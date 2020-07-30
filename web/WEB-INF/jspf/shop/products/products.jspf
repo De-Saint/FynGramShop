@@ -1,0 +1,223 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<!--breadcrumbs area start-->
+<div class="breadcrumbs_area">
+    <div class="container">   
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_content">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="/FynGramShop/">home</a></li>
+                        <li class="shop-cat-root-name" style="cursor: pointer;"></li>
+                        <li class="shop-cat-par-name" style="cursor: pointer;"></li>
+                        <li class="shop-cat-name font-weight-bold" style="cursor: pointer;"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>         
+</div>
+<!--breadcrumbs area end-->
+
+<!--shop  area start-->
+<div class="shop_area shop_reverse mt-70 mb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-12">
+                <!--sidebar widget start-->
+                <aside class="sidebar_widget">
+                    <div class="widget_inner">
+                        <div class="widget_list widget_categories">
+                            <h3>CATEGORY</h3>
+                            <ul class="">
+                                <li class="widget_sub_categories sub_categories1">
+                                    <a href="javascript:void(0)" class="shop-cat-name">No further category</a>
+                                    <ul class="widget_dropdown_categories dropdown_categories1 shop-list-cat-list">
+                                        <li class=" shop-list-cat-clone d-none">
+                                            <a href="javascript:void(0)" class="shop-list-cat-name">Document</a>
+                                            <ul class="shop-list-cat-sub-list">
+                                                <li class="shop-list-cat-sub-clone d-none">
+                                                    <a href="javascript:void(0)" class="shop-list-cat-sub-name">Flickr</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="widget_list widget_filter">
+                            <form name="filterPriceForm"> 
+                                <h3>price
+                                    <button class="float-right mb-5"  type="submit">APPLY</button>
+                                </h3>
+                                <div class="clearfix"></div>
+                                <div id="slider-range"></div>  
+                                <div class="form-row align-items-center">
+                                    <div class="col-auto ">
+                                        <div class="input-group ">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">₦</div>
+                                            </div>
+                                            <input type="text" class="border text-center" value="" id="minamount" >
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <span class="font-weight-bold text-success">-</span>
+                                    </div>
+                                    <div class="col-auto ">
+                                        <div class="input-group ">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">₦</div>
+                                            </div>
+                                            <input type="text" class="border text-center" value="" id="maxamount">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form> 
+                        </div>
+
+                        <div class="cat-proplist">
+                            <div class="widget_list widget_color cat-proplist-clone d-none">
+
+                                <h3 class="cat-proplist-name">COLOR</h3>
+                                <ul class="cat-subproplist">
+                                    <li class="cat-subprop-clone d-none">
+                                        <label for="remember">
+                                            <input id="remember" type="checkbox" class="cat-subprop-id" name="cat-subprop-id">
+                                            <a href="javascript:void(0)" class="cat-subprop-name">Black  <span>(6)</span></a>
+                                        </label>
+                                        <!----> 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="widget_list tags_widget">
+                            <h3>Category tags</h3>
+                            <div class="tag_cloud cat-taglist" >
+
+                                <a href="#" class="cat-taglist-clone d-none"> <span class="cat-taglist-name">Men</span></a>
+
+                            </div>
+                        </div>
+                        <div class="widget_list banner_widget">
+                            <div class="banner_thumb">
+                                <a href="#"><img src="../../../assets/img/bg/banner17.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <!--sidebar widget end-->
+            </div>
+            <div class="col-lg-9 col-md-12">
+                <!--shop wrapper start-->
+                <!--shop toolbar start-->
+                <div class="shop_toolbar_wrapper">
+                    <div class="shop_toolbar_btn">
+
+                        <button data-role="grid_3" type="button" class="active btn-grid-3" data-toggle="tooltip" title="3"></button>
+
+                        <button data-role="grid_4" type="button"  class=" btn-grid-4" data-toggle="tooltip" title="4"></button>
+
+                        <button data-role="grid_list" type="button"  class="btn-list" data-toggle="tooltip" title="List"></button>
+                    </div>
+                    <div class="">
+                        <form class="" action="#">
+                            <select name="orderby" class="select2 form-control select2-show-search" id="short">
+                                <option selected value="1">Sort by average rating</option>
+                                <option  value="2">Sort by popularity</option>
+                                <option value="3">Sort by newness</option>
+                                <option value="4">Sort by price: low to high</option>
+                                <option value="5">Sort by price: high to low</option>
+                                <option value="6">Product Name: Z</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="page_amount">
+                        <p>Showing 1–9 of 21 results</p>
+                    </div>
+                </div>
+                <!--shop toolbar end-->
+                <div class="row shop_wrapper ShopProductList" id="product-display" >
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 prodlist-clone d-none">
+                        <div class="single_product">
+                            <div class="product_thumb">
+                                <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 shop-d-view" alt=""></a>
+                                <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 shop-d-view"  alt=""></a>
+                                <div class="label_product">
+                                    <span class="label_sale">Sale</span>
+                                    <span class="label_new shop-p-condition ">New</span>
+                                </div>
+                                <div class="action_links">
+                                    <ul>
+                                        <li class="add_to_cart btn-shop-p-add-to-cart" data-toggle="tooltip" data-placement="top" title="Add to Cart"><a href="javascript:void(0)" title="Add to cart" ><span class="lnr lnr-cart"></span></a></li>
+                                        <li class="quick_button btn-shop-p-quick-view" data-toggle="tooltip" data-placement="top"  data-original-title="Quick View"><a href="javascript:void(0)" data-toggle="modal" data-target="#modal_box"  title="quick view"> <span class="lnr lnr-magnifier"></span></a></li>
+                                        <li class="wishlist btn-shop-p-wishlist" data-toggle="tooltip" data-placement="top"  data-original-title="Add to Saved Items"><a href="javascript:void(0)" title="Add to Wishlist"><span class="lnr lnr-heart"></span></a></li>  
+                                        <li class="compare btn-shop-p-details" data-toggle="tooltip" data-placement="top"  data-original-title="Details" ><a href="javascript:void(0)" title="Add to Compare"><span class="lnr lnr-eye"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product_content grid_content">
+                                <h4 class="product_name"><a href="javascript:void(0)" class="shop-p-name btn-shop-p-details">Cas Meque Metus</a></h4>
+                                <p><a href="#" class="shop-prod-rootcategory">Fruits</a></p>
+                                <div class="price_box"> 
+                                    <span class="current_price shop-p-selling-price">$32.00</span>
+                                    <span class="old_price shop-p-cost-price">$342.00</span>
+                                </div>
+                            </div>
+                            <div class="product_content list_content">
+                                <h4 class="product_name"><a href="javascript:void(0)" class="shop-p-name">Cas Meque Metus</a></h4>
+                                <p><a href="#" class="shop-prod-rootcategory">Fruits</a></p>
+                                <div class="price_box"> 
+                                    <span class="current_price shop-p-selling-price">$32.00</span>
+                                    <span class="old_price shop-p-cost-price">$342.00</span>
+                                </div>
+                                <div class="product_desc">
+                                    <p class="shop-p-desc text-justify">Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Viva..</p>
+                                </div>
+                                <div class="action_links list_action_right">
+                                    <ul>
+                                        <li class="add_to_cart btn-shop-p-add-to-cart" data-toggle="tooltip" data-placement="top" title="Add to Cart"><a href="javascript:void(0)" title="Add to cart">Add to Cart</a></li>
+                                        <li class="quick_button btn-shop-p-quick-view" data-toggle="tooltip" data-placement="top"  data-original-title="Quick View"><a href="javascript:void(0)" data-toggle="modal" data-target="#modal_box"  title="quick view"> <span class="lnr lnr-magnifier"></span></a></li>
+                                        <li class="wishlist btn-shop-p-wishlist" data-toggle="tooltip" data-placement="top"  data-original-title="Add to Saved Items"><a href="javascript:void(0)" title="Add to Wishlist"><span class="lnr lnr-heart"></span></a></li>  
+                                        <li class="compare btn-shop-p-details" data-toggle="tooltip" data-placement="top"  data-original-title="Details" ><a href="javascript:void(0)"  title="Show Details"><span class="lnr lnr-eye"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row shop_wrapper d-none" id="noproduct-display">
+                    <div class="col-lg-12 col-md-12 col-sm-6 col-12">
+                        <div class="text-center mt-70">
+                            <div class="widgets_container contact_us">
+                                <div class="font-weight-bold">
+                                    Sorry for the inconvenience
+                                </div>
+                                <div class="font-weight-light "> Search again what you are looking for</div>
+
+                            </div>  
+                            <form action="#" class="col-lg-6 offset-3">
+
+                                <div class="search_box" >
+                                    <input placeholder="Search products, brands and categories..." class=" border-bottom border-left border-top form-control"  type="text">
+                                    <button type="submit"><span class="lnr lnr-magnifier"></span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!--shop toolbar end
+                <!--shop wrapper end-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--shop  area end-->

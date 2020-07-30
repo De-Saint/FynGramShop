@@ -1,0 +1,410 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<!--breadcrumbs area start-->
+<div class="breadcrumbs_area">
+    <div class="container">   
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_content">
+                    <h3>Checkout</h3>
+                    <ul>
+                        <li><a href="/FynGramShop/">home</a></li>
+                        <li>Checkout</li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>         
+</div>
+<!--breadcrumbs area end-->
+
+<!--Checkout page section end-->
+<div class="Checkout_section mt-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="accordion">
+                    <!-- Section1 address details -->
+                    <div class=" user-actions">
+                        <h3 class="fs-16"  id="headingOne"> 
+                            <a  href="javascript:void(0)" class="Returning" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span class="text-success  check_completed">Step 1: Address Details  <i class="fa fa-check-circle fs-15"></i></span> 
+                            </a>
+                            <a  href="javascript:void(0)" class="Returning pull-right" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fa fa-pencil fa-fw"></i>Edit
+                            </a> 
+                        </h3>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="panel">
+                                <div class="checkout_info">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="card" style="border-color: #28a745; border-width: 2px; border-style: solid;">
+                                                <div class="card-header">
+                                                    <div class="float-left">
+                                                        This default address will be used as your delivery address
+                                                    </div>
+                                                    <div class="float-right">
+                                                        <button type="button" class="btn btn-outline-primary">Add</button>
+                                                    </div>
+                                                </div>
+                                                <hr >
+                                                <div class="col-md-12">
+                                                    <div class="d-flex">
+                                                        <div class="lnr lnr-user" style="font-size: 18px;"></div>
+                                                        <div class="ml-3" style="font-size: 16px;"><p>Sanni Ibrahim</p></div>
+                                                    </div>
+                                                    <div class="d-flex mt-3">
+                                                        <div class="lnr lnr-location" style="font-size: 18px;"></div>
+                                                        <div class="ml-3" style="font-size: 16px;"><p>1 Wale Balogun close, Hopeville Estate, Sangotedo, Ajah, Lagos State.</p></div>
+                                                    </div>
+                                                    <div class="d-flex mt-3">
+                                                        <div class="lnr lnr-phone" style="font-size: 18px;"></div>
+                                                        <div class="ml-3" style="font-size: 16px;"><p>08023282638</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                    <div class="order_button">
+                                        <button  type="button" class="pull-right mt-3 btn btn-success">Continue</button> 
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- Section 2 delivery method-->
+                    <div class="user-actions">
+                        <h3 class="fs-16" id="headingOne">
+                            <a href="javascript:void(0)" class="Returning" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <span class="text-muted  check_completed"> Step 2: Delivery Method  <i class="fa fa-check-circle fs-15"></i></span> 
+                            </a>
+                            <a href="javascript:void(0)" class="Returning pull-right" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="fa fa-pencil fa-fw"></i>Edit
+                            </a>
+                        </h3>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="panel">
+                                    <div id="accordion2">
+                                        <div class="panel-default" id="headOne">
+                                            <input id="door_step" name="check_method" checked="" type="radio" data-toggle="collapse" data-target="#door_delivery_method" aria-expanded="false" aria-controls="door_delivery_method" />
+                                            <label for="door_step" data-toggle="collapse" data-target="#door_delivery_method" aria-controls="door_delivery_method">Door Step Delivery</label>
+
+                                            <div id="door_delivery_method" class="collapse show" aria-labelledby="headOne" data-parent="#accordion2">
+                                                <div class="ml-2">This selected address will be used as your door step delivery.</div>
+                                                <div id="accordion3" class="pl-4">
+                                                    <div class="panel-default" id="HOne">
+                                                        <input id="payment1" name="check_delivery_method" data-toggle="collapse" type="radio" data-toggle="collapse" data-target="#delivery_method1" aria-controls="delivery_method1"/>
+                                                        <label for="payment1" data-toggle="collapse" data-target="#delivery_method1" aria-controls="method" class="font-weight-semibold">Local Delivery</label>
+
+                                                        <div id="delivery_method1" class="collapse"  aria-labelledby="HOne" data-parent="#accordion3">
+                                                            <div class="form-group pl-4">
+                                                                <div class="">This is the details of the selected Delivery.</div>
+                                                                <div class="">Fees. #4650</div>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="panel-default">
+                                                        <input id="payment2" name="check_delivery_method" type="radio" data-toggle="collapse" data-target="#delivery_method2" aria-controls="delivery_method2" />
+                                                        <label for="payment2" data-toggle="collapse" data-target="#delivery_method2" aria-controls="delivery_method2" class="font-weight-semibold">Inter State Delivery </label>
+
+                                                        <div id="delivery_method2" class="collapse"  aria-labelledby="HOne" data-parent="#accordion3">
+                                                            <div class="form-group pl-4">
+                                                                <div class="">This is the details of the selected Delivery.</div>
+                                                                <div class="">Fees. #4650</div>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel-default">
+                                                        <input id="payment3" name="check_delivery_method" type="radio"  data-toggle="collapse" data-target="#delivery_method3" aria-controls="delivery_method3" />
+                                                        <label for="payment3" data-toggle="collapse" data-target="#delivery_method3" aria-controls="delivery_method3" class="font-weight-semibold">Express Delivery </label>
+
+                                                        <div id="delivery_method3" class="collapse"  aria-labelledby="HOne" data-parent="#accordion3">
+                                                            <div class="form-group pl-4">
+                                                                <div class="">This is the details of the selected Delivery.</div>
+                                                                <div class="">Fees. #4650</div>
+
+
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div> 
+
+                                        <div class="panel-default" id="headOne">
+                                            <input id="pickup_station" name="check_method" type="radio" data-toggle="collapse" data-target="pickup_station_form" aria-expanded="false" aria-controls="pickup_station_form"/>
+                                            <label for="pickup_station" data-toggle="collapse" data-target="#pickup_station_form" aria-controls="pickup_station_form">PickUp Station </label>
+                                            <div id="pickup_station_form" class="collapse" aria-labelledby="headTwo" data-parent="#accordion2">
+                                                <div class="card-body1">
+                                                    <div class="ml-2">
+                                                        Select a Pick-Up station to enjoy <br>
+                                                        - Cheaper delivery fees <br>
+                                                        - Call Pick-Up Station to scheduled pickup at your own convenience 
+
+
+                                                        <div class="mini_cart_wrapper mt-1">
+                                                            <a href="javascript:void(0)" class="btn btn-success btn-sm">Select a Pickup Station</a>
+                                                        </div> 
+
+                                                        <div class="panel card-body">
+                                                            <span class="font-weight-bold fs-15 "> Name of Pickup Station:</span> <span class="font-weight-bold fs-18 text-success">sdfsfsf sfsdf</span> <br>
+                                                            <span class="font-weight-bold fs-15 "> Location: </span><span class="font-weight-bold fs-18 text-success">sdfsfsf sfsdf</span> <br>
+                                                            <span class="font-weight-bold fs-15 ">Shipping Fees: </span><span class="font-weight-bold fs-18 text-success">45000</span> <br>
+                                                            <span class="font-weight-bold fs-15 "> Contact Information:</span> <span class="font-weight-bold fs-18 text-success">sdfsfsf sfsdf</span> <br>
+                                                            <span class="font-weight-bold fs-15 "> Operating Hours: </span><span class="font-weight-bold fs-18 text-success">sdfsfsf sfsdf</span> <br>
+                                                            <div class="mini_cart_wrapper mt-1">
+                                                                <a href="javascript:void(0)" class="btn btn-success btn-sm">Change Pickup Station</a>
+                                                            </div> 
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+
+                                    <div class="order_button">
+                                        <button  type="button" class="pull-right mt-3 btn btn-success">Continue</button> 
+                                        <div class="clearfix"></div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section 2 shipping details -->
+                    <div class="user-actions">
+                        <h3 class="fs-16" id="headingOne">
+                            <a href="javascript:void(0)" class="Returning" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span class="text-muted  check_completed">Step 3: Shipping Details  <i class="fa fa-check-circle fs-15"></i></span> 
+                            </a>
+                            <a href="javascript:void(0)" class="Returning pull-right" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="fa fa-pencil fa-fw"></i>Edit
+                            </a>
+                        </h3>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="panel">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="row">
+                                                <div class=" col-lg-4 col-md-4" id="">
+                                                    <div class="card-body1 p1">
+                                                        <div class="font-weight-bold">Shipment 1 of 5 </div>
+                                                        <div><span class="font-weight-bold">Product Name:</span> <span>Product 1</span></div>
+                                                        <div><span class="font-weight-bold">Shipping Information</span> <span> 3rd monday june  to 5th friday June</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class=" col-lg-4 col-md-4" id="">
+                                                    <div class="card-body1 p1">
+                                                        <div class="font-weight-bold">Shipment 2 of 5 </div>
+                                                        <div><span class="font-weight-bold">Product Name:</span> <span>Product 2</span></div>
+                                                        <div><span class="font-weight-bold">Shipping Information</span> <span> 3rd monday june  to 5th friday June</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class=" col-lg-4 col-md-4" id="">
+                                                    <div class="card-body1 p1">
+                                                        <div class="font-weight-bold">Shipment 3 of 5 </div>
+                                                        <div><span class="font-weight-bold">Product Name:</span> <span>Product 3</span></div>
+                                                        <div><span class="font-weight-bold">Shipping Information</span> <span> 3rd monday june  to 5th friday June</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class=" col-lg-4 col-md-4" id="">
+                                                    <div class="card-body1 p1">
+                                                        <div class="font-weight-bold">Shipment 4 of 5 </div>
+                                                        <div><span class="font-weight-bold">Product Name:</span> <span>Product 4</span></div>
+                                                        <div><span class="font-weight-bold">Shipping Information</span> <span> 3rd monday june  to 5th friday June</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class=" col-lg-4 col-md-4" id="">
+                                                    <div class="card-body1 p1">
+                                                        <div class="font-weight-bold">Shipment 5 of 5 </div>
+                                                        <div><span class="font-weight-bold">Product Name:</span> <span>Product 5</span></div>
+                                                        <div><span class="font-weight-bold">Shipping Information</span> <span> 3rd monday june  to 5th friday June</span></div>
+                                                    </div>
+                                                </div>
+                                               
+
+                                               
+                                            </div>   
+                                        </div> 
+                                    </div>
+
+                                    <div class="order-notes">
+                                        <label for="order_note">Order Notes</label>
+                                        <textarea id="order_note" class="form-control-plaintext" rows="2" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                                    </div>    
+                                    <div class="order_button">
+                                        <button  type="submit" class="pull-right mt-3 btn btn-success">Continue</button> 
+                                        <div class="clearfix"></div>
+                                    </div> 
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section 4 confirm order-->
+                    <div class="user-actions">
+                        <h3 class="fs-16" id="headingOne">
+                            <a href="javascript:void(0)" class="Returning" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <span class="text-muted  check_completed">Step 4: Confirm Order  <i class="fa fa-check-circle fs-15"></i></span> 
+                            </a>
+                            <a href="javascript:void(0)" class="Returning pull-right" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <i class="fa fa-pencil fa-fw"></i>Edit
+                            </a>
+                        </h3>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="panel">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <td class="text-left">Product Name</td>
+                                                <td class="text-left">Model</td>
+                                                <td class="text-right">Quantity</td>
+                                                <td class="text-right">Unit Price</td>
+                                                <td class="text-right">Total</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr>
+                                                <td class="text-left"><a href="http://safira.demo.towerthemes.com/index.php?route=product/product&amp;product_id=48">Etiam Gravida</a>         </td>
+                                                <td class="text-left">Store1</td>
+                                                <td class="text-right">1</td>
+                                                <td class="text-right">$100.00</td>
+                                                <td class="text-right">$100.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left"><a href="http://safira.demo.towerthemes.com/index.php?route=product/product&amp;product_id=97">Letraset Sheets</a>         </td>
+                                                <td class="text-left">Store1</td>
+                                                <td class="text-right">1</td>
+                                                <td class="text-right">$100.00</td>
+                                                <td class="text-right">$100.00</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="4" class="text-right"><strong>Total:</strong></td>
+                                                <td class="text-right">$205.00</td>
+                                            </tr>
+                                        </tfoot>
+
+                                    </table>
+                                </div>
+                                <div class="order_button">
+                                    <button  type="button" class="pull-right mt-3 btn btn-success">Continue</button> 
+                                    <div class="clearfix"></div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section 5 payment method -->
+                    <div class="user-actions">
+                        <h3 class="fs-16" id="headingOne">
+                            <a href="javascript:void(0)" class="Returning" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <span class="text-muted  check_completed">Step 5: Payment Method  <i class="fa fa-check-circle fs-15"></i></span> 
+                            </a>
+                            <a href="javascript:void(0)" class="Returning pull-right" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <i class="fa fa-pencil fa-fw"></i>Edit
+                            </a>
+                        </h3>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                            <div class="panel">
+                                <div class="container">
+                                    <div class="checkout_form">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12">
+                                                <form action="#">
+                                                    <div  class="font-weight-bold">Got a fyngram Discount Code? Use it below:</div>
+                                                    <div class="row">
+                                                        <div class="col-lg-6 mb-20 mt-3">
+
+                                                            <input type="text" class="form-control border">    
+                                                        </div>
+                                                        <div class="col-lg-6 mb-20 mt-3">
+
+                                                            <button type="button" class="btn btn-block btn-success" >Add Discount Code</button>
+                                                        </div>   	    	    	    	    	    	    
+                                                    </div>
+                                                </form>    
+                                            </div>
+                                            <div class="order_table table-responsive">
+                                                <table>
+                                                    <tfoot >
+                                                        <tr>
+                                                            <th class="text-right">Cart Subtotal</th>
+                                                            <td>$215.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-right">Delivery Fees</th>
+                                                            <td><strong>$5.00</strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-right">Order Subtotal</th>
+                                                            <td><strong>$220.00</strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-right">Discount Amount</th>
+                                                            <td><strong>{$20.00}</strong></td>
+                                                        </tr>
+                                                        <tr >
+                                                            <th class="text-right">Order Total</th>
+                                                            <td><strong>$218.00</strong></td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>     
+                                            </div>
+
+
+
+                                            <div class="col-lg-12 col-md-12">
+                                                <div class="font-weight-bold">How do you want to pay for your order?</div>
+                                                <div id="accordion4" class="row">
+
+                                                    <div class="panel-default col-lg-6 col-md-6" id="headPayOne">
+                                                        <input id="walletpaymethod" name="pay_method" type="radio" data-toggle="collapse" data-target="#walletpay" aria-expanded="false" aria-controls="walletpay"/>
+                                                        <label for="walletpaymethod" data-toggle="collapse" data-target="#walletpay" aria-controls="walletpay">Pay from My Wallet?  <i class="fa fa-money fs-32 pt-2 ml-1"></i> </label>
+                                                        <div id="walletpay" class="collapse show" aria-labelledby="headPayTwo" data-parent="#accordion4">
+                                                            <div class="card-body1 pl-4">
+                                                                <p>Pay from your fyngram wallet account. This transaction will fail if you have insufficient fund. <a href="#">check your wallet balance?</a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="panel-default col-lg-6 col-md-6" id="headPayOne">
+                                                        <input id="paystackmethod" name="pay_method" type="radio" data-toggle="collapse" data-target="#paystackpay" aria-expanded="false" aria-controls="paystackpay" />
+                                                        <label for="paystackmethod" data-toggle="collapse" data-target="#paystackpay" aria-controls="paystackpay">Pay via PayStack? <img src="../../../assets/img/brand/paystack.png" style="width: 160px; height: 45px;" alt=""></label>
+
+                                                        <div id="paystackpay" class="collapse" aria-labelledby="headPayOne" data-parent="#accordion4">
+                                                            <div class="card-body1 pl-4">
+                                                                <p>Pay via PayStack; you can pay with your card if you don’t have not funded your <b>FynGram Wallet.</b></p> 
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div> 
+                                                </div>   
+                                            </div> 
+                                        </div> 
+                                    </div>      
+                                    <div class="py-3">
+                                        <small class="ml-1">I have read and agreed to the <a href="#">terms and conditions</a></small>
+                                        <div  type="button" class="btn btn-success btn-block py-2 text-capitalize mt-3">PAY AND PLACE ORDER</div> 
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

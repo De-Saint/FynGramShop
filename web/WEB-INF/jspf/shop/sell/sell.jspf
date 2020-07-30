@@ -1,0 +1,80 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="breadcrumbs_area">
+    <div class="container">   
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_content">
+                    <h3>Become A Seller</h3>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li>Sell On fyngram </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>         
+</div>
+
+
+
+<div class="contact_area">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-12 col-md-12 text-center">
+                <div class="contact_message form mt-30">
+                    <h3>Make Money On Fyngram</h3> 
+                    <h5>Seller To Our Customers</h5> 
+                    
+                    <a class="btn btn-success " href="/FynGramManager/pages/general/register/register.jsp" target="blank">Start Selling On Fyngram </a>
+                </div> 
+            </div>
+        </div>
+
+
+    </div>   
+    <div class="choseus_area mt-30" data-bgimg="../../../assets/img/about/about-us-policy-bg.jpg">
+        <div class="container">   
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="single_chose">
+                        <div class="chose_icone">
+                            <img src="../../../assets/img/about/About_icon1.png" alt="">
+                        </div>
+                        <div class="chose_content">
+                            <h3>Creative Design</h3>
+                            <p>Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="single_chose">
+                        <div class="chose_icone">
+                            <img src="../../../assets/img/about/About_icon2.png" alt="">
+                        </div>
+                        <div class="chose_content">
+                            <h3>100% Money Back Guarantee</h3>
+                            <p>Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="single_chose">
+                        <div class="chose_icone">
+                            <img src="../../../assets/img/about/About_icon3.png" alt="">
+                        </div>
+                        <div class="chose_content">
+                            <h3>Online Support 24/7</h3>
+                            <p>Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+</div>

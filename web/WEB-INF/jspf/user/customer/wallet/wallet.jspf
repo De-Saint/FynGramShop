@@ -1,0 +1,114 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!--breadcrumbs area start-->
+<div class="breadcrumbs_area">
+    <div class="container">   
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_content">
+                    <h3>My Account</h3>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li>My account</li>
+                        <li>My Wallets</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>         
+</div>
+<!--breadcrumbs area end-->
+
+<!-- my account start  -->
+<section class="main_content_area">
+    <div class="container">   
+        <div class="account_dashboard">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <%@include file="../../general/sublinks/sublinks.jspf" %>   
+                </div>
+                <div class="col-sm-12 col-md-9 col-lg-9">
+                    <!-- Tab panes -->
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card pl-3 pr-3 pt-3 pb-3 border border-success">
+                                    <h5 class="text-dark" style="font-weight: 600;">Main Wallet 
+                                        <span  data-toggle="modal" data-target="#fund_wallet"   class="pull-right btn btn-outline-success btn-sm"> Fund Wallet</span>
+                                    </h5>
+                                    <h5 class="mt-2">Wallet Number</h5>
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text bg-white"><div class="fa fa-money"></div></div>
+                                        </div>
+                                        <input type="text"  class="form-control text-center font-weight-bold bg-white walletNumber"  readonly="">
+                                        <div class="input-group-prepend bg-white   ">
+                                            <div class="input-group-text bg-white"><div class="fa fa-copy"></div></div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="row d-flex mt-3">
+                                            <div class="col-md-7 d-flex">
+                                                <div class="fa fa-credit-card pr-2 pt-1" style="font-size: 15px; color: #495057;"></div>
+                                                <div style="color: #495057;">Wallet Pin :</div>
+                                            </div>
+                                            <div class="col-md-5 float-right">
+                                                <div class="walletPin" style="font-weight: 500; text-align: right;">6533</div>
+                                            </div>
+                                        </div>
+                                        <div class="row d-flex mt-2">
+                                            <div class="col-md-7 d-flex">
+                                                <div class="fa fa-bank pr-2 pt-1" style="font-size: 15px; color: #495057;"></div>
+                                                <div style="color: #495057;">Total Amount :</div>
+                                            </div>
+                                            <div class="col-md-5 float-right">
+                                                <div class="" style="color: seagreen; font-weight: 600; font-size: 16px; text-align: right;">&#8358; <span class="MainBalance"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card bg-light pl-3 pr-3 pt-3 pb-3">
+                                    <h5 class="text-dark" style="font-weight: 600;">Pending Wallet</h5>
+                                    <h5 class="mt-2">Wallet Number</h5>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text" style="background-color: #ffffff"><div class="fa fa-money"></div></div>
+                                        </div>
+                                        <input type="text" class="form-control walletNumber text-center font-weight-bold"  readonly="" style="background-color: #ffffff">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"  style="background-color: #ffffff;"><div class="fa fa-copy"></div></div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="row d-flex mt-3">
+                                            <div class="col-md-7 d-flex">
+                                                <div class="fa fa-credit-card pr-2 pt-1" style="font-size: 15px; color: #495057;"></div>
+                                                <div style="color: #495057;">Wallet Pin :</div>
+                                            </div>
+                                            <div class="col-md-5 float-right">
+                                                <div class="walletPin" style="font-weight: 500; text-align: right;">6533</div>
+                                            </div>
+                                        </div>
+                                        <div class="row d-flex mt-2">
+                                            <div class="col-md-7 d-flex">
+                                                <div class="fa fa-bank pr-2 pt-1" style="font-size: 15px; color: #495057;"></div>
+                                                <div style="color: #495057;">Total Amount :</div>
+                                            </div>
+                                            <div class="col-md-5 float-right">
+                                                <div class="" style="color: seagreen; font-weight: 600; font-size: 16px; text-align: right;">&#8358; <span class="PendingBalance"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>        	
+</section>			
+<!-- my account end   --> 

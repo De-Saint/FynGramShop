@@ -1,0 +1,68 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!--breadcrumbs area start-->
+<div class="breadcrumbs_area">
+    <div class="container">   
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_content">
+                    <h3>Login</h3>
+                    <ul>
+                        <li><a href="${pageContext.request.contextPath}/LinksServlet?type=Index">home</a></li>
+                        <li>Login</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>         
+</div>
+<!--breadcrumbs area end-->
+
+<!-- customer login start -->
+<div class="customer_login">
+    <div class="container">
+        <div class="row">
+            <!--login area start-->
+            <div class="col-lg-6 col-md-6">
+                <div class="account_form">
+                    <h2>New Customer</h2>
+                    <div class="font-weight-bold">Register Account</div>
+                    <form action="#">
+                        <div class="">
+                            By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.
+                            <div class="mt-70 text-left  p-lg-0 mb-lg-4">
+                                <a href="${pageContext.request.contextPath}/LinksServlet?type=Register" class="btn btn-success text-white rounded mb-3">Continue</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>    
+            </div>
+            <!--login area start-->
+
+            <!--register area start-->
+            <div class="col-lg-6 col-md-6">
+                <div class="account_form register">
+                    <h2>Returning Customer</h2>
+                    <div class="font-weight-bold">I am a returning customer</div>
+                    <form name="loginForm" class="" id="loginForm">
+                        <p>   
+                            <label>Email Address  <span>*</span></label>
+                            <input type="email" id="fgemail" placeholder="Email" required="true">
+                        </p>
+                        <p>   
+                            <label>Passwords <span>*</span></label>
+                            <input type="password" id="fgpass" placeholder="Password" required="true">
+                        </p>
+                        <div class="login_submit">
+                            <a href="${pageContext.request.contextPath}/LinksServlet?type=Recovery">Forgotten Password?</a>
+                            <!--<div  class="btn btn-success text-white rounded">Login</div>-->
+                            <button type="submit" class="btn btn-success">Login</button>
+                        </div>
+                    </form>
+                </div>    
+            </div>
+            <!--register area end-->
+        </div>
+    </div>    
+</div>
+<!-- customer login end -->

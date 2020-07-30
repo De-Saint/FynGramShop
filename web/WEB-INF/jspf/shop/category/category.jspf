@@ -1,0 +1,83 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!--breadcrumbs area start-->
+<div class="breadcrumbs_area">
+    <div class="container">   
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_content">
+                    <h3>All Categories</h3>
+                    <ul>
+                        <li><a href="/FynGramShop/">home</a></li>
+                        <li>Best Categories</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>         
+</div>
+<!--breadcrumbs area end-->
+
+<div class="priceing_table">
+    <div class="container"> 
+
+<!--        <div class="grid" >
+            <div class="grid-sizer col-md-4"></div>
+            <div class="row callategorylist">
+                <div class="grid-item col-md-4 mb-4 allcategory-clone d-none gitem" style="position: static !important">
+                    <div class="card">
+                        <div class="card-header allcat-name"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Panel title</h5>
+                            <p class="card-text">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p>
+                            <a class="card-link">Card link</a>
+                            <a class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <div class='clearfix'></div>
+        <div class="row callategorylist">
+            <div class="col-lg-3 col-md-6 allcategory-clone d-none">
+                <div class="all_single_priceing">
+                    <div class="priceing_title">
+                        <h1 class="allcat-name">Standard</h1>
+                    </div>
+                    <div class="priceing_list allparcategorylist">
+                        <ul class="allparcategory-clone d-none">
+                            <li class="">
+                                <span class="allparcat-name">Vegetables</span>
+                                <p class="allsubcategorylist ">
+                                    <span class="allsubcategory-clone d-none">
+                                        <small class="ml-3 allsubcat-name font-weight-bold">Dresses</small><br>
+                                    </span>
+
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>       
+                </div>
+            </div>
+
+        </div>
+    </div>    
+</div>
+<div class="advantages_ecommerce clearfix">
+    <div class="container">   
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-md-8 col-sm-12">
+                <div class="advantages_content">
+                    <h3>Advantages of FynGram Store</h3>
+                    <p>Purchase directly from the farmer</p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-4 col-sm-12">
+                <div class="advantages_button">
+                    <a href="${pageContext.request.contextPath}/LinksServlet?type=Services" title="MORE INFO ">More Info <i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>

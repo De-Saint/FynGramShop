@@ -1,0 +1,108 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!--breadcrumbs area start-->
+<div class="breadcrumbs_area">
+    <div class="container">   
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_content">
+                    <h3>Saved Items</h3>
+                    <ul>
+                        <li><a href="/FynGramShop">home</a></li>
+                        <li>Wishlist</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>         
+</div>
+<!--breadcrumbs area end-->
+
+
+<!--wishlist area start -->
+<div class="wishlist_area mt-70">
+    <div class="container">   
+
+        <div class="row fullshopsaveditems">
+            <div class="col-9">
+                <div class="table_desc wishlist">
+                    <div class="cart_page table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="product_remove">SN</th>
+                                    <th class="product_thumb">Image</th>
+                                    <th class="product_name">Product</th>
+                                    <th class="product-price">Price</th>
+                                    <th class="product_quantity">Stock Status</th>
+                                    <th class="product_total">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ShopSavedItemList">
+                                <tr class="shop-saveditems-clone d-none">
+                                    <td class="product_remove shop-saveditem-sn">#1</td>
+                                    <td class="product_thumb"><a href="javascript:void(0)"><img src="../../../../assets/img/s-product/product.jpg" class="shop-saveditem-p-image" alt=""></a></td>
+                                    <td class="product_name"><a href="javascript:void(0)" class="shop-saveditem-p-name">Handbag fringilla</a>
+                                        <p><a href="javascript:void(0)" class="shop-saveditem-btn-delete-item"><i class="fa fa-trash fs-20 mt-3 text-danger"></i></a></p>
+                                    </td>
+                                    <td class="product-price ">&#8358;<span class="shop-saveditem-p-price">0</span></td>
+                                    <td class="product_quantity shop-saveditem-p-stock">In Stock</td>
+                                    <td class="product_total"><button class="shop-saveditem-buynow btn btn-success"><i class="fa fa-cart-plus"></i> BUY NOW</button></td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>   
+                    </div>  
+
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="coupon_area">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="coupon_code">
+                                <h3>Saved Items Total</h3>
+                                <div class="coupon_inner">
+                                    <div class="cart_subtotal">
+                                        <p>Item(s)</p>
+                                        <p class="shop-saveditem-p-count text-success fs-25">0</p>
+                                    </div>
+
+                                    <div class="cart_subtotal">
+                                        <p>Saved Items Total</p>
+                                        <p class="cart_amount ">&#8358;<span class="shop-saveditem-p-total-amount">0</span></p>
+                                    </div>
+                                    <div class="checkout_btn mb-3 mt-5">
+                                        <a href="javascript:void(0)" class="btn-block text-center shop-saveditem-buyall "><i class="mr-1 fa fa-check-circle-o"></i>BUY ALL</a>
+                                    </div>
+
+                                    <a href="javascript:void(0)" class="text-center text-danger fs-15 mt-5 shop-saveditem-empty">Empty Saved ItemS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row emptyshopsaveditems d-none mt-70 mb-68" id="">
+            <div class="col-lg-12 col-md-12 col-sm-6 col-12">
+                <div class="text-center">
+                    <div class="widgets_container contact_us">
+                        <div class="font-weight-bold">
+                            You do not have any Saved Items!
+                        </div>
+                        <div class="font-weight-light "> Search again what you are looking for and add to your Saved Items</div>
+
+                    </div>  
+                    <div class="col-lg-6 offset-3 mt-3">
+                        <a class="btn btn-success text-center" href="${pageContext.request.contextPath}/LinksServlet?type=Index">Start Shopping</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<!--wishlist area end -->

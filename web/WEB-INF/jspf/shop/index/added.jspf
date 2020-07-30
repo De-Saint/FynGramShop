@@ -1,0 +1,89 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="modal fade" id="modal_box-added" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-white text-center justify-content-center">
+                <h5 class="modal-title text-success " id="new_cashout_request"><i class="fa fa-check fa-fw"></i> Product successfully added to your shopping cart</h5>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><i class="icon-x"></i></span>
+            </button>
+
+            <div class="modal_body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <div class="modal_tab">  
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="tab-content product-details-large ">
+                                            <img src="" class="added-p-image" alt="" style="width: 15em; height: 15em;">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <h4 class="font-weight-bold text-success added-p-name">
+                                            Name
+                                        </h4>
+                                        <div class="added-p-price font-weight-semibold">
+                                            Price
+                                        </div>
+                                        <div class="mt-1">
+                                            <table>
+                                                <tbody id="added-p-det-prop-list">
+                                                    <tr class="added-p-det-prop-clone d-none">
+                                                        <td class="first_child font-weight-bold added-p-det-prop-name">name</td>
+                                                        <td class="added-p-det-prop-value">value</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                         <div class="mt-2">
+                                             <span class="font-weight-semibold"> Quantity</span>
+                                            <span class="added-p-cart-count ml-2"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div> 
+                        <div class="col-lg-7 col-md-7 col-sm-12 border-left">
+                            <div class="modal_right">
+                                <div class="modal_title mb-10">
+                                    <h2 class="added-p-msg"></h2> 
+                                </div>
+                                <div class="modal_price mb-10">
+                                    <span class="float-left text-dark" id="">Subtotal:</span>    
+                                    <span class="float-right added-p-cart-amount text-dark">0</span>   
+                                    <span class="clearfix"></span>
+                                </div> 
+                                <div class="modal_price mb-10">
+                                    <span class="float-left font-weight-semibold text-dark" id="">Shipping:</span>    
+                                    <span class="float-right font-weight-semibold text-dark" id="" >Not yet included</span>   
+                                    <span class="clearfix"></span>
+                                </div> 
+                                <div class="modal_price mt-10 bg-grey p-1">
+                                    <span class="float-left" id="">Total:</span>    
+                                    <span class="float-right added-p-cart-amount">0</span>   
+                                    <span class="clearfix"></span>
+                                </div> 
+                                <div class="variants_selects">
+
+                                    <div class="modal_add_to_cart">
+                                        <form action="#">
+                                            <button type="button" id="ContinueShopping" class="float-left">Continue Shopping</button>
+                                            <button type="button" id="ProceedToCheckOut" class="float-right">Proceed To Checkout</button>
+                                        </form>
+                                        <div class="clearfix"></div>
+                                    </div>   
+                                </div>
+
+                            </div>    
+                        </div>    
+                    </div>     
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>

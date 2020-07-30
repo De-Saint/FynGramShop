@@ -1,0 +1,72 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<!--breadcrumbs area start-->
+<div class="breadcrumbs_area">
+    <div class="container">   
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_content">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="/FynGramShop/">home</a></li>
+                        <li>24/7 Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>         
+</div>
+<!--breadcrumbs area end-->
+
+<div class="priceing_table">
+    <div class="container">   
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="single_priceing">
+                    <div class="priceing_title">
+                        <h1>Talk to Sales</h1>
+                    </div>
+                    <div class="priceing_list">
+                        <div class="mt-5">
+                            Interested in FynGram’s Store? Just pick up the phone to chat with a member of our sales team.
+                        </div>
+                        <h1><span>+234 818 206 6897</span></h1>
+                        <a  href="${pageContext.request.contextPath}/LinksServlet?type=Contact">Talk To Sales </a>
+                    </div>       
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="single_priceing">
+                    <div class="priceing_title">
+                        <h1>Contact Customer Support</h1>
+                    </div>
+                    <div class="priceing_list">
+                        <div  class="mt-5">
+                            Sometimes you need a little help shopping on FynGram Store. Don’t worry… our support team rep. is here for you.
+                        </div>
+                        <h1><span>+234 818 206 6897</span></h1>
+                        <a class="list_button" href="${pageContext.request.contextPath}/LinksServlet?type=Contact">Customer Support </a>
+                    </div>       
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+<div class="advantages_ecommerce">
+    <div class="container">   
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-md-8 col-sm-12">
+                <div class="advantages_content">
+                    <h3>Advantages of FynGram Store</h3>
+                    <p>Purchase directly from the farmer</p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-4 col-sm-12">
+                <div class="advantages_button">
+                    <a href="${pageContext.request.contextPath}/LinksServlet?type=Services" title="MORE INFO ">More Info <i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>

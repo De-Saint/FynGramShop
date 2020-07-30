@@ -1,0 +1,41 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="breadcrumbs_area">
+    <div class="container">   
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_content">
+                    <h3>Track Order</h3>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li>Track your order </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>         
+</div>
+
+
+
+<div class="contact_area">
+    <div class="container">   
+        <div class="row">
+       
+            <div class="col-lg-12 col-md-12 text-center">
+                <div class="contact_message form mt-30">
+                    <h3>Tell us about us here</h3>   
+                    <form id="contact-form" method="POST"  action="assets/mail.php">
+                        <p>  
+                            <label> Enter your Order Reference Number</label>
+                            <input name="name" placeholder="FG-XXXXXXXXXX *" type="text"> 
+                        </p>
+                        <button type="submit"> Track</button>  
+                        <p class="form-messege"></p>
+                    </form> 
+
+                </div> 
+            </div>
+        </div>
+    </div>    
+</div>

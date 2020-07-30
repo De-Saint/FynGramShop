@@ -1,0 +1,83 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!--breadcrumbs area start-->
+<div class="breadcrumbs_area">
+    <div class="container">   
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_content">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="/FynGramShop/">home</a></li>
+                        <li>contact us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>         
+</div>
+<!--breadcrumbs area end-->
+
+<!--contact map start-->
+<div class="contact_map mt-70">
+    <div class="map-area">
+        <div id="googleMap"></div>
+    </div>
+</div>
+<!--    <div class="contact_map mt-70">
+       <div class="map-area">
+           <div id="">
+               <iframe id="googleMap" frameborder="0" style="border:0;" allowfullscreen=""
+        src="https://www.google.com/maps/place/The+Landmark/@6.4636502,3.5550964,17z/data=!3m1!4b1!4m5!3m4!1s0x103bf73ec1ab8287:0x243cb57147898100!8m2!3d6.4636502!4d3.5572851?hl=en"></iframe>
+                
+           </div>
+       </div>
+    </div>-->
+<!--contact map end-->
+
+<!--contact area start-->
+<div class="contact_area">
+    <div class="container">   
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="contact_message content">
+                    <h3>contact us</h3>    
+                    <p>We are a team of intermediators between the farmers and you the customer.</p>
+                    <ul>
+                        <li><i class="fa fa-fax"></i>  Address : Suite 208, Jinifa Plaza, Plot 1014, Samuel Ademulegun Adesujo Street, Central Business District Abuja</li>
+                        <li><i class="fa fa-phone"></i> <a href="#">sales@fyngram.com</a></li>
+                        <li><i class="fa fa-envelope-o"></i><a href="tel:+234 818 206 6897">+234 818 206 6897</a>  </li>
+                    </ul>             
+                </div> 
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="contact_message form">
+                    <h3>Tell us your project</h3>   
+                    <form id="contact-form" method="POST"  action="assets/mail.php">
+                        <p>  
+                            <label> Your Name (required)</label>
+                            <input name="name" placeholder="Name *" type="text"> 
+                        </p>
+                        <p>       
+                            <label>  Your Email (required)</label>
+                            <input name="email" placeholder="Email *" type="email">
+                        </p>
+                        <p>          
+                            <label>  Subject</label>
+                            <input name="subject" placeholder="Subject *" type="text">
+                        </p>    
+                        <div class="contact_textarea">
+                            <label>  Your Message</label>
+                            <textarea placeholder="Message *" name="message"  class="form-control2" ></textarea>     
+                        </div>   
+                        <button type="submit"> Submit</button>  
+                        <p class="form-messege"></p>
+                    </form> 
+
+                </div> 
+            </div>
+        </div>
+    </div>    
+</div>
+
+<!--contact area end-->

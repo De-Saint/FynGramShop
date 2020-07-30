@@ -1,0 +1,136 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="modal fade" id="modal_box" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><i class="icon-x"></i></span>
+            </button>
+            <div class="modal_body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <div class="modal_tab">  
+                                <div class="tab-content product-details-large ">
+                                    <div class="tab-pane fade show active " id="tab1" role="tabpanel" >
+                                        <div class="modal_tab_img">
+                                            <a href="tab1">
+                                                <img class="shop-qv-prod-root-image1" alt="" style="width: 381px; height: 381px;">
+                                            </a>    
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab2" role="tabpanel">
+                                        <div class="modal_tab_img">
+                                            <a href="tab2">
+                                                <img class="shop-qv-prod-root-image2" alt="" style="width: 381px; height: 381px;">
+                                            </a>    
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab3" role="tabpanel">
+                                        <div class="modal_tab_img">
+                                            <a href="tab3">
+                                                <img class="shop-qv-prod-root-image3" alt="" style="width: 381px; height: 381px;">
+                                            </a>    
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab4" role="tabpanel">
+                                        <div class="modal_tab_img">
+                                            <a href="tab4">
+                                                <img class="shop-qv-prod-root-image4" alt="" style="width: 381px; height: 381px;">
+                                            </a>    
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal_tab_button">    
+                                    <ul class="nav product_navactive owl-carousel" role="tablist">
+                                        <li class="s-qv-p-img1">
+                                            <a class="nav-link active" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false">
+                                                <img class="shop-qv-prod-root-image1" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="s-qv-p-img2">
+                                            <a class="nav-link" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">
+                                                <img class="shop-qv-prod-root-image2" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a class="nav-link s-qv-p-img3 button_three" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">
+                                                <img class="shop-qv-prod-root-image3" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="s-qv-p-img4">
+                                            <a class="nav-link" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">
+                                                <img class="shop-qv-prod-root-image4" alt="">
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>    
+                            </div>  
+                        </div> 
+                        <div class="col-lg-7 col-md-7 col-sm-12">
+                            <div class="modal_right">
+                                <div class="modal_title mb-10 float-left">
+                                    <h2 id="shop-qv-prod-name">name</h2> 
+                                    <h5 id="shop-qv-prod-root-category">name</h5> 
+                                </div>
+                                <div class="modal_social float-right mr-5">
+                                    <ul>
+                                        <li class="facebook" id="shop-qv-prod-add-to-wishlist" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Saved Items"><a href="#"><i class="fa fa-heart"></i></a></li>
+                                    </ul>    
+                                </div>  
+                                <div class="clearfix"></div>
+                                <div class="modal_price mb-10">
+                                    <span class="new_price" id="shop-qv-prod-selling-price">0</span>    
+                                    <span class="old_price" id="shop-qv-prod-cost-price" >0</span>    
+                                </div>
+                                <div class="modal_description mb-15">
+                                    <p id="shop-qv-prod-desc"> </p>    
+                                </div> 
+                                <div class="variants_selects">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <h4 class="font-weight-semibold">Properties</h4>
+                                            <div class="shop-qv-p-prop-list">
+                                                <dl class=" shop-qv-p-prop-list-clone d-none ml-0">
+                                                    <dt class="shop-qv-p-prop-name"></dt>
+                                                    <dd class="shop-qv-p-prop-value"></dd>
+                                                </dl>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <h4 class="font-weight-semibold">Related Categories</h4>
+                                            <div class="shop-qv-p-cat-list">
+                                                <dl class=" shop-qv-p-prop-cat-clone d-none ml-0">
+                                                    <dt class="shop-qv-p-cat-name"></dt>
+                                                </dl>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal_add_to_cart">
+                                        <form action="#">
+                                            <input min="1" max="100"  value="1"   id="shop-qv-p-quantity" type="number">
+                                            <button type="button" id="shop-qv-p-addtocart">add to cart</button>
+                                        </form>
+                                    </div>   
+                                </div>
+                                <div class="modal_social">
+                                    <h2>Share this product</h2>
+                                    <ul>
+                                        <li class="facebook"><a href="#"><i class="fa fa-heart"></i></a></li>
+                                        <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="pinterest"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                        <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>    
+                                </div>  
+                            </div>    
+                        </div>    
+                    </div>     
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>

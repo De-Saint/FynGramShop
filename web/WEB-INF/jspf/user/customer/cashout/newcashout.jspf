@@ -1,0 +1,49 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="header_account_list  mini_cart_wrapper">
+    <!--mini cart-->
+    <div class="mini_cart">
+        <form name="cashoutForm" id="cashoutForm">
+            <div class="cart_gallery">
+                <div class="cart_close">
+                    <div class="cart_text">
+                        <h3>Request PayOut</h3>
+                    </div>
+                    <div class="mini_cart_close">
+                        <a href="javascript:void(0)"><i class="icon-x"></i></a>
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <label class="text-center">Amount</label>
+                    <div class="input-group input-group-alternative">
+                        <div class="input-group-prepend"> 
+                            <span class="input-group-text">
+                                <i class="fa fa-money mx-auto text-muted fs-18"></i>
+                            </span>
+                        </div> 
+                        <input class="form-control" id="cashoutAmount" placeholder="Amount" type="text"  data-type="currency">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="text-center">Wallet Pin</label>
+                    <div class="input-group input-group-alternative">
+                        <div class="input-group-prepend"> 
+                            <span class="input-group-text">
+                                <i class="fa fa-key mx-auto text-muted fs-18"></i>
+                            </span>
+                        </div> 
+                        <input class="form-control" id="cashoutPin" placeholder="Wallet Pin" type="password">
+                    </div>
+                </div>
+
+                <div class="mini_cart_footer mt-3">
+                    <div class="cart_button">
+                        <button type="submit" class="btn btn-success btn-block" ><i class="fa fa-sign-out"></i> Submit</button>
+                    </div>
+                </div>
+                <p class="text-danger">Ensure you have added you bank details!!!</p>
+            </div>
+        </form>
+    </div>
+    <!--mini cart end-->
+</div>

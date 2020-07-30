@@ -1,0 +1,84 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!--breadcrumbs area start-->
+<div class="breadcrumbs_area">
+    <div class="container">   
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_content">
+                    <h3>Register</h3>
+                    <ul>
+                        <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Index">home</a></li>
+                        <li>Register your account</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>         
+</div>
+<!--breadcrumbs area end-->
+
+<!-- customer login start -->
+<div class="mt-30 mb-30">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <!-- Nav tabs -->
+                <div class="dashboard_tab_button">
+                    <ul role="" class="nav flex-column dashboard-list">
+                        <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Login" class="nav-link ">Login </a></li>
+                        <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Cart" class="nav-link ">Cart </a></li>
+                        <li><a href="${pageContext.request.contextPath}/LinksServlet?type=WishList" class="nav-link ">WishList </a></li>
+                    </ul>
+                </div>    
+            </div>
+            <div class="col-sm-12 col-md-9 col-lg-9">
+                <h3>Register Account </h3>
+                <div class="login">
+                    <div class="login_form_container">
+                        <div class="account_login_form">
+                            <form name="registerForm" class="form-horizontal" id="registerForm">
+                                <p>Already have an account? <a href="${pageContext.request.contextPath}/LinksServlet?type=Login">LogIn Instead!</a></p>
+
+                                <div class="font-weight-bold">Your Personal Details</div>
+                                <hr class="border-dark">
+                                <div class="input-radio">
+                                    <span class="custom-radio"><input type="radio" required value="Male"  name="id_gender"> Mr.</span>
+                                    <span class="custom-radio"><input type="radio" required="" value="FeMale" name="id_gender"> Mrs.</span>
+                                </div>
+                                <label>First Name</label>
+                                <input type="text" name="first-name" id="firstname" required="true" placeholder="First Name">
+                                <label>Last Name</label>
+                                <input type="text" name="last-name" id="lastname" required="true" placeholder="Last Name">
+                                <label>Email</label>
+                                <input type="email" name="email-name" id="emial" required="true" placeholder="Email">
+                                <label>Phone</label>
+                                <input type="tel" name="phone-name" id="phone" required="true" placeholder="Phone Number">
+                                <div class="font-weight-bold">Your Password</div>
+                                <hr class="border-dark">
+                                <label>Password</label>
+                                <input type="password" name="user-password" id="password1" required="true" placeholder="Password">
+                                <label>Confirm Password</label>
+                                <input type="password" name="user-password2" id="password2" required="true" placeholder="Confirm Password">
+                                <div class="font-weight-bold">Newsletter</div>
+                                <hr class="border-dark">
+                                <span class="custom_checkbox">
+                                    <input type="checkbox" value="1"  id="newsletter" name="newsletter">
+                                    <label><strong>Subscribe</strong><em> You may unsubscribe at any moment.</em></label>
+                                </span>
+                                <div class=" ">
+                                    <span class="custom_checkbox">
+                                        <input type="checkbox" value="1" name="terms"  id="terms" required="true">
+                                        <label>I have read and agree to the <a class="font-weight-bold" href="${pageContext.request.contextPath}/LinksServlet?type=Terms">Term and condition!</a> </label>
+                                    </span><br>
+                                    <button type="submit" class="btn btn-success">Register</button>
+                                </div>
+                             </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+<!-- customer login end -->

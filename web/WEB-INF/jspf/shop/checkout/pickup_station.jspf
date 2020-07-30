@@ -1,0 +1,70 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="header_account_list  mini_cart_wrapper">
+    <!--mini cart-->
+    <div class="mini_cart">
+        <div class="cart_gallery">
+            <div class="cart_close">
+                <div class="cart_text">
+                    <h3>Select a Pickup Station</h3>
+                </div>
+                <div class="mini_cart_close">
+                    <a href="javascript:void(0)"><i class="icon-x"></i></a>
+                </div>
+            </div>
+            <div class="py-2">
+                <div class="font-weight-bold">Select State/Region</div>
+                <select name="orderby" class="select2 form-control select2-show-search" id="pickup_states">
+                    <option selected value="1">Sort by average rating</option>
+                    <option  value="2">Sort by popularity</option>
+                    <option value="3">Sort by newness</option>
+                    <option value="4">Sort by price: low to high</option>
+                    <option value="5">Sort by price: high to low</option>
+                    <option value="6">Product Name: Z</option>
+                </select>
+            </div>
+            <div class="py-2">
+                <div class="font-weight-bold">Select Town</div>
+                <select name="orderby" class="select2 form-control select2-show-search" id="pickup_towns">
+                    <option selected value="1">Sort by average rating</option>
+                    <option  value="2">Sort by popularity</option>
+                    <option value="3">Sort by newness</option>
+                    <option value="4">Sort by price: low to high</option>
+                    <option value="5">Sort by price: high to low</option>
+                    <option value="6">Product Name: Z</option>
+                </select>
+            </div>
+            <div class="mt-3">
+                <span class="font-weight-bold">Name Pickup Station:</span>
+                <div class=" text-wrap">Port Harcount pickup station </div>
+            </div>
+            <div class="mt-2">
+                <span class="font-weight-bold">Location:</span>
+                <div class=" text-wrap" style="width: 6rem;">kldjfksdjflsfjlksjflsdfldsjflsdjsfdgdgd  fgdf gdg dfg gdfgdfgdgfls djjd f </div>
+            </div>
+            <div class="mt-2">
+                <span class="font-weight-bold">Close To:</span>
+                <div class=" text-wrap">fgdf gdg dfg gdfgdfgdgfls djjd f </div>
+            </div>
+            <div class="mt-2">
+                <span class="font-weight-bold">Shipping Fees:</span>
+                <div class=" text-wrap font-weight-semibold fs-16">34534535 </div>
+            </div>
+            <div class="mt-2">
+                <span class="font-weight-bold">Contact Information:</span>
+                <div class=" text-wrap font-weight-semibold fs-16">949404904 </div>
+            </div>
+            <div class="mt-2">
+                <span class="font-weight-bold">Operating Hours:</span>
+                <div class=" text-wrap font-weight-semibold fs-16">949404904 </div>
+            </div>
+        </div>
+
+        <div class="mini_cart_footer mt-3">
+            <div class="cart_button">
+                <a href="checkout.html"><i class="fa fa-sign-out"></i> Select This PickUp Station</a>
+            </div>
+        </div>
+    </div>
+    <!--mini cart end-->
+</div>

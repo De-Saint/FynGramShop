@@ -1,0 +1,97 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!--footer area start-->
+<footer class="footer_widgets">
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-7">
+                    <div class="widgets_container contact_us">
+                        <div class="footer_logo">
+                            <a href="/FynGramShop/"><img class="logoImage" alt=""></a>
+                        </div>
+                        <p><span>Address:</span> Suite 208, Jinifa Plaza, Plot 1014, Samuel Ademulegun Adesujo Street, Central Business District Abuja.</p>
+                        <p><span>Email:</span> <a href="#">sales@fyngram.com</a></p>
+                        <p><span>Call us:</span> <a  href="tel:+234 818 206 6897">+234 818 206 6897</a> </p>
+                    </div>          
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-5">
+                    <div class="widgets_container widget_menu">
+                        <h3>Information</h3>
+                        <div class="footer_menu">
+
+                            <ul>
+                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=About">About Us</a></li>
+                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Privacy"> Privacy Policy</a></li>
+                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Terms"> Terms & Conditions</a></li>
+                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Contact"> Contact Us</a></li>
+                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Services"> Our Services</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <div class="widgets_container widget_menu">
+                        <h3>Extras</h3>
+                        <div class="footer_menu">
+                            <ul>
+                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Categories">All Categories</a></li>
+                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Complaints">Complaints</a></li>
+                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Supports">Supports</a></li>
+                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=FAQs">FAQs</a></li>
+                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Track">Track Order</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="widgets_container widget_newsletter">
+                        <h3>Sign up newsletter</h3>
+                        <p class="footer_desc">Get updates by subscribing to our weekly newsletter</p>
+                        <div class="subscribe_form">
+                            <form name="mc-mail" class="mc-form footer-newsletter" >
+                                <input id="mc-email" class="mc-email" type="email" autocomplete="off" placeholder="Enter you email" />
+                                <button id="mc-submit" class="mc-submit">Subscribe</button>
+                            </form>
+                            <!-- mailchimp-alerts Start -->
+                            <div class="mailchimp-alerts text-centre">
+                                <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
+                                <div class="mailchimp-success"></div><!-- mailchimp-success end -->
+                                <div class="mailchimp-error"></div><!-- mailchimp-error end -->
+                            </div><!-- mailchimp-alerts end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-7">
+                    <div class="copyright_area">
+                        <p>
+                            Copyright &copy;<script>
+                                document.write(new Date().getFullYear());
+                            </script> All Rights Reserved | <a href="#" target="blank">FynGram</a>
+                        </p>
+                    </div>
+                </div>    
+                <div class="col-lg-6 col-md-5">    
+                    <div class="footer_payment">
+                        <ul>
+                            <li><a href="/FynGramShop/"><img class="partnerLogo1" alt=""></a></li>
+                            <li><a href="/FynGramShop/"><img class="partnerLogo2" alt=""></a></li>
+                            <li><a href="/FynGramShop/"><img class="partnerLogo3" alt=""></a></li>
+                            <li><a href="/FynGramShop/"><img class="partnerLogo4" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+
+</footer>
+<!--footer area end-->

@@ -1,0 +1,77 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!--breadcrumbs area start-->
+<div class="breadcrumbs_area">
+    <div class="container">   
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_content">
+                    <h3>My Account</h3>
+                    <ul>
+                        <li><a href="/FynGramShop/">home</a></li>
+                        <li>My account</li>
+                        <li>My Addresses</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>         
+</div>
+<!--breadcrumbs area end-->
+
+<!-- my account start  -->
+<section class="main_content_area">
+    <div class="container">   
+        <div class="account_dashboard">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <%@include file="../../general/sublinks/sublinks.jspf" %> 
+                </div>
+                <div class="col-sm-12 col-md-9 col-lg-9">
+                    <!-- Tab panes -->
+                    <div class="row">
+                        <div class="mini_cart_wrapper col-md-12">
+                            <a href="javascript:void(0)" class="btn btn-outline-success btn-sm float-right">New Address</a>
+                        </div> 
+                    </div>
+
+                    <hr class="" style="margin-top: 10px !important; margin-bottom: 10px !important;">
+
+                    <div class="row AddressList">
+                        <div class="col-md-6 addresslist-clone d-none mb-2">
+                            <div class="card address_container">
+                                <div class="card-header">
+                                    <div class="float-left">
+                                        <span class="addresstypename font-weight-bold">Home Address</span>
+                                    </div>
+                                    <div class="float-right">
+                                        <button type="button" class="btn btn-outline-success btn-sm btn_makedefault_address" data-toggle="tooltip" data-placement="top" title="" data-original-title="Make Default"><i class="fa fa-thumbs-o-up"></i></button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm btn_delete_ddress" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></button>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 card-body">
+                                    <div class="d-flex">
+                                        <div class="lnr lnr-user fs-18"></div>
+                                        <div class="ml-3  fs-16"><p class="addressusername">Sanni Ibrahim</p></div>
+                                    </div>
+                                    <div class="d-flex mt-3">
+                                        <div class="lnr lnr-location fs-18"></div>
+                                        <div class="ml-3 fs-16"><p class="addressfulladress">1 Wale Balogun close, Hopeville Estate, Sangotedo, Ajah, Lagos State.</p></div>
+                                    </div>
+                                    <div class="d-flex mt-3">
+                                        <div class="lnr lnr-phone fs-18"></div>
+                                        <div class="ml-3 fs-16"><p class="addressuserphone">08023282638</p></div>
+                                    </div>
+                                </div>
+                                
+                            </div>    
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>  
+    </div>        	
+</section>			
+<!-- my account end   --> 
