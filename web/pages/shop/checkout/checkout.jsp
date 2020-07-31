@@ -19,6 +19,7 @@
 
         <!-- CSS 
         ========================= -->
+        <link href="checkout.css" rel="stylesheet" type="text/css"/>
         <!--bootstrap min css-->
         <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
         <!--owl carousel min css-->

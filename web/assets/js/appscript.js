@@ -95,7 +95,6 @@ function GenralBtnEvents() {
 function DisplayShopAllLevelCategories(data) {
     var parent = $(".categorylist");
     parent.find(".catnewclone").remove();
-
     if (data === "none") {
         parent.text("No Result");
     } else {
@@ -105,7 +104,6 @@ function DisplayShopAllLevelCategories(data) {
 //-------------------TOp Categery Start----------------------//
         var childclone = parent.find(".category-clone");
         $.each(List, function (topcatid, details) {
-
             var newchild = childclone.clone();
             newchild.removeClass("category-clone");
             newchild.removeClass("d-none");

@@ -18,16 +18,16 @@ function LoginBtnEvents() {
         var EmailAddress = $("#fgemail").val();
         var Password = $("#fgpass").val();
         sessionid = verifyUser();
-        var data = [EmailAddress, Password, sessionid];
+        var data = [EmailAddress, Password, sessionid, ""];
         GetData("User", "Login", "LoadLoginCustomer", data);
         e.preventDefault();
     });
 }
 
 function DisplayLoginCustomer(resp) {
-    SessionTokenManager(resp);
-    sessionid = verifyUser();
     if (resp.status === "success") {
+        SessionTokenManager(resp);
+        sessionid = verifyUser();
         ShowNotification(resp.msg, 'success');
         localStorage.setItem("shownewsletter", "No");
         cartcount = GetCartCount();

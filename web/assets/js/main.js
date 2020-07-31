@@ -766,7 +766,7 @@
 
     $('.mini_cart_close,.off_canvars_overlay').on('click', function () {
         $('.mini_cart,.off_canvars_overlay').removeClass('active');
-    })
+    });
     
     $('.mini_cart_wrapper2 > a').on('click', function () {
         $('.mini_cart2,.off_canvars_overlay').addClass('active');
@@ -779,11 +779,11 @@
 
     /*---canvas menu activation---*/
     $('.canvas_open,.off_canvars_overlay').on('click', function () {
-        $('.offcanvas_menu_wrapper,.off_canvars_overlay').addClass('active')
+        $('.offcanvas_menu_wrapper,.off_canvars_overlay').addClass('active');
     });
 
     $('.canvas_close,.off_canvars_overlay').on('click', function () {
-        $('.offcanvas_menu_wrapper,.off_canvars_overlay').removeClass('active')
+        $('.offcanvas_menu_wrapper,.off_canvars_overlay').removeClass('active');
     });
 
 

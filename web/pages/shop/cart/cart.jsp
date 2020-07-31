@@ -42,6 +42,7 @@
         <link rel="stylesheet" href="../../../assets/css/plugins.css">
 
         <!-- Main Style CSS -->
+        <link href="cart.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="../../../assets/css/style.css">
         <!--Select 2-->
         <link rel="stylesheet" href="../../../assets/css/select2.min.css" >

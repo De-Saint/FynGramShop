@@ -110,7 +110,7 @@ function returnToTimeOutPage(extension) {
 function GetData(action, type, callfunction, data) {
     var path = window.location.pathname;
     var href = window.location.href;
-    var url = href.replace(path, '');
+    var url = href.replace(path, '').replace("#", '');
     $.ajax({
         url: url + '/FynGramEngine/DispatcherSerlvet',
         type: 'GET',
@@ -333,6 +333,13 @@ function linkToFunction(action, params) {
             DisplayShopCart(params, parent);
             break;
         }
+        case "LoadGetShopCart":
+        {
+            var parent = $(".CheckOutShopCartList");
+            DisplayGetShopCart(params, parent);
+            DisplayShippingDetails(params);
+            break;
+        }
         case "LoadUpdateOptions":
         {
             DisplayUpdateOptions(params);
@@ -487,6 +494,16 @@ function linkToFunction(action, params) {
         {
             var parent = $(".DiscountCodeList");
             DisplayCustomerDiscountCodes(params, parent);
+            break;
+        }
+        case "LoadDefaultAddress":
+        {
+            DisplayDefaultAddress(params);
+            break;
+        }
+        case "LoadShippingFees":
+        {
+            DisplayShippingFees(params);
             break;
         }
     }

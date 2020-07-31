@@ -55,10 +55,10 @@
                             <div class="language_currency text-right">
                                 <ul>
                                     <li class="language mt-1">
-                                        <a href="#" class="notforMembers"> 
+                                        <a href="javascript:void(0)" class="notforMembers"> 
                                             <span class="lnr lnr-user mr-1" style="font-size: 17px;"></span><span class="font-weight-normal">Login<i class="icon-right ion-ios-arrow-down font-weight-bold"></i></span>
                                         </a>
-                                        <a href="#" class="forMembers d-none" > 
+                                        <a href="javascript:void(0)" class="forMembers d-none" > 
                                             <span class="lnr lnr-user mr-1" style="font-size: 17px;"></span><span class="font-weight-normal">Account<i class="icon-right ion-ios-arrow-down font-weight-bold"></i></span>
                                         </a>
                                         <ul class="dropdown_language">
