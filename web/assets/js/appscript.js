@@ -367,3 +367,39 @@ function DisplayShopCartCount(data) {
     localStorage.removeItem("cartcount");
     localStorage.setItem("cartcount", data);
 }
+
+function DisplayUserDetails(resp) {
+    hideLoading();
+    $(".UserType").text(resp.UserType);
+    $(".UserName").text(resp.UserName);
+    localStorage.setItem("uUserName", resp.UserName);
+    $(".uFirstName").val(resp.firstname);
+    $(".uLastName").val(resp.lastname);
+    $(".uDateJoined").text(resp.date);
+    if (resp.newsletter === 1 || resp.newsletter === "1") {
+        $(".uNewsletter").text("Has Subcribed").addClass("badge badge-success");
+    } else {
+        $(".uNewsletter").text("Has not subscribed").addClass("badge badge-primary");
+    }
+    $(".uEmail").val(resp.email);
+    localStorage.setItem("uEmail", resp.email);
+    $(".uPhone").val(resp.phone);
+    $(".uGender").text(resp.gender);
+    $(".uBankName").val(resp.BankDetails.bankName);
+    if (resp.BankDetails.bankName) {
+        $(".add_bank_details").addClass("d-none");
+        $(".change_bank_details").removeClass("d-none");
+    } else if (!resp.BankDetails.bankName) {
+        $(".add_bank_details").removeClass("d-none");
+        $(".change_bank_details").addClass("d-none");
+    }
+    $(".uAccoutNumber").val(resp.BankDetails.account_number);
+    $(".uAcctType").val(resp.BankDetails.account_type);
+    $(".ubkdetid").val(resp.BankDetails.id);
+    if (resp.ImageText !== "none") {
+        $(".UserImage").attr("src", "data:image/png;base64," + resp.ImageText);
+    } else {
+        var image_url = "../../../../assets/img/no-image.png";
+        $(".UserImage").attr("src", image_url);
+    }
+}

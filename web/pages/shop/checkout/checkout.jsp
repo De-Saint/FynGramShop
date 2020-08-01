@@ -47,6 +47,8 @@
         <link rel="stylesheet" href="../../../assets/css/style.css">
         <!--Select 2-->
         <link rel="stylesheet" href="../../../assets/css/select2.min.css" >
+        <link href="../../../assets/css/noty.css" rel="stylesheet""/>
+        <link href="../../../assets/css/noty_bootstrap-v4.css" rel="stylesheet" type="text/css"/>
 
         <!--modernizr min js here-->
         <script src="../../../assets/js/vendor/modernizr-3.7.1.min.js"></script>
@@ -107,6 +109,8 @@
         <script src="../../../assets/js/helper.js"></script>
         <script src="../../../assets/js/appscript.js"></script>
         <script src="checkout.js" type="text/javascript"></script>
+        <script src="../../../assets/js/noty.min.js"></script>
+        <script src="https://js.paystack.co/v1/inline.js"></script>
 
 
 

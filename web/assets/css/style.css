@@ -5689,7 +5689,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #e5e5e5;
     padding: 8px 10px;
     margin: 0 0 40px;
 }
@@ -5797,7 +5796,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     line-height: 30px;
     text-align: center;
     background: #f1f1f1;
-    border-radius: 3px;
+    border-radius: 50px;
     margin-left: 3px;
 }
 .pagination ul li:first-child {
@@ -5805,7 +5804,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .pagination ul li a {
     display: block;
-    border-radius: 3px;
+    border-radius: 50px;
 }
 .pagination ul li a:hover {
     background: #40A944;
@@ -6113,8 +6112,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #ddd;
-    padding: 8px 10px;
+    background-color:  #f6f6f6;
+    padding: 10px 20px;
     margin: 0 0 30px;
 }
 @media only screen and (max-width: 767px) {
@@ -10983,7 +10982,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     font-size: 50px !important;
 }
 
-.loader {
+/*.loader {
     overflow: hidden;
     width: 100%;
     height: 100%;
@@ -11010,8 +11009,49 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     height: 3px;
     width: 0;
     animation: getWidth 5s ease-in infinite;
+}*/
+
+
+
+.faceted-overlay {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(25,25,25,.5);
+    z-index: 100;
+}
+.faceted-overlay .overlay__inner {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
-@keyframes getWidth {
-    100% { width: 100%; }
+
+.faceted-overlay .overlay__content {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.faceted-overlay .spinner {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    border-width: 3px;
+    border-color: #fff;
+    border-top-color: #40A944;
+    animation: spin 1s infinite linear;
+    border-radius: 100%;
+    border-style: solid;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(360deg)
+    }
 }

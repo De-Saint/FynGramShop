@@ -46,7 +46,7 @@
                                             <div class="card" style="border-color: #28a745; border-width: 2px; border-style: solid;">
                                                 <div class="card-header">
                                                     <div class="float-left">
-                                                        <span class="address_type font-weight-bold fs-16"></span> Address
+                                                        <span class="address_type font-weight-bold fs-16"></span> Address <span class="address_id"></span>
                                                     </div>
                                                     <div class="float-right">
                                                         <a class="btn btn-outline-success text-center" href="${pageContext.request.contextPath}/LinksServlet?type=Address">Change</a>
@@ -114,8 +114,8 @@
 
                                             <div id="door_delivery_method" class="collapse show" aria-labelledby="headOne" data-parent="#accordion2">
                                                 <div class="ml-4">This selected address will be used as your door step delivery.</div>
-                                                <div class="ml-4 font-weight-bold">Shipping Fees: <span class="shippingFeesAmount"></span></div>
-                                                <div class="ml-4 font-weight-bold">Shipping ID: <span class="shippingFeesID"></span></div>
+                                                <div class="ml-4 font-weight-bold">Shipping Fees: &#8358;<span class="shippingFeesAmount">0</span></div>
+                                                <div class="ml-4 font-weight-bold">Shipping ID: <span class="shippingFeesID">0</span></div>
                                             </div>
 
                                         </div> 
@@ -159,57 +159,18 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Section 2 shipping details -->
-                    <div class="user-actions">
-                        <h3 class="fs-16" id="headingOne">
-                            <a href="javascript:void(0)" class="Returning ShippingDetails">
-                                <span class="text-muted  check_completed ShippingDetailsText">Step 3: Shipping Details  <i class="fa fa-check-circle fs-15"></i></span> 
-                            </a>
-                            <a href="javascript:void(0)" class="Returning pull-right EditShippingDetailsBtn d-none">
-                                <i class="fa fa-pencil fa-fw"></i>Edit
-                            </a>
-                        </h3>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                            <div class="panel">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12">
-                                            <div class="row" id="shippingDetailList">
-                                                <div class=" col-lg-4 col-md-4 shippingdetail-clone d-none">
-                                                    <div class="card-body1 p1">
-                                                        <div class="font-weight-bold">Shipment <span class="ship-p-sn"></span> of <span class="total_ship-p-count"></span> </div>
-                                                        <div><span class="font-weight-bold">Product Name:</span> <span class="ship-p-name">Product 1</span></div>
-                                                        <div><span class="font-weight-bold">Shipping Information:</span> <span class="ship-p-startdate"> 3rd monday june </span>  <b>to</b>  <span class="ship-p-enddate"> 5th friday June</span></div>
-                                                    </div>
-                                                </div>
-                                            </div>   
-                                        </div> 
-                                    </div>
 
-                                    <div class="order-notes">
-                                        <label for="order_note">Order Notes</label>
-                                        <textarea id="order_note" class="form-control-plaintext" maxlength="80" rows="1" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
-                                    </div>    
-                                    <div class="order_button">
-                                        <button  type="submit" class="pull-right mt-3 btn btn-success ShippingDetailsBtn">Continue</button> 
-                                        <div class="clearfix"></div>
-                                    </div> 
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Section 4 confirm order-->
+                    <!-- Section 3 confirm order-->
                     <div class="user-actions">
                         <h3 class="fs-16" id="headingOne">
                             <a href="javascript:void(0)" class="Returning ConfirmOrder">
-                                <span class="text-muted  check_completed ConfirmOrderText">Step 4: Confirm Order  <i class="fa fa-check-circle fs-15"></i></span> 
+                                <span class="text-muted  check_completed ConfirmOrderText">Step 3: Confirm Order  <i class="fa fa-check-circle fs-15"></i></span> 
                             </a>
                             <a href="javascript:void(0)" class="Returning pull-right EditConfirmOrderBtn d-none">
                                 <i class="fa fa-pencil fa-fw"></i>Edit
                             </a>
                         </h3>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                             <div class="panel">
                                 <div class="container">
                                     <div class="table_desc mb-0">
@@ -250,6 +211,7 @@
                                         </div>  
                                         <div class="cart_submit">
                                             <a class="btn btn-primary pull-left" href="${pageContext.request.contextPath}/LinksServlet?type=Cart">Modify Cart</a>
+                                            <a class="fs-18 font-weight-bold pr-4 pull-right " >&#8358;<span class="cart_amount">0</span></a>
                                             <div class="clearfix"></div>
                                         </div>      
                                     </div>
@@ -258,6 +220,46 @@
                                         <div class="clearfix"></div>
                                     </div> 
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section 4 shipping details -->
+                    <div class="user-actions">
+                        <h3 class="fs-16" id="headingOne">
+                            <a href="javascript:void(0)" class="Returning ShippingDetails">
+                                <span class="text-muted  check_completed ShippingDetailsText">Step 4: Shipping Details  <i class="fa fa-check-circle fs-15"></i></span> 
+                            </a>
+                            <a href="javascript:void(0)" class="Returning pull-right EditShippingDetailsBtn d-none">
+                                <i class="fa fa-pencil fa-fw"></i>Edit
+                            </a>
+                        </h3>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="panel">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="row" id="shippingDetailList">
+                                                <div class=" col-lg-4 col-md-4 shippingdetail-clone d-none">
+                                                    <div class="card-body1 p1">
+                                                        <div class="font-weight-bold">Shipment <span class="ship-p-sn"></span> of <span class="total_ship-p-count"></span> </div>
+                                                        <div><span class="font-weight-bold">Product Name:</span> <span class="ship-p-name">Product 1</span></div>
+                                                        <div><span class="font-weight-bold">Shipping Information:</span> <span class="ship-p-startdate"> 3rd monday june </span>  <b>to</b>  <span class="ship-p-enddate"> 5th friday June</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>   
+                                        </div> 
+                                    </div>
+
+                                    <div class="order-notes">
+                                        <label for="order_note">Order Notes</label>
+                                        <textarea id="order_note" class="form-control-plaintext" maxlength="80" rows="1" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                                    </div>    
+                                    <div class="order_button">
+                                        <button  type="submit" class="pull-right mt-3 btn btn-success ShippingDetailsBtn">Continue</button> 
+                                        <div class="clearfix"></div>
+                                    </div> 
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -281,38 +283,43 @@
                                                     <div  class="font-weight-bold">Got a fyngram Discount Code? Use it below:</div>
                                                     <div class="row">
                                                         <div class="col-lg-6 mb-20 mt-3">
-
-                                                            <input type="text" class="form-control" style="border: 1px solid #28a745;">    
+                                                            <input type="text" class="form-control" id="discountCodeValue" style="border: 1px solid #28a745;">    
                                                         </div>
                                                         <div class="col-lg-6 mb-20 mt-3">
 
-                                                            <button type="button" class="btn btn-block btn-success" >Add Discount Code</button>
+                                                            <button type="button" class="btn btn-block btn-success btn_add_discount_code" >Add Discount Code</button>
                                                         </div>   	    	    	    	    	    	    
                                                     </div>
-                                                </form>    
+
+                                                    <div class="mailchimp-alerts text-centre">
+                                                       <div class="alert alert-primary dcode-success d-none" role="alert"></div>
+                                                        <div class="alert alert-danger dcode-error d-none" role="alert"></div>
+                                                       
+                                                    </div><!-- mailchimp-alerts end -->
+                                                </form> 
                                             </div>
                                             <div class="order_table table-responsive">
                                                 <table>
                                                     <tfoot >
                                                         <tr>
                                                             <th class="text-right">Cart Subtotal</th>
-                                                            <td>$215.00</td>
+                                                            <td >&#8358; <span class="checkout_cart_sub_total">0</span> </td>
                                                         </tr>
                                                         <tr>
                                                             <th class="text-right">Delivery Fees</th>
-                                                            <td><strong>$5.00</strong></td>
+                                                            <td>&#8358;<span class="checkout_delivey_fees">0</span></td>
                                                         </tr>
                                                         <tr>
                                                             <th class="text-right">Order Subtotal</th>
-                                                            <td><strong>$220.00</strong></td>
+                                                            <td> &#8358;<span class="checkout_cart_sub_total_amount">0</span></td>
                                                         </tr>
                                                         <tr>
                                                             <th class="text-right">Discount Amount</th>
-                                                            <td><strong>{$20.00}</strong></td>
+                                                            <td>&#8358;<span class="checkout_discount_amount">0</span></td>
                                                         </tr>
                                                         <tr >
                                                             <th class="text-right">Order Total</th>
-                                                            <td><strong>$218.00</strong></td>
+                                                            <td>&#8358;<span class="checkout_cart_total_amount">0</span></td>
                                                         </tr>
                                                     </tfoot>
                                                 </table>     
@@ -325,7 +332,7 @@
                                                 <div id="accordion4" class="row">
 
                                                     <div class="panel-default col-lg-6 col-md-6" id="headPayOne">
-                                                        <input id="walletpaymethod" name="pay_method" type="radio" data-toggle="collapse" data-target="#walletpay" aria-expanded="false" aria-controls="walletpay"/>
+                                                        <input id="walletpaymethod" name="pay_method" type="radio" value="wallet" data-toggle="collapse" data-target="#walletpay" aria-expanded="false" aria-controls="walletpay"/>
                                                         <label for="walletpaymethod" data-toggle="collapse" data-target="#walletpay" aria-controls="walletpay">Pay from My Wallet?  <i class="fa fa-money fs-32 pt-2 ml-1"></i> </label>
                                                         <div id="walletpay" class="collapse show" aria-labelledby="headPayTwo" data-parent="#accordion4">
                                                             <div class="card-body1 pl-4">
@@ -335,7 +342,7 @@
                                                     </div>
 
                                                     <div class="panel-default col-lg-6 col-md-6" id="headPayOne">
-                                                        <input id="paystackmethod" name="pay_method" type="radio" data-toggle="collapse" data-target="#paystackpay" aria-expanded="false" aria-controls="paystackpay" />
+                                                        <input id="paystackmethod" name="pay_method" type="radio" value="paystack" data-toggle="collapse" data-target="#paystackpay" aria-expanded="false" aria-controls="paystackpay" />
                                                         <label for="paystackmethod" data-toggle="collapse" data-target="#paystackpay" aria-controls="paystackpay">Pay via PayStack? <img src="../../../assets/img/brand/paystack.png" style="width: 160px; height: 45px;" alt=""></label>
 
                                                         <div id="paystackpay" class="collapse" aria-labelledby="headPayOne" data-parent="#accordion4">
@@ -351,8 +358,8 @@
                                         </div> 
                                     </div>      
                                     <div class="py-3">
-                                        <small class="ml-1">I have read and agreed to the <a href="#" class="fs-12 text-danger">terms and conditions</a></small>
-                                        <div  type="button" class="btn btn-success btn-block py-2 text-capitalize mt-3">PAY AND PLACE ORDER</div> 
+                                        <small class="ml-1">I have read and agreed to the <a href="${pageContext.request.contextPath}/LinksServlet?type=Terms" class="fs-12 text-danger">terms and conditions</a></small>
+                                        <div  type="button" class="btn btn-success btn-block py-2 text-capitalize mt-3 PlaceOrder">PAY AND PLACE ORDER</div> 
                                     </div> 
                                 </div>
                             </div>

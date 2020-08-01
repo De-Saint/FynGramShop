@@ -33,17 +33,9 @@ function walletsBtnEvents() {
     });
 }
 
-function CalculatePercentage(userAmt) {
-    var addedPerc = (parseInt(userAmt) * parseFloat(0.02));
-    var newAmt = parseInt(userAmt) + parseInt(addedPerc);
-    if (parseInt(userAmt) >= parseInt(2500)) {
-        newAmt = parseInt(userAmt) + parseInt(100);
-    }
-    return newAmt;
-}
+
 function payWithPaystack(paymentamount, email, actualamount, PaymentType) {
     var userDetail = localStorage.getItem("uUserName");
-
     var handler = PaystackPop.setup({
         key: 'pk_test_b3685f824518679567d6356e2636fc184878e833',
         email: email,
@@ -65,8 +57,8 @@ function payWithPaystack(paymentamount, email, actualamount, PaymentType) {
         },
         callback: function (response) {
             var data = [sessionid, actualamount, response.reference, response.trans, PaymentType];
-            var loader = showLoading();
-            GetData("Payment", "ValidatePaystackPayment", "LoadValidatePaystackPayment", data, loader);
+            showLoading();
+            GetData("Payment", "ValidatePaystackPayment", "LoadValidatePaystackPayment", data);
         },
         onClose: function () {
             ShowNotification("CheckOut closed, transaction terminated", "error");
@@ -94,7 +86,6 @@ function DisplayGetWalletDetails(resp) {
         $(".PendingBalance").text(PriceNumberFormat(resp.PendingBalance));
         $(".walletPin").text(resp.wallet_pin);
     }
-//    alert(JSON.stringify(resp));
 }
 
 function DisplayValidatePaystackPayment(data) {

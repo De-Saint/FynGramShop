@@ -34,6 +34,7 @@ function cartPageFunctions() {
     if (sessionid) {
         var cartcount = GetCartCount();
         if (parseInt(cartcount) !== 0) {
+            showLoading();
             GetData("Cart", "GetShopCart", "LoadShopCart", sessionid);
         } else {
             $(".emptyshopcart").removeClass("d-none");
@@ -49,6 +50,7 @@ function cartPageFunctions() {
 
 
 function DisplayShopCart(data, parent) {
+    hideLoading();
     if (data.product_count) {
         $(".emptyshopcart").addClass("d-none");
         $(".fullshopcart").removeClass("d-none");
@@ -146,23 +148,27 @@ function DisplayShopCart(data, parent) {
 }
 
 function UpdateOption(Option, ProductID, ProductPrice, ProductQuantity, Action) {
+    showLoading();
     var data = [sessionid, Option, ProductID, ProductPrice, ProductQuantity, Action];
     GetData("Cart", "UpdateOptions", "LoadUpdateOptions", data);
 
 }
 
 function DeleteOption(Option, OptionID, ProductID) {
+    showLoading();
     var data = [sessionid, Option, OptionID, ProductID];
     GetData("Cart", "DeleteOptions", "LoadDeleteOptions", data);
 
 }
 function EmptyOption(OptionID, Option) {
+    showLoading();
     var data = [OptionID, Option];
     GetData("Cart", "EmptyOptions", "LoadEmptyOptions", data);
 
 }
 
 function DisplayUpdateOptions(data) {
+    hideLoading();
     var parent = $(".ShopCartList");
     var cartData = data[1];
     DisplayShopCart(cartData, parent);
@@ -171,6 +177,7 @@ function DisplayUpdateOptions(data) {
 
 }
 function DisplayUpdateCartOptions(data) {
+    hideLoading();
     var parent = $(".ShopCartList");
     var cartData = data[1];
     DisplayShopCart(cartData, parent);
@@ -180,6 +187,7 @@ function DisplayUpdateCartOptions(data) {
 }
 
 function DisplayEmptyCartOptions(resp) {
+    hideLoading();
     ShowNotification(resp.msg, resp.status);
     GetData("Cart", "GetShopCart", "LoadShopCart", sessionid);
 }

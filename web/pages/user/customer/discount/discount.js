@@ -63,7 +63,7 @@ function DisplayCustomerDiscountCodes(data, parent) {
             var deletebtn = newchild.find(".delete_dcode_btn");
 
             var status = details["status"];
-            if (status === "Pending") {
+            if (status === "Unused") {
                 newchild.find(".dcode-status").text(details["status"]).addClass("badge badge-primary badge-pill");
             } else if (status === "Used") {
                 newchild.find(".dcode-status").text(details["status"]).addClass("badge badge-success badge-pill");

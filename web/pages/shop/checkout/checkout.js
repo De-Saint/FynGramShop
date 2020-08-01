@@ -3,15 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-var extension = "../../../../";
+var extension = "../../../";
 var sessionid;
-var extension = "";
 $(document).ready(function () {
-//    $(document).on('keydown', '#collapse-checkout-option input[name=\'email\'], #collapse-checkout-option input[name=\'password\']', function (e) {
-//        if (e.keyCode === 13) {
-//            $('#collapse-checkout-option #button-login').trigger('click');
-//        }
-//    });
     checkOutFunctions();
 });
 
@@ -31,10 +25,70 @@ function checkOutFunctions() {
 
 function checkOutBtnEvents() {
     controlCheckOutAccordion();
+    $(".btn_add_discount_code").click(function () {
+        var discountCodeValue = $("#discountCodeValue").val();
+        var data = [sessionid, discountCodeValue];
+        showLoading();
+        GetData("Cart", "CartDiscountCode", "LoadUpdateDiscountCode", data);
+        $("#discountCodeValue").val("");
+    });
 
 
+    $(".PlaceOrder").click(function () {
+        var email = localStorage.getItem("uEmail");
+        var pay_method = $("input[name=pay_method]:checked").val();
+        var TotalAmount = $.trim($(".checkout_cart_total_amount").text().replace("₦", ""));
+        if (pay_method === "wallet") {
+
+        } else if (pay_method === "paystack") {
+
+            if (TotalAmount.includes(",")) {
+                TotalAmount = TotalAmount.replace(/,/g, "");
+            }
+            var newPaymentAmount = CalculatePercentage(TotalAmount);
+            var email = localStorage.getItem("uEmail");
+            CheckoutWithPaystack(newPaymentAmount, email, TotalAmount, "Fund Wallet");
+        }
+
+
+    });
 
 }
+
+
+function CheckoutWithPaystack(paymentamount, email, actualamount, PaymentType) {
+    var userDetail = localStorage.getItem("uUserName");
+    var handler = PaystackPop.setup({
+        key: 'pk_test_b3685f824518679567d6356e2636fc184878e833',
+        email: email,
+        amount: paymentamount + "00",
+        ref: '' + Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+        metadata: {
+            custom_fields: [
+                {
+                    display_name: "Customer Name",
+                    variable_name: "Customer Name",
+                    value: userDetail
+                },
+                {
+                    display_name: "Payment Type",
+                    variable_name: "Payment Type",
+                    value: PaymentType
+                }
+            ]
+        },
+        callback: function (response) {
+            var data = [sessionid, actualamount, response.reference, response.trans, PaymentType];
+            showLoading();
+            GetData("Payment", "ValidatePaystackPayment", "LoadPlaceOrderContinuation", data);
+        },
+        onClose: function () {
+            ShowNotification("CheckOut closed, transaction terminated", "error");
+        }
+    });
+    handler.openIframe();
+}
+
 
 function controlCheckOutAccordion() {
     $(".AddressDetailsBtn").click(function () {
@@ -56,14 +110,12 @@ function controlCheckOutAccordion() {
 
 
     $(".DeliveryMethodBtn").click(function () {
-        $("#collapseTwo").removeClass("show");
-        $(".DeliveryMethodText").addClass("text-success").removeClass("text-muted");
-        $(".EditDeliveryMethodBtn").removeClass("d-none");
-
-        $("#collapseThree").addClass("show");
-
-        var shippingfeesid = $(".shippingFeesID").text();
-        alert(shippingfeesid);
+        var shippingfees = $.trim($(".shippingFeesAmount").text().replace("₦", ""));
+        var shippingaddressid = $(".address_id").text();
+        var shippingtypeid = $("input[name=check_method]:checked").val();
+        var data = [sessionid, shippingtypeid, shippingaddressid, shippingfees];
+        showLoading();
+        GetData("Cart", "CartShippingAddress", "LoadCartShippingAddress", data);
     });
 
     $(".EditDeliveryMethodBtn").click(function () {
@@ -76,15 +128,15 @@ function controlCheckOutAccordion() {
     });
 
 
-    $(".ShippingDetailsBtn").click(function () {
+    $(".ConfirmOrderBtn").click(function () {
         $("#collapseThree").removeClass("show");
-        $(".ShippingDetailsText").addClass("text-success").removeClass("text-muted");
-        $(".EditShippingDetailsBtn").removeClass("d-none");
+        $(".ConfirmOrderText").addClass("text-success").removeClass("text-muted");
+        $(".EditConfirmOrderBtn").removeClass("d-none");
 
         $("#collapseFour").addClass("show");
     });
 
-    $(".EditShippingDetailsBtn").click(function () {
+    $(".EditConfirmOrderBtn").click(function () {
         $("#collapseThree").addClass("show");
 
         $("#collapseFour").removeClass("show");
@@ -94,18 +146,18 @@ function controlCheckOutAccordion() {
     });
 
 
-    $(".ConfirmOrderBtn").click(function () {
+    $(".ShippingDetailsBtn").click(function () {
         $("#collapseFour").removeClass("show");
-        $(".ConfirmOrderText").addClass("text-success").removeClass("text-muted");
+        $(".ShippingDetailsText").addClass("text-success").removeClass("text-muted");
         $(".PaymentMethodText").addClass("text-success").removeClass("text-muted");
-        $(".EditConfirmOrderBtn").removeClass("d-none");
+        $(".EditShippingDetailsBtn").removeClass("d-none");
 
         $("#collapseFive").addClass("show");
         $(".PaymentMethodText").addClass("text-success").removeClass("text-muted");
         $(".EditPaymentMethodBtn").removeClass("d-none");
     });
 
-    $(".EditConfirmOrderBtn").click(function () {
+    $(".EditShippingDetailsBtn").click(function () {
         $("#collapseFour").addClass("show");
 
         $("#collapseFive").removeClass("show");
@@ -129,25 +181,20 @@ function controlCheckOutAccordion() {
 
 function checkOutPageFunctions() {
     showLoading();
-    GetData("Address", "GetDefaultAddress", "LoadDefaultAddress", sessionid);
-
+    GetData("Cart", "GetCartDefaultAddress", "LoadDefaultAddress", sessionid);
     GetData("Cart", "GetShopCart", "LoadGetShopCart", sessionid);
-
-
 }
 
 
 function DisplayDefaultAddress(data) {
-    hideLoading();
     if (data.full_address) {
         $(".no_address_list").addClass("d-none");
         $(".address_list").removeClass("d-none");
         $(".address_fulladdress").text(data.full_address);
         $(".address_type").text(data.addresstypename);
         $(".address_name").text(data.addressusername);
-        $(".address_name").text(data.addressusername);
         $(".address_phone").text(data.phone);
-        $(".address_phone").text(data.phone);
+        $(".address_id").text(data.id);
     } else {
         $(".address_list").addClass("d-none");
         $(".no_address_list").removeClass("d-none");
@@ -156,9 +203,13 @@ function DisplayDefaultAddress(data) {
 }
 
 function DisplayGetShopCart(data, parent) {
+    hideLoading();
     if (data.product_count) {
-        $(".cart_total_amount").text(PriceNumberFormat(data.total_amount));
+        console.log(data);
         GetDeliveryFees(data.total_amount);
+        $(".cart_amount").text(PriceNumberFormat(data.amount));
+        $(".checkout_cart_sub_total").text(PriceNumberFormat(data.amount));
+        $(".checkout_discount_amount").text(PriceNumberFormat(data.discount_amount));
         $(".cart_status").text(data.status + " Cart").addClass("text-danger");
         $(".cart_date").text(data.date).addClass("text-primary");
         var CartID = data.id;
@@ -202,11 +253,10 @@ function DisplayGetShopCart(data, parent) {
 }
 
 function DisplayShippingDetails(data) {
-
+    hideLoading();
     if (data.product_count) {
         var parent = $("#shippingDetailList");
         var cartproddata = data.CartProductDetails;
-        console.log(cartproddata);
         parent.find(".new-clone").remove();
         if (cartproddata === "none") {
             parent.text("No Result");
@@ -235,13 +285,50 @@ function DisplayShippingDetails(data) {
 
 
 function GetDeliveryFees(cartamount) {
-    GetData("Address", "GetShippingFees", "LoadShippingFees", cartamount);
+    GetData("Cart", "GetCartShippingFees", "LoadShippingFees", cartamount);
 
 }
 
 function DisplayShippingFees(data) {
-    var amount = data.split("#")[0];
+    var shippingAmount = data.split("#")[0];
     var shippingfeesid = data.split("#")[1];
-    $(".shippingFeesAmount").text(PriceFormat(parseFloat(amount)));
+    $(".shippingFeesAmount").text(PriceNumberFormat(parseFloat(shippingAmount)));
     $(".shippingFeesID").text(shippingfeesid);
+
+    var cartAmout = $.trim($(".cart_amount").text().replace("₦", "").replace(",", ""));
+    var cartsubtotalamount = parseFloat(shippingAmount) + parseInt(cartAmout);
+    $(".checkout_cart_sub_total_amount").text(PriceNumberFormat(parseFloat(cartsubtotalamount)));
+    $(".checkout_delivey_fees").text(PriceNumberFormat(parseFloat(shippingAmount)));
+
+    $(".checkout_cart_total_amount").text(PriceNumberFormat(cartsubtotalamount));
+}
+
+function DisplayCartShippingAddress(data) {
+    ShowNotification("Shipping Details Updated", "success");
+    hideLoading();
+    $("#collapseTwo").removeClass("show");
+    $(".DeliveryMethodText").addClass("text-success").removeClass("text-muted");
+    $(".EditDeliveryMethodBtn").removeClass("d-none");
+    $("#collapseThree").addClass("show");
+}
+
+
+function DisplayUpdateDiscountCode(resp) {
+    hideLoading();
+    if (resp.status === "success") {
+        $('.dcode-success').removeClass("d-none");
+        $('.dcode-success').addClass('active');
+        $('.dcode-success').html('' + resp.msg).fadeIn(900);
+        $(".dcode-success").fadeTo(2000, 500).slideUp(500, function () {
+            $(".dcode-success").slideUp(500);
+        });
+        $(".checkout_discount_amount").text(PriceNumberFormat(parseFloat(resp.cartDiscountAmount)));
+        $(".checkout_cart_total_amount").text(PriceNumberFormat(parseFloat(resp.cartTotalAmount)));
+    } else if (resp.status === "error") {
+        $('.dcode-error').html('' + resp.msg).fadeIn(900);
+        $('.dcode-error').removeClass("d-none");
+        $(".dcode-error").fadeTo(2000, 500).slideUp(500, function () {
+            $(".dcode-error").slideUp(500);
+        });
+    }
 }

@@ -1,5 +1,10 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<div class="loader d-none" >   
+<!--<div class="loader d-none" >   
     <div class="loader__element"></div> 
+</div>-->
+<div class="faceted-overlay d-none" id="loader">
+    <div class="overlay__inner">
+        <div class="overlay__content"><span class="spinner"></span></div>
+    </div>
 </div>

@@ -139,11 +139,11 @@ function ShowNotification(text, type) {
 }
 
 function showLoading() {
-    $(".loader").removeClass("d-none");
+    $("#loader").removeClass("d-none");
 }
 
 function hideLoading(noty) {
-    $(".loader").addClass("d-none");
+    $("#loader").addClass("d-none");
 
 }
 
@@ -245,6 +245,14 @@ function formatCurrency(input, blur) {
     input[0].setSelectionRange(caret_pos, caret_pos);
 }
 
+function CalculatePercentage(userAmt) {
+    var addedPerc = (parseInt(userAmt) * parseFloat(0.02));
+    var newAmt = parseInt(userAmt) + parseInt(addedPerc);
+    if (parseInt(userAmt) >= parseInt(2500)) {
+        newAmt = parseInt(userAmt) + parseInt(100);
+    }
+    return newAmt;
+}
 
 function linkToFunction(action, params) {
     switch (action) {
@@ -504,6 +512,16 @@ function linkToFunction(action, params) {
         case "LoadShippingFees":
         {
             DisplayShippingFees(params);
+            break;
+        }
+        case "LoadCartShippingAddress":
+        {
+            DisplayCartShippingAddress(params);
+            break;
+        }
+        case "LoadUpdateDiscountCode":
+        {
+            DisplayUpdateDiscountCode(params);
             break;
         }
     }
