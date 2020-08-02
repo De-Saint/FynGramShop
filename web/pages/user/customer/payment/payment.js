@@ -67,8 +67,8 @@ function DisplayGetPayments(data, parent) {
         childclone.hide();
 
     } else {
-        var row = $("<div />").appendTo(parent);
-        $("<div />", {class: "ml-9 text-center newclone text-primary", text: "No Result Found"}).appendTo(row);
+        var row = $("<tr />").appendTo(parent);
+        $("<td />", {class: "ml-9 text-center newclone text-primary", text: "No Result Found", colspan:"5"}).appendTo(row);
 
     }
 

@@ -1,0 +1,46 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!--breadcrumbs area start-->
+<div class="breadcrumbs_area">
+    <div class="container">   
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_content">
+                    <ul>
+                        <li><a href="/FynGramShop/">home</a></li>
+                        <li class="">Confirm Order</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>         
+</div>
+<!--breadcrumbs area end-->
+
+<div class="container my-5">
+    <div class="row">
+        <div id="content" class="col-sm-12">
+            <h1>Your order has been placed!</h1>
+            <p>Your order has been successfully placed!</p>
+            <p>You can view your order by going to the <a
+                    href="${pageContext.request.contextPath}/LinksServlet?type=Accounts" class="font-weight-bold text-success">my
+                    account</a> page and by clicking on <a
+                        href="${pageContext.request.contextPath}/LinksServlet?type=Order" class="font-weight-bold text-success">Order</a>.
+            </p>
+            
+            <p>Please direct any questions you have to the <a
+                    href="${pageContext.request.contextPath}/LinksServlet?type=Support" class="font-weight-bold text-success">support
+                    team</a>.</p>
+            <p>Please for any inquiry, you can <a
+                    href="${pageContext.request.contextPath}/LinksServlet?type=Contact" class="font-weight-bold text-success">contact
+                    us</a>.</p>
+            <p>Thanks for shopping with us!</p>
+            <div class="buttons">
+                <div class="pull-right"><a
+                        href="${pageContext.request.contextPath}/LinksServlet?type=Index"
+                        class="btn btn-success">Continue</a></div>
+            </div>
+                        <div class="clearfix"></div>
+        </div>
+    </div>
+</div>

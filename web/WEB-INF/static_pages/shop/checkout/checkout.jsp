@@ -8,3 +8,4 @@
 <!DOCTYPE html>
 <%@include file="../../../jspf/shop/checkout/checkout.jspf" %>
 <%@include file="../../../jspf/shop/checkout/pickup_station.jspf" %>
+<%@include file="../../../jspf/shop/checkout/check_account_balance.jspf" %>

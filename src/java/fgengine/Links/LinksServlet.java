@@ -94,6 +94,10 @@ public class LinksServlet extends HttpServlet {
                     response.sendRedirect("pages/shop/checkout/checkout.jsp");
                     break;
                 }
+                 case "OrderConfirmation": {
+                    response.sendRedirect("pages/shop/order_confirm/order_confirm.jsp");
+                    break;
+                }
                 case "FAQs": {
                     response.sendRedirect("pages/shop/faq/faq.jsp");
                     break;

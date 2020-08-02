@@ -524,5 +524,15 @@ function linkToFunction(action, params) {
             DisplayUpdateDiscountCode(params);
             break;
         }
+        case "LoadWalletBalance":
+        {
+            DisplayWalletBalance(params);
+            break;
+        }
+        case "LoadPlaceOrder":
+        {
+            DisplayPlaceOrder(params);
+            break;
+        }
     }
 }

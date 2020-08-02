@@ -69,8 +69,6 @@ function profileSetLink() {
 }
 function profilePageFunctions() {
     showLoading();
-    GetData("User", "GetUserDetails", "LoadUserDetails", sessionid);
-    showLoading();
     GetData("CashOut", "GetBanks", "LoadBanks", "");
 }
 

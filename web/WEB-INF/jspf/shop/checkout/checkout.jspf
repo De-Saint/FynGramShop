@@ -210,7 +210,7 @@
                                             </table>   
                                         </div>  
                                         <div class="cart_submit">
-                                            <a class="btn btn-primary pull-left" href="${pageContext.request.contextPath}/LinksServlet?type=Cart">Modify Cart</a>
+                                            <a class="btn btn-outline-success pull-left" href="${pageContext.request.contextPath}/LinksServlet?type=Cart">Modify Cart</a>
                                             <a class="fs-18 font-weight-bold pr-4 pull-right " >&#8358;<span class="cart_amount">0</span></a>
                                             <div class="clearfix"></div>
                                         </div>      
@@ -292,9 +292,9 @@
                                                     </div>
 
                                                     <div class="mailchimp-alerts text-centre">
-                                                       <div class="alert alert-primary dcode-success d-none" role="alert"></div>
+                                                        <div class="alert alert-primary dcode-success d-none" role="alert"></div>
                                                         <div class="alert alert-danger dcode-error d-none" role="alert"></div>
-                                                       
+
                                                     </div><!-- mailchimp-alerts end -->
                                                 </form> 
                                             </div>
@@ -336,7 +336,12 @@
                                                         <label for="walletpaymethod" data-toggle="collapse" data-target="#walletpay" aria-controls="walletpay">Pay from My Wallet?  <i class="fa fa-money fs-32 pt-2 ml-1"></i> </label>
                                                         <div id="walletpay" class="collapse show" aria-labelledby="headPayTwo" data-parent="#accordion4">
                                                             <div class="card-body1 pl-4">
-                                                                <p>Pay from your fyngram wallet account. This transaction will fail if you have insufficient fund. <a href="#">check your wallet balance?</a></p>
+                                                                <p>Pay from your fyngram wallet account.
+                                                                    <br>This transaction will fail if you have insufficient fund. </br>
+                                                                    <span class="mini_cart_wrapper">
+                                                                        <a href="javascript:void(0)" class="font-weight-bold text-success">Check your wallet balance</a>
+                                                                    </span> 
+                                                                </p>
                                                             </div>
                                                         </div>
                                                     </div>

@@ -37,26 +37,36 @@ function checkOutBtnEvents() {
     $(".PlaceOrder").click(function () {
         var email = localStorage.getItem("uEmail");
         var pay_method = $("input[name=pay_method]:checked").val();
+        var note = $("#order_note").val();
         var TotalAmount = $.trim($(".checkout_cart_total_amount").text().replace("₦", ""));
+        if (TotalAmount.includes(",")) {
+            TotalAmount = TotalAmount.replace(/,/g, "");
+        }
+
         if (pay_method === "wallet") {
-
+            var data = [sessionid, "Wallet", note];
+            showLoading();
+            GetData("Order", "PlaceOrder", "LoadPlaceOrder", data);
         } else if (pay_method === "paystack") {
-
-            if (TotalAmount.includes(",")) {
-                TotalAmount = TotalAmount.replace(/,/g, "");
-            }
             var newPaymentAmount = CalculatePercentage(TotalAmount);
-            var email = localStorage.getItem("uEmail");
-            CheckoutWithPaystack(newPaymentAmount, email, TotalAmount, "Fund Wallet");
+            CheckoutWithPaystack(newPaymentAmount, email, TotalAmount, "CheckOut Payment", note);
         }
 
 
     });
 
+
+    $("#ViewWalletBalance").click(function () {
+        var pin = $("#walletPin").val();
+        var data = [sessionid, pin];
+        showLoading();
+        GetData("Cart", "ViewWalletBalance", "LoadWalletBalance", data);
+    })
+
 }
 
 
-function CheckoutWithPaystack(paymentamount, email, actualamount, PaymentType) {
+function CheckoutWithPaystack(paymentamount, email, actualamount, PaymentType, Note) {
     var userDetail = localStorage.getItem("uUserName");
     var handler = PaystackPop.setup({
         key: 'pk_test_b3685f824518679567d6356e2636fc184878e833',
@@ -78,9 +88,9 @@ function CheckoutWithPaystack(paymentamount, email, actualamount, PaymentType) {
             ]
         },
         callback: function (response) {
-            var data = [sessionid, actualamount, response.reference, response.trans, PaymentType];
+            var data = [sessionid, actualamount, response.reference, response.trans, PaymentType, Note];
             showLoading();
-            GetData("Payment", "ValidatePaystackPayment", "LoadPlaceOrderContinuation", data);
+            GetData("Payment", "ValidatePaystackPayment", "LoadPlaceOrder", data);
         },
         onClose: function () {
             ShowNotification("CheckOut closed, transaction terminated", "error");
@@ -304,7 +314,6 @@ function DisplayShippingFees(data) {
 }
 
 function DisplayCartShippingAddress(data) {
-    ShowNotification("Shipping Details Updated", "success");
     hideLoading();
     $("#collapseTwo").removeClass("show");
     $(".DeliveryMethodText").addClass("text-success").removeClass("text-muted");
@@ -330,5 +339,26 @@ function DisplayUpdateDiscountCode(resp) {
         $(".dcode-error").fadeTo(2000, 500).slideUp(500, function () {
             $(".dcode-error").slideUp(500);
         });
+    }
+}
+
+function DisplayWalletBalance(resp) {
+    hideLoading();
+    if (resp.status === "error") {
+        ShowNotification(resp.msg, resp.status);
+    } else {
+        $(".wBalance").removeClass("d-none");
+        $(".wbal").text(PriceNumberFormat(parseFloat(resp.walletbalance)));
+    }
+
+}
+
+function DisplayPlaceOrder(resp) {
+    hideLoading();
+    if (resp.status === "error") {
+        ShowNotification(resp.msg, resp.status);
+    } else {
+        ShowNotification(resp.msg, resp.status);
+        window.location = extension + "LinksServlet?type=OrderConfirmation";
     }
 }

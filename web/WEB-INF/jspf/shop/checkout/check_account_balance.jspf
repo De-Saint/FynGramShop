@@ -1,0 +1,45 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="header_account_list  mini_cart_wrapper">
+    <!--mini cart-->
+    <div class="mini_cart">
+        <div class="cart_gallery">
+            <div class="cart_close">
+                <div class="cart_text">
+                    <h3>View Wallet Balance</h3>
+                </div>
+                <div class="mini_cart_close">
+                    <a href="javascript:void(0)"><i class="icon-x"></i></a>
+                </div>
+            </div>
+            <div class="mt-3 form-control">
+                <label class=" text-wrap">Wallet PIN </label>
+                <input type="text" class="form-control" id="walletPin" placeholder="Please enter your wallet PIN"/>
+            </div>
+
+        </div>
+
+        <div class="mini_cart_footer mt-3">
+            <div class="cart_button">
+                <a href="javascript:void(0)" id="ViewWalletBalance"><i class="fa fa-sign-out"></i>Submit</a>
+            </div>
+        </div>
+        <!--<hr class="border-success">-->
+        <div class="text-center">Or</div>
+        <!--<hr class="border-success">-->
+        <div class="mini_cart_footer mt-3">
+            <div class="cart_button">
+                <a href="${pageContext.request.contextPath}/LinksServlet?type=Wallets" target="_blank"><i class="fa fa-sign-out"></i> Goto the Wallet Page Instead.</a>
+            </div>
+        </div>
+        <div class="mt-3 wBalance d-none">
+            <hr class="border-success ">
+            <span class="text-center">Balance: &#8358;<span class="wbal">0</span></span>
+            <hr class="border-success">
+            
+            <p>You can go to your<a href="${pageContext.request.contextPath}/LinksServlet?type=Wallets" class="text-success font-weight-semibold" target="_blank"> wallet page </a><br> and fund your wallet, <br> or Tick the pay via Paystack option.</p>
+        </div>
+
+    </div>
+    <!--mini cart end-->
+</div>

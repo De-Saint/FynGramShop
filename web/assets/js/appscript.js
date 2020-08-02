@@ -18,7 +18,8 @@ function GeneralAppFunctions() {
 
 
     if (sessionid || sessionid !== 0) {
-        GetData("Cart", "GetShopCartCount", "LoadShopCartCount", sessionid);
+        GetData("Cart", "GetShopCartCount", "LoadShopCartCount", sessionid); 
+        GetData("User", "GetUserDetails", "LoadUserDetails", sessionid);
     }
     cartcount = GetCartCount();
     if (cartcount) {
@@ -369,7 +370,7 @@ function DisplayShopCartCount(data) {
 }
 
 function DisplayUserDetails(resp) {
-    hideLoading();
+//    hideLoading();
     $(".UserType").text(resp.UserType);
     $(".UserName").text(resp.UserName);
     localStorage.setItem("uUserName", resp.UserName);
