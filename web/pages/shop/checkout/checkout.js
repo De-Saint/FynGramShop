@@ -46,10 +46,13 @@ function checkOutBtnEvents() {
         if (pay_method === "wallet") {
             var data = [sessionid, "Wallet", note];
             showLoading();
+            localStorage.setItem("cartcount", 0);
             GetData("Order", "PlaceOrder", "LoadPlaceOrder", data);
         } else if (pay_method === "paystack") {
             var newPaymentAmount = CalculatePercentage(TotalAmount);
             CheckoutWithPaystack(newPaymentAmount, email, TotalAmount, "CheckOut Payment", note);
+        } else {
+            ShowNotification("Please, select a payment option.", "error");
         }
 
 

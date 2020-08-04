@@ -50,7 +50,7 @@
                                         <tbody class="TransionList">
                                             <tr class="transactionlist-clone d-none">
                                                 <td ><span class="trans-sn">1</span><br>
-                                                    <a href="javascript:void(0)"><i class="fa fa-trash-o fs-16 text-danger delete-transaction-btn"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"></i></a> 
+                                                    <!--<a href="javascript:void(0)"><i class="fa fa-trash-o fs-16 text-danger delete-transaction-btn"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"></i></a>--> 
                                                 </td>
                                                 <td class="trans-name">May 10, 2018</td>
                                                 <!--<td class="trans-type">May 10, 2018</td>-->

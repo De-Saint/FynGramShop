@@ -90,6 +90,7 @@ function DisplayGetWalletDetails(resp) {
 
 function DisplayValidatePaystackPayment(data) {
     console.log(data);
+     hideLoading();
     var resp = data.result;
     if (resp.status === "success") {
         var paymentdata = data.paymentdata;

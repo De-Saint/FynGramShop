@@ -1,542 +1,159 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-  <!--breadcrumbs area start-->
-    <div class="breadcrumbs_area">
-        <div class="container">   
-            <div class="row">
-                <div class="col-12">
-                    <div class="breadcrumb_content">
-                       <h3>My Account</h3>
-                        <ul>
-                            <li><a href="index.html">home</a></li>
-                            <li>My account</li>
-                        </ul>
-                    </div>
+<!--breadcrumbs area start-->
+<div class="breadcrumbs_area">
+    <div class="container">   
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_content">
+                    <h3>My Account</h3>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li>My account</li>
+                    </ul>
                 </div>
             </div>
-        </div>         
-    </div>
-    <!--breadcrumbs area end-->
-    
-    <!-- my account start  -->
-    <section class="main_content_area">
-        <div class="container">   
-            <div class="account_dashboard">
-                <div class="row">
-                    <div class="col-sm-12 col-md-3 col-lg-3">
-                        <!-- Nav tabs -->
-                         <%@include file="../../general/sublinks/sublinks.jspf" %>   
+        </div>
+    </div>         
+</div>
+<!--breadcrumbs area end-->
+
+<!-- my account start  -->
+<section class="main_content_area">
+    <div class="container">   
+        <div class="account_dashboard">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <!-- Nav tabs -->
+                    <%@include file="../../general/sublinks/sublinks.jspf" %>   
+                </div>
+                <div class="col-sm-12 col-md-9 col-lg-9">
+                    <!-- Tab panes -->
+                    <div class="col-md-12 d-flex">
+                        <p class="" style="font-size: 20px; font-weight: 500;">Order</p>
+                        <p class="ml-1" style="font-size: 20px; font-weight: 500;">(24)</p>
                     </div>
-                    <div class="col-sm-12 col-md-9 col-lg-9">
-                        <!-- Tab panes -->
-                         <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-4 card pt-3 pb-3 pl-3 pr-3">
-                                <div class="card">
-                                    <div class="card-header" style="font-size: 13px; font-weight: 600;">Order Date : 12 July 2020</div>
-                                    <div class="card-body pt-2">
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-md-8 pl-0 pr-0" style="color: #6c757d; font-size: 12px;">
-                                                    <div class="d-flex">
-                                                        <p class="mb-1">Total:</p>
-                                                        <p class="ml-2">&#8358;21,500</p>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <p Class="mb-1">Order No:</p>
-                                                        <p class="ml-2">2GF6LWQ8</p>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <p lass="mb-1">Payment Method:</p>
-                                                        <p class="ml-2">Pay On Delivery</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 pl-0 pr-0" style="color: #6c757d; font-size: 12px;">
-                                                    <p class="float-right mb-1" style="font-weight: 600;">Delivery Addr:</p>
-                                                    <p class="float-right" style="text-align: right; line-height: 20px;">1, demeene road, off apapa street, everywhere in nigeria road.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="mt-2" style="width: 70px; height: 70px;"><img src="../../../../assets/img/product/product14.jpg" /></div>
-                                    </div>
-                                </div>
 
-                                <div class="card mt-3">
-                                    <div class="card-header" style="font-size: 13px; font-weight: 600;">Order Date : 12 July 2020</div>
-                                    <div class="card-body pt-2">
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-md-8 pl-0 pr-0" style="color: #6c757d; font-size: 12px;">
-                                                    <div class="d-flex">
-                                                        <p class="mb-1">Total:</p>
-                                                        <p class="ml-2">&#8358;21,500</p>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <p Class="mb-1">Order No:</p>
-                                                        <p class="ml-2">2GF6LWQ8</p>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <p lass="mb-1">Payment Method:</p>
-                                                        <p class="ml-2">Pay On Delivery</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 pl-0 pr-0" style="color: #6c757d; font-size: 12px;">
-                                                    <p class="float-right mb-1" style="font-weight: 600;">Delivery Addr:</p>
-                                                    <p class="float-right" style="text-align: right; line-height: 20px;">1, demeene road, off apapa street, everywhere in nigeria road.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="mt-2" style="width: 70px; height: 70px;"><img src="../../../../assets/img/product/product18.jpg" /></div>
-                                    </div>
-                                </div>
-
-                                <div class="card mt-3">
-                                    <div class="card-header" style="font-size: 13px; font-weight: 600;">Order Date : 12 July 2020</div>
-                                    <div class="card-body pt-2">
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-md-8 pl-0 pr-0" style="color: #6c757d; font-size: 12px;">
-                                                    <div class="d-flex">
-                                                        <p class="mb-1">Total:</p>
-                                                        <p class="ml-2">&#8358;21,500</p>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <p Class="mb-1">Order No:</p>
-                                                        <p class="ml-2">2GF6LWQ8</p>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <p lass="mb-1">Payment Method:</p>
-                                                        <p class="ml-2">Pay On Delivery</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 pl-0 pr-0" style="color: #6c757d; font-size: 12px;">
-                                                    <p class="float-right mb-1" style="font-weight: 600;">Delivery Addr:</p>
-                                                    <p class="float-right" style="text-align: right; line-height: 20px;">1, demeene road, off apapa street, everywhere in nigeria road.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="mt-2" style="width: 70px; height: 70px;"><img src="../../../../assets/img/product/product20.jpg" /></div>
-                                    </div>
-                                </div>
+                    <div class="col-md-12 card mt-3" id="OrderLIst">
+                        <div class="row order-clone">
+                            <div class="col-md-2 mt-3 mb-3 pr-0">
+                                <img src="../../../../assets/img/product/product12.jpg" style="width: 110px; height: 105px;"/>
                             </div>
-
-
-                            <div class="col-md-8 card pt-3 pb-3 pl-3 pr-3">
-                                <nav>
-                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                        <a class="nav-item nav-link active fs-16" id="nav-all-tab" data-toggle="tab" href="#nav-all" role="tab" aria-controls="nav-all" aria-selected="true">All</a>
-                                        <a class="nav-item nav-link fs-16" id="nav-processing-tab" data-toggle="tab" href="#nav-processing" role="tab" aria-controls="nav-processing" aria-selected="false">Processing</a>
-                                        <a class="nav-item nav-link fs-16" id="nav-shipped-tab" data-toggle="tab" href="#nav-shipped" role="tab" aria-controls="nav-shipped" aria-selected="false" >Shipped</a>
-                                        <a class="nav-item nav-link fs-16" id="nav-delivered-tab" data-toggle="tab" href="#nav-delivered" role="tab" aria-controls="nav-delivered" aria-selected="false" >Delivered</a>
-                                        <a class="nav-item nav-link fs-16" id="nav-cancelled-tab" data-toggle="tab" href="#nav-cancelled" role="tab" aria-controls="nav-cancelled" aria-selected="false" >Cancelled</a>
+                            <div class="col-md-10 mt-3 mb-3">
+                                <div class="row">
+                                    <div class="col-md-9 fs-12">
+                                        <div class="fs-16 font-weight-bold order-p-fname">A very green fruit in a whole bag and sacks together</div>
                                     </div>
-                                </nav>
-                                <div class="tab-content" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
-                                        <div class="card mt-3">
-                                            <div class="card-header" style="font-size: 13px;">
-                                                <div class="row">
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1">Tracking ID:</p>
-                                                        <p class="ml-2" style="font-weight: 600; font-size: 15px;">D45F6DF</p>
-                                                    </div>
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1 pl-4">Shipping Fee:</p>
-                                                        <p class="ml-2">&#8358;500</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-2">
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1">Sold By:</p>
-                                                        <p class="ml-1 pl-0 pr-0" style="font-weight: 600; font-size: 12px; color: tomato;">Gbenro vent.</p>
-                                                    </div>
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1 pl-4">Total:</p>
-                                                        <p class="ml-2">&#8358;18,500</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-body pt-2">
-                                                <div class="col-md-12">
-                                                    <div class="row">
-                                                        <div class="col-md-6 pl-0 pr-0 d-flex" style="font-size: 12px;">
-                                                            <div class="fa fa-address-card pr-1 pt-1 pr-2" style="font-size: 15px; color: sandybrown;"></div>
-                                                            <div style="color: sandybrown; font-size: 12px;">Tracking Order</div>
-                                                        </div>
-                                                        <div class="col-md-6 pl-0 pr-0" style="color: #6c757d; font-size: 12px;">
-                                                            <a href="#" class="badge badge-danger float-right mt-2 pl-2 pr-2">Cancelled</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-3">
-                                                    <div class="col-md-3">
-                                                        <div class="mt-2" style="width: 70px; height: 70px;"><img src="../../../../assets/img/product/product20.jpg" /></div>
-                                                    </div>
-                                                    <div class="col-md-9 pl-2 pr-0" style="color: #6c757d; font-size: 12px;">
-                                                        <div class="d-flex">
-                                                            <p class="mb-1">Fresh green fruit with fine leaves</p>
-                                                        </div>
-                                                        <div class="d-flex">
-                                                            <p Class="mb-1" style="font-weight: 600; color: black;">&#8358; 21,455</p>
-                                                        </div>
-                                                        <div class="d-flex">
-                                                            <p lass="mb-1">Quantity:</p>
-                                                            <p class="ml-2">12</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="card mt-3">
-                                            <div class="card-header" style="font-size: 13px;">
-                                                <div class="row">
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1">Tracking ID:</p>
-                                                        <p class="ml-2" style="font-weight: 600; font-size: 15px;">D45F6DF</p>
-                                                    </div>
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1 pl-4">Shipping Fee:</p>
-                                                        <p class="ml-2">&#8358;500</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-2">
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1">Sold By:</p>
-                                                        <p class="ml-1 pl-0 pr-0" style="font-weight: 600; font-size: 12px; color: tomato;">Gbenro vent.</p>
-                                                    </div>
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1 pl-4">Total:</p>
-                                                        <p class="ml-2">&#8358;18,500</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-body pt-2">
-                                                <div class="col-md-12">
-                                                    <div class="row">
-                                                        <div class="col-md-6 pl-0 pr-0 d-flex" style="font-size: 12px;">
-                                                            <div class="fa fa-address-card pr-1 pt-1 pr-2" style="font-size: 15px; color: sandybrown;"></div>
-                                                            <div style="color: sandybrown; font-size: 12px;">Tracking Order</div>
-                                                        </div>
-                                                        <div class="col-md-6 pl-0 pr-0" style="color: #6c757d; font-size: 12px;">
-                                                            <a href="#" class="badge badge-success float-right mt-2 pl-2 pr-2">Delivered</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-3">
-                                                    <div class="col-md-3">
-                                                        <div class="mt-2" style="width: 70px; height: 70px;"><img src="../../../../assets/img/product/product20.jpg" /></div>
-                                                    </div>
-                                                    <div class="col-md-9 pl-2 pr-0" style="color: #6c757d; font-size: 12px;">
-                                                        <div class="d-flex">
-                                                            <p class="mb-1">Fresh green fruit with fine leaves</p>
-                                                        </div>
-                                                        <div class="d-flex">
-                                                            <p Class="mb-1" style="font-weight: 600; color: black;">&#8358; 21,455</p>
-                                                        </div>
-                                                        <div class="d-flex">
-                                                            <p lass="mb-1">Quantity:</p>
-                                                            <p class="ml-2">12</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="card mt-3">
-                                            <div class="card-header" style="font-size: 13px;">
-                                                <div class="row">
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1">Tracking ID:</p>
-                                                        <p class="ml-2" style="font-weight: 600; font-size: 15px;">D45F6DF</p>
-                                                    </div>
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1 pl-4">Shipping Fee:</p>
-                                                        <p class="ml-2">&#8358;500</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-2">
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1">Sold By:</p>
-                                                        <p class="ml-1 pl-0 pr-0" style="font-weight: 600; font-size: 12px; color: tomato;">Gbenro vent.</p>
-                                                    </div>
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1 pl-4">Total:</p>
-                                                        <p class="ml-2">&#8358;18,500</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-body pt-2">
-                                                <div class="col-md-12">
-                                                    <div class="row">
-                                                        <div class="col-md-6 pl-0 pr-0 d-flex" style="font-size: 12px;">
-                                                            <div class="fa fa-address-card pr-1 pt-1 pr-2" style="font-size: 15px; color: sandybrown;"></div>
-                                                            <div style="color: sandybrown; font-size: 12px;">Tracking Order</div>
-                                                        </div>
-                                                        <div class="col-md-6 pl-0 pr-0" style="color: #6c757d; font-size: 12px;">
-                                                            <a href="#" class="badge badge-info float-right mt-2 pl-2 pr-2">processing</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-3">
-                                                    <div class="col-md-3">
-                                                        <div class="mt-2" style="width: 70px; height: 70px;"><img src="../../../../assets/img/product/product20.jpg" /></div>
-                                                    </div>
-                                                    <div class="col-md-9 pl-2 pr-0" style="color: #6c757d; font-size: 12px;">
-                                                        <div class="d-flex">
-                                                            <p class="mb-1">Fresh green fruit with fine leaves</p>
-                                                        </div>
-                                                        <div class="d-flex">
-                                                            <p Class="mb-1" style="font-weight: 600; color: black;">&#8358; 21,455</p>
-                                                        </div>
-                                                        <div class="d-flex">
-                                                            <p lass="mb-1">Quantity:</p>
-                                                            <p class="ml-2">12</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="col-md-3" style="color: #6c757d; font-size: 14px;">
+                                        <a href="${pageContext.request.contextPath}/LinksServlet?type=Order" class="float-right text-success">VIEW DETAILS</a>
                                     </div>
-                                    <div class="tab-pane fade" id="nav-processing" role="tabpanel" aria-labelledby="nav-processing-tab">
-                                        
-                                        <div class="card mt-3">
-                                            <div class="card-header" style="font-size: 13px;">
-                                                <div class="row">
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1">Tracking ID:</p>
-                                                        <p class="ml-2" style="font-weight: 600; font-size: 15px;">D45F6DF</p>
-                                                    </div>
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1 pl-4">Shipping Fee:</p>
-                                                        <p class="ml-2">&#8358;500</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-2">
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1">Sold By:</p>
-                                                        <p class="ml-1 pl-0 pr-0" style="font-weight: 600; font-size: 12px; color: tomato;">Gbenro vent.</p>
-                                                    </div>
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1 pl-4">Total:</p>
-                                                        <p class="ml-2">&#8358;18,500</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-body pt-2">
-                                                <div class="col-md-12">
-                                                    <div class="row">
-                                                        <div class="col-md-6 pl-0 pr-0 d-flex" style="font-size: 12px;">
-                                                            <div class="fa fa-address-card pr-1 pt-1 pr-2" style="font-size: 15px; color: sandybrown;"></div>
-                                                            <div style="color: sandybrown; font-size: 12px;">Tracking Order</div>
-                                                        </div>
-                                                        <div class="col-md-6 pl-0 pr-0" style="color: #6c757d; font-size: 12px;">
-                                                            <a href="#" class="badge badge-info float-right mt-2 pl-2 pr-2">processing</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-3">
-                                                    <div class="col-md-3">
-                                                        <div class="mt-2" style="width: 70px; height: 70px;"><img src="../../../../assets/img/product/product20.jpg" /></div>
-                                                    </div>
-                                                    <div class="col-md-9 pl-2 pr-0" style="color: #6c757d; font-size: 12px;">
-                                                        <div class="d-flex">
-                                                            <p class="mb-1">Fresh green fruit with fine leaves</p>
-                                                        </div>
-                                                        <div class="d-flex">
-                                                            <p Class="mb-1" style="font-weight: 600; color: black;">&#8358; 21,455</p>
-                                                        </div>
-                                                        <div class="d-flex">
-                                                            <p lass="mb-1">Quantity:</p>
-                                                            <p class="ml-2">12</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
+                                </div>
+                                <div class="row mt-1">
+                                    <div class="col-md-12 d-flex fs-14" style="font-size: 14px; color: #6c757d;">
+                                        <p class="mb-0">Placed On </p>
+                                        <p class="ml-2 mb-0"> 03-05-2020</p>
                                     </div>
-                                    <div class="tab-pane fade" id="nav-shipped" role="tabpanel" aria-labelledby="nav-shipped-tab">
-                                        
-                                        <div class="card mt-3">
-                                            <div class="card-header" style="font-size: 13px;">
-                                                <div class="row">
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1">Tracking ID:</p>
-                                                        <p class="ml-2" style="font-weight: 600; font-size: 15px;">D45F6DF</p>
-                                                    </div>
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1 pl-4">Shipping Fee:</p>
-                                                        <p class="ml-2">&#8358;500</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-2">
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1">Sold By:</p>
-                                                        <p class="ml-1 pl-0 pr-0" style="font-weight: 600; font-size: 12px; color: tomato;">Gbenro vent.</p>
-                                                    </div>
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1 pl-4">Total:</p>
-                                                        <p class="ml-2">&#8358;18,500</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-body pt-2">
-                                                <div class="col-md-12">
-                                                    <div class="row">
-                                                        <div class="col-md-6 pl-0 pr-0 d-flex" style="font-size: 12px;">
-                                                            <div class="fa fa-address-card pr-1 pt-1 pr-2" style="font-size: 15px; color: sandybrown;"></div>
-                                                            <div style="color: sandybrown; font-size: 12px;">Tracking Order</div>
-                                                        </div>
-                                                        <div class="col-md-6 pl-0 pr-0" style="color: #6c757d; font-size: 12px;">
-                                                            <a href="#" class="badge badge-primary float-right mt-2 pl-2 pr-2">Shipped</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-3">
-                                                    <div class="col-md-3">
-                                                        <div class="mt-2" style="width: 70px; height: 70px;"><img src="../../../../assets/img/product/product20.jpg" /></div>
-                                                    </div>
-                                                    <div class="col-md-9 pl-2 pr-0" style="color: #6c757d; font-size: 12px;">
-                                                        <div class="d-flex">
-                                                            <p class="mb-1">Fresh green fruit with fine leaves</p>
-                                                        </div>
-                                                        <div class="d-flex">
-                                                            <p Class="mb-1" style="font-weight: 600; color: black;">&#8358; 21,455</p>
-                                                        </div>
-                                                        <div class="d-flex">
-                                                            <p lass="mb-1">Quantity:</p>
-                                                            <p class="ml-2">12</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="tab-pane fade" id="nav-delivered" role="tabpanel" aria-labelledby="nav-delivered-tab">
-                                        
-                                        <div class="card mt-3">
-                                            <div class="card-header" style="font-size: 13px;">
-                                                <div class="row">
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1">Tracking ID:</p>
-                                                        <p class="ml-2" style="font-weight: 600; font-size: 15px;">D45F6DF</p>
-                                                    </div>
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1 pl-4">Shipping Fee:</p>
-                                                        <p class="ml-2">&#8358;500</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-2">
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1">Sold By:</p>
-                                                        <p class="ml-1 pl-0 pr-0" style="font-weight: 600; font-size: 12px; color: tomato;">Gbenro vent.</p>
-                                                    </div>
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1 pl-4">Total:</p>
-                                                        <p class="ml-2">&#8358;18,500</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-body pt-2">
-                                                <div class="col-md-12">
-                                                    <div class="row">
-                                                        <div class="col-md-6 pl-0 pr-0 d-flex" style="font-size: 12px;">
-                                                            <div class="fa fa-address-card pr-1 pt-1 pr-2" style="font-size: 15px; color: sandybrown;"></div>
-                                                            <div style="color: sandybrown; font-size: 12px;">Tracking Order</div>
-                                                        </div>
-                                                        <div class="col-md-6 pl-0 pr-0" style="color: #6c757d; font-size: 12px;">
-                                                            <a href="#" class="badge badge-success float-right mt-2 pl-2 pr-2">Delivered</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-3">
-                                                    <div class="col-md-3">
-                                                        <div class="mt-2" style="width: 70px; height: 70px;"><img src="../../../../assets/img/product/product20.jpg" /></div>
-                                                    </div>
-                                                    <div class="col-md-9 pl-2 pr-0" style="color: #6c757d; font-size: 12px;">
-                                                        <div class="d-flex">
-                                                            <p class="mb-1">Fresh green fruit with fine leaves</p>
-                                                        </div>
-                                                        <div class="d-flex">
-                                                            <p Class="mb-1" style="font-weight: 600; color: black;">&#8358; 21,455</p>
-                                                        </div>
-                                                        <div class="d-flex">
-                                                            <p lass="mb-1">Quantity:</p>
-                                                            <p class="ml-2">12</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="tab-pane fade" id="nav-cancelled" role="tabpanel" aria-labelledby="nav-cancelled-tab">
-                                        
-                                        <div class="card mt-3">
-                                            <div class="card-header" style="font-size: 13px;">
-                                                <div class="row">
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1">Tracking ID:</p>
-                                                        <p class="ml-2" style="font-weight: 600; font-size: 15px;">D45F6DF</p>
-                                                    </div>
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1 pl-4">Shipping Fee:</p>
-                                                        <p class="ml-2">&#8358;500</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-2">
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1">Sold By:</p>
-                                                        <p class="ml-1 pl-0 pr-0" style="font-weight: 600; font-size: 12px; color: tomato;">Gbenro vent.</p>
-                                                    </div>
-                                                    <div class="col-md-6 d-flex">
-                                                        <p class="mb-1 pl-4">Total:</p>
-                                                        <p class="ml-2">&#8358;18,500</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-body pt-2">
-                                                <div class="col-md-12">
-                                                    <div class="row">
-                                                        <div class="col-md-6 pl-0 pr-0 d-flex" style="font-size: 12px;">
-                                                            <div class="fa fa-address-card pr-1 pt-1 pr-2" style="font-size: 15px; color: sandybrown;"></div>
-                                                            <div style="color: sandybrown; font-size: 12px;">Tracking Order</div>
-                                                        </div>
-                                                        <div class="col-md-6 pl-0 pr-0" style="color: #6c757d; font-size: 12px;">
-                                                            <a href="#" class="badge badge-danger float-right mt-2 pl-2 pr-2">Cancelled</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-3">
-                                                    <div class="col-md-3">
-                                                        <div class="mt-2" style="width: 70px; height: 70px;"><img src="../../../../assets/img/product/product20.jpg" /></div>
-                                                    </div>
-                                                    <div class="col-md-9 pl-2 pr-0" style="color: #6c757d; font-size: 12px;">
-                                                        <div class="d-flex">
-                                                            <p class="mb-1">Fresh green fruit with fine leaves</p>
-                                                        </div>
-                                                        <div class="d-flex">
-                                                            <p Class="mb-1" style="font-weight: 600; color: black;">&#8358; 21,455</p>
-                                                        </div>
-                                                        <div class="d-flex">
-                                                            <p lass="mb-1">Quantity:</p>
-                                                            <p class="ml-2">12</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-md-12 fs-18" style="color: #6c757d;">
+                                        <span class="badge badge-danger pl-2 pr-2">Cancelled</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-md-12 card mt-3">
+                        <div class="row">
+                            <div class="col-md-2 mt-3 mb-3 pr-0">
+                                <img src="../../../../assets/img/product/product12.jpg" style="width: 110px; height: 105px;"/>
+                            </div>
+                            <div class="col-md-10 mt-3 mb-3">
+                                <div class="row">
+                                    <div class="col-md-9" style="font-size: 12px;">
+                                        <div style="font-size: 16px; font-weight: 500;">A very green fruit in a whole bag and sacks together</div>
+                                    </div>
+                                    <div class="col-md-3" style="color: #6c757d; font-size: 14px;">
+                                        <a href="" class="float-right" style="text-transform: uppercase">see details</a>
+                                    </div>
+                                </div>
+                                <div class="row mt-1">
+                                    <div class="col-md-12 d-flex" style="font-size: 14px; color: #6c757d;">
+                                        <p class="mb-0">Placed On </p>
+                                        <p class="ml-2 mb-0"> 03-05-2020</p>
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-md-12 d-flex text-success" style="font-size: 14px; ">
+                                        <div class="fa fa-check-circle pr-1 pt-1 pr-2" style="font-size: 16px; "></div>
+                                        <div style="font-size: 14px; text-transform: uppercase">Delivered on</div>
+                                        <div class="ml-2"> 03-05-2020</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 card mt-3">
+                        <div class="row">
+                            <div class="col-md-2 mt-3 mb-3 pr-0">
+                                <img src="../../../../assets/img/product/product12.jpg" style="width: 110px; height: 105px;"/>
+                            </div>
+                            <div class="col-md-10 mt-3 mb-3">
+                                <div class="row">
+                                    <div class="col-md-9" style="font-size: 12px;">
+                                        <div style="font-size: 16px; font-weight: 500;">A very green fruit in a whole bag and sacks together</div>
+                                    </div>
+                                    <div class="col-md-3" style="color: #6c757d; font-size: 14px;">
+                                        <a href="" class="float-right" style="text-transform: uppercase">see details</a>
+                                    </div>
+                                </div>
+                                <div class="row mt-1">
+                                    <div class="col-md-12 d-flex" style="font-size: 14px; color: #6c757d;">
+                                        <p class="mb-0">Placed On </p>
+                                        <p class="ml-2 mb-0"> 03-05-2020</p>
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-md-12" style="font-size: 17px; color: #6c757d;">
+                                        <a href="#" class="badge badge-warning pl-2 pr-2">Pending</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 card mt-3">
+                        <div class="row">
+                            <div class="col-md-2 mt-3 mb-3 pr-0">
+                                <img src="../../../../assets/img/product/product12.jpg" style="width: 110px; height: 105px;"/>
+                            </div>
+                            <div class="col-md-10 mt-3 mb-3">
+                                <div class="row">
+                                    <div class="col-md-9" style="font-size: 12px;">
+                                        <div style="font-size: 16px; font-weight: 500;">A very green fruit in a whole bag and sacks together</div>
+                                    </div>
+                                    <div class="col-md-3" style="color: #6c757d; font-size: 14px;">
+                                        <a href="" class="float-right" style="text-transform: uppercase">see details</a>
+                                    </div>
+                                </div>
+                                <div class="row mt-1">
+                                    <div class="col-md-12 d-flex" style="font-size: 14px; color: #6c757d;">
+                                        <p class="mb-0">Placed On </p>
+                                        <p class="ml-2 mb-0"> 03-05-2020</p>
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-md-12" style="font-size: 17px; color: #6c757d;">
+                                        <a href="#" class="badge badge-info pl-2 pr-2">Processing</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>  
-        </div>        	
-    </section>			
-    <!-- my account end   --> 
+            </div>
+        </div>  
+    </div>        	
+</section>			
+<!-- my account end   --> 

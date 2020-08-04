@@ -18,7 +18,7 @@ function LoginBtnEvents() {
         var EmailAddress = $("#fgemail").val();
         var Password = $("#fgpass").val();
         sessionid = verifyUser();
-        var data = [EmailAddress, Password, sessionid, ""];
+        var data = [EmailAddress, Password, sessionid, "FynGramShop"];
         GetData("User", "Login", "LoadLoginCustomer", data);
         e.preventDefault();
     });
