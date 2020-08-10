@@ -102,8 +102,16 @@ public class LinksServlet extends HttpServlet {
                     response.sendRedirect("pages/shop/faq/faq.jsp");
                     break;
                 }
-                case "Deals": {
-                    response.sendRedirect("pages/shop/deals/deals.jsp");
+                case "Suggestions": {
+                    response.sendRedirect("pages/shop/suggestions/suggestions.jsp");
+                    break;
+                }
+                case "ReturnPolicy": {
+                    response.sendRedirect("pages/shop/returned_policy/returned_policy.jsp");
+                    break;
+                }
+                case "HowToReturn": {
+                    response.sendRedirect("pages/shop/how_to_return/how_to_return.jsp");
                     break;
                 }
                 case "Search": {
