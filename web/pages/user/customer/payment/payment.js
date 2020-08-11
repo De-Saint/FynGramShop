@@ -4,15 +4,15 @@
  * and open the template in the editor.
  */
 var extension = "../../../../";
-var sessionid, sessiontype;
+var shopsessionid, sessiontype;
 $(document).ready(function () {
     paymentsFunctions();
 });
 
 function paymentsFunctions() {
     paymentsBtnEvents();
-    sessionid = verifyUser();
-    if (!sessionid || sessionid === 0) {
+    shopsessionid = verifyUser();
+    if (!shopsessionid || shopsessionid === 0) {
         returnToTimeOutPage(extension);
     }
     paymentsPageFunctions();
@@ -30,7 +30,7 @@ function paymentsSetLink() {
 }
 function paymentsPageFunctions() {
     showLoading();
-    GetData("Payment", "GetPayments", "LoadGetPayments", sessionid);
+    GetData("Payment", "GetPayments", "LoadGetPayments", shopsessionid);
 
 }
 
@@ -59,7 +59,7 @@ function DisplayGetPayments(data, parent) {
 
             deletebtn.click(function () {
                 showLoading();
-                var data = [sessionid, result["id"]];
+                var data = [shopsessionid, result["id"]];
                 GetData("Payment", "DeletePayment", "LoadPaymentsInfo", data);
             });
             newchild.appendTo(parent).show();

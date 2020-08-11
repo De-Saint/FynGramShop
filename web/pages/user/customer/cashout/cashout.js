@@ -4,15 +4,15 @@
  * and open the template in the editor.
  */
 var extension = "../../../../";
-var sessionid, sessiontype;
+var shopsessionid, sessiontype;
 $(document).ready(function () {
     cashoutFunctions();
 });
 
 function cashoutFunctions() {
     cashoutBtnEvents();
-    sessionid = verifyUser();
-    if (!sessionid || sessionid === 0) {
+    shopsessionid = verifyUser();
+    if (!shopsessionid || shopsessionid === 0) {
         returnToTimeOutPage(extension);
     }
     cashoutPageFunctions();
@@ -27,7 +27,7 @@ function cashoutBtnEvents() {
         }
         var Pin = $("#cashoutPin").val();
         $(".mini_cart_close").click();
-        var data = [Amount, Pin, sessionid];
+        var data = [Amount, Pin, shopsessionid];
         showLoading();
         GetData("CashOut", "NewCashoutRequest", "LoadCashOutOptions", data);
         e.preventDefault();
@@ -41,7 +41,7 @@ function cashoutSetLink() {
 }
 function cashoutPageFunctions() {
     showLoading();
-    GetData("CashOut", "GetCashoutRequests", "LoadCashoutRequests", sessionid);
+    GetData("CashOut", "GetCashoutRequests", "LoadCashoutRequests", shopsessionid);
 }
 
 function DisplayCashoutRequests(data, parent) {
@@ -83,7 +83,7 @@ function DisplayCashoutRequests(data, parent) {
             deletebtn.click(function () {
                 showLoading();
                 ShowNotification("Deleting Cashout Request", "primary");
-                var data = ["Deleted", details["CashOutID"], sessionid];
+                var data = ["Deleted", details["CashOutID"], shopsessionid];
                 GetData("CashOut", "ProcessCashOut", "LoadCashOutOptions", data);
             });
 

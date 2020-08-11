@@ -5,15 +5,15 @@
  */
 
 var extension = "../../../../";
-var sessionid, sessiontype;
+var shopsessionid, sessiontype;
 $(document).ready(function () {
     addressFunctions();
 });
 
 function addressFunctions() {
     addressBtnEvents();
-    sessionid = verifyUser();
-    if (!sessionid || sessionid === 0) {
+    shopsessionid = verifyUser();
+    if (!shopsessionid || shopsessionid === 0) {
         returnToTimeOutPage(extension);
     }
     addressPageFunctions();
@@ -86,7 +86,7 @@ function addressBtnEvents() {
         var add_addressline = $("#add_addressline").val();
         var add_makedefault = $("#add_makedefault").val();
         var add_phone_line = $("#add_phone_line").val();
-        var data = [sessionid, addresstypes, states, lgas, towns, busstops, streets, add_closeto, add_postal_code, add_addressline, add_makedefault, add_phone_line];
+        var data = [shopsessionid, addresstypes, states, lgas, towns, busstops, streets, add_closeto, add_postal_code, add_addressline, add_makedefault, add_phone_line];
         showLoading();
         $(".mini_cart_close").click();
         GetData("Address", "AddNewAddress", "LoadUserAddressesInfo", data);
@@ -106,7 +106,7 @@ function addressPageFunctions() {
     GetData("Address", "GetAddressTypes", "LoadAddressTypes", "");
     GetData("Address", "GetStates", "LoadStates", "");
     showLoading();
-    GetData("Address", "GetUserAddresses", "LoadUserAddresses", sessionid);
+    GetData("Address", "GetUserAddresses", "LoadUserAddresses", shopsessionid);
 }
 
 
@@ -251,7 +251,6 @@ function DisplayUserAddressesInfo(data) {
 
 
 function DisplayUserAddresses(data, parent) {
-//    alert(data);
     hideLoading();
     parent.find(".newclone").remove();
     if (data !== "none") {
@@ -283,14 +282,14 @@ function DisplayUserAddresses(data, parent) {
                     return false;
                 }
                 showLoading();
-                var data = [sessionid, result["id"]];
+                var data = [shopsessionid, result["id"]];
                 GetData("Address", "DeleteUserAddresses", "LoadUserAddressesInfo", data);
             });
             DisplayToolTip(deletebtn);
 
             makedefault.click(function () {
                 showLoading();
-                var data = [sessionid, result["id"]];
+                var data = [shopsessionid, result["id"]];
                 GetData("Address", "MakeUserAddressDefault", "LoadUserAddressesInfo", data);
             });
             newchild.appendTo(parent).show();

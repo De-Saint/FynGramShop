@@ -6,7 +6,7 @@
 
 
 var extension = "../../../../";
-var sessionid;
+var shopsessionid;
 $(document).ready(function () {
     wishListFunctions();
 });
@@ -22,9 +22,10 @@ function WishListBtnEvents() {
 }
 
 function WishListPageFunctions() {
-    sessionid = verifyUser();
-    if (sessionid) {
-        GetData("Cart", "GetShopSavedItems", "LoadShopSavedItems", sessionid);
+    shopsessionid = verifyUser();
+    if (shopsessionid) {
+        showLoading();
+        GetData("Cart", "GetShopSavedItems", "LoadShopSavedItems", shopsessionid);
     } else {
         $(".emptyshopsaveditems").removeClass("d-none");
         $(".fullshopsaveditems").addClass("d-none");
@@ -33,6 +34,7 @@ function WishListPageFunctions() {
 
 
 function DisplayShopSavedItems(data) {
+    hideLoading();
     if (parseInt(data.product_count)) {
         $(".emptyshopsaveditems").addClass("d-none");
         $(".fullshopsaveditems").removeClass("d-none");
@@ -66,7 +68,7 @@ function DisplayShopSavedItems(data) {
                 if (parseInt(ProductQty) > 2) {
                     newchild.find(".shop-saveditem-p-stock").text("In-Stock").addClass("text-success");
                     newchild.find(".shop-saveditem-buynow").click(function () {
-                        var data = [sessionid, SaveItemsID, ProductID];
+                        var data = [shopsessionid, SaveItemsID, ProductID];
                         localStorage.setItem("savedtimepage", true);
                         GetData("Cart", "AddWishListProductToCart", "LoadAddOption", data);
                     });
@@ -101,7 +103,8 @@ function DisplayShopSavedItems(data) {
                 var deletebtn = newchild.find(".shop-saveditem-btn-delete-item");
                 deletebtn.click(function () {
                     var ProductID = details.ProductDetails.ProductID;
-                    var data = [sessionid, "SavedItems", SaveItemsID, ProductID];
+                    var data = [shopsessionid, "SavedItems", SaveItemsID, ProductID];
+                    showLoading();
                     GetData("Cart", "DeleteOptions", "LoadDeleteOptions", data);
                 });
                 DisplayToolTip(deletebtn);
@@ -111,7 +114,7 @@ function DisplayShopSavedItems(data) {
         }
 
         $(".shop-saveditem-buyall").click(function () {
-            GetData("Cart", "BuyAllSavedItems", "LoadBuyAllSavedItems", sessionid);
+            GetData("Cart", "BuyAllSavedItems", "LoadBuyAllSavedItems", shopsessionid);
         });
         $(".shop-saveditem-empty").click(function () {
             var data = [SaveItemsID, "SavedItems"];
@@ -125,6 +128,7 @@ function DisplayShopSavedItems(data) {
 }
 
 function DisplayUpdateSavedItemsOptions(data) {
+      hideLoading();
     var cartData = data[1];
     DisplayShopSavedItems(cartData);
     var respData = data[0];
@@ -134,10 +138,12 @@ function DisplayUpdateSavedItemsOptions(data) {
 
 function DisplayEmptySavedItemsOptions(resp) {
     ShowNotification(resp.msg, resp.status);
-    GetData("Cart", "GetShopSavedItems", "LoadShopSavedItems", sessionid);
+    showLoading();
+    GetData("Cart", "GetShopSavedItems", "LoadShopSavedItems", shopsessionid);
 }
 
 function DisplayBuyAllSavedItems(resp) {
+    hideLoading();
     var cartdata = resp.CartDetails;
     var resultdata = resp.result;
     ShowNotification(resultdata.msg, resultdata.status);
@@ -145,5 +151,6 @@ function DisplayBuyAllSavedItems(resp) {
     localStorage.setItem("cartcount", cartdata.product_count);
     var cartcount = GetCartCount();
     $(".cart_count").text(cartcount);
-    GetData("Cart", "GetShopSavedItems", "LoadShopSavedItems", sessionid);
+    showLoading();
+    GetData("Cart", "GetShopSavedItems", "LoadShopSavedItems", shopsessionid);
 }

@@ -4,15 +4,15 @@
  * and open the template in the editor.
  */
 var extension = "../../../../";
-var sessionid, sessiontype;
+var shopsessionid, sessiontype;
 $(document).ready(function () {
     dashboardFunctions();
 });
 
 function dashboardFunctions() {
     dashboardBtnEvents();
-    sessionid = verifyUser();
-    if (!sessionid || sessionid === 0) {
+    shopsessionid = verifyUser();
+    if (!shopsessionid || shopsessionid === 0) {
         returnToTimeOutPage(extension);
     }
     dashboardPageFunctions();

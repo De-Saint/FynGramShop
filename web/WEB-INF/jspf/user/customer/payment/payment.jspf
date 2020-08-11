@@ -50,7 +50,7 @@
                                                     <a href="javascript:void(0)"> <i class="fa fa-trash-o fs-16 text-danger pay-delete-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"></i></a></td>
                                                 <td class="pay-paytype">May 10, 2018</td>
                                                 <td class="pay-tcode"><span class="success">Completed</span></td>
-                                                <td class="pay-amount">$25.00 for 1 item </td>
+                                                <td class="pay-amount">0 for 1 item </td>
                                                 <td class="pay-date-time">4535</td>
                                             </tr>
                                         </tbody>

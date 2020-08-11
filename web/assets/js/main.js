@@ -35,8 +35,8 @@
             animateOut: 'fadeOut',
             loop: true,
             nav: false,
-            autoplay: false,
-            autoplayTimeout: 8000,
+            autoplay: true,
+            autoplayTimeout: 4000,
             items: 1,
             dots: true,
         });
@@ -46,16 +46,20 @@
     var $porductColumn5 = $('.product_column5');
     if ($porductColumn5.length > 0) {
         $porductColumn5.on('changed.owl.carousel initialized.owl.carousel', function (event) {
-            $(event.target).find('.owl-item').removeClass('last').eq(event.item.index + event.page.size - 1).addClass('last')
+            $(event.target).find('.owl-item').removeClass('last').eq(event.item.index + event.page.size - 1).addClass('last');
         }).owlCarousel({
-            loop: true,
-            nav: true,
+            loop: false,
+            nav: false,
             autoplay: false,
+            mouseDrag: false,
+            touchDrag: false,
+            pullDrag: false,
+            freeDrag: false,
             autoplayTimeout: 8000,
             items: 5,
             margin: 20,
             dots: false,
-            navText: ['<i class="ion-ios-arrow-left"></i>', '<i class="ion-ios-arrow-right"></i>'],
+            navText: ['', ''],
             responsiveClass: true,
             responsive: {
                 0: {
@@ -117,14 +121,14 @@
         $productPageColumn4.on('changed.owl.carousel initialized.owl.carousel', function (event) {
             $(event.target).find('.owl-item').removeClass('last').eq(event.item.index + event.page.size - 1).addClass('last')
         }).owlCarousel({
-            loop: true,
-            nav: true,
+            loop: false,
+            nav: false,
             autoplay: false,
             autoplayTimeout: 8000,
             items: 4,
             margin: 20,
             dots: false,
-            navText: ['<i class="ion-ios-arrow-left"></i>', '<i class="ion-ios-arrow-right"></i>'],
+            navText: ['', ''],
             responsiveClass: true,
             responsive: {
                 0: {
@@ -206,26 +210,38 @@
     var $productColumn2 = $('.product_column2');
     if ($productColumn2.length > 0) {
         $productColumn2.on('changed.owl.carousel initialized.owl.carousel', function (event) {
-            $(event.target).find('.owl-item').removeClass('last').eq(event.item.index + event.page.size - 1).addClass('last')
+            $(event.target).find('.owl-item').removeClass('first').eq(event.item.index + event.page.size - 1).addClass('first')
         }).owlCarousel({
-            loop: true,
+            loop: false,
             nav: false,
             autoplay: false,
+            mouseDrag: false,
+            touchDrag: false,
+            pullDrag: false,
+            freeDrag: false,
             autoplayTimeout: 8000,
-            items: 2,
-            dots: false,
+            items: 5,
             margin: 20,
+            dots: false,
+            navText: ['', ''],
             responsiveClass: true,
             responsive: {
                 0: {
                     items: 1,
                 },
-                768: {
-                    items: 1,
-                },
-                992: {
+                576: {
                     items: 2,
                 },
+                768: {
+                    items: 3,
+                },
+                992: {
+                    items: 4,
+                },
+                1200: {
+                    items: 5,
+                },
+
             }
         });
     }
@@ -322,14 +338,14 @@
         $('.smallp4_left_column1').on('changed.owl.carousel initialized.owl.carousel', function (event) {
             $(event.target).find('.owl-item').removeClass('last').eq(event.item.index + event.page.size - 1).addClass('last')
         }).owlCarousel({
-            loop: true,
-            nav: true,
+            loop: false,
+            nav: false,
             autoplay: false,
             autoplayTimeout: 8000,
             items: 1,
             dots: false,
             margin: 20,
-            navText: ['<i class="ion-ios-arrow-left"></i>', '<i class="ion-ios-arrow-right"></i>'],
+            navText: ['', ''],
             responsiveClass: true,
             responsive: {
                 0: {
@@ -550,19 +566,19 @@
 
     /*--- niceSelect---*/
     $('#cat-root-cat').select2({
-        placeholder:"Select a Category"
+        placeholder: "Select a Category"
     });
     $('#short').select2({
-        placeholder:"Select a Category"
+        placeholder: "Select a Category"
     });
     $('#p-det-quantity').select2({
-        placeholder:"Select Quantity"
+        placeholder: "Select Quantity"
     });
     $('#pickup_states').select2({
-        placeholder:"Select States"
+        placeholder: "Select States"
     });
     $('#pickup_towns').select2({
-        placeholder:"Select Towns"
+        placeholder: "Select Towns"
     });
 
     /*---  Accordion---*/
@@ -608,7 +624,7 @@
 //    });
 //    $("#amount").val("$" + $("#slider-range").slider("values", 0) +
 //            " - $" + $("#slider-range").slider("values", 1));
-   
+
     /*---elevateZoom---*/
     $("#zoom1").elevateZoom({
         gallery: 'gallery_01',
@@ -720,6 +736,7 @@
         $('.shop_toolbar_btn > button').removeClass('active');
         $(this).addClass('active');
 
+
         var parentsDiv = $('.shop_wrapper');
         var viewMode = $(this).data('role');
 
@@ -727,16 +744,18 @@
         parentsDiv.removeClass('grid_3 grid_4 grid_5 grid_list').addClass(viewMode);
 
         if (viewMode == 'grid_3') {
+            threegrid();
             parentsDiv.children().addClass('col-lg-4 col-md-4 col-sm-6').removeClass('col-lg-3 col-cust-5 col-12');
 
         }
 
         if (viewMode == 'grid_4') {
+            fourgrid();
             parentsDiv.children().addClass('col-lg-3 col-md-4 col-sm-6').removeClass('col-lg-4 col-cust-5 col-12');
         }
 
         if (viewMode == 'grid_list') {
-            parentsDiv.children().addClass('col-12').removeClass('col-lg-3 col-lg-4 col-md-4 col-sm-6 col-cust-5');
+            parentsDiv.children().addClass('col-12').removeClass('col-lg-3 col-lg-4 col-md-4 col-sm-6 col-cust-5  ');
         }
 
     });
@@ -767,7 +786,7 @@
     $('.mini_cart_close,.off_canvars_overlay').on('click', function () {
         $('.mini_cart,.off_canvars_overlay').removeClass('active');
     });
-    
+
     $('.mini_cart_wrapper2 > a').on('click', function () {
         $('.mini_cart2,.off_canvars_overlay').addClass('active');
     });

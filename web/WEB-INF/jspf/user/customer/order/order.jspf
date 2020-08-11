@@ -30,122 +30,40 @@
                 <div class="col-sm-12 col-md-9 col-lg-9">
                     <!-- Tab panes -->
                     <div class="col-md-12 d-flex">
-                        <p class="" style="font-size: 20px; font-weight: 500;">Order</p>
-                        <p class="ml-1" style="font-size: 20px; font-weight: 500;">(24)</p>
+                        <p class="fs-20 font-weight-bold">Order</p>
+                        <p class="ml-1 fs-20 font-weight-bold">(<span class="order-count">0</span>)</p>
                     </div>
 
-                    <div class="col-md-12 card mt-3" id="OrderLIst">
-                        <div class="row order-clone">
-                            <div class="col-md-2 mt-3 mb-3 pr-0">
-                                <img src="../../../../assets/img/product/product12.jpg" style="width: 110px; height: 105px;"/>
+                    <div class="col-md-12 card  border-0" id="OrderList">
+                        <div class="row order-clone d-none border mt-3">
+                            <div class="col-md-2 mt-3 mb-3 pr-0 h-25 w-25 text-center pt-3">
+                                Items in the Order (#<span class="order-product_count font-weight-bold">0</span>)
                             </div>
-                            <div class="col-md-10 mt-3 mb-3">
-                                <div class="row">
-                                    <div class="col-md-9 fs-12">
-                                        <div class="fs-16 font-weight-bold order-p-fname">A very green fruit in a whole bag and sacks together</div>
+                            <div class="col-md-10 mt-3 mb-3 border-left">
+                                <div class="">
+                                    <div class="pull-left fs-12">
+                                        <div class="fs-18 font-weight-bold order-reference">#FG-JFKFKFORIRJRL97</div>
                                     </div>
-                                    <div class="col-md-3" style="color: #6c757d; font-size: 14px;">
-                                        <a href="${pageContext.request.contextPath}/LinksServlet?type=Order" class="float-right text-success">VIEW DETAILS</a>
+                                    <div class="pull-right fs-14 text-success">
+                                        <a href="javascript:void(0)" class="float-right view_btn_order text-success font-weight-bold">VIEW DETAILS</a>
                                     </div>
+                                    <div class="clearfix"></div>
                                 </div>
                                 <div class="row mt-1">
-                                    <div class="col-md-12 d-flex fs-14" style="font-size: 14px; color: #6c757d;">
+                                    <div class="col-md-6 d-flex fs-14 pull-left">
                                         <p class="mb-0">Placed On </p>
-                                        <p class="ml-2 mb-0"> 03-05-2020</p>
+                                        <p class="ml-2 mb-0 order-bookeddate-time"> 03-05-2020</p>
                                     </div>
+                                    <div class="pull-right col-md-6">
+                                          <span class="order-payment fs-14 font-weight-bold">Cancelled</span>
+                                    </div>
+                                    <div class="clearfix"></div>
                                 </div>
                                 <div class="row mt-4">
-                                    <div class="col-md-12 fs-18" style="color: #6c757d;">
-                                        <span class="badge badge-danger pl-2 pr-2">Cancelled</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 card mt-3">
-                        <div class="row">
-                            <div class="col-md-2 mt-3 mb-3 pr-0">
-                                <img src="../../../../assets/img/product/product12.jpg" style="width: 110px; height: 105px;"/>
-                            </div>
-                            <div class="col-md-10 mt-3 mb-3">
-                                <div class="row">
-                                    <div class="col-md-9" style="font-size: 12px;">
-                                        <div style="font-size: 16px; font-weight: 500;">A very green fruit in a whole bag and sacks together</div>
-                                    </div>
-                                    <div class="col-md-3" style="color: #6c757d; font-size: 14px;">
-                                        <a href="" class="float-right" style="text-transform: uppercase">see details</a>
-                                    </div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-md-12 d-flex" style="font-size: 14px; color: #6c757d;">
-                                        <p class="mb-0">Placed On </p>
-                                        <p class="ml-2 mb-0"> 03-05-2020</p>
-                                    </div>
-                                </div>
-                                <div class="row mt-4">
-                                    <div class="col-md-12 d-flex text-success" style="font-size: 14px; ">
-                                        <div class="fa fa-check-circle pr-1 pt-1 pr-2" style="font-size: 16px; "></div>
-                                        <div style="font-size: 14px; text-transform: uppercase">Delivered on</div>
-                                        <div class="ml-2"> 03-05-2020</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 card mt-3">
-                        <div class="row">
-                            <div class="col-md-2 mt-3 mb-3 pr-0">
-                                <img src="../../../../assets/img/product/product12.jpg" style="width: 110px; height: 105px;"/>
-                            </div>
-                            <div class="col-md-10 mt-3 mb-3">
-                                <div class="row">
-                                    <div class="col-md-9" style="font-size: 12px;">
-                                        <div style="font-size: 16px; font-weight: 500;">A very green fruit in a whole bag and sacks together</div>
-                                    </div>
-                                    <div class="col-md-3" style="color: #6c757d; font-size: 14px;">
-                                        <a href="" class="float-right" style="text-transform: uppercase">see details</a>
-                                    </div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-md-12 d-flex" style="font-size: 14px; color: #6c757d;">
-                                        <p class="mb-0">Placed On </p>
-                                        <p class="ml-2 mb-0"> 03-05-2020</p>
-                                    </div>
-                                </div>
-                                <div class="row mt-4">
-                                    <div class="col-md-12" style="font-size: 17px; color: #6c757d;">
-                                        <a href="#" class="badge badge-warning pl-2 pr-2">Pending</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 card mt-3">
-                        <div class="row">
-                            <div class="col-md-2 mt-3 mb-3 pr-0">
-                                <img src="../../../../assets/img/product/product12.jpg" style="width: 110px; height: 105px;"/>
-                            </div>
-                            <div class="col-md-10 mt-3 mb-3">
-                                <div class="row">
-                                    <div class="col-md-9" style="font-size: 12px;">
-                                        <div style="font-size: 16px; font-weight: 500;">A very green fruit in a whole bag and sacks together</div>
-                                    </div>
-                                    <div class="col-md-3" style="color: #6c757d; font-size: 14px;">
-                                        <a href="" class="float-right" style="text-transform: uppercase">see details</a>
-                                    </div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-md-12 d-flex" style="font-size: 14px; color: #6c757d;">
-                                        <p class="mb-0">Placed On </p>
-                                        <p class="ml-2 mb-0"> 03-05-2020</p>
-                                    </div>
-                                </div>
-                                <div class="row mt-4">
-                                    <div class="col-md-12" style="font-size: 17px; color: #6c757d;">
-                                        <a href="#" class="badge badge-info pl-2 pr-2">Processing</a>
+                                    <div class="col-md-12 fs-18">
+                                        <span class="badge pl-2 pr-2 pb-2 order-status pull-left">Cancelled</span>
+                                      
+                                        <span class=" pl-2 pr-2 pull-right bold text-muted order-amount">#3,8898</span>
                                     </div>
                                 </div>
                             </div>

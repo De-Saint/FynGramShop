@@ -5,7 +5,7 @@
  */
 
 var extension = "";
-var sessionid = "";
+var shopsessionid = "";
 $(document).ready(function () {
     cartFunctions();
 });
@@ -13,14 +13,13 @@ $(document).ready(function () {
 function cartFunctions() {
     cartBtnEvents();
     cartPageFunctions();
-
 }
 
 
 function cartBtnEvents() {
     $(".cart-proceed-to-checkout").click(function () {
-        sessionid = verifyUser();
-        var UserType = sessionid.split("#")[1];
+        shopsessionid = verifyUser();
+        var UserType = shopsessionid.split("#")[1];
         if (UserType === "G") {
             localStorage.setItem("page_redirect", "checkout");
             window.location = extension + "LinksServlet?type=Login";
@@ -30,18 +29,17 @@ function cartBtnEvents() {
     });
 }
 function cartPageFunctions() {
-    sessionid = verifyUser();
-    if (sessionid) {
+    shopsessionid = verifyUser();
+    if (shopsessionid) {
         var cartcount = GetCartCount();
         if (parseInt(cartcount) !== 0) {
             showLoading();
-            GetData("Cart", "GetShopCart", "LoadShopCart", sessionid);
+            GetData("Cart", "GetShopCart", "LoadShopCart", shopsessionid);
         } else {
             $(".emptyshopcart").removeClass("d-none");
             $(".fullshopcart").addClass("d-none");
         }
     } else {
-        ShowNotification("You appear to be offline. Pleace check your internet connection", "error");
         $(".emptyshopcart").removeClass("d-none");
         $(".fullshopcart").addClass("d-none");
     }
@@ -112,8 +110,8 @@ function DisplayShopCart(data, parent) {
                 DisplayToolTip(updatebtn);
                 var wishlistbtn = newchild.find(".shop-p-det-add-to-wishlist");
                 wishlistbtn.click(function () {
-                    sessionid = verifyUser();
-                    var UserType = sessionid.split("#")[1];
+                    shopsessionid = verifyUser();
+                    var UserType = shopsessionid.split("#")[1];
                     if (UserType === "G") {
                         localStorage.setItem("page_redirect", "saveditems");
                         window.location = extension + "LinksServlet?type=Login";
@@ -149,14 +147,14 @@ function DisplayShopCart(data, parent) {
 
 function UpdateOption(Option, ProductID, ProductPrice, ProductQuantity, Action) {
     showLoading();
-    var data = [sessionid, Option, ProductID, ProductPrice, ProductQuantity, Action];
+    var data = [shopsessionid, Option, ProductID, ProductPrice, ProductQuantity, Action];
     GetData("Cart", "UpdateOptions", "LoadUpdateOptions", data);
 
 }
 
 function DeleteOption(Option, OptionID, ProductID) {
     showLoading();
-    var data = [sessionid, Option, OptionID, ProductID];
+    var data = [shopsessionid, Option, OptionID, ProductID];
     GetData("Cart", "DeleteOptions", "LoadDeleteOptions", data);
 
 }
@@ -189,5 +187,5 @@ function DisplayUpdateCartOptions(data) {
 function DisplayEmptyCartOptions(resp) {
     hideLoading();
     ShowNotification(resp.msg, resp.status);
-    GetData("Cart", "GetShopCart", "LoadShopCart", sessionid);
+    GetData("Cart", "GetShopCart", "LoadShopCart", shopsessionid);
 }

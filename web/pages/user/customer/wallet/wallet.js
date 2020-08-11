@@ -4,15 +4,15 @@
  * and open the template in the editor.
  */
 var extension = "../../../../";
-var sessionid, sessiontype;
+var shopsessionid, sessiontype;
 $(document).ready(function () {
     walletsFunctions();
 });
 
 function walletsFunctions() {
     walletsBtnEvents();
-    sessionid = verifyUser();
-    if (!sessionid || sessionid === 0) {
+    shopsessionid = verifyUser();
+    if (!shopsessionid || shopsessionid === 0) {
         returnToTimeOutPage(extension);
     }
     walletsPageFunctions();
@@ -56,7 +56,7 @@ function payWithPaystack(paymentamount, email, actualamount, PaymentType) {
             ]
         },
         callback: function (response) {
-            var data = [sessionid, actualamount, response.reference, response.trans, PaymentType];
+            var data = [shopsessionid, actualamount, response.reference, response.trans, PaymentType];
             showLoading();
             GetData("Payment", "ValidatePaystackPayment", "LoadValidatePaystackPayment", data);
         },
@@ -75,7 +75,7 @@ function walletsSetLink() {
 }
 function walletsPageFunctions() {
     showLoading();
-    GetData("Wallet", "GetWalletDetails", "LoadGetWalletDetails", sessionid);
+    GetData("Wallet", "GetWalletDetails", "LoadGetWalletDetails", shopsessionid);
 }
 
 function DisplayGetWalletDetails(resp) {

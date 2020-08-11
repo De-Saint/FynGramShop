@@ -115,7 +115,7 @@
                                             <div id="door_delivery_method" class="collapse show" aria-labelledby="headOne" data-parent="#accordion2">
                                                 <div class="ml-4">This selected address will be used as your door step delivery.</div>
                                                 <div class="ml-4 font-weight-bold">Shipping Fees: &#8358;<span class="shippingFeesAmount">0</span></div>
-                                                <div class="ml-4 font-weight-bold">Shipping ID: <span class="shippingFeesID">0</span></div>
+                                                <div class="ml-4 font-weight-bold d-none">Shipping ID: <span class="shippingFeesID">0</span></div>
                                             </div>
 
                                         </div> 

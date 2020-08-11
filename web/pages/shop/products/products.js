@@ -5,7 +5,7 @@
  */
 
 var extension = "";
-var categoryid = "";
+var categoryid = "", shopsessionid;
 $(document).ready(function () {
     productFunctions();
 });
@@ -23,6 +23,7 @@ function GetCategoryID() {
 function productBtnEvents() {
     /*---slider-range here---*/
 
+    $(".product_thumb").addClass("threegridimage");
     $("#slider-range").slider({
         range: true,
         min: 10,
@@ -117,11 +118,17 @@ function DisplayShopProductsByCategoryID(data) {
             var btndetails = newchild.find(".btn-shop-p-details").click(function () {
                 localStorage.setItem("productid", ProductID);
                 window.location = extension + "LinksServlet?type=ProductDetails";
+                shopsessionid = verifyUser();
+                var data = [shopsessionid, ProductID];
+                GetData("Products", "ComputeUserProductViewed", "LoadComputeUserProductViewed", data);
             });
             DisplayToolTip(btndetails);
             var btnquick = newchild.find(".btn-shop-p-quick-view").click(function () {
                 var modalParent = $("#modal_box");
                 QuickView(modalParent, details);
+                shopsessionid = verifyUser();
+                var data = [shopsessionid, ProductID];
+                GetData("Products", "ComputeUserProductViewed", "LoadComputeUserProductViewed", data);
             });
             DisplayToolTip(btnquick);
 
@@ -130,8 +137,8 @@ function DisplayShopProductsByCategoryID(data) {
             });
             DisplayToolTip(btndaddtocart);
             var btnsaved = newchild.find(".btn-shop-p-wishlist").click(function () {
-                sessionid = verifyUser();
-                var UserType = sessionid.split("#")[1];
+                shopsessionid = verifyUser();
+                var UserType = shopsessionid.split("#")[1];
                 if (UserType === "G") {
                     localStorage.setItem("page_redirect", "saveditems");
                     window.location = extension + "LinksServlet?type=Login";
@@ -323,4 +330,13 @@ function DisplayShopTagsByCategoryID(data) {
         });
         childclone.hide();
     }
+}
+
+function threegrid() {
+    $(".product_thumb").addClass("threegridimage");
+    $(".product_thumb").removeClass("fourgridimage");
+}
+function fourgrid() {
+    $(".product_thumb").addClass("fourgridimage");
+    $(".product_thumb").removeClass("threegridimage");
 }

@@ -34,25 +34,25 @@
 
 
                         <div class="col-md-12 d-flex mt-4 mb-2">
-                            <a href=""><div class="fa fa-arrow-left pr-2 pt-1" style="font-size: 15px; color: #495057;"></div></a>
-                            <p class="ml-1" style="font-size: 20px; font-weight: 500;">Order Details</p>
+                            <a href="${pageContext.request.contextPath}/LinksServlet?type=Order" class="float-right text-success"><div class="fa fa-arrow-left pr-2 pt-1" style="font-size: 15px; color: #495057;"></div></a>
+                            <p class="ml-1 fs-20 font-weight-bold">Order Details</p>
                         </div> 
 
                         <hr>
 
                         <div class="col-md-12 mt-2">
                             <div class="d-flex">
-                                <p class="mr-2 mb-2" style="font-size: 16px; font-weight: 500;">Order No</p>
-                                <p style="font-size: 16px; font-weight: 500;">23ADD3846</p>
+                                <p class="mr-2 mb-2 fs-18 font-weight-bold">Order No</p>
+                                <p class="fs-16 font-weight-bold order_reference text-muted">Loading</p>
                             </div>
-                            <p class="pt-0 mb-0" style="color: #6c757d;">2 Items</p>
+                            <p class="pt-0 mb-0 " style="color: #6c757d;"><span class="order-product_count">Loading</span> Item(s)</p> 
                             <div class="d-flex" style="color: #6c757d;">
                                 <p class="mr-2 mb-0">Placed on</p>
-                                <p >21-09-2020</p>
+                                <p class="order_booked_date">Loading</p>
                             </div>
                             <div class="d-flex" style="color: #6c757d;">
                                 <p class="mr-2 mb-0">Total:</p>
-                                <p >&#8358;13,545</p>
+                                <p class="order_seller_amount">0</p>
                             </div>
                         </div>
 
@@ -66,32 +66,33 @@
                         <div class="card mt-3 mb-3">
                             <div class="card-header d-flex">
                                 <div class="mr-2">Status:</div>
-                                <div class="fa fa-check-circle pr-1 pt-1 pr-2 text-success" style="font-size: 16px; "></div>
-                                <div class="text-success" style="font-size: 14px; text-transform: uppercase">Delivered</div>
+                                <div class="p-1 order_status badge" style="font-size: 16px; "></div>
+                                <!--<span class="badge order_status pt-1">status</span>-->
                             </div>
-                            <div class="card-body">
-                                <div class="row">
+                            <div class="card-body hstory_productlist">
+                                <div class="row historyproductclone d-none">
                                     <div class="col-md-2 pr-0">
-                                        <img src="../../../../assets/img/product/product12.jpg" style="width: 110px; height: 105px;"/>
+                                        <img class="order-p-image" style="width: 110px; height: 105px;"/>
                                     </div>
                                     <div class="col-md-10">
                                         <div class="row">
                                             <div class="col-md-9" style="font-size: 12px;">
-                                                <div style="font-size: 16px; font-weight: 500;">A very green fruit in a whole bag and sacks together</div>
-                                            </div>  
+                                                <div class="fs-16 font-weight-bold order-p-name">loading</div>
+                                            </div> 
+                                            <!--<div class="order-p-desc col-12"></div>-->
                                         </div>
                                         <div class="row mt-3">
-                                            <div class="col-md-12 d-flex" style="font-size: 14px; color: #6c757d;">
+                                            <div class="col-md-12 d-flex fs-14 text-muted">
                                                 <p class="mb-0">Quantity: </p>
-                                                <p class="ml-2 mb-0"> 5 Bags</p>
+                                                <p class="ml-2 mb-0 order-p-order-quantity"> 5 Bags</p>
                                             </div>
-                                            <div class="col-md-12 d-flex" style="font-size: 14px; color: #6c757d;">
+                                            <div class="col-md-12 d-flex  fs-14 text-muted" >
                                                 <p class="mb-0">Weight: </p>
-                                                <p class="ml-2 mb-0"> 5 Kilogram</p>
+                                                <p class="ml-2 mb-0 "> <span class="order-p-unit-value">Loading</span>  <span class="order-p-unit-name"></span></p>
                                             </div>
-                                            <div class="col-md-12 d-flex" style="font-size: 14px; color: #6c757d;">
+                                            <div class="col-md-12 d-flex  fs-14 text-muted" >
                                                 <p class="mb-0">Price: </p>
-                                                <p class="ml-2 mb-0">&#8358;13,545</p>
+                                                <p class="ml-2 mb-0 order-p-price">&#8358;13,545</p>
                                             </div>
                                         </div>
                                     </div>
@@ -108,20 +109,24 @@
                                     <div class="card-body">
                                         <div class="">
                                             <h5 class="" style="font-size: 16px; font-weight: 500;">Payment Method</h5>
-                                            <p class="" style="color: #6c757d;">Pay On Delivery</p>
+                                            <p class="order-payment-type text-muted" >Loading</p>
                                         </div>
-                                        <h5 class="mt-5" style="font-size: 16px; font-weight: 500;">Payment Details</h5>
+                                        <h5 class="mt-5 fs-16 font-weight-bold">Payment Details</h5>
                                         <div class="d-flex" >
-                                            <p class="mb-0" style="font-size: 14px; color: #6c757d;">Item Total: </p>
-                                            <p class="ml-2 mb-0" style="font-size: 14px; color: #6c757d;">&#8358;13,545</p>
-                                        </div>
-                                        <div class="d-flex" >
-                                            <p class="mb-0" style="font-size: 14px; color: #6c757d;">Shipping Fee: </p>
-                                            <p class="ml-2 mb-0" style="font-size: 14px; color: #6c757d;">&#8358;3,545</p>
+                                            <p class="mb-0 fs-14 text-muted">Item Total: </p>
+                                            <p class="ml-2 mb-0 order-cart-amount fs-14 text-muted order-cart-amount">&#8358;13,545</p>
                                         </div>
                                         <div class="d-flex" >
-                                            <p class="mb-0" style="font-size: 14px; color: #6c757d; font-weight: 500;">Total: </p>
-                                            <p class="ml-2 mb-0" style="font-size: 14px; color: #6c757d; font-weight: 500">&#8358;17,545</p>
+                                            <p class="mb-0 fs-14 text-muted">Shipping Fee: </p>
+                                            <p class="ml-2 mb-0 fs-14 text-muted order_shipping_fees">&#8358;3,545</p>
+                                        </div>
+                                        <div class="d-flex" >
+                                            <p class="mb-0 fs-14 text-muted">{Discount Code}: </p>
+                                            <p class="ml-2 mb-0 fs-14 text-muted order-discount-deduction-amount">&#8358;3,545</p>
+                                        </div>
+                                        <div class="d-flex" >
+                                            <p class="mb-0 fs-14 text-muted font-weight-bold" >Total: </p>
+                                            <p class="ml-2 mb-0 fs-14 text-muted font-weight-bold order-total-amount">&#8358;17,545</p>
                                         </div>
                                     </div>
                                 </div>
@@ -130,20 +135,22 @@
                             <div class="col-md-6 mb-3">
                                 <div class="card">
                                     <div class="card-header">
-                                        <div class="" style="font-weight: 500;">DELIVER INFORMATION</div>
+                                        <div class="" style="font-weight: 500;">DELIVERY INFORMATION</div>
                                     </div>
                                     <div class="card-body">
                                         <div class="">
-                                            <h5 class="" style="font-size: 16px; font-weight: 500;">Delivery Method</h5>
-                                            <p class="" style="color: #6c757d;">Pay On Delivery</p>
+                                            <h5 class="fs-16 font-weight-bold">Delivery Method</h5>
+                                            <p class="text-muted"><span class="order-ship-type"></span>: Door Step Delivery</p>
                                         </div>
-                                        <h5 class="mt-5" style="font-size: 16px; font-weight: 500;">Shipping Address</h5>
+                                        <h5 class="mt-5 fs-16 font-weight-bold">Shipping Address</h5>
                                         <div class="" >
-                                            <p class="mb-0" style="font-size: 14px; color: #6c757d;">Saint Deemene </p>
+                                            <p class="mb-0 order-ship-address-name fs-14 text-muted">Loading </p>
                                         </div>
                                         <div class="" >
-                                            <p class="mb-0" style="font-size: 14px; color: #6c757d;">01, Hopeville Estate, Haruna bus/stop, sangotedo
-                                                ajah lekki, lagos state.</p>
+                                            <p class="mb-0  fs-14 text-muted"><span class="order-ship-address-type font-weight-bold" >Loading</span>  -  <span class="order-ship-address-phone"></span></p>
+                                        </div>
+                                        <div class="" >
+                                            <p class="mb-0 fs-14 text-muted order-ship-address">Loading.</p>
                                         </div>
                                     </div>
                                 </div>

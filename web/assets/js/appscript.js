@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-var sessionid;
+var shopsessionid;
 var extension, cartcount, checkcat, loadedcategory;
 function performActions() {
-    sessionid = verifyUser();
+    shopsessionid = verifyUser();
     GenralBtnEvents();
     GeneralAppFunctions();
     logoFunction();
@@ -17,9 +17,9 @@ function GeneralAppFunctions() {
     GetData("Category", "GetShopMobileRootCategories", "LoadShopMobileRootCategories", "");
 
 
-    if (sessionid || sessionid !== 0) {
-        GetData("Cart", "GetShopCartCount", "LoadShopCartCount", sessionid); 
-        GetData("User", "GetUserDetails", "LoadUserDetails", sessionid);
+    if (shopsessionid || shopsessionid !== 0) {
+        GetData("Cart", "GetShopCartCount", "LoadShopCartCount", shopsessionid);
+        GetData("User", "GetUserDetails", "LoadUserDetails", shopsessionid);
     }
     cartcount = GetCartCount();
     if (cartcount) {
@@ -84,7 +84,7 @@ function GenralBtnEvents() {
         $(".cart_count").text(cartcount);
         var saveditems = localStorage.getItem("savedtimepage");
         if (saveditems) {
-            GetData("Cart", "GetShopSavedItems", "LoadShopSavedItems", sessionid);
+            GetData("Cart", "GetShopSavedItems", "LoadShopSavedItems", shopsessionid);
         }
     });
     $("#ProceedToCheckOut").click(function () {
@@ -170,8 +170,8 @@ function QuickView(parent, data) {
     parent.find("#shop-qv-prod-cost-price").text(PriceFormat(data.PriceDetails.cost_price));
     parent.find("#shop-qv-prod-root-category").text(data.RootCatName);
     parent.find("#shop-qv-prod-add-to-wishlist").click(function () {
-        sessionid = verifyUser();
-        var UserType = sessionid.split("#")[1];
+        shopsessionid = verifyUser();
+        var UserType = shopsessionid.split("#")[1];
         if (UserType === "G") {
             localStorage.setItem("page_redirect", "saveditems");
             window.location = extension + "LinksServlet?type=Login";
@@ -298,9 +298,10 @@ function DisplayShopMobileRootCategories(data) {
 
 
 function ProcessProductOption(Option, ProductID, ProductPrice, ProductQuantity, Action) {
-    var data = [sessionid, Option, ProductID, ProductPrice, ProductQuantity, Action];
+    var data = [shopsessionid, Option, ProductID, ProductPrice, ProductQuantity, Action];
     GetData("Cart", "AddOptions", "LoadAddOption", data);
-
+    var data = [shopsessionid, ProductID];
+    GetData("Products", "ComputeUserProductViewed", "LoadComputeUserProductViewed", data);
 }
 
 function DisplayCartAddOption(data) {
@@ -360,8 +361,8 @@ function DisplayCartAddOption(data) {
 
 function DisplaySaveGuest(data) {
     localStorage.setItem("shownewsletter", "No");
-    localStorage.removeItem("sessionid");
-    localStorage.setItem("sessionid", data);
+    localStorage.removeItem("shopsessionid");
+    localStorage.setItem("shopsessionid", data);
 }
 
 function DisplayShopCartCount(data) {
@@ -371,36 +372,42 @@ function DisplayShopCartCount(data) {
 
 function DisplayUserDetails(resp) {
 //    hideLoading();
-    $(".UserType").text(resp.UserType);
-    $(".UserName").text(resp.UserName);
-    localStorage.setItem("uUserName", resp.UserName);
-    $(".uFirstName").val(resp.firstname);
-    $(".uLastName").val(resp.lastname);
-    $(".uDateJoined").text(resp.date);
-    if (resp.newsletter === 1 || resp.newsletter === "1") {
-        $(".uNewsletter").text("Has Subcribed").addClass("badge badge-success");
-    } else {
-        $(".uNewsletter").text("Has not subscribed").addClass("badge badge-primary");
+    if (!$.isEmptyObject(resp)) {
+        $(".UserType").text(resp.UserType);
+        $(".UserName").text(resp.UserName);
+        localStorage.setItem("uUserName", resp.UserName);
+        $(".uFirstName").val(resp.firstname);
+        $(".uLastName").val(resp.lastname);
+        $(".uDateJoined").text(resp.date);
+        if (resp.newsletter === 1 || resp.newsletter === "1") {
+            $(".uNewsletter").text("Has Subcribed").addClass("badge badge-success");
+        } else {
+            $(".uNewsletter").text("Has not subscribed").addClass("badge badge-primary");
+        }
+        $(".uEmail").val(resp.email);
+        localStorage.setItem("uEmail", resp.email);
+        $(".uPhone").val(resp.phone);
+        $(".uGender").text(resp.gender);
+        if (!$.isEmptyObject(resp.BankDetails)) {
+            $(".uBankName").val(resp.BankDetails.bankName);
+            if (resp.BankDetails.bankName) {
+                $(".add_bank_details").addClass("d-none");
+                $(".change_bank_details").removeClass("d-none");
+            } else if (!resp.BankDetails.bankName) {
+                $(".add_bank_details").removeClass("d-none");
+                $(".change_bank_details").addClass("d-none");
+            }
+            $(".uAccoutNumber").val(resp.BankDetails.account_number);
+            $(".uAcctType").val(resp.BankDetails.account_type);
+            $(".ubkdetid").val(resp.BankDetails.id);
+        }
+
+        if (resp.ImageText !== "none") {
+            $(".UserImage").attr("src", "data:image/png;base64," + resp.ImageText);
+        } else {
+            var image_url = "../../../../assets/img/no-image.png";
+            $(".UserImage").attr("src", image_url);
+        }
     }
-    $(".uEmail").val(resp.email);
-    localStorage.setItem("uEmail", resp.email);
-    $(".uPhone").val(resp.phone);
-    $(".uGender").text(resp.gender);
-    $(".uBankName").val(resp.BankDetails.bankName);
-    if (resp.BankDetails.bankName) {
-        $(".add_bank_details").addClass("d-none");
-        $(".change_bank_details").removeClass("d-none");
-    } else if (!resp.BankDetails.bankName) {
-        $(".add_bank_details").removeClass("d-none");
-        $(".change_bank_details").addClass("d-none");
-    }
-    $(".uAccoutNumber").val(resp.BankDetails.account_number);
-    $(".uAcctType").val(resp.BankDetails.account_type);
-    $(".ubkdetid").val(resp.BankDetails.id);
-    if (resp.ImageText !== "none") {
-        $(".UserImage").attr("src", "data:image/png;base64," + resp.ImageText);
-    } else {
-        var image_url = "../../../../assets/img/no-image.png";
-        $(".UserImage").attr("src", image_url);
-    }
+
 }

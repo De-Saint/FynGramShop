@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 var extension = "../../../../";
-var page_redirect, sessionid;
+var page_redirect, shopsessionid;
 $(document).ready(function () {
     LoginFunctions();
 });
@@ -17,17 +17,19 @@ function LoginBtnEvents() {
     $("form[name=loginForm]").submit(function (e) {
         var EmailAddress = $("#fgemail").val();
         var Password = $("#fgpass").val();
-        sessionid = verifyUser();
-        var data = [EmailAddress, Password, sessionid, "FynGramShop"];
+        shopsessionid = verifyUser();
+        var data = [EmailAddress, Password, shopsessionid, "FynGramShop"];
+        showLoading();
         GetData("User", "Login", "LoadLoginCustomer", data);
         e.preventDefault();
     });
 }
 
 function DisplayLoginCustomer(resp) {
+    hideLoading();
     if (resp.status === "success") {
         SessionTokenManager(resp);
-        sessionid = verifyUser();
+        shopsessionid = verifyUser();
         ShowNotification(resp.msg, 'success');
         localStorage.setItem("shownewsletter", "No");
         cartcount = GetCartCount();

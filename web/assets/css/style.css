@@ -3574,7 +3574,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     }
 }
 .product_carousel .owl-nav.disabled {
-    display: block;
+    display: none;
 }
 .product_carousel .owl-nav div {
     position: absolute;
@@ -11053,5 +11053,26 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 @keyframes spin{
     100%{
         transform:rotate(360deg)
+    }
+}
+.threegridimage{
+    width: 262px !important;
+    height: 262px !important;
+}
+
+.fourgridimage{
+    width: 189px !important;
+    height: 189px !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .threegridimage{
+        width: 345px !important;
+        height: 345px !important;
+    }
+
+    .fourgridimage{
+        width: 345px !important;
+        height: 345px !important;
     }
 }

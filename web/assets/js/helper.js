@@ -65,11 +65,11 @@ function PriceNumberFormat(price) {
     return price.replace(".00", "");
 }
 function verifyUser() {
-    var sessionidString = "";
+    var shopsessionidString = "";
 //This function checks if a user is signed in and responds     
     if (localStorage) {
-        var sessionidString = localStorage.getItem("sessionid");
-        if (sessionidString === "null" || sessionidString === null || sessionidString === "" || sessionidString === "undefined" || sessionidString === undefined) {
+        var shopsessionidString = localStorage.getItem("shopsessionid");
+        if (shopsessionidString === "null" || shopsessionidString === null || shopsessionidString === "" || shopsessionidString === "undefined" || shopsessionidString === undefined) {
             $(".forMembers").hide();
             $(".forMembers").addClass("d-none");
             $(".notforMembers").show();
@@ -80,12 +80,14 @@ function verifyUser() {
                 GetData("User", "SaveGuest", "LoadSaveGuest", data);
             });
         } else {
-            var utype = sessionidString.split("#")[1];
+            var utype = shopsessionidString.split("#")[1];
             if (utype === "G") {
                 $(".forMembers").addClass("d-none");
                 $(".forMembers").hide();
                 $(".notforMembers").show();
                 $(".notforMembers").removeClass("d-none");
+            } else if (utype === "S" || utype === "A") {
+//                window.location = extension + "LinksServlet?type=Index";
             } else {
                 $(".forMembers").removeClass("d-none");
                 $(".forMembers").show();
@@ -95,9 +97,9 @@ function verifyUser() {
 
         }
     } else {
-        sessionidString = 0;
+        shopsessionidString = 0;
     }
-    return sessionidString;
+    return shopsessionidString;
 }
 
 
@@ -148,10 +150,10 @@ function hideLoading(noty) {
 }
 
 function SessionTokenManager(resp) {
-    localStorage.removeItem("sessionid");
-    localStorage.removeItem("sessiontype");
-    localStorage.setItem("sessionid", resp.data.sessionid);
-    localStorage.setItem("sessiontype", resp.data.sessiontype);
+    localStorage.removeItem("shopsessionid");
+    localStorage.removeItem("shopsessiontype");
+    localStorage.setItem("shopsessionid", resp.data.sessionid);
+    localStorage.setItem("shopsessiontype", resp.data.sessiontype);
 }
 
 function DisplayToolTip(btn) {
@@ -534,5 +536,84 @@ function linkToFunction(action, params) {
             DisplayPlaceOrder(params);
             break;
         }
+        case "LoadSaveComplaints":
+        {
+            DisplaySaveComplaints(params);
+            break;
+        }
+        case "LoadNewFeatureRequest":
+        {
+            DisplaySaveSuggestion(params);
+            break;
+        }
+        case "LoadOrders":
+        {
+            DisplayOrders(params);
+            break;
+        }
+        case "LoadOrderDetails":
+        {
+            DisplayOrderDetails(params);
+            break;
+        }
+        case "LoadStockMovement":
+        {
+            DisplayStockMovement(params);
+            break;
+        }
+        case "LoadRecentlyAddedProducts":
+        {
+            var parent = $(".RecentlyAddedProd");
+            DisplayShopProducts(params, parent);
+            break;
+        }
+        case "LoadTopSellingProducts":
+        {
+            var parent = $(".TopSellingProd");
+            DisplayShopProducts(params, parent);
+            break;
+        }
+        case "LoadBestSellersProducts":
+        {
+            var parent = $(".BestSellersProd");
+            DisplayShopProducts(params, parent);
+            break;
+        }
+        case "LoadFeaturedProducts":
+        {
+            var parent = $(".FeaturedProd");
+            DisplayShopProducts(params, parent);
+            break;
+        }
+        case "LoadMostViewed":
+        {
+            var parent = $(".MostViewedProd");
+            DisplayShopProducts(params, parent);
+            break;
+        }
+        case "LoadRelatedProducts":
+        {
+            var parent = $(".RelatedProductList");
+            DisplayDetailsProducts(params, parent);
+            break;
+        }
+        case "LoadComputeUserProductViewed":
+        {
+            console.log(params);
+            break;
+        }
+        case "LoadRecentlyViewed":
+        {
+            var parent = $(".RecentlyViewedList");
+            DisplayDetailsProducts(params, parent);
+            break;
+        }
+        case "LoadDetailFeaturedList":
+        {
+            var parent = $(".DetailFeaturedList");
+            DisplayDetailsProducts(params, parent);
+            break;
+        }
+
     }
 }

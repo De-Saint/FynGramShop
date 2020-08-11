@@ -4,15 +4,15 @@
  * and open the template in the editor.
  */
 var extension = "../../../../";
-var sessionid, sessiontype;
+var shopsessionid, sessiontype;
 $(document).ready(function () {
     transactionsFunctions();
 });
 
 function transactionsFunctions() {
     transactionsBtnEvents();
-    sessionid = verifyUser();
-    if (!sessionid || sessionid === 0) {
+    shopsessionid = verifyUser();
+    if (!shopsessionid || shopsessionid === 0) {
         returnToTimeOutPage(extension);
     }
     transactionsPageFunctions();
@@ -30,7 +30,7 @@ function transactionsSetLink() {
 }
 function transactionsPageFunctions() {
     showLoading();
-    GetData("Transaction", "GetRecentTransactions", "LoadRecentTransactions", sessionid);
+    GetData("Transaction", "GetRecentTransactions", "LoadRecentTransactions", shopsessionid);
 }
 
 function DisplayRecentTransactions(data, parent) {
@@ -65,7 +65,7 @@ function DisplayRecentTransactions(data, parent) {
 
             btndelete.click(function () {
                 showLoading();
-                var data = [sessionid, result["id"]];
+                var data = [shopsessionid, result["id"]];
                 GetData("Transaction", "DeleteTransaction", "LoadDeleteTransaction", data);
             });
             DisplayToolTip(btndelete);

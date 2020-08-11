@@ -38,27 +38,22 @@
                                     <table class="table">
                                         <thead>
                                             <tr>
-                                                <th>Order</th>
-                                                <th>Date</th>
-                                                <th>Status</th>
-                                                <th>Total</th>
-                                                <th>Actions</th>	 	 	 	
+                                                <th>SN</th>
+                                                <th>Product Name</th>
+                                                <th>Type</th>
+                                                <th>Quantity</th>
+                                                <th>Date</th>	 	 	 	
+                                                <th>Time</th>	 	 	 	
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>May 10, 2018</td>
-                                                <td><span class="success">Completed</span></td>
-                                                <td>$25.00 for 1 item </td>
-                                                <td><a href="cart.html" class="view">view</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>May 10, 2018</td>
-                                                <td>Processing</td>
-                                                <td>$17.00 for 1 item </td>
-                                                <td><a href="cart.html" class="view">view</a></td>
+                                        <tbody class="StockList">
+                                            <tr class="stock-clone d-none">
+                                                <td class="stock-sn">1</td>
+                                                <td class="stock-product-name"></td>
+                                                <td class="stock-name">May 10, 2018</td>
+                                                <td class="stock-order-qty">$25.00 for 1 item </td>
+                                                <td class="stock-date"></td>
+                                                <td class="stock-time"></td>
                                             </tr>
                                         </tbody>
                                     </table>

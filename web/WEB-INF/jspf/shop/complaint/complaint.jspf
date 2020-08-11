@@ -25,22 +25,20 @@
             <div class="col-lg-12 col-md-12">
                 <div class="contact_message form mt-30">
                     <h3>Tell us about us</h3>   
-                    <form id="contact-form" method="POST"  action="assets/mail.php">
-                        <p>  
-                            <label> Your Name (required)</label>
-                            <input name="name" placeholder="Name *" type="text"> 
-                        </p>
-                        <p>       
-                            <label>  Your Email (required)</label>
-                            <input name="email" placeholder="Email *" type="email">
-                        </p>
+                    <form name="complaintsForm" method="POST">
                         <p>          
                             <label>  Subject</label>
-                            <input name="subject" placeholder="Subject *" type="text">
+                            <select class="select2 form-control" required id="comSubject">
+                                <option selected="selected" disabled="true">Select a subject</option>
+                                <option value="Sales">Sales</option>
+                                <option value="Seller">Seller</option>
+                                <option value="Support">Support</option>
+                                <option value="Product">Product</option>
+                            </select>
                         </p>    
                         <div class="contact_textarea">
                             <label>  Your Message</label>
-                            <textarea placeholder="Message *" name="message"  class="form-control2" ></textarea>     
+                            <textarea placeholder="Message *" id="comBody" required="true" name="message"  class="form-control2" ></textarea>     
                         </div>   
                         <button type="submit"> Send</button>  
                         <p class="form-messege"></p>

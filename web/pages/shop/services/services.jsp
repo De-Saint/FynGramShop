@@ -68,7 +68,6 @@
 
             <!--footer area start-->
         <%@include file="../../../WEB-INF/jspf/shop/general/footer/footer.jspf" %>
-        <%@include file="../../../WEB-INF/jspf/shop/index/index_product_view.jspf" %>
 
         <!-- modal area end-->
 

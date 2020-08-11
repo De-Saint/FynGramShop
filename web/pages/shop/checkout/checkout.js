@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 var extension = "../../../";
-var sessionid;
+var shopsessionid;
 $(document).ready(function () {
     checkOutFunctions();
 });
@@ -13,8 +13,8 @@ $(document).ready(function () {
 function checkOutFunctions() {
     checkOutBtnEvents();
     checkOutPageFunctions();
-    sessionid = verifyUser();
-    var UserType = sessionid.split("#")[1];
+    shopsessionid = verifyUser();
+    var UserType = shopsessionid.split("#")[1];
     if (UserType === "G") {
         localStorage.setItem("page_redirect", "checkout");
         window.location = extension + "LinksServlet?type=Login";
@@ -27,7 +27,7 @@ function checkOutBtnEvents() {
     controlCheckOutAccordion();
     $(".btn_add_discount_code").click(function () {
         var discountCodeValue = $("#discountCodeValue").val();
-        var data = [sessionid, discountCodeValue];
+        var data = [shopsessionid, discountCodeValue];
         showLoading();
         GetData("Cart", "CartDiscountCode", "LoadUpdateDiscountCode", data);
         $("#discountCodeValue").val("");
@@ -44,7 +44,7 @@ function checkOutBtnEvents() {
         }
 
         if (pay_method === "wallet") {
-            var data = [sessionid, "Wallet", note];
+            var data = [shopsessionid, "Wallet", note];
             showLoading();
             localStorage.setItem("cartcount", 0);
             GetData("Order", "PlaceOrder", "LoadPlaceOrder", data);
@@ -61,7 +61,7 @@ function checkOutBtnEvents() {
 
     $("#ViewWalletBalance").click(function () {
         var pin = $("#walletPin").val();
-        var data = [sessionid, pin];
+        var data = [shopsessionid, pin];
         showLoading();
         GetData("Cart", "ViewWalletBalance", "LoadWalletBalance", data);
     })
@@ -91,7 +91,7 @@ function CheckoutWithPaystack(paymentamount, email, actualamount, PaymentType, N
             ]
         },
         callback: function (response) {
-            var data = [sessionid, actualamount, response.reference, response.trans, PaymentType, Note];
+            var data = [shopsessionid, actualamount, response.reference, response.trans, PaymentType, Note];
             showLoading();
             GetData("Payment", "ValidatePaystackPayment", "LoadPlaceOrder", data);
         },
@@ -126,7 +126,7 @@ function controlCheckOutAccordion() {
         var shippingfees = $.trim($(".shippingFeesAmount").text().replace("₦", ""));
         var shippingaddressid = $(".address_id").text();
         var shippingtypeid = $("input[name=check_method]:checked").val();
-        var data = [sessionid, shippingtypeid, shippingaddressid, shippingfees];
+        var data = [shopsessionid, shippingtypeid, shippingaddressid, shippingfees];
         showLoading();
         GetData("Cart", "CartShippingAddress", "LoadCartShippingAddress", data);
     });
@@ -194,8 +194,8 @@ function controlCheckOutAccordion() {
 
 function checkOutPageFunctions() {
     showLoading();
-    GetData("Cart", "GetCartDefaultAddress", "LoadDefaultAddress", sessionid);
-    GetData("Cart", "GetShopCart", "LoadGetShopCart", sessionid);
+    GetData("Cart", "GetCartDefaultAddress", "LoadDefaultAddress", shopsessionid);
+    GetData("Cart", "GetShopCart", "LoadGetShopCart", shopsessionid);
 }
 
 

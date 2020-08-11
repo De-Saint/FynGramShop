@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 var extension = "../../../../";
-var sessionid;
+var shopsessionid;
 $(document).ready(function () {
     RegisterFunctions();
 });
@@ -28,10 +28,11 @@ function RegisterBtnEvents() {
         if (!Newsletter) {
             Newsletter = 0;
         }
-        sessionid = verifyUser();
+        shopsessionid = verifyUser();
         if (Password === password2) {
             if (terms) {
-                var data = [Gender, Frstname, Lastname, EmailAddress, PhoneNumber, Password, Newsletter, sessionid];
+                showLoading();
+                var data = [Gender, Frstname, Lastname, EmailAddress, PhoneNumber, Password, Newsletter, shopsessionid];
                 GetData("User", "RegisterCustomer", "LoadRegisterCustomer", data);
             } else {
                 ShowNotification("Please, accept our terms and conditions by ticking the terms and condition box", 'error');
@@ -46,9 +47,9 @@ function RegisterBtnEvents() {
 
 
 function DisplayRegisterCustomer(resp) {
-    SessionTokenManager(resp);
-    sessionid = verifyUser();
+    hideLoading();
     if (resp.status === "success") {
+        SessionTokenManager(resp);
         ShowNotification(resp.msg, 'success');
         verifyUser();
         localStorage.setItem("shownewsletter", "No");

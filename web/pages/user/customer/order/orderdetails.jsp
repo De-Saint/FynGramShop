@@ -104,7 +104,7 @@
         <script src="../../../../assets/js/main.js"></script>
         <script src="../../../../assets/js/helper.js"></script>
         <script src="../../../../assets/js/appscript.js"></script>
-        <script src="order.js" type="text/javascript"></script>
+        <script src="orderdetails.js" type="text/javascript"></script>
 
 
 

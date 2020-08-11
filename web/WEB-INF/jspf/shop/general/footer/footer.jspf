@@ -26,6 +26,7 @@
                                 <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Terms"> Terms & Conditions</a></li>
                                 <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Contact"> Contact Us</a></li>
                                 <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Services"> Our Services</a></li>
+                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Suggestions">Suggest Feature</a></li>
                             </ul>
                         </div>
                     </div>
@@ -36,7 +37,8 @@
                         <div class="footer_menu">
                             <ul>
                                 <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Categories">All Categories</a></li>
-                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Complaints">Complaints</a></li>
+                                <li class="forMembers d-none"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Complaints">Complaints</a></li>
+                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=HowToReturn">How to Return </a></li>
                                 <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Supports">Supports</a></li>
                                 <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=FAQs">FAQs</a></li>
                                 <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Track">Track Order</a></li>

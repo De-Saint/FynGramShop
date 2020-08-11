@@ -146,9 +146,10 @@
                         <div class="single_product">
                             <div class="product_thumb">
                                 <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 shop-d-view" alt=""></a>
-                                <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 shop-d-view"  alt=""></a>
+                                <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 shop-d-view"   alt=""></a>
                                 <div class="label_product">
-                                    <span class="label_sale">Sale</span>
+                                    <span class="label_sale">On Sale</span>
+                                    <!--<span class="label_sale">Sale</span>-->
                                     <span class="label_new shop-p-condition ">New</span>
                                 </div>
                                 <div class="action_links">
@@ -162,21 +163,21 @@
                             </div>
                             <div class="product_content grid_content">
                                 <h4 class="product_name"><a href="javascript:void(0)" class="shop-p-name btn-shop-p-details">Cas Meque Metus</a></h4>
-                                <p><a href="#" class="shop-prod-rootcategory">Fruits</a></p>
+                                <p><a href="javascript:void(0)" class="shop-prod-rootcategory">Fruits</a></p>
                                 <div class="price_box"> 
                                     <span class="current_price shop-p-selling-price">$32.00</span>
                                     <span class="old_price shop-p-cost-price">$342.00</span>
                                 </div>
                             </div>
                             <div class="product_content list_content">
-                                <h4 class="product_name"><a href="javascript:void(0)" class="shop-p-name">Cas Meque Metus</a></h4>
-                                <p><a href="#" class="shop-prod-rootcategory">Fruits</a></p>
+                                <h4 class="product_name"><a href="javascript:void(0)" class="shop-p-name btn-shop-p-details">Cas Meque Metus</a></h4>
+                                <p><a href="javascript:void(0)" class="shop-prod-rootcategory">Fruits</a></p>
                                 <div class="price_box"> 
                                     <span class="current_price shop-p-selling-price">$32.00</span>
                                     <span class="old_price shop-p-cost-price">$342.00</span>
                                 </div>
                                 <div class="product_desc">
-                                    <p class="shop-p-desc text-justify">Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Viva..</p>
+                                    <p class="shop-p-desc text-justify">Loading Description</p>
                                 </div>
                                 <div class="action_links list_action_right">
                                     <ul>

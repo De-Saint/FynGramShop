@@ -4,15 +4,15 @@
  * and open the template in the editor.
  */
 var extension = "../../../";
-var sessionid, sessiontype;
+var shopsessionid, sessiontype;
 $(document).ready(function () {
     profileFunctions();
 });
 
 function profileFunctions() {
     profileBtnEvents();
-    sessionid = verifyUser();
-    if (!sessionid || sessionid === 0) {
+    shopsessionid = verifyUser();
+    if (!shopsessionid || shopsessionid === 0) {
         returnToTimeOutPage(extension);
     }
     profilePageFunctions();
@@ -49,7 +49,7 @@ function profileBtnEvents() {
                 showLoading();
                 $(".mini_cart_close").click();
                 if (option === "add") {
-                    var data = [sessionid, bankid, bkaccttype, bkAcctNumber];
+                    var data = [shopsessionid, bankid, bkaccttype, bkAcctNumber];
                     GetData("CashOut", "CreateBankDetails", "LoadAddBankDetails", data);
                 } else {
                     var data = [bankid, bkaccttype, bkAcctNumber, bkdetid];
@@ -91,7 +91,7 @@ function DisplayBanks(data) {
 function DisplayAddBankDetails(resp) {
     ShowNotification(resp.msg, resp.status);
     if (resp.status === "success") {
-        GetData("User", "GetUserDetails", "LoadUserDetails", sessionid);
+        GetData("User", "GetUserDetails", "LoadUserDetails", shopsessionid);
     } else {
         hideLoading();
     }

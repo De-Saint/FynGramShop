@@ -4,15 +4,15 @@
  * and open the template in the editor.
  */
 var extension = "../../../../";
-var sessionid, sessiontype;
+var shopsessionid, sessiontype;
 $(document).ready(function () {
     messagesFunctions();
 });
 
 function messagesFunctions() {
     messagesBtnEvents();
-    sessionid = verifyUser();
-    if (!sessionid || sessionid === 0) {
+    shopsessionid = verifyUser();
+    if (!shopsessionid || shopsessionid === 0) {
         returnToTimeOutPage(extension);
     }
     messagesPageFunctions();
@@ -29,7 +29,7 @@ function messagesSetLink() {
 
 }
 function messagesPageFunctions() {
-    var data = [sessionid, "All"];
+    var data = [shopsessionid, "All"];
     showLoading();
     GetData("Messages", "GetMessages", "LoadMessages", data);
 }
@@ -55,7 +55,7 @@ function DisplayMessages(data, parent) {
 
             deletebtn.click(function () {
                 showLoading();
-                var data = [sessionid, result["id"]];
+                var data = [shopsessionid, result["id"]];
                 GetData("Messages", "DeleteMessage", "LoadDeleteMessageInfo", data);
             });
             newchild.appendTo(parent).show();
