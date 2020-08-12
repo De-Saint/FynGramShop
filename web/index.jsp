@@ -53,7 +53,6 @@
     </head>
 
     <body>
-
         <jsp:include page="pages/shop/index/index.jsp"></jsp:include>
 
         <!-- JS
