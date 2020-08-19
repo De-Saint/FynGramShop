@@ -108,6 +108,10 @@ function returnToTimeOutPage(extension) {
 }
 
 
+function loadProductPage(categoryID) {
+    localStorage.setItem("categoryid", categoryID);
+    window.location = extension + "LinksServlet?type=Products";
+}
 
 function GetData(action, type, callfunction, data) {
     var path = window.location.pathname;
@@ -612,6 +616,16 @@ function linkToFunction(action, params) {
         {
             var parent = $(".DetailFeaturedList");
             DisplayDetailsProducts(params, parent);
+            break;
+        }
+        case "LoadReviewProduct":
+        {
+            DisplayReviewProduct(params);
+            break;
+        }
+        case "LoadUserReviewList":
+        {
+            DisplayUserReviewList(params);
             break;
         }
 

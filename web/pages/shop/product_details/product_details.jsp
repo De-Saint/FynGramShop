@@ -22,6 +22,7 @@
         ========================= -->
         <!--bootstrap min css-->
         <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+       
         <!--owl carousel min css-->
         <link rel="stylesheet" href="../../../assets/css/owl.carousel.min.css">
         <!--slick min css-->
@@ -45,7 +46,7 @@
 
         <!-- Main Style CSS -->
         <link rel="stylesheet" href="../../../assets/css/style.css">
-
+ <link href="../products/products.css" rel="stylesheet" type="text/css"/>
         <!--Select 2-->
         <link rel="stylesheet" href="../../../assets/css/select2.min.css" >
         <!--modernizr min js here-->
@@ -110,7 +111,6 @@
         <script src="../../../assets/js/appscript.js"></script>
         <script src="product_details.js" type="text/javascript"></script>
         <script src="../../../assets/js/noty.min.js" type="text/javascript"></script>
-
 
 
     </body>

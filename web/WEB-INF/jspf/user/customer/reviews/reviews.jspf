@@ -8,7 +8,7 @@
                 <div class="breadcrumb_content">
                     <h3>My Account</h3>
                     <ul>
-                        <li><a href="index.html">home</a></li>
+                        <li><a href="/FynGramShop">home</a></li>
                         <li>My account</li>
                         <li>My Reviews</li>
                     </ul>
@@ -32,65 +32,35 @@
                     <!-- Tab panes -->
                     <div class="tab-content dashboard_content">
                         <div class="" id="reviews">
-                            <h3>Reviews</h3>
+                            <h3>Reviews (<span class="review_count"></span>)</h3>
                             <div class="reviews_wrapper">
-                                <h2>1 review for Donec eu furniture</h2>
-                                <div class="reviews_comment_box">
-                                    <div class="comment_thmb">
-                                        <img src="../../../assets/img/blog/comment2.jpg" alt="">
-                                    </div>
-                                    <div class="comment_text">
-                                        <div class="reviews_meta">
-                                            <div class="star_rating">
-                                                <ul>
-                                                    <li><a href="product-sidebar.html#"><i class="icon-star"></i></a></li>
-                                                    <li><a href="product-sidebar.html#"><i class="icon-star"></i></a></li>
-                                                    <li><a href="product-sidebar.html#"><i class="icon-star"></i></a></li>
-                                                    <li><a href="product-sidebar.html#"><i class="icon-star"></i></a></li>
-                                                    <li><a href="product-sidebar.html#"><i class="icon-star"></i></a></li>
-                                                </ul>   
+                                <!--<h2>1 review for Donec eu furniture</h2>-->
+                                <div class=""  id="reviewsList">
+                                    <div class="reviews_comment_box mt-2 shop-product-review-clone d-none">
+                                        <!--<div class="">-->
+                                        <div class="comment_thmb">
+                                            <img src="../../../../assets/img/no-image.png" alt="" style="width: 4em; height: 4em; border-radius: 40px;">
+                                        </div>
+                                        <div class="comment_text">
+                                            <div class="reviews_meta">
+                                                <div class="star_rating">
+                                                    <ul>
+                                                        <li><span class="fs-15 shop-product-review-rate_value">3.5</span></li>
+                                                        <li><a  href="javascript:void(0)"><i class="icon-star fs-15"></i></a></li>
+                                                    </ul> 
+                                                    <!--<span>3.5</span>-->
+                                                </div>
+                                                <p><strong class="shop-product-review-name">name </strong> - <span class="shop-product-review-date-time">September 12, 2018</span></p>
+                                                <span class="shop-product-review-comment">comment</span>
+                                                <p class="shop-product-review-p-name mt-2 font-weight-semibold"></p>
                                             </div>
-                                            <p><strong>admin </strong>- September 12, 2018</p>
-                                            <span>roadthemes</span>
                                         </div>
+
                                     </div>
+                                </div>
 
-                                </div>
-                                <div class="comment_title">
-                                    <h2>Add a review </h2>
-                                    <p>Your email address will not be published.  Required fields are marked </p>
-                                </div>
-                                <div class="product_ratting mb-10">
-                                    <h3>Your rating</h3>
-                                    <ul>
-                                        <li><a href="product-sidebar.html#"><i class="icon-star"></i></a></li>
-                                        <li><a href="product-sidebar.html#"><i class="icon-star"></i></a></li>
-                                        <li><a href="product-sidebar.html#"><i class="icon-star"></i></a></li>
-                                        <li><a href="product-sidebar.html#"><i class="icon-star"></i></a></li>
-                                        <li><a href="product-sidebar.html#"><i class="icon-star"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="product_review_form">
-                                    <form action="#">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <label for="review_comment">Your review </label>
-                                                <textarea name="comment" id="review_comment" ></textarea>
-                                            </div> 
-                                            <div class="col-lg-6 col-md-6">
-                                                <label for="author">Name</label>
-                                                <input id="author"  type="text">
-
-                                            </div> 
-                                            <div class="col-lg-6 col-md-6">
-                                                <label for="email">Email </label>
-                                                <input id="email"  type="text">
-                                            </div>  
-                                        </div>
-                                        <button type="submit">Submit</button>
-                                    </form>   
-                                </div> 
                             </div> 
+
                         </div>
                     </div>
                 </div>

@@ -32,6 +32,40 @@ function IndexBtnEvents() {
         }
         e.preventDefault();
     });
+
+    $("#slideImage1").click(function () {
+        loadProductPage(1);
+    });
+    $("#slideImage2").click(function () {
+        loadProductPage(6);
+    });
+    $("#slideImage3").click(function () {
+        loadProductPage(6);
+    });
+    $("#bannerImage1").click(function () {
+        loadProductPage(8);
+    });
+    $("#bannerImage2").click(function () {
+        loadProductPage(12);
+    });
+    $("#bannerImage3").click(function () {
+        loadProductPage(7);
+    });
+    $("#bannerImage4").click(function () {
+        loadProductPage(10);
+    });
+    $("#indexImage4").click(function () {
+        loadProductPage(9);
+    });
+    $("#indexImage3").click(function () {
+        loadProductPage(7);
+    });
+    $("#indexImage2").click(function () {
+        loadProductPage(10);
+    });
+    $("#indexImage1").click(function () {
+        loadProductPage(6);
+    });
 }
 
 function DisplaySubcribeNewletter(resp) {
@@ -43,6 +77,7 @@ function DisplaySubcribeNewletter(resp) {
         $('.mailchimp-error').html('' + resp.msg).fadeIn(900);
     }
 }
+
 
 function IndexPageFunctions() {
     GetData("Products", "GetRecentlyAddedProducts", "LoadRecentlyAddedProducts", "");
@@ -112,7 +147,7 @@ function DisplayShopProducts(data, parent) {
             DisplayToolTip(btnquick);
             var btndaddtocart = newchild.find(".btn-shop-p-add-to-cart").click(function () {
                 ProcessProductOption("Cart", ProductID, details["PriceDetails"].selling_price, 1, "Increase");
-                 var data = [shopsessionid, ProductID];
+                var data = [shopsessionid, ProductID];
                 GetData("Products", "ComputeUserProductViewed", "LoadComputeUserProductViewed", data);
             });
             DisplayToolTip(btndaddtocart);
@@ -124,8 +159,8 @@ function DisplayShopProducts(data, parent) {
                     window.location = extension + "LinksServlet?type=Login";
                 } else {
                     ProcessProductOption("SavedItems", ProductID, details["PriceDetails"].selling_price, 1, "Increase");
-                     var data = [shopsessionid, ProductID];
-                GetData("Products", "ComputeUserProductViewed", "LoadComputeUserProductViewed", data);
+                    var data = [shopsessionid, ProductID];
+                    GetData("Products", "ComputeUserProductViewed", "LoadComputeUserProductViewed", data);
                 }
             });
             DisplayToolTip(btnsaved);

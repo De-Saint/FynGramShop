@@ -29,7 +29,31 @@ function orderDetailsFunctions() {
 }
 
 function orderDetailsBtnEvents() {
+    var options = {
+        max_value: 5,
+        step_size: 0.5,
+        selected_symbol_type: 'utf8_star',
+        initial_value: 3,
+        update_input_field_name: $("#input2")
 
+    };
+    $(".rating").rate(options);
+
+    $("form[name=productRatingForm]").submit(function (e) {
+        var comment = $("#review_comment").val();
+        var productid = $("#reviewProductlist").val();
+        var ratevalue = $("#input2").val();
+        shopsessionid = verifyUser();
+        if (parseInt(productid) === 0) {
+            ShowNotification("Please, select the product you would like to review.", "error");
+            return false;
+        }
+        var data = [productid, ratevalue, shopsessionid, comment];
+        showLoading();
+        GetData("Review", "ReviewProduct", "LoadReviewProduct", data);
+        $("#review_comment").val("");
+        e.preventDefault();
+    });
 }
 
 function orderDetailsSetLink() {
@@ -45,7 +69,6 @@ function orderDetailsPageFunctions() {
 
 function DisplayOrderDetails(data) {
     hideLoading();
-    console.log(data.OrderDetails);
     $(".order_seller_amount").text(PriceFormat(data.OrderDetails.seller_amount));
     $(".order_booked_date").text(data.OrderDetails.booking_date);
     $(".order_reference").text(data.OrderDetails.reference);
@@ -86,7 +109,7 @@ function DisplayPaymentDetails(data) {
 }
 
 function DisplayOrderHistoryProducts(data) {
-    var parent = $(".hstory_productlist");
+    var parent = $(".history_productlist");
     parent.find(".new-clone").remove();
     if (data === "none") {
         parent.text("No Result");
@@ -101,7 +124,12 @@ function DisplayOrderHistoryProducts(data) {
             newchild.removeClass("d-none");
             newchild.addClass("new-clone");
             newchild.find(".order-p-sn").text("#" + count);
-            newchild.find(".order-p-name").text(details.ProductDetails.InfoDetails.name);
+            var btndetails = newchild.find(".order-p-name").text(details.ProductDetails.InfoDetails.name);
+            btndetails.click(function () {
+                localStorage.setItem("productid", details.ProductDetails.InfoDetails.productid);
+                window.location = extension + "LinksServlet?type=ProductDetails";
+            });
+
             newchild.find(".order-p-desc").text(details.ProductDetails.InfoDetails.description);
             newchild.find(".order-p-price").text(PriceFormat(details.ProductDetails.PriceDetails.selling_price));
             newchild.find(".order-p-order-quantity").text(details.quantity);
@@ -117,5 +145,21 @@ function DisplayOrderHistoryProducts(data) {
             newchild.appendTo(parent).show();
         });
         childclone.hide();
+
+
+
+        var cs = $("#reviewProductlist");
+        cs.empty();
+        cs.append($('<option/>').val(0).text("Select a Product"));
+        $.each(data, function (index, details) {
+            cs.append($('<option/>').val(details["productid"]).text(details.ProductDetails.InfoDetails.name));
+        });
+
     }
+}
+
+
+function DisplayReviewProduct(resp) {
+    hideLoading();
+    ShowNotification(resp.msg, resp.status);
 }

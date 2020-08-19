@@ -22,6 +22,10 @@ function GetProductID() {
 
 function productDetailsBtnEvents() {
 
+    $("#indexImage1").click(function () {
+        loadProductPage(10);
+    });
+
 }
 function productDetailsPageFunctions() {
     productid = GetProductID();
@@ -33,7 +37,7 @@ function productDetailsPageFunctions() {
         GetData("Products", "GetRecentlyViewed", "LoadRecentlyViewed", shopsessionid);
         GetData("Products", "GetDetailedFeaturedProducts", "LoadDetailFeaturedList", "");
     } else {
-
+        returnToTimeOutPage(extension);
     }
 
 }
@@ -60,6 +64,9 @@ function DisplayShopProductDetails(data) {
     $(".shop-p-det-unit-value").text(data.UnitDetails.value);
 
     $(".shop-p-det-condition").text(data.CondionDetails.name);
+    $(".shop-numberofratings").text(data.RatingDetails.NumberOfRatings);
+    $(".shop-average-rates").text(data.RatingDetails.AverageRatings);
+
 
     $(".shop-p-det-addtoWishList").click(function () {
         shopsessionid = verifyUser();
@@ -106,11 +113,11 @@ function DisplayShopProductDetails(data) {
             $(".shop-p-det-image12").attr("src", "data:image/png;base64," + data.SecondImage);
             $(".zoomWindow").attr("src", "data:image/png;base64," + data.SecondImage);
         }
-    }else{
-         $(".owl-carousel .s-p-det-img2").parent().removeClass("owl-item cloned").addClass("d-none");
+    } else {
+        $(".owl-carousel .s-p-det-img2").parent().removeClass("owl-item cloned").addClass("d-none");
     }
-    
-    
+
+
     if (data.ImageDetails.ImageText3) {
         $(".owl-carousel .s-p-det-img3").parent().addClass("owl-item").removeClass("d-none");
         if (data.ImageDetails.ImageText3 === "0" || data.ImageDetails.ImageText3 === 0) {
@@ -145,30 +152,7 @@ function DisplayShopProductDetails(data) {
     }
 //
 
-    var propdata = data.PropertyDetails;
-    var PropertyParent = $("#shop-p-det-prop-list");
-    PropertyParent.find(".new-clone").remove();
-    if (propdata === "none") {
-        PropertyParent.text("No Result");
-    } else {
-        var childclone = PropertyParent.find(".shop-p-det-prop-clone");
-        var count = 0;
-        $.each(propdata, function (index, details) {
-            var newchild = childclone.clone();
-            count++;
-            newchild.removeClass("shop-p-det-prop-clone");
-            newchild.removeClass("d-none");
-            newchild.addClass("new-clone");
-            if (details["RootPropName"] !== details["name"]) {
-                newchild.find(".shop-p-det-prop-name").text(details["RootPropName"]);
-                newchild.find(".shop-p-det-prop-value").text(details["name"]);
-            } else {
-                newchild.addClass("d-none");
-            }
-            newchild.appendTo(PropertyParent).show();
-        });
-        childclone.hide();
-    }
+//   
 
     var catdata = data.CategoryDetails;
     var catParent = $("#shop-p-det-cat-list");
@@ -215,11 +199,35 @@ function DisplayShopProductDetails(data) {
         childclone.hide();
     }
 
+
+    var reviewdata = data.ReviewDetails;
+    var reviewParent = $("#shop-product-reviews");
+    reviewParent.find(".new-clone").remove();
+    console.log(reviewdata);
+    if (reviewdata === "none") {
+        reviewParent.text("No Result");
+    } else {
+        var childclone = reviewParent.find(".shop-product-review-clone");
+        var count = 0;
+        $.each(reviewdata, function (index, details) {
+            var newchild = childclone.clone();
+            count++;
+            newchild.removeClass("shop-p-det-prop-clone");
+            newchild.removeClass("d-none");
+            newchild.addClass("new-clone");
+                newchild.find(".shop-product-review-date-time").text(details["date"] + " " + details["time"]);
+                newchild.find(".shop-product-review-comment").text(details["comment"]);
+                newchild.find(".shop-product-review-name").text(details["reviewUsername"]);
+                newchild.find(".shop-product-review-rate_value").text(details["rate_value"]);
+            newchild.appendTo(reviewParent).show();
+        });
+        childclone.hide();
+    }
+
 }
 
 
 function DisplayDetailsProducts(data, parent) {
-    console.log(data);
     parent.find(".new-clone").remove();
     if (data !== "none") {
         var childclone = parent.find(".product-clone").removeClass("d-none");
@@ -233,7 +241,7 @@ function DisplayDetailsProducts(data, parent) {
             newchild.removeClass("product-clone");
             newchild.addClass("new-clone");
             newchild.find(".prod-sn").text(count);
-            var ProductID = details["ProductID"];
+            var ProductID = details["id"];
             newchild.find(".prod-id").val(ProductID);
             newchild.find(".shop-p-name").text(details["InfoDetails"].name);
             newchild.find(".shop-p-desc").text(details["InfoDetails"].description);
@@ -266,6 +274,9 @@ function DisplayDetailsProducts(data, parent) {
             var btndetails = newchild.find(".btn-shop-p-details").click(function () {
                 localStorage.setItem("productid", ProductID);
                 window.location = extension + "LinksServlet?type=ProductDetails";
+                shopsessionid = verifyUser();
+                var data = [shopsessionid, ProductID];
+                GetData("Products", "ComputeUserProductViewed", "LoadComputeUserProductViewed", data);
             });
             DisplayToolTip(btndetails);
             var btnquick = newchild.find(".btn-shop-p-quick-view").click(function () {
@@ -275,6 +286,7 @@ function DisplayDetailsProducts(data, parent) {
             DisplayToolTip(btnquick);
 
             var btndaddtocart = newchild.find(".btn-shop-p-add-to-cart").click(function () {
+                
                 ProcessProductOption("Cart", ProductID, details["PriceDetails"].selling_price, 1, "Increase");
             });
             DisplayToolTip(btndaddtocart);

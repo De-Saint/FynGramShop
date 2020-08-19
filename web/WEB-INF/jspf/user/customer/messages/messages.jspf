@@ -8,7 +8,7 @@
                 <div class="breadcrumb_content">
                     <h3>My Account</h3>
                     <ul>
-                        <li><a href="index.html">home</a></li>
+                        <li><a href="/FynGramShop">home</a></li>
                         <li>My account</li>
                         <li>My Messages</li> 
                     </ul>
@@ -42,13 +42,10 @@
                     </div>
 
                     <ul class="pagination">
-                        <li class="disabled"><a href="#">«</a></li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">»</a></li>
+                        <li class="disabled"><a href="javascript:void(0)">«</a></li>
+                        <li class="active"><a href="javascript:void(0)">1</a></li>
+                        <li><a href="javascript:void(0)">2</a></li>
+                        <li><a href="javascript:void(0)">3</a></li>
                     </ul>						
                 </div>
             </div>

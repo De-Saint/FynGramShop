@@ -61,9 +61,14 @@ function checkOutBtnEvents() {
 
     $("#ViewWalletBalance").click(function () {
         var pin = $("#walletPin").val();
-        var data = [shopsessionid, pin];
-        showLoading();
-        GetData("Cart", "ViewWalletBalance", "LoadWalletBalance", data);
+        if (pin) {
+            var data = [shopsessionid, pin];
+            showLoading();
+            GetData("Cart", "ViewWalletBalance", "LoadWalletBalance", data);
+        }else{
+            ShowNotification("Please, enter your wallet pin.", "error");
+        }
+
     })
 
 }

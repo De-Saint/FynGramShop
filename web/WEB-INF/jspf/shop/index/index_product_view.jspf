@@ -76,7 +76,7 @@
                                 </div>
                                 <div class="modal_social float-right mr-5">
                                     <ul>
-                                        <li class="facebook" id="shop-qv-prod-add-to-wishlist" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Saved Items"><a href="#"><i class="fa fa-heart"></i></a></li>
+                                        <li class="facebook" id="shop-qv-prod-add-to-wishlist" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Saved Items"><a href="javascript:void(0)"><i class="fa fa-heart"></i></a></li>
                                     </ul>    
                                 </div>  
                                 <div class="clearfix"></div>
@@ -116,7 +116,7 @@
                                         </form>
                                     </div>   
                                 </div>
-                                <div class="modal_social">
+                                <div class="modal_social d-none">
                                     <h2>Share this product</h2>
                                     <ul>
                                         <li class="facebook"><a href="#"><i class="fa fa-heart"></i></a></li>

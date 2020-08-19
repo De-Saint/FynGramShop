@@ -15,21 +15,21 @@
                             </div>
                             <div class="language_currency">
                                 <ul>
-                                    <li class="language"><a href="#"> English </a>
+                                    <li class="language"><a  href="javascript:void(0)"> English </a>
                                     </li>
-                                    <li class="currency"><a href="#"> NGN </a>
+                                    <li class="currency"><a  href="javascript:void(0)"> NGN </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="header_social text-right">
                                 <ul>
-                                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                    <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                                    <li><a  href="javascript:void(0)"><i class="ion-social-twitter"></i></a></li>
+                                    <li><a  href="javascript:void(0)"><i class="ion-social-facebook"></i></a></li>
+                                    <li><a  href="javascript:void(0)"><i class="ion-social-instagram-outline"></i></a></li>
                                 </ul>
                             </div>
                             <div class="search_container">
-                                <form action="#">
+                                <form name="">
                                     <div class="hover_category">
                                         <select class="select2" name="select" id="cat-root-cat" style="width: 253px; border-radius: 24px; padding-left: 1em;">
                                             <option selected value="1">Select a categories</option>
@@ -38,7 +38,7 @@
                                     </div>
                                     <div class="search_box">
                                         <input placeholder="Search products, brands, categories.." type="text">
-                                        <button type="submit"><span class="lnr lnr-magnifier"></span></button>
+                                        <button type="submit" disabled="true"><span class="lnr lnr-magnifier"></span></button>
                                     </div>
                                 </form>
                             </div>
@@ -76,7 +76,7 @@
                                 </ul>
                             </div>
                             <div class="offcanvas_footer">
-                                <span><a href="#"><i class="fa fa-envelope-o"></i> sales@fyngram.com</a></span>
+                                <span><a  href="javascript:void(0)"><i class="fa fa-envelope-o"></i> sales@fyngram.com</a></span>
                             </div>
                         </div>
                     </div>

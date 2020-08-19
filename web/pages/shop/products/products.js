@@ -49,7 +49,9 @@ function productBtnEvents() {
         e.preventDefault();
     });
 
-
+    $("#productbannerImage").click(function () {
+        loadProductPage(10);
+    });
 
 
 }
@@ -163,7 +165,6 @@ function DisplayShopCategoriesByCategoryID(data) {
         DisplayCategoryLinks(data);
 
     } else {
-
         var CatList = data[0];
         var TopCatSubs = data[1];
         var childclone = parent.find(".shop-list-cat-clone");
@@ -284,7 +285,7 @@ function DisplayShopPropertiesByCategoryID(data) {
     var parent = $(".cat-proplist");
     var CatList = data[0];
     var TopCatSubs = data[1];
-    if (data === "none") {
+    if (data[0] === "none") {
         parent.text("No Result");
     } else {
         var childclone = parent.find(".cat-proplist-clone");

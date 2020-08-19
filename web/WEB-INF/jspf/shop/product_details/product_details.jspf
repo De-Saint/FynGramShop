@@ -32,22 +32,13 @@
                                 <article class="single_product">
                                     <figure>
                                         <div class="product_thumb">
-                                            <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 shop-d-view" alt=""></a>
-                                            <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 shop-d-view"   alt=""></a>
+                                            <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 " alt=""></a>
+                                            <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 "   alt=""></a>
                                         </div>
                                         <figcaption class="product_content">
                                             <h4 class="product_name">
                                                 <a href="javascript:void(0)" class="shop-p-name btn-shop-p-details d-inline-block text-truncate" style="max-width: 150px;">Cas Meque Metus</a>
                                             </h4>
-                                            <div class="product_rating">
-                                                <ul>
-                                                    <li><a href="javascript:void(0)"><i class="ion-ios-star"></i></a></li>
-                                                    <li><a href="javascript:void(0)"><i class="ion-ios-star"></i></a></li>
-                                                    <li><a href="javascript:void(0)"><i class="ion-ios-star"></i></a></li>
-                                                    <li><a href="javascript:void(0)"><i class="ion-ios-star"></i></a></li>
-                                                    <li><a href="javascript:void(0)"><i class="ion-ios-star"></i></a></li>
-                                                </ul>
-                                            </div>
                                             <div class="action_links">
                                                 <ul>
                                                     <li class="add_to_cart btn-shop-p-add-to-cart" data-toggle="tooltip" data-placement="top" title="Add to Cart"><a href="javascript:void(0)" title="Add to cart" ><span class="lnr lnr-cart"></span></a></li>
@@ -66,7 +57,7 @@
                         </div>
                     </div>
                     <div class="banner_thumb">
-                        <a href="#"><img src="../../../assets/img/bg/banner14.jpg" alt=""></a> 
+                        <a href="javascript:void(0)" id="indexImage1"><img src="../../../assets/img/bg/banner14.jpg" alt=""></a> 
                     </div>
                     <div class="custom_product4">
                         <div class="section_title p-3 mt-2">
@@ -77,22 +68,13 @@
                                 <article class="single_product">
                                     <figure>
                                         <div class="product_thumb">
-                                            <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 shop-d-view" alt=""></a>
-                                            <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 shop-d-view"   alt=""></a>
+                                            <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 " alt=""></a>
+                                            <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 "   alt=""></a>
                                         </div>
                                         <figcaption class="product_content">
                                             <h4 class="product_name">
                                                 <a href="javascript:void(0)" class="shop-p-name btn-shop-p-details d-inline-block text-truncate" style="max-width: 150px;">Cas Meque Metus</a>
                                             </h4>
-                                            <div class="product_rating">
-                                                <ul>
-                                                    <li><a href="javascript:void(0)"><i class="ion-ios-star"></i></a></li>
-                                                    <li><a href="javascript:void(0)"><i class="ion-ios-star"></i></a></li>
-                                                    <li><a href="javascript:void(0)"><i class="ion-ios-star"></i></a></li>
-                                                    <li><a href="javascript:void(0)"><i class="ion-ios-star"></i></a></li>
-                                                    <li><a href="javascript:void(0)"><i class="ion-ios-star"></i></a></li>
-                                                </ul>
-                                            </div>
                                             <div class="action_links">
                                                 <ul>
                                                     <li class="add_to_cart btn-shop-p-add-to-cart" data-toggle="tooltip" data-placement="top" title="Add to Cart"><a href="javascript:void(0)" title="Add to cart" ><span class="lnr lnr-cart"></span></a></li>
@@ -158,14 +140,15 @@
 
                                     <h1><a href="javascript:void(0)" class="shop-p-det-name">name</a></h1>
 
-                                    <div class=" product_ratting">
-                                        <ul>
-                                            <li><a href="javascript:void(0)"><i class="icon-star"></i></a></li>
-                                            <li><a href="javascript:void(0)"><i class="icon-star"></i></a></li>
-                                            <li><a href="javascript:void(0)"><i class="icon-star"></i></a></li>
-                                            <li><a href="javascript:void(0)"><i class="icon-star"></i></a></li>
-                                            <li><a href="javascript:void(0)"><i class="icon-star"></i></a></li>
-                                            <li class="review"><a href="#"> (Reviews) </a></li>
+                                    <div class="product_ratting">
+                                        <ul class="text-success">
+                                            <li><a href="javascript:void(0)"><i class="icon-star fs-20"></i></a></li>
+                                            <li><a href="javascript:void(0)"><i class="icon-star fs-20"></i></a></li>
+                                            <li><a href="javascript:void(0)"><i class="icon-star fs-20"></i></a></li>
+                                            <li><a href="javascript:void(0)"><i class="icon-star fs-20"></i></a></li>
+                                            <li><a href="javascript:void(0)"><i class="icon-star fs-20"></i></a></li>
+                                            <li class="review fs-15"> </a>
+                                                <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Reviews (<span class="shop-numberofratings">0</span>)</a></li>
                                         </ul>
 
                                     </div>
@@ -190,7 +173,7 @@
                                     </div>
                                     <div class="product_meta">
                                         <span>Category: 
-                                            <a href="#" class="shop-p-det-root-category">cat</a>
+                                            <a href="javascript:void(0)" class="shop-p-det-root-category">cat</a>
                                         </span>
                                     </div>
 
@@ -221,7 +204,7 @@
                                     <a class="nav-link" data-toggle="tab" href="#specification" role="tab">Specification</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Reviews (1)</a>
+                                    <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Reviews (<span class="shop-numberofratings">0</span>)</a>
                                 </li>
                             </ul>
                         </div>
@@ -338,7 +321,7 @@
                                     <div class="col-sm-6 col-lg-6 col-md-12">
                                         <div class="rating-block">
                                             <h4>Average user rating</h4>
-                                            <h2 class="bold padding-bottom-7">4.3 <small>/ 5</small></h2>
+                                            <h2 class="bold padding-bottom-7"><span class="shop-average-rates">0</span> <span>/ 5</span></h2>
                                             <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
                                                 <i class="fa fa-star fa-fw "></i>
                                             </button>
@@ -370,7 +353,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="pull-right d-view-r">1</div>
+                                            <div class="pull-right d-view-r">5</div>
                                         </div>
                                         <div class="pull-left">
                                             <div class="pull-left d-view-l" >
@@ -383,7 +366,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="pull-right d-view-r">1</div>
+                                            <div class="pull-right d-view-r">4</div>
                                         </div>
                                         <div class="pull-left">
                                             <div class="pull-left d-view-l">
@@ -396,7 +379,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="pull-right d-view-r">0</div>
+                                            <div class="pull-right d-view-r">3</div>
                                         </div>
                                         <div class="pull-left">
                                             <div class="pull-left d-view-l">
@@ -409,7 +392,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="pull-right d-view-r">0</div>
+                                            <div class="pull-right d-view-r">2</div>
                                         </div>
 
 
@@ -426,34 +409,33 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="pull-right d-view-r">0</div>
+                                            <div class="pull-right d-view-r">1</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="reviews_wrapper">
-
-
-                                    <h2>1 review for Donec eu furniture</h2>
-                                    <div class="reviews_comment_box">
-                                        <div class="comment_thmb">
-                                            <img src="../../../assets/img/blog/comment2.jpg" alt="">
-                                        </div>
-                                        <div class="comment_text">
-                                            <div class="reviews_meta">
-                                                <div class="star_rating">
-                                                    <ul>
-                                                        <li><a href="product-sidebar.html#"><i class="icon-star"></i></a></li>
-                                                        <li><a href="product-sidebar.html#"><i class="icon-star"></i></a></li>
-                                                        <li><a href="product-sidebar.html#"><i class="icon-star"></i></a></li>
-                                                        <li><a href="product-sidebar.html#"><i class="icon-star"></i></a></li>
-                                                        <li><a href="product-sidebar.html#"><i class="icon-star"></i></a></li>
-                                                    </ul>   
-                                                </div>
-                                                <p><strong>admin </strong>- September 12, 2018</p>
-                                                <span>roadthemes</span>
+                                    <!--<h2>1 review for Donec eu furniture</h2>-->
+                                    <div class=""  id="shop-product-reviews">
+                                        <div class="reviews_comment_box mt-2 shop-product-review-clone d-none">
+                                            <!--<div class="">-->
+                                            <div class="comment_thmb">
+                                                <img src="../../../assets/img/no-image.png" alt="" style="width: 4em; height: 4em; border-radius: 40px;">
                                             </div>
-                                        </div>
+                                            <div class="comment_text">
+                                                <div class="reviews_meta">
+                                                    <div class="star_rating">
+                                                        <ul>
+                                                            <li><span class="fs-15 shop-product-review-rate_value">3.5</span></li>
+                                                            <li><a  href="javascript:void(0)"><i class="icon-star fs-15"></i></a></li>
+                                                        </ul> 
+                                                        <!--<span>3.5</span>-->
+                                                    </div>
+                                                    <p><strong class="shop-product-review-name">name </strong> - <span class="shop-product-review-date-time">September 12, 2018</span></p>
+                                                    <span class="shop-product-review-comment">comment</span>
+                                                </div>
+                                            </div>
 
+                                        </div>
                                     </div>
 
                                 </div> 
@@ -468,37 +450,39 @@
                     <div class="section_title">
                         <h2>Related Products	</h2>
                     </div>
-                    <div class="product_carousel productpage_column4 RelatedProductList d-inline-flex">
-                        <div class="product_items product-clone d-none " style="width: 196px; margin-right: 20px;">
-                            <article class="single_product">
-                                <figure>
+                    <div class="product_container">  
+                        <div class="row RelatedProductList">
+                            <div class="col-lg-3 col-md-2 product-clone d-none" >
+                                <div class="single_product">
                                     <div class="product_thumb">
-                                        <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 shop-d-view" alt=""></a>
-                                        <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 shop-d-view"   alt=""></a>
+                                        <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 "  alt=""></a>
+                                        <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2"   alt=""></a>
                                         <div class="label_product">
                                             <span class="label_sale">Sale</span>
-                                            <span class="label_new">New</span>
+                                            <span class="label_new shop-p-condition ">New</span>
                                         </div>
                                         <div class="action_links">
                                             <ul>
                                                 <li class="add_to_cart btn-shop-p-add-to-cart" data-toggle="tooltip" data-placement="top" title="Add to Cart"><a href="javascript:void(0)" title="Add to cart" ><span class="lnr lnr-cart"></span></a></li>
+                                                <li class="quick_button btn-shop-p-quick-view" data-toggle="tooltip" data-placement="top"  data-original-title="Quick View"><a href="javascript:void(0)" data-toggle="modal" data-target="#modal_box"  title="quick view"> <span class="lnr lnr-magnifier"></span></a></li>
                                                 <li class="wishlist btn-shop-p-wishlist" data-toggle="tooltip" data-placement="top"  data-original-title="Add to Saved Items"><a href="javascript:void(0)" title="Add to Wishlist"><span class="lnr lnr-heart"></span></a></li>  
                                                 <li class="compare btn-shop-p-details" data-toggle="tooltip" data-placement="top"  data-original-title="Details" ><a href="javascript:void(0)" title="Add to Compare"><span class="lnr lnr-eye"></span></a></li>
                                             </ul>
                                         </div>
                                     </div>
-                                    <figcaption class="product_content">
+                                    <div class="product_content">
                                         <h4 class="product_name"><a href="javascript:void(0)" class="shop-p-name btn-shop-p-details">Cas Meque Metus</a></h4>
-                                        <p><a href="javascript:void(0)"  class="shop-prod-rootcategory">Fruits</a></p>
+                                        <p><a href="javascript:void(0)" class="shop-prod-rootcategory">Fruits</a></p>
                                         <div class="price_box"> 
-                                            <span class="current_price shop-p-selling-price">$32.00</span>
-                                            <span class="old_price shop-p-cost-price">$342.00</span>
+                                            <span class="current_price shop-p-selling-price">$=0</span>
+                                            <span class="old_price shop-p-cost-price">=0</span>
                                         </div>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </div>
-                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>  
+
                 </section>
                 <!--product area end-->
 

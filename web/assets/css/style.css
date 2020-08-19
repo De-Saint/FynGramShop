@@ -6219,7 +6219,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     }
 }
 .product_d_right .product_ratting ul li a {
-    color: #FEB954;
+    /*color: #FEB954;*/
 }
 .product_d_right .product_ratting ul li a:hover {
     color: #40A944;

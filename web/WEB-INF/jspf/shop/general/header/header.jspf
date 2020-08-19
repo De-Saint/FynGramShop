@@ -9,9 +9,9 @@
                     <div class="col-lg-4 col-md-2">
                         <div class="language_currency">
                             <ul>
-                                <li class="language"><a href="#">English </a>
+                                <li class="language"><a href="javascript:void(0)">English </a>
                                 </li>
-                                <li class="currency"><a href="#">NGN</a>
+                                <li class="currency"><a href="javascript:void(0)">NGN</a>
                                 </li>
                             </ul>
                         </div>
@@ -24,9 +24,9 @@
                     <div class="col-lg-2">
                         <div class="header_social text-right">
                             <ul>
-                                <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ion-social-twitter"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ion-social-facebook"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="ion-social-instagram-outline"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
 
                                     <div class="search_box">
                                         <input placeholder="Search products, brands and categories..."  type="text">
-                                        <button type="submit"><span class="lnr lnr-magnifier"></span></button>
+                                        <button type="submit" disabled="true"><span class="lnr lnr-magnifier"></span></button>
                                     </div>
                                 </form>
                             </div>
@@ -96,13 +96,13 @@
                             <div class="categories_menu_toggle">
                                 <ul class="categorylist">
                                     <li class="menu_item_children category-clone d-none">
-                                        <a href="#" class="cat-name"><span class=""></span><i class="fa fa-angle-right"></i></a>
+                                        <a href="javascript:void(0)" class="cat-name"><span class=""></span><i class="fa fa-angle-right"></i></a>
                                         <ul class="categories_mega_menu parcategorylist">
                                             <li class="menu_item_children parcategory-clone d-none">
-                                                <a href="#" class="parcat-name font-weight-bold">Dresses</a>
+                                                <a href="javascript:void(0)" class="parcat-name font-weight-bold">Dresses</a>
                                                 <ul class="categorie_sub_menu subcategorylist">
                                                     <li class="subcategory-clone d-none">
-                                                        <a href="" class="subcat-name">Sweater</a>
+                                                        <a href="javascript:void(0)" class="subcat-name">Sweater</a>
                                                     </li>
 
                                                 </ul>

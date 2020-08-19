@@ -99,13 +99,13 @@
                             <h3>Category tags</h3>
                             <div class="tag_cloud cat-taglist" >
 
-                                <a href="#" class="cat-taglist-clone d-none"> <span class="cat-taglist-name">Men</span></a>
+                                <a <a href="javascript:void(0)" class="cat-taglist-clone d-none"> <span class="cat-taglist-name">Men</span></a>
 
                             </div>
                         </div>
                         <div class="widget_list banner_widget">
                             <div class="banner_thumb">
-                                <a href="#"><img src="../../../assets/img/bg/banner17.jpg" alt=""></a>
+                                <a href="javascript:void(0)"  id="productbannerImage"><img src="../../../assets/img/bg/banner17.jpg" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -194,11 +194,11 @@
                 <div class="shop_toolbar t_bottom">
                     <div class="pagination">
                         <ul>
-                            <li><a href="shop.html#"><</a></li>
+                            <li><a href="javascript:void(0)"><</a></li>
                             <li class="current">1</li>
-                            <li><a href="shop.html#">2</a></li>
-                            <li><a href="shop.html#">3</a></li>
-                            <li class="next"><a href="shop.html#">></a></li>
+                            <li><a href="javascript:void(0)">2</a></li>
+                            <li><a href="javascript:void(0)">3</a></li>
+                            <li class="next"><a href="javascript:void(0)">></a></li>
                         </ul>
                     </div>
                 </div>
