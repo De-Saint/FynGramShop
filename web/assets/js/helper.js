@@ -628,6 +628,11 @@ function linkToFunction(action, params) {
             DisplayUserReviewList(params);
             break;
         }
+        case "LoadCustomerStats":
+        {
+            DisplayCustomerStats(params);
+            break;
+        }
 
     }
 }

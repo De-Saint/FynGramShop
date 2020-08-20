@@ -23,11 +23,26 @@ function dashboardBtnEvents() {
 
 }
 
-function dashboardSetLink(){
+function dashboardSetLink() {
     $("#collapseOne").addClass("show");
     $(".id-dashboard").addClass("active");
-    
+
 }
 function dashboardPageFunctions() {
+    showLoading();
+    GetData("Report", "GetCustomerStats", "LoadCustomerStats", shopsessionid);
+}
 
+function DisplayCustomerStats(data) {
+    hideLoading();
+    console.log(data);
+    $(".address_count").text(data.address_count);
+    $(".review_count").text(data.review_count);
+    $(".discount_count").text(data.discount_count);
+    $(".payment_count").text(data.payment_count);
+    $(".wallet_balance").text(data.wallet_balance);
+    $(".message_count").text(data.message_count);
+    $(".transaction_count").text(data.transaction_count);
+    $(".wishlist_count").text(data.wishlist_count);
+    $(".order_count").text(data.order_count);
 }

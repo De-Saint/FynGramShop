@@ -34,10 +34,10 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="col-md-12 text-center">
-                                            <div class="fa fa-shopping-basket text-center" style="font-size: 45px; color: #28a745;"></div>
+                                            <div class="fa fa-shopping-basket text-center fs-40 text-success" ></div>
                                         </div>
-                                        <div class="col-md-12 text-center mt-2" style="font-weight: 600; font-size: 24px; color: #495057">0</div>
-                                        <div class="col-md-12 text-center mt-2" style="font-size: 15px; color: #495057; font-weight: 500;"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Order" class="text-success">Total Orders</a></div>
+                                        <div class="col-md-12 text-center mt-2 fs-21 text-muted font-weight-bold order_count">0</div>
+                                        <div class="col-md-12 text-center mt-2 fs-15 font-weight-bold"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Order" class="text-success">Total Orders</a></div>
                                         
                                     </div>
                                 </div>
@@ -46,10 +46,10 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="col-md-12 text-center">
-                                            <div class="fa fa-heart-o text-center" style="font-size: 45px; color: #28a745;"></div>
+                                            <div class="fa fa-heart-o text-center fs-40 text-success"></div>
                                         </div>
-                                        <div class="col-md-12 text-center mt-2" style="font-weight: 600; font-size: 24px; color: #495057">0</div>
-                                        <div class="col-md-12 text-center mt-2" style="font-size: 15px; color: #495057; font-weight: 500;"><a  href="${pageContext.request.contextPath}/LinksServlet?type=WishList" class="text-success">Total Saved Items</a></div>
+                                        <div class="col-md-12 text-center mt-2 fs-21 text-muted font-weight-bold wishlist_count">0</div>
+                                        <div class="col-md-12 text-center mt-2 fs-15 font-weight-bold"><a  href="${pageContext.request.contextPath}/LinksServlet?type=WishList" class="text-success">Total Saved Items</a></div>
                                         
                                     </div>
                                 </div>
@@ -58,10 +58,10 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="col-md-12 text-center">
-                                            <div class="fa fa-bank text-center" style="font-size: 45px; color: #28a745;"></div>
+                                            <div class="fa fa-bank text-center fs-40 text-success"></div>
                                         </div>
-                                        <div class="col-md-12 text-center mt-2" style="font-weight: 600; font-size: 24px; color: #495057">0</div>
-                                        <div class="col-md-12 text-center mt-2" style="font-size: 15px; color: #495057; font-weight: 500;"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Transaction" class="text-success">Total Transactions</a></div>
+                                        <div class="col-md-12 text-center mt-2 fs-21 text-muted font-weight-bold transaction_count">0</div>
+                                        <div class="col-md-12 text-center mt-2 fs-15 font-weight-bold"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Transaction" class="text-success">Total Transactions</a></div>
                                         
                                     </div>
                                 </div>
@@ -75,10 +75,10 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="col-md-12 text-center">
-                                            <div class="fa fa-comment text-center" style="font-size: 45px; color: #28a745;"></div>
+                                            <div class="fa fa-comment text-center fs-40 text-success"></div>
                                         </div>
-                                        <div class="col-md-12 text-center mt-2" style="font-weight: 600; font-size: 24px; color: #495057">0</div>
-                                        <div class="col-md-12 text-center mt-2" style="font-size: 15px; color: #495057; font-weight: 500;"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Messages" class="text-success">Total Messages</a></div>
+                                        <div class="col-md-12 text-center mt-2 fs-21 text-muted font-weight-bold message_count">0</div>
+                                        <div class="col-md-12 text-center mt-2 fs-15 font-weight-bold"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Messages" class="text-success">Total Messages</a></div>
                                         
                                     </div>
                                 </div>
@@ -87,10 +87,10 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="col-md-12 text-center">
-                                            <div class="fa fa-money text-center" style="font-size: 45px; color: #28a745;"></div>
+                                            <div class="fa fa-money text-center fs-40 text-success"></div>
                                         </div>
-                                        <div class="col-md-12 text-center mt-2" style="font-weight: 600; font-size: 24px; color: #495057">&#8358;<span>0</span></div>
-                                        <div class="col-md-12 text-center mt-2" style="font-size: 15px; color: #495057; font-weight: 500;"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Wallets" class="text-success">Total Wallet Balance</a></div>
+                                        <div class="col-md-12 text-center mt-2 fs-21 text-muted font-weight-bold ">&#8358;<span class="wallet_balance">0</span></div>
+                                        <div class="col-md-12 text-center mt-2 fs-15 font-weight-bold"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Wallets" class="text-success">Total Wallet Balance</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -98,10 +98,10 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="col-md-12 text-center">
-                                            <div class="fa fa-credit-card text-center" style="font-size: 45px; color: #28a745;"></div>
+                                            <div class="fa fa-credit-card text-center fs-40 text-success"></div>
                                         </div>
-                                        <div class="col-md-12 text-center mt-2" style="font-weight: 600; font-size: 24px; color: #495057">0</div>
-                                        <div class="col-md-12 text-center mt-2" style="font-size: 15px; color: #495057; font-weight: 500;"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Payments" class="text-success">Total Payments</a></div>
+                                        <div class="col-md-12 text-center mt-2 fs-21 text-muted font-weight-bold payment_count">0</div>
+                                        <div class="col-md-12 text-center mt-2 fs-15 font-weight-bold"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Payments" class="text-success">Total Payments</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -113,10 +113,10 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="col-md-12 text-center">
-                                            <div class="fa fa-gift text-center" style="font-size: 45px; color: #28a745;"></div>
+                                            <div class="fa fa-gift text-center fs-40 text-success"></div>
                                         </div>
-                                        <div class="col-md-12 text-center mt-2" style="font-weight: 600; font-size: 24px; color: #495057">0</div>
-                                        <div class="col-md-12 text-center mt-2" style="font-size: 15px; color: #495057; font-weight: 500;"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Discount" class="text-success">Total Discount Codes</a></div>
+                                        <div class="col-md-12 text-center mt-2 fs-21 text-muted font-weight-bold discount_count">0</div>
+                                        <div class="col-md-12 text-center mt-2 fs-15 font-weight-bold"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Discount" class="text-success">Total Discount Codes</a></div>
                                         
                                     </div>
                                 </div>
@@ -125,10 +125,10 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="col-md-12 text-center">
-                                            <div class="fa fa-comments-o text-center" style="font-size: 45px; color: #28a745;"></div>
+                                            <div class="fa fa-comments-o text-center fs-40 text-success"></div>
                                         </div>
-                                        <div class="col-md-12 text-center mt-2" style="font-weight: 600; font-size: 24px; color: #495057">0</div>
-                                        <div class="col-md-12 text-center mt-2" style="font-size: 15px; color: #495057; font-weight: 500;"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Reviews" class="text-success">Total Reviews</a></div>
+                                        <div class="col-md-12 text-center mt-2 fs-21 text-muted font-weight-bold review_count">0</div>
+                                        <div class="col-md-12 text-center mt-2 fs-15 font-weight-bold"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Reviews" class="text-success">Total Reviews</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -136,10 +136,10 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="col-md-12 text-center">
-                                            <div class="fa fa-map-marker text-center" style="font-size: 45px; color: #28a745;"></div>
+                                            <div class="fa fa-map-marker text-center fs-40 text-success"></div>
                                         </div>
-                                        <div class="col-md-12 text-center mt-2" style="font-weight: 600; font-size: 24px; color: #495057">0</div>
-                                        <div class="col-md-12 text-center mt-2" style="font-size: 15px; color: #495057; font-weight: 500;"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Address" class="text-success">Total Addresses</a></div>
+                                        <div class="col-md-12 text-center mt-2 fs-21 text-muted font-weight-bold address_count">0</div>
+                                        <div class="col-md-12 text-center mt-2 fs-15 font-weight-bold"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Address" class="text-success">Total Addresses</a></div>
                                     </div>
                                 </div>
                             </div>
