@@ -121,7 +121,7 @@
                             <nav class="align-items-center">  
                                 <ul>
                                     <li><a class="active" href="${pageContext.request.contextPath}/LinksServlet?type=Sell">Sell on Fyngram </a></li> 
-                                    <li><a href="${pageContext.request.contextPath}/LinksServlet?type=ReturnPolicy">Return Policy</a></li>
+                                    
                                 </ul>  
                             </nav> 
                         </div>

@@ -19,41 +19,34 @@
 <!--breadcrumbs area end-->
 
 <!--contact map start-->
-<div class="contact_map mt-70">
+<!--<div class="contact_map mt-70">
     <div class="map-area">
         <div id="googleMap"></div>
     </div>
-</div>
-<!--    <div class="contact_map mt-70">
-       <div class="map-area">
-           <div id="">
-               <iframe id="googleMap" frameborder="0" style="border:0;" allowfullscreen=""
-        src="https://www.google.com/maps/place/The+Landmark/@6.4636502,3.5550964,17z/data=!3m1!4b1!4m5!3m4!1s0x103bf73ec1ab8287:0x243cb57147898100!8m2!3d6.4636502!4d3.5572851?hl=en"></iframe>
-                
-           </div>
-       </div>
-    </div>-->
+</div>-->
 <!--contact map end-->
 
 <!--contact area start-->
 <div class="contact_area">
-    <div class="container">   
+    <div class="container mt-30">   
         <div class="row">
             <div class="col-lg-6 col-md-6">
                 <div class="contact_message content">
                     <h3>contact us</h3>    
-                    <p>We are a team of intermediators between the farmers and you the customer.</p>
-                    <ul>
-                        <li><i class="fa fa-fax"></i>  Address : Suite 208, Jinifa Plaza, Plot 1014, Samuel Ademulegun Adesujo Street, Central Business District Abuja</li>
-                        <li><i class="fa fa-phone"></i> <a href="#">sales@fyngram.com</a></li>
-                        <li><i class="fa fa-envelope-o"></i><a href="tel:+234 818 206 6897">+234 818 206 6897</a>  </li>
-                    </ul>             
+                    <p class="font-weight-bold">Please contact us for any questions or comments by sending an email</p>
+                    <p><i class="fa fa-phone"></i> <a href="#">info@fyngram.com</a></p>
+                   
+                    <p class="font-weight-bold">You can also contact our customer care at </p>
+                     <p><i class="fa fa-envelope-o"></i><a href="tel:+234 818 206 6897"> +234 818 206 6897</a></p>
+                   
+                    <p class="font-weight-bold">You can visit our office address at </p>
+                    <p><i class="fa fa-fax"></i> Umuahia, Abia State. Nigeria</p>         
                 </div> 
             </div>
             <div class="col-lg-6 col-md-6">
                 <div class="contact_message form">
-                    <h3>Tell us your project</h3>   
-                    <form id="contact-form" method="POST"  action="assets/mail.php">
+                    <h3>Direct Message</h3>   
+                    <form id="contact-form2" method="POST"  action="#">
                         <p>  
                             <label> Your Name (required)</label>
                             <input name="name" placeholder="Name *" type="text"> 

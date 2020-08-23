@@ -20,186 +20,183 @@
 <div class="wishlist_area mt-70">
     <div class="container text-justify"> 
         <div class="blended_grid">
-            <div class="bgbox_grey" style="margin-top:40px; font-size:18px;padding: 20px 40px;">
-                Outlines
-                <br>
-                <br>
-                <ul style="list-style-type: decimal;">
-                    <li>
-                        <a href="https://www.jumia.com.ng/sp-privacy/#q1" data-ajax="false" class="ques">About this Privacy and Cookie Notice </a>
-                    </li>
-                    <li>
-                        <a href="https://www.jumia.com.ng/sp-privacy/#q2" data-ajax="false" class="ques">The data we collect about you</a>
-                    </li>
-                    <li>
-                        <a href="https://www.jumia.com.ng/sp-privacy/#q3" data-ajax="false" class="ques">Cookies and how we use them</a>
-                    </li>
-                    <li>
-                        <a href="https://www.jumia.com.ng/sp-privacy/#q4" data-ajax="false" class="ques">How we use your personal data</a>
-                    </li>
-                    <li>
-                        <a href="https://www.jumia.com.ng/sp-privacy/#q5" data-ajax="false" class="ques">How we share your personal data</a>
-                    </li>
-                    <li>
-                        <a href="https://www.jumia.com.ng/sp-privacy/#q6" data-ajax="false" class="ques">International transfers</a>
-                    </li>
-                    <li>
-                        <a href="https://www.jumia.com.ng/sp-privacy/#q7" data-ajax="false" class="ques">Data security</a>
-                    </li>
-                    <li>
-                        <a href="https://www.jumia.com.ng/sp-privacy/#q8" data-ajax="false" class="ques">Your legal rights</a>
-                    </li>
-                    <li>
-                        <a href="https://www.jumia.com.ng/sp-privacy/#q9" data-ajax="false" class="ques">Further details</a>
-                    </li>
-                </ul>
-            </div>
+
             <div class="">
                 <div style="margin:30px 0">
-                    <div class="question listformat" id="1">1. About this Notice</div>
+                    <div class="question listformat font-weight-bold" id="1">1. What is the Fyngram Platform?</div>
                     <p class="txt">
-                        This Privacy and Cookie Notice provides information on how Jumia collects and processes your personal data
-                        when you visit our website or mobile applications.
+                        Fyngram Private Limited, a company incorporated under the laws of Nigeria/Africa, having its registered office at Umuahia, Abia State. - Nigeria <strong>(“Company”)</strong> has, as a part of it objective, created a mobile application [and website] “Fyngram” <strong>(“Fyngram Platform”)</strong> that facilitates it users registered on the Fyngram Platform, to buy fresh fruits and vegetables across cities in India <strong>(“Services”)</strong>.
                     </p>
                 </div>
 
                 <div style="margin:30px 0">
-                    <div class="question listformat" id="2">2. The Data We Collect About You?</div>
+                    <div class="question listformat font-weight-bold" id="2">2. What is this Privacy Policy?</div>
                     <p class="txt">
-                        We collect your personal data in order to provide and continually improve our products and services. We may
-                        collect, use, store and transfer the following different kinds of personal data about you:
-                        <a href="https://www.webtrekk.com/en/home/" style="text-decoration: none; color: #f90;" target="_blank">
-                            Here</a> for marketing and personal data optimization purposes. Jumia also uses Google Digital Marketing
-                        to propose
-                        targeted offers.
-                        <br> To find out more:
-                    </p><ul>
-                        <li>Information you provide to us: We receive and store the information you provide to us including your
-                            identity data, contact data, delivery address and financial data.</li>
-                        <li>Information on your use of our website and/or mobile applications: We automatically collect and store
-                            certain types of information regarding your use of the Jumia marketplace including information about
-                            your searches, views, downloads and purchases.</li>
-                        <li>Information from third parties and publicly available sources: We may receive information about you
-                            from third parties including our carriers; payment service providers; merchants/brands; and advertising
-                            service providers.</li>
-                    </ul>
-                    <p></p>
+                        This privacy policy <strong>(the “Privacy Policy”)</strong> describes how and why the Fyngram Platform collects, uses and discloses the information provided by the users. All users shall be bound by this Privacy Policy and the Fyngram Platform shall not use any information supplied by customers except in accordance with this Privacy Policy. In order to use and access the Fyngram Platform, it is necessary for the users to agree to and accept the terms and conditions provided for under this Privacy Policy along with the terms of use. The users who do not agree with the terms set out in this Privacy Policy and the terms of use are advised to refrain from accepting them and are advised to refrain from using any Services. The users’ visit to and/or use of the Fyngram Platform and any dispute over privacy is subject to this Privacy Policy and the terms of use.
+                    </p>
                 </div>
 
                 <div style="margin:30px 0">
-                    <div class="question listformat" id="3">3. Cookies and How We Use Them</div>
+                    <div class="question listformat font-weight-bold" id="3">3. Why does the Fyngram Platform have this Privacy Policy?</div>
                     <div class="txt">
-                        A cookie is a small file of letters and numbers that we put on your computer if you agree.
-                        <br class="clear">
-                        Cookies allow us to distinguish you from other users of our website and mobile applications, which helps us
-                        to provide you with an enhanced browsing experience. For example we use cookies for the following purposes:
-                        <ul>
-                            <li>Recognising and counting the number of visitors and to see how visitors move around the site when they
-                                are using it (this helps us to improve the way our website works, for example by ensuring that users can
-                                find what they are looking for).</li>
-                            <li>Identifying your preferences and subscriptions e.g. language settings, saved items, items stored in
-                                your basket and Prime membership; and</li>
-                            <li>Sending you newsletters and commercial/advertising messages tailored to your interests. </li>
-                        </ul>
-                        Our approved third parties may also set cookies when you use our marketplace. Third parties include search
-                        engines, providers of measurement and analytics services, social media networks and advertising companies.
+                        This Privacy Policy is published pursuant to:
+                        <ol>
+                            <li>Section 43A of the Information Technology Act, 2000</li>
+                            <li>Regulation 4 of the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011 (“SPDI Rules”); and</li>
+                            <li>Regulation 3(1) of the Information Technology (Intermediaries Guidelines) Rules, 2011.</li>
+                        </ol>
+                        In this Privacy Policy, the Company will disclose what kind of information is collected from the customers. It will also specify why the Fyngram Platform collects this information, the modes and means by which it will be used, and the entities or persons who will have access to this information.
                     </div>
                 </div>
 
                 <div style="margin:30px 0">
-                    <div class="question listformat" id="q4">4. How We Use Your Personal Data</div>
+                    <div class="question listformat  font-weight-bold" id="q4">4. What is Sensitive Personal Data or Information?</div>
                     <p class="txt">
-                        We use your personal data to operate, provide, develop and improve the products and services that we offer,
-                        including the following:
-                    </p><ul>
-                        <li>Registering you as a new customer.</li>
-                        <li>Processing and delivering your orders.</li>
-                        <li>Managing your relationship with us.</li>
-                        <li>Enabling you to participate in promotions, competitions and surveys.</li>
-                        <li>Improving our website, applications, products and services</li>
-                        <li>Recommending/advertising products or services which may be of interest to you.</li>
-                        <li>Complying with our legal obligations, including verifying your identity where necessary.</li>
-                        <li>Detecting fraud.</li>
-                    </ul>
+                        Under the SPDI Rules, sensitive personal data or information of a person means and includes such personal information about that person relating to the following <strong>(“Personal Information”)</strong>:
+                    </p><ol >
+                        <li>Passwords.</li>
+                        <li>Financial information such as bank accounts, credit and debit card details or other payment instrument details <strong>(“Financial Information”)</strong>.</li>
+                        <li>Physical, physiological and mental health condition.</li>
+                        <li>Sexual orientation.</li>
+                        <li>Medical records and history.</li>
+                        <li>Biometric information; and</li>
+                        <li>Information received by body corporates under lawful contract or otherwise.</li>
+                    </ol>
                     <p></p>
                 </div>
 
                 <div style="margin:30px 0">
-                    <div class="question listformat" id="q5">5. How We Share Your Personal Data</div>
+                    <div class="question listformat  font-weight-bold" id="q5">5. What personal information do we collect from the people that visit our app?</div>
                     <div class="txt">
-                        We may need to share your personal data with third parties for the following purposes:
+                        <p><u>Financial Information</u></p>
                         <ul>
-                            <li>Sale of products and services: In order to deliver your products and services purchased on our
-                                marketplace from third parties, we may be required to provide your personal data to such third parties.
+                            <li>In the course of transacting on the Fyngram Platform, users may be required to pay with a credit card, wire-transfer, or debit card through the Fyngram Platform’s third-party payment gateway provider or any other platform. This third-party payment gateway provider may be required to collect certain Financial Information from users including, but not restricted to, their Financial Information. The Financial Information so collected will only be used for billing and payment for the sale of the Services through the Fyngram Platform. The processes of verifying the Financial Information will be entirely conducted by the user and the Fyngram Platform shall have no part in such processes.
                             </li>
-                            <li>Working with third party service providers: We engage third parties to perform certain functions on
-                                our behalf. Examples include fulfilling orders for products or services, delivering packages, analyzing
-                                data, providing marketing assistance, processing payments, transmitting content, assessing and managing
-                                credit risk, and providing customer service.</li>
-                            <li>Business transfers: As we continue to develop our business, we might sell or buy other businesses or
-                                services. In such transactions, customer information may be transferred together with other business
-                                assets.</li>
-                            <li>Detecting fraud and abuse: We release account and other personal data to other companies and
-                                organizations for fraud protection and credit risk reduction, and to comply with the law. </li>
+                            <li>The Financial Information collected from the users is transacted through secure digital platforms of approved payment gateways which are under encryption, thereby complying with reasonably expected technology standards. While the Fyngram Platform shall make reasonable endeavors to ensure that the user’s Personal Information and the Financial Information is duly protected by undertaking security measures prescribed under applicable laws, the user is strongly advised to exercise discretion while providing Personal Information or Financial Information while using the Services given that the Internet is susceptible to security breaches.</li>
                         </ul>
-                        <p>When we share your personal data with third parties we:</p>
+                        <p class="mt-2"><u>Personal Information/Personally Identifiable Information:</u></p>
                         <ul>
-                            <li>require them to agree to use your data in accordance with the terms of this Privacy and Cookie Notice,
-                                our Privacy Policy and in accordance with the law; and</li>
-                            <li>only permit them to process your personal data for specified purposes and in accordance with our
-                                instructions. We do not allow our third-party service providers to use your personal data for their own
-                                purposes.</li>
+                            <li>Without the need for further, repeated consents (aside from the acceptance of this Privacy Policy) by the user, Personal Information, Personally Identifiable Information and/or Financial Information shall be collected by the Fyngram Platform on an ongoing basis, for one or more of the following reasons</li>
+                            <ol>
+                                <li>To identify the User, to understand his/her/its needs and resolve disputes, if any.</li>
+                                <li>To set up, manage and facilitate the offer of Products, and to enhance the Services to meet the user’s requirements.</li>
+                                <li>To provide ongoing service.</li>
+                                <li>To meet legal and regulatory requirements.</li>
+                                <li>To resolve technical issues and troubleshoot problems.</li>
+                                <li>To aid the Fyngram Platform in collecting monies from users for transactions carried out on the Fyngram Platform;</li>
+                                <li>To keep users apprised of the Fyngram Platform’s promotions and offers;</li>
+                                <li>To customize user experience;</li>
+                                <li>To detect and protect the Fyngram Platform from error, fraud and other criminal activities;</li>
+                                <li>To enforce the terms of use; and</li>
+                                <li>Other reasons which, prior to being put into effect, shall be communicated to the users through an update carried out to this Privacy Policy</li>
+                            </ol>
+                        </ul>
+                        <p class="mt-2"><u>Automatically Generated Information: </u></p>
+                        <ul>
+                            <li>When a user visits the Fyngram Platform, it automatically receives the following information:</li>
+                            <ol>
+                                <li>Uniform resource locator of the site from which such user visits the Fyngram Platform;</li>
+                                <li>Details of the website such User is visiting on leaving the Fyngram Platform.</li>
+                                <li>The internet protocol <strong>(“IP”)</strong> address of each user’s computer operating system.</li>
+                                <li>Type of web browser the user is using, email patterns; and</li>
+                                <li>The user’s internet service provider.</li>
+                            </ol>
+                        </ul>
+                        <p class="mt-2"><u>Locations</u></p>
+                        <ul>
+                            <li>The Fyngram Platform may also access, collect, store and/or monitor information regarding the user’s location, which includes but is not limited to his/her/its global positioning system coordinates vis-à-vis the device used to access the Fyngram Platform. The location data does not collect or share any personally identifiable information about the user.</li>
+                        </ul>
+                        <p class="mt-2"><u>Telephone calls</u></p>
+                        <ul>
+                            <li>The Fyngram Platform may keep records of telephone calls received from and made to users for the purpose of administration of Services, research and development, training, business intelligence, business development, or for user administration. The Fyngram Platform may share the telephone records with third parties when required by law or when required to provide or facilitate the User with the Services.</li>
                         </ul>
                     </div>
                 </div>
 
                 <div style="margin: 10px 0 0 0;">
-                    <div class="question listformat" id="q6">6. International Transfers</div>
+                    <div class="question listformat font-weight-bold" id="q6">6. When do we collect information?</div>
                     <p class="txt">
-                        We may transfer your personal data to locations in another country, if this is permissible pursuant to
-                        applicable laws in your location. There are inherent risks in such transfers.
-                        <br>
-                        In the event of international transfers of your personal data, we shall put in place measures necessary to
-                        protect your data, and we shall continue to respect your legal rights pursuant to the terms of this Privacy
-                        and Cookie Notice and applicable laws in your location.
+                        We collect information from the user when the user registers on the Fyngram Platform, place an order, subscribe to a newsletter or enter information on our application. We may offer email, app notifications, short message service (sms), multimedia message service (mms) or other forms of communication to share information with the about certain promotions or features the application may choose to offer or about our affiliates, subsidiaries, business partners, advertisers and sponsors. You may receive such communication when you have registered as a user.
                     </p>
                     <br>
                 </div>
 
                 <div style="margin: 10px 0 0 0;">
-                    <div class="question listformat" id="q7">7. Data Security</div>
-                    <p class="txt">
-                        We have put in place appropriate security measures to prevent your personal data from being accidentally
-                        lost, used or accessed in an unauthorised way, altered or disclosed.
-                        <br>
-                        In addition, we limit access to your personal data to those employees, agents, contractors and other third
-                        parties who have a business need to know. They will only process your personal data on our instructions and
-                        they are subject to a duty of confidentiality.
-                        <br>
-                        We have put in place procedures to deal with any suspected personal data breach and will notify you and any
-                        applicable regulator of a breach where we are legally required to do so.
-                    </p>
+                    <div class="question listformat font-weight-bold" id="q7">7. Who has access to your information?</div>
+                    <p class="txt"><u>Employees and Authorized Personnel:</u> </p>
+                    <ul>
+                        <li>All information that is collected, stored and disclosed to the Fyngram Platform by the users is accessible only to authorized personnel and employees on a need-to-know basis. All employees and data processors, who have access to and are associated with the processing of Personal Information or Financial Information provided by users are obliged to respect the confidentiality of every user’s Personal Information or Financial Information.</li>
+                    </ul>
+                    <p class="txt"><u>Government Institutions or Authorities:</u> </p>
+                    <ul>
+                        <li>The Fyngram Platform may be required to disclose Personal Information or Financial Information to governmental institutions or authorities under any law or judicial decree. The Fyngram Platform may also do so in its sole discretion, deems it necessary in order to protect its rights or the rights of others, to prevent harm to persons or property, to fight fraud and credit risk, or to enforce or apply the terms of use. The Fyngram Platform shall not be responsible for the manner or method in which such institutions and authorities use or disclose such information.</li>
+                    </ul>
+                    <p class="txt"><u>Other Parties:</u> </p>
+                    <ul>
+                        <li>The Fyngram Platform may share/use Personal Information and Personally Identifiable Information provided by users with the other parties for the purposes of:</li>
+                        <ol>
+                            <li>providing services, technical support, etc. in relation to the Services, and enhancing User experience; or</li>
+                            <li>detecting and preventing identity theft, fraud or any other potentially illegal acts; or</li>
+                            <li>monitoring and enhancing user interest and engagement, including through promotional activity, personal messages to users using Personally Identifiable Information provided by users, etc; or</li>
+                            <li>processing the purchase of Services on the Fyngram Platform.</li>
+                        </ol>
+                    </ul>
+                    <p class="txt"><u>Merging/Acquiring Parties:</u> </p>
+                    <ul>
+                        <li>In the event that the Fyngram Platform is merged with or acquired by another business entity, it will be required to transfer all Personal Information to such merging or acquiring party. In such a case, the Fyngram Platform will take all reasonable efforts to make sure that Personal Information is protected by the merging or acquiring entity, in conformity with applicable laws.</li>
+                    </ul>
+                    <p class="txt"><u>Third Party upon Sale:</u> </p>
+                    <ul>
+                        <li>
+                            The Fyngram Platform may also disclose or transfer the personal and other information provided by Users, to any third party as a part of reorganization or a sale of the assets, division or transfer of a part or whole of the company. Any third party to which the Fyngram Platform transfers or sells its assets will have the right to continue to use the personal and other information that Users provide to the Fyngram Platform.
+                        </li>
+                    </ul>
+                    <p class="txt"><u>Third-Party Sites:</u> </p>
+                    <ul>
+                        <li>
+                            The Fyngram Platform does not exercise control over the websites displayed as search results or links from within the Services. These other sites may place their own cookies or other files on the users’ computer, collect data or solicit Personal Information or Financial Information from the users, for which the Fyngram Platform shall not be held responsible or liable. The Fyngram Platform does not make any representations concerning the privacy practices or policies of such third parties or terms of use of such websites, nor does the Fyngram Platform guarantee the accuracy, integrity, or quality of the information, data, text, software, sound, photographs, graphics, videos, messages or other materials available on such websites. The inclusion or exclusion does not imply any endorsement by the Fyngram Platform of such websites, the websites’ provider, or the information on the website.
+                        </li>
+                    </ul>
+                </div>
+
+                <div style="margin: 10px 0 0 0;">
+                    <div class="question listformat font-weight-bold" id="q8">8. How do we use your information?</div>
+                    <p class="txt">We may use the information we collect from the user when the user registers, makes a purchase, signs up for our newsletter, responds to a survey or marketing communication, surfs the application, or uses certain other application features in the following ways: </p>
+                    <ol>
+                        <li>
+                            To personalize your experience and to allow us to deliver the type of content and product offerings in which you are most interested
+                        </li>
+                        <li> To improve our application in order to better serve you.
+                        </li>
+                        <li>To allow us to better service you in responding to your customer service requests.
+                        </li>
+                        <li>To administer a contest, promotion, survey or other application feature.</li>
+                        <li>To quickly process your transactions</li>
+                        <li>To ask for ratings and reviews of services or products.
+                        </li>
+                    </ol>
                     <br>
                 </div>
 
                 <div style="margin: 10px 0 0 0;">
-                    <div class="question listformat" id="q8">8. Your Legal Rights</div>
+                    <div class="question listformat font-weight-bold" id="q9">9. How do we protect your information?</div>
                     <p class="txt">
-                        It is important that the personal data we hold about you is accurate and current. Please keep us informed if
-                        your personal data changes during your relationship with us.
-                        <br>
-                        Under certain circumstances, you have rights under data protection laws in relation to your personal data,
-                        including the right to access, correct or erase your personal data, object to or restrict processing of your
-                        personal data, and unsubscribe from our emails and newsletters.
+                        The Company has implemented security policies, rules and technical measures, as required under applicable law including firewalls, transport layer security and other physical and electronic security measures to protect the Financial Information and Personal Information that it has under its control from unauthorised access, improper use or disclosure, unauthorised modification and unlawful destruction or accidental loss. While the Fyngram Platform is committed to maintaining confidentiality of all Personal Information, Personally Identifiable Information and Financial Information, it shall not be responsible for any breach of security or for any action of any third parties that receive Users’ personal data or events that are beyond the reasonable control of the Fyngram Platform including, acts of government, computer hacking, unauthorised access to computer data and storage device, computer crashes, breach of security and encryption, etc. All information collected from the Users by the Fyngram Platform is maintained in electronic form on servers and/or cloud systems and shall be accessible by certain employees of the Company. The User information may also be converted to physical form from time to time. Regardless of the manner of storage, the Fyngram Platform shall make commercially reasonable endeavours to ensure that the User information is rendered confidential and will disclose User information only in accordance with the terms of this Privacy Policy.
                     </p>
                     <br>
                 </div>
-
                 <div style="margin: 10px 0 0 0;">
-                    <div class="question listformat" id="q9">9. Further Details</div>
+                    <div class="question listformat font-weight-bold" id="q10">10. Do we use ‘cookies’?</div>
                     <p class="txt">
-                        If you are looking for more information on how we process your personal data, or you wish to exercise your
-                        legal rights in respect of your personal data, please contact 
+                        We do not use cookies for tracking purposes. Users can choose to have their computer warn them each time a cookie is being sent, or users can choose to turn off all cookies. Users do this through their browser settings. Since browser is a little different, users may look at their browser’s help menu to learn the correct way to modify their cookies.
+                        If users turn cookies off, some of the features that make users’ application experience more efficient may not function properly.
+                    </p>
+                    <br>
+                </div>
+                <div style="margin: 10px 0 0 0;">
+                    <div class="question listformat font-weight-bold" id="q11">10. Changes in Privacy Policy?</div>
+                    <p class="txt">
+                    We reserve the right to modify this privacy policy at any time, so please review it frequently. Changes and clarifications will take effect immediately upon their posting on the application. If we make material changes to this policy, we will notify you here that it has been updated, so that you are aware of what information we collect, how we use it, and under what circumstances, if any, we use and/or disclose it
                     </p>
                     <br>
                 </div>

@@ -110,10 +110,6 @@ public class LinksServlet extends HttpServlet {
                     response.sendRedirect("pages/shop/returned_policy/returned_policy.jsp");
                     break;
                 }
-                case "HowToReturn": {
-                    response.sendRedirect("pages/shop/how_to_return/how_to_return.jsp");
-                    break;
-                }
                 case "Search": {
                     session.setAttribute("categoryID", request.getParameter("cat"));
                     session.setAttribute("query", request.getParameter("query"));

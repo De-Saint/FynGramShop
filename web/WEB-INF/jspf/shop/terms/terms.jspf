@@ -1,85 +1,258 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
 
-    <!--breadcrumbs area start-->
-    <div class="breadcrumbs_area">
-        <div class="container">   
-            <div class="row">
-                <div class="col-12">
-                    <div class="breadcrumb_content">
-                        <h3>Terms Of Use</h3>
-                        <ul>
-                            <li><a href="/FynGramShop/">home</a></li>
-                            <li>terms and conditions</li>
-                        </ul>
-                    </div>
+<!--breadcrumbs area start-->
+<div class="breadcrumbs_area">
+    <div class="container">   
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_content">
+                    <h3>Terms Of Use</h3>
+                    <ul>
+                        <li><a href="/FynGramShop/">home</a></li>
+                        <li>terms and conditions</li>
+                    </ul>
                 </div>
             </div>
-        </div>         
-    </div>
-    <!--breadcrumbs area end-->
+        </div>
+    </div>         
+</div>
+<!--breadcrumbs area end-->
 <div class="container text-justify mb-40 mt-30">
     <div class="row">
-        <h4 class="text-center">Introduction</h4>
-        <p>
-            Welcome to the Jumia.com.ng website (the "Site"). These terms & conditions ("Terms and Conditions") apply to the Site, and all of its divisions, subsidiaries, and affiliate operated Internet sites which reference these Terms and Conditions.
-            This website is owned and operated by Ecart Internet Services Nigeria Limited. For the purposes of this website, "seller", "we", "us" and "our" all refer Jumia.com.ng
-            The Site reserves the right, to change, modify, add, or remove portions of both the Terms and Conditions of Use and the Terms and Conditions of Sale at any time. Changes will be effective when posted on the Site with no other notice provided. Please check these Terms and Conditions regularly for updates. Your continued use of the Site following the posting of changes to these Terms and Conditions constitutes your acceptance of those changes.
-            Kindly review the Terms and Conditions listed below diligently prior to using this website as your use of the website indicates your agreement to be wholly bound by its Terms and Conditions without modification.
-            You agree that if you are unsure of the meaning of any part of these Terms and Conditions or have any questions regarding the Terms and Conditions, you will not hesitate to contact us for clarification. These Terms and Conditions fully govern the use of this website. No extrinsic evidence, whether oral or written, will be incorporated.
-        </p>
-    </div>
-    <div class="row">
-        <h4 class="align-content-center">Terms and Conditions of Use</h4>
-    </div>
-
-    <div class="row">
-        <h5 class="text-center">Use of the Site</h5>
-        <p>
-            Welcome to the Jumia.com.ng website (the "Site"). These terms & conditions ("Terms and Conditions") apply to the Site, and all of its divisions, subsidiaries, and affiliate operated Internet sites which reference these Terms and Conditions.
-            This website is owned and operated by Ecart Internet Services Nigeria Limited. For the purposes of this website, "seller", "we", "us" and "our" all refer Jumia.com.ng
-            The Site reserves the right, to change, modify, add, or remove portions of both the Terms and Conditions of Use and the Terms and Conditions of Sale at any time. Changes will be effective when posted on the Site with no other notice provided. Please check these Terms and Conditions regularly for updates. Your continued use of the Site following the posting of changes to these Terms and Conditions constitutes your acceptance of those changes.
-            Kindly review the Terms and Conditions listed below diligently prior to using this website as your use of the website indicates your agreement to be wholly bound by its Terms and Conditions without modification.
-            You agree that if you are unsure of the meaning of any part of these Terms and Conditions or have any questions regarding the Terms and Conditions, you will not hesitate to contact us for clarification. These Terms and Conditions fully govern the use of this website. No extrinsic evidence, whether oral or written, will be incorporated.
-
-            You confirm that you are at least 18 years of age or are accessing the Site under the supervision of a parent or legal guardian.
-            Both parties agree that this website may only be used in accordance with these Terms and Conditions of Use. If you do not agree with the Terms and Conditions of Use or do not wish to be bound by them, you agree to refrain from using this website.
-            We grant you a non-transferable, revocable and non-exclusive license to use this Site, in accordance with the Terms and Conditions of Use, for such things as: shopping for personal items sold on the site, gathering prior information regarding our products and services and making purchases. Commercial use or use on behalf of any third party is prohibited, except as explicitly permitted by us in advance. These Terms and Conditions of Use specifically prohibit actions such as: accessing our servers or internal computer systems, interfering in any way with the functionality of this website, gathering or altering any underlying software code, infringing any intellectual property rights. This list is non-exhaustive and similar actions are also strictly prohibited.
-            Any breach of these Terms and Conditions of Use shall result in the immediate revocation of the license granted in this paragraph without prior notice to you. Should we determine at our sole discretion that you are in breach of any of these conditions, we reserve the right to deny you access to this website and its contents and do so without prejudice to any available remedies at law or otherwise.
-            Certain services and related features that may be made available on the Site may require registration or subscription. Should you choose to register or subscribe for any such services or related features, you agree to provide accurate and current information about yourself, and to promptly update such information if there are any changes. Every user of the Site is solely responsible for keeping passwords and other account identifiers safe and secure.
-            The account owner is entirely responsible for all activities that occur under such password or account. Furthermore, you must notify us of any unauthorized use of your password or account. The Site shall not be responsible or liable, directly or indirectly, in any way for any loss or damage of any kind incurred as a result of, or in connection with, your failure to comply with this section.
-            During the registration process you agree to receive promotional emails from the Site. You can subsequently opt out of receiving such promotional e-mails by clicking on the link at the bottom of any promotional email.
-
+        <h4 class="text-center">1. Introduction and Terms of Use</h4>
+        <p>The terms and conditions contained hereinafter <strong>(“Terms and Condition of Use”)</strong> shall apply to the use of Fyngram (<b>"Fyngram"</b> or <b>"we"</b> or <b>"our"</b>), a trade name owned and managed by 63Ideas Infolabs Private Limited. Fyngram is an application in Android Store that facilitates users registered on <b>Fyngram</b>, to buy fresh fruits and vegetables across cities in Nigeria <b>(“Services”)</b>. 
+            Any person logging on to or using <b>Fyngram</b> (even when such person does not make any purchase from <b>Fyngram</b>) (<b>“User” or “you”</b>) shall be presumed to have read these Terms of Use (which includes the Privacy Policy, separately provided on Fyngram) and unconditionally accepted the terms and conditions set out herein and this constitutes a binding and enforceable agreement between the User and <b>Fyngram</b> (“<b>Agreement</b>”). This Agreement does not alter in any way the terms or conditions of any other written agreement you may have with <b>Fyngram</b> for other services. If you do not agree to this Agreement (including any referenced policies or guidelines), please immediately terminate your use of <b>Fyngram</b>. To the extend applicable, this Terms of Use shall apply to the website of <b>Fyngram</b> and its visitors as well.
         </p>
     </div>
 
-    <div class="row">
-        <h5 class="text-center">User Submissions</h5>
+    <div class="row mt-30">
+        <h4 class="text-center">2. Membership Eligibility</h4>
         <p>
-            Anything that you submit to the Site and/or provide to us, including but not limited to, questions, reviews, comments, and suggestions (collectively, "Submissions") will become our sole and exclusive property and shall not be returned to you.
-            In addition to the rights applicable to any Submission, when you post comments or reviews to the Site, you also grant us the right to use the name that you submit, in connection with such review, comment, or other content.
-            You shall not use a false e-mail address, pretend to be someone other than yourself or otherwise mislead us or third parties as to the origin of any Submissions. We may, but shall not be obligated to, remove or edit any Submissions.
-            By completing an order or signing up, you agree to receive a) emails associated with finalizing your order, which may contain relevant offers from third parties, and b) emails asking you to review Jumia and your purchase and c) promotional emails, SMS and push notifications from Jumia. You may unsubscribe from promotional emails via a link provided in each email. If you would like us to remove your personal information from our database, unsubscribe from emails and/or SMS, please email Customer Service email address by country.
-
+            Use of <b>Fyngram</b> is available only to such persons who can form legally binding contracts under Nigeria/Africa Contract Act, 1872. Persons who are "incompetent to contract" within the meaning of the Nigeria/Africa Contract Act, 1872 including minors, un-discharged insolvents etc. are not eligible to use Fyngram. If you are a minor i.e. under the age of 18 years, you shall not register as a User of Fyngram and shall not transact on or use Fyngram. As a minor if you wish to use or transact on Fyngram, such use or transaction may be made by your legal guardian or parents on Fyngram. Fyngram reserves the right to terminate your membership and / or refuse to provide you with access to Fyngram if it is brought to Fyngram notice or if it is discovered that you are under the age of 18 years. By accepting these Terms of Use, the User irrevocably declares and undertakes that he/she is of legal age i.e. 18 years or older and capable of entering into a binding contract and such usage shall be deemed to form a contract between Fyngram and such User to the extent permissible under applicable laws.
         </p>
     </div>
 
-    <div class="row">
-        <h5 class="text-center">Notice of Copyright Infringement</h5>
+    <div class="row mt-30">
+        <h4 class="text-center">3. Account and Registration Obligations</h4>
         <p>
-
-            If you have any complaints with respect to the infringement of your copyright, kindly write to the following address: Jumia Nigeria, 109 Adeniyi Jones, Ikeja, Lagos.
-            Who? Where?
-            Where you believe that your intellectual property has been infringed upon on our website, please notify us by email it to (insert physical address and email address for copyright complaints). We expeditiously respond to all concerns regarding copyright infringements.
-            We request that you provide the following information along with your complaint:
-            A physical or electronic signature of the person authorized to act on behalf of the owner of the copyrighted work for the purposes of the complaint.
-            A proper description of the copyrighted work claimed to have been infringed.
-            A description of the location of the infringing material on our Website.
-            The address, telephone number or e-mail address of the complaining party.
-            A statement made by the complaining party that he has a good-faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent or by law.
-            A statement deposed to under oath, that the information in the notice of copyright infringement is accurate, and that the complaining party is authorized to act on behalf of the copyright owner. Please note that this procedure is exclusively for notifying Jumia that your copyrighted material has been infringed.
-
+            If you use <b>Fyngram,</b> you shall be responsible for maintaining the confidentiality of your account and password and shall be responsible for all activities that occur in or throughout your account. We will not be liable to any person for any loss or damage which may arise as a result of any failure by you to protect your password or account. You should take all necessary steps to ensure that the password is kept confidential and secure. In case you have any reason to believe that your password has become known to anyone else, or if the password is being, or is likely to be, used in an unauthorised manner, you should inform us immediately at info@fyngram.com. You agree that if you provide any information that is untrue, inaccurate, not current or incomplete or we have reasonable grounds to suspect that such information is untrue, inaccurate, not current or incomplete, or not in accordance with this Terms of Use, we shall have the right to indefinitely suspend or terminate or block access of your membership on <b>Fyngram</b> and refuse to provide you with access to <b>Fyngram.</b>
         </p>
+        <ul>
+            <li>You also agree and confirm that you will:</li>
+            <ol>
+                <li>Provide accurate, current and complete information whenever prompted by <b>Fyngram</b> or  when required by the <b>Fyngram</b> registration form <b>(“Registration Data”).</b>
+                </li>
+                <li>Provide information about and/or access to your social accounts to enable us to use such information solely for the purpose of providing services to you.</li>
+                <li>Maintain and promptly update the Registration Data to keep it accurate, current and complete at all times. We reserve the right to confirm and validate the information and other details provided by you at any point of time. If you provide any information that is untrue, inaccurate, incomplete, or not current or if we have reasonable grounds to suspect that such information is not in accordance with the Terms of Use (whether wholly or in part thereof), we reserve the right to reject your registration and/or indefinitely suspend or terminate your membership and to refuse to provide you access to <b>Fyngram.</b>
+                </li>
+                <li>In order to ensure that we are not violating any right that you might have in your Registration Data, grant to us a non-exclusive, worldwide, perpetual, irrevocable, royalty-free, sub-licensable right to exercise the copyright, publicity, and database rights (but no other rights) that you have in the Registration Data, in any media now or in future known, with respect to your Registration Data solely to enable us and our service partners to use such Registration Data you have supplied to us.</li>
+
+            </ol>
+        </ul>
+    </div>
+
+    <div class="row mt-30">
+        <h4 class="text-center">4. Communications</h4>
+        <p>
+            When you use <b>Fyngram</b> or send emails or other data, information or communication to us, you agree and understand that you are communicating with us through electronic records and You consent to receive communications via electronic records from Us periodically and as and when required. We may communicate with you by email or by such other mode of communication, electronic or otherwise.
+            When you visit <b>Fyngram</b> or send e-mails to us, you are communicating with us electronically. You will be required to provide a valid phone number while placing an order with us. We will communicate with you by e-mail, phone calls, SMS or by posting notices on <b>Fyngram.</b> You agree that all agreements, notices, disclosures and other communications that we provide to you electronically satisfy any legal requirement that such communications be in writing. Notwithstanding anything contained in this Agreement and subject to applicable laws, you consent to receive communications (including transactional, promotional and/or commercial messages), from us with respect to your use of the website and/or your order placed on Fyngram.
+        </p>
+    </div>
+
+    <div class="row mt-30">
+        <h4 class="text-center">5. Indemnity and Release</h4>
+        <p>
+            You shall indemnify and hold harmless Fyngram, and/or any of its officers, directors, agents, employees and representatives from any claim or demand, or actions including reasonable attorney's fees, made by any third party or penalty imposed due to or arising out of your breach of these Terms of Use or any document incorporated by reference, or your violation of any applicable laws, rules, regulations or the rights of any third party.
+            You hereby expressly release Fyngram and/or any of its officers and representatives from any cost, damage, liability or other consequence of any of the actions/inactions of the third-party and specifically waive any claims or demands that you may have in this behalf under any statute, contract or otherwise.
+        </p>
+    </div>
+
+    <div class="row mt-30">
+        <h4 class="text-center">6. Privacy</h4>
+        <p>
+            In order to avail the Services from Fyngram, you will need to provide Registration Data prior to getting registered. As an account holder you are required to provide Fyngram with accurate personal information. Any personal information collected by Fyngram shall not be disclosed to any third party unrelated to Fyngram unless such a disclosure is authorized or required by law, or you have expressly consented to such a disclosure. However, by accepting the terms and conditions, you grant Fyngram an unconditional right to share your personal information with Fyngram partners, affiliates, employees and agents for administrative purpose. You are requested to review the Privacy Policy before using Fyngram. If you have any objection to the terms of our Privacy Policy, you are requested not to use Fyngram. </p>
+    </div>
+
+
+    <div class="row mt-30">
+        <h4 class="text-center">7. Credit Cards/ Financial Wallets / UPI/ Banking A/c No or any other Financial Information.</h4>
+        <p>
+            You agree, understand and confirm that the financial details provided by you for availing of Services of Fyngram will be correct and accurate and you shall not use any financial payment option which is un-lawfully owned by you or outside the purview of the law of the country of India. Thus, you must not pay or attempt to pay for Services using fraudulent financial information and through illegal payment option as per law of India. You further agree and undertake to provide the correct and details to Fyngram.
+            <br>Further the said information will not be utilized and shared by Fyngram with any third parties unless required for fraud verifications or by law, regulation or court order. Fyngram will not be liable for any kind of financial fraud. The liability for use of a financial payment option will be on you and the onus to ‘prove otherwise’ shall be exclusively yours.
+        </p>
+    </div>
+
+
+    <div class="row mt-30">
+        <h4 class="text-center">8. User Liability.</h4>
+        <p>The User, by the act of logging onto Fyngram is deemed to have consented to and has expressly/impliedly and irrevocably authorized Fyngram to use, reveal, analyze, display or transmit all information required by Fyngram. The User represents and warrants that all the information provided by him/her are true, correct and complete and if such information is found to be untrue, incorrect or incomplete, Fyngram has the right to take any action it deems appropriate in relation to the particular circumstances without any limitations
+        </p>
+    </div>
+
+
+    <div class="row mt-30">
+        <h4 class="text-center">9. Representations, Warranties and Covenants.</h4>
+        <p>You shall not, directly or indirectly attempt to gain unauthorized access to Fyngram, other Users’ account(s), computer systems and/or networks connected to Fyngram through hacking, phishing, password mining and/or any other means (whether now known or hereafter developed or invented) or obtain any material or information through any means not intentionally made available to User.</p>
+        <ul>
+            <li class="font-weight-bold">You understand and undertake that you shall be solely responsible for the Registration Data and undertake to not host, display, upload, modify, publish, transmit, update or share any information that:</li>
+            <ol>
+                <li>belongs to another person and to which you do not have any right to;</li>
+                <li>Is grossly harmful, harassing, blasphemous, defamatory, obscene, pornographic, pedophilic,    seditious, libelous, invasive of another's privacy, hateful, or racially, ethnically objectionable, disparaging, relating or encouraging money laundering or gambling, or otherwise unlawful in any manner whatever;</li>
+                <li>Harms minors in any way; </li>
+                <li>Infringes any patent, trademark, copyright or other proprietary rights of any person anywhere in the world;.</li>
+                <li>Violates any law for the time being in force;</li>
+                <li>Deceives or misleads the addressee about the origin of such messages or communicates any information which is grossly offensive or menacing in nature;</li>
+                <li>Impersonates another person;</li>
+                <li>contains software viruses or any other computer code, files or programs designed to interrupt, destroy or limit the functionality of any computer resource;</li>
+                <li>Threatens the unity, integrity, defence, security or sovereignty of India, friendly relations with foreign states, or public order or causes incitement to the commission of any cognizable offence or prevents investigation of any offence or is insulting to any other nation;</li>
+                <li>Creates liability for Fyngram or causes Fyngram to lose (in whole or in part) the services of Fyngram ISPs or other service providers;</li>
+                <li>Is in the nature of political campaigning, unsolicited or unauthorized advertising, promotional and/ or commercial solicitation, chain letters, pyramid schemes, mass mailings and/or any form of ‘spam’ or solicitation; or</li>
+                <li>s illegal in any other way. </li>
+            </ol>
+        </ul>
+        <ul>
+            <li class="font-weight-bold">The User understands and agrees that the Fyngram team reserves the right to remove and/or edit such detail / information.
+                <br>  If you do post content or submit material on Fyngram, and unless we indicate otherwise to you in writing, it shall be deemed that you</li>
+            <ol>
+                <li>Grant Fyngram a non-exclusive, royalty-free, irrevocable, perpetual and fully sub-licensable rights to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such content throughout the world in any media;</li>
+                <li>Grant Fyngram the right to use the name that you submit in connection with such content, if they choose; and</li>
+                <li>Agree that the rights you grant above are irrevocable during the entire period of protection of your intellectual property rights associated with such content and material. You agree to waive your right to be identified as the author of such content and your right to object to any usage or derogatory treatment of such content. You agree to perform all further acts necessary to perfect any of the above rights granted by you to Fyngram.</li>
+            </ol>
+        </ul>
+        <ul>
+            <li class="font-weight-bold">You represent and warrant that you own or otherwise control all the rights to the content that you post or that you otherwise provide on or through Fyngram; that, as at the date that the content or material is submitted to Fyngram:</li>
+            <ol>
+                <li>The content and material is accurate</li>
+                <li>The use of the content and material supplied by you does not breach any applicable policies of Fyngram or any guidelines herein and will not cause injury to any person or entity (including that the content or material is not defamatory);</li>
+                <li>The content is lawful and does not violate any applicable laws</li>
+            </ol>
+        </ul>
+        <p>
+            You further agree to indemnify Fyngram for all claims brought by third parties against Fyngram arising out of or in connection with a breach of any of the representations and warranties provided hereinabove. 
+        </p>
+    </div>
+
+
+    <div class="row mt-30">
+        <h4 class="text-center">10. Complaint against Objectionable Content.</h4>
+        <p>If you believe that any content on Fyngram is illegal, offensive (including but not limited to material that has sexually explicit content or which promotes racism, bigotry, hatred or physical harm etc.), deceptive, misleading, abusive, indecent, harassing, blasphemous, defamatory, libellous, obscene, pornographic, paedophilic or menacing; ethnically objectionable, disparaging; or is otherwise injurious to third parties; or relates to or promotes money laundering or gambling; or is harmful to minors in any way; or impersonates another person; or threatens the unity, integrity, security or sovereignty of Nigeria or friendly relations with foreign States; or objectionable or otherwise unlawful in any manner whatsoever; or which consists of or contains software viruses, (<b>“Objectionable Content”</b>), please notify us immediately on <a href="mailto:info@fyngram.com" class="text-primary">info@fyngram.com</a>. We will take reasonable steps to ensure that such Objectionable Content complained about is reviewed and removed (if required) within a reasonable time.</p>
+    </div>
+
+
+    <div class="row mt-30">
+        <h4 class="text-center">11. Intellectual Property Rights.</h4>
+        <p>The information, content and compilation provided in Fyngram is our exclusive property and is protected under the applicable Indian and international intellectual property laws. No person shall use, copy, transmit, reproduce, publish, modify, distribute any contents of the website or any part thereof without our express written permission.
+            <br>  Further, without the express written consent of Fyngram, no person shall create and/ or publish his/her own database that features substantial (e.g. prices and product listings) portions of the contents of Fyngram
+        </p>
+    </div>
+
+
+    <div class="row mt-30">
+        <h4 class="text-center">12. Intellectual Property Claims.</h4>
+        <p>Fyngram respects the intellectual property of others. If you believe that your intellectual property rights have been used in a way that gives rise to concerns of infringement, please bring it to our notice by sending an email at <a href="mailto:info@fyngram.com" class="text-primary" >info@fyngram.com</a>. We will envisage to address your concerns and take necessary steps, if required.
+        </p>
+    </div>
+
+
+    <div class="row mt-30">
+        <h4 class="text-center">13. Alteration of Service or Amendments to the Conditions.</h4>
+        <p>We reserve the right to make changes to Fyngram, its policies and these Terms of Use at any time. You will be subject to the policies and Terms of Use in force at the time that you use Fyngram. If any of these terms are deemed invalid, void, or for any reason unenforceable, that term will be deemed severable and will not affect the validity and enforceability of any remaining condition of this Terms of Use
+        </p>
+    </div>
+
+
+    <div class="row mt-30">
+        <h4 class="text-center">14. Waiver.</h4>
+        <p>
+            Neither failure nor delay on the part of Fyngram to exercise or enforce any right, remedy, power or privilege contained hereunder nor course of dealing between the parties shall operate as a waiver thereof, or of the exercise of any other right, remedy, power or privilege. No part of these Terms of Use shall be deemed waived, and no breach consented to, unless such waiver or consent shall be in writing and signed by the party claimed to have waived or consented. No waiver of any rights or consent to any breaches shall constitute a waiver of any other rights or consent to any other breach.</p>
+    </div>
+
+
+    <div class="row mt-30">
+        <h4 class="text-center">15. Limitation of Liability.</h4>
+        <p>
+            In no event shall Fyngram be liable for any special, incidental, indirect or consequential damages of any kind in connection with these Terms of Use, even if the User has been informed in advance of the possibility of such damages.
+        </p>
+    </div>
+
+
+
+    <div class="row mt-30">
+        <h4 class="text-center">16. Disclaimer.</h4>
+        <ul>
+            <ol>
+                <li class="font-weight-bold">General</li>
+                <ul>
+                    <li>
+                        You acknowledge and undertake that you are visiting and accessing the Services on the mobile application and website, as the case may be, (“Fyngram Platform”) and transacting at your own risk and are using your best and prudent judgment before entering into any transactions through the Fyngram Platform. We shall both be liable nor responsible for any actions or inactions of sellers nor any breach of conditions, representations or warranties by the sellers or manufacturers of the products and hereby expressly disclaim and any all responsibility and liability in that regard. We shall not mediate or resolve any dispute or disagreement between you and the sellers or manufacturers of the products.
+                    </li>
+                </ul> 
+                <li class="font-weight-bold">No warranties</li>
+                <ul>
+                    <li>
+                        We expressly disclaim any warranties or representations (express or implied) in respect of quality, suitability, accuracy, reliability, completeness, timeliness, performance, safety, merchantability, fitness for a particular purpose, or legality of the products listed or displayed or transacted or the content (including product or pricing information and/or specifications) on the Fyngram Platform. While we have taken precautions to avoid inaccuracies in content of Fyngram Platform, all content, information (including the price of products), software, products, services and related graphics are provided as is, without warranty of any kind.
+                    </li>
+                    <ul>
+                        <li>Without prejudice to the generality of the foregoing paragraph, we do not warrant that:</li>
+                        <ol>
+                            <li>The Fyngram Platform will be constantly available, or available at all; or</li>
+                            <li>The information on the Fyngram Platform is complete, true, accurate or not misleading</li>
+                        </ol>
+                    </ul>
+                    <li>
+                        Nothing on the Fyngram Platform constitutes, or is meant to constitute, advice of any kind. While we strive to ensure that the information contained in the Fyngram Platform is accurate and reliable, we make no warranties or representations as to the accuracy, correctness, reliability or otherwise with respect to such information, and we assume no liability or responsibility for any omission or error in the content of the Fyngram Platform. The information and materials contained on the Fyngram Platform are subject to change without notice and are provided for general information only and should not be used as a basis for making business or financial decisions.
+                    </li>
+                    <li>
+                        Despite our best efforts to provide accurate information on the Fyngram Platform, it is not possible to ensure that all the information provided here is up to date. We shall not be liable for any unintentional inaccuracies or errors with respect to the description of any product. Further, no liability shall be imposed on us, in the event of any damage, error, injury or loss caused to any person or User, whether direct or indirect, caused to him due to use or inability to use the Fyngram Platform or any links or hyperlinks provided on the Fyngram Platform. The usage of any link or hyperlink by any visitor will be at his/ her own risk and we assume no liability for any damage caused. We recommend that the users read the terms and conditions of such link(s).
+                    </li>
+                    <li>
+                        The contents, designs, materials, etc. available on this Fyngram Platform may be protected by copyright law. You may not otherwise change, reproduce, modify, distribute, and publicly display the materials available on the Fyngram Platform in any way, unless authorized by us or the respective copyright owner.
+                    </li>
+                </ul> 
+                <li class="font-weight-bold">Limitations of Liability</li>
+                <ul>
+                    <li>
+                        We expressly disclaim any warranties or representations (express or implied) in respect of quality, suitability, accuracy, reliability, completeness, timeliness, performance, safety, merchantability, fitness for a particular purpose, or legality of the products listed or displayed or transacted or the content (including product or pricing information and/or specifications) on the Fyngram Platform. While we have taken precautions to avoid inaccuracies in content of Fyngram Platform, all content, information (including the price of products), software, products, services and related graphics are provided as is, without warranty of any kind.
+                    </li>
+                    <ol>
+                        <li>
+                            To the extent that the Fyngram Platform is provided free-of-charge, for any direct loss;
+                        </li>
+                        <li>
+                            For any indirect, special or consequential loss;
+                        </li>
+                        <li>
+                            For any errors in or omissions on this Fyngram Platform and the content therein, including but not limited to technical inaccuracies and typographical errors;
+                        </li>
+                        <li>
+                            For any third-party websites or content therein directly or indirectly accessed through links in this Fyngram Platform, including but not limited to any errors in or omissions therefrom; 
+                        </li>
+                        <li>
+                            For your use of this Fyngram Platform; or
+                        </li>
+                        <li>
+                            For your use of any equipment or software in connection with the Fyngram Platform
+                        </li>
+                        <li>
+                           These limitations of liability apply even if we have been expressly advised of the potential loss.
+                        </li>
+
+                    </ol>
+                </ul>
+
+            </ol>
+
+        </ul>
+    </div>
+
+
+
+    <div class="row mt-30">
+        <h4 class="text-center">17. Governing law and Jurisdiction</h4>
+        <p>
+            These Terms of Use shall be governed by and construed in accordance with the laws of Nigeria (“applicable laws” or “laws”). The courts at Lagos, Nigeria shall have exclusive jurisdiction in relation to any proceedings arising out of or in connection with these Terms of Use  </p>
+
     </div>
 
 

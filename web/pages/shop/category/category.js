@@ -33,12 +33,14 @@ function categoryBtnEvents() {
 //    });
 }
 function categoryPageFunctions() {
+    showLoading();
     GetData("Category", "GetAllLevelCategories", "LoadAllLevelCategories", "");
 
 }
 
 
 function DisplayAllLevelCategories(data) {
+    hideLoading();
     var parent = $(".callategorylist");
     parent.find(".catnewclone").remove();
     var List = data[0];

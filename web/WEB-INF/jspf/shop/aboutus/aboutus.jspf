@@ -1,140 +1,135 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
 
-    <!--breadcrumbs area start-->
-    <div class="breadcrumbs_area">
-        <div class="container">   
-            <div class="row">
-                <div class="col-12">
-                    <div class="breadcrumb_content">
-                        <h3>About Us</h3>
-                        <ul>
-                            <li><a href="/FynGramShop/">home</a></li>
-                            <li>about us</li>
-                        </ul>
+<!--breadcrumbs area start-->
+<div class="breadcrumbs_area">
+    <div class="container">   
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_content">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="/FynGramShop/">home</a></li>
+                        <li>about us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>         
+</div>
+<!--breadcrumbs area end-->
+
+<!--about section area -->
+<section class="about_section"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <figure>
+                    <div class="about_thumb">
+                        <img src="../../../assets/img/about/about1.jpg" alt="">
+                    </div>
+                    <figcaption class="about_content">
+                        <h1>Fyngram is a tech-driven trio F2B, B2B and B2C business model Supply Chain Company.</h1>
+                        <p>Fyngram is Nigeria/Africa largest fresh produce supply Chain Company that is solving one of the toughest problems in the world through technology. We connect producers of food directly with retailers, restaurants, and service providers using in-house applications that drive end to end operations. Currently, our Supply Chain is equipped to move 1400 tonnes of perishables from farms to businesses, every day, in less than 12 hours.</p>
+                        <!--                            <div class="about_signature">
+                                                        <img src="../../../assets/img/about/about-us-signature.png" alt="">
+                                                    </div>-->
+                    </figcaption>
+                </figure>
+            </div>    
+        </div>  
+    </div> 
+</section>
+<!--about section end-->
+
+<!--chose us area start-->
+<div class="choseus_area" data-bgimg="../../../assets/img/about/about-us-policy-bg.jpg">
+    <div class="container">   
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <div class="single_chose">
+                    <div class="chose_icone">
+                        <img src="../../../assets/img/about/About_icon1.png" alt="">
+                    </div>
+                    <div class="chose_content">
+                        <h3>Fyngram CC & DC</h3>
+                        <p>Fyngram Collection Centres and Delivery Centres </p>
+
                     </div>
                 </div>
             </div>
-        </div>         
-    </div>
-    <!--breadcrumbs area end-->
-    
-    <!--about section area -->
-    <section class="about_section"> 
-       <div class="container">
+            <div class="col-lg-4 col-md-4">
+                <div class="single_chose">
+                    <div class="chose_icone">
+                        <img src="../../../assets/img/about/About_icon2.png" alt="">
+                    </div>
+                    <div class="chose_content">
+                        <h3>100% Fresh Produces</h3>
+                        <p>Fresh produce supply Chain Company - Fyngram</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="single_chose">
+                    <div class="chose_icone">
+                        <img src="../../../assets/img/about/About_icon3.png" alt="">
+                    </div>
+                    <div class="chose_content">
+                        <h3>Online Support 24/7</h3>
+                        <p>24/7 support team for all your requests.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<!--chose us area end-->      
+
+<!--services img area-->
+<div class="about_gallery_section"> 
+    <div class="container">
+        <div class="about_gallery_container">
             <div class="row">
-                <div class="col-12">
-                   <figure>
-                        <div class="about_thumb">
-                            <img src="../../../assets/img/about/about1.jpg" alt="">
-                        </div>
-                        <figcaption class="about_content">
-                            <h1>We are a digital agency focused on delivering content and utility user-experiences.</h1>
-                            <p>Adipiscing lacus ut elementum, nec duis, tempor litora turpis dapibus. Imperdiet cursus odio tortor in elementum. Egestas nunc eleifend feugiat lectus laoreet, vel nunc taciti integer cras. Hac pede dis, praesent nibh ac dui mauris sit. Pellentesque mi, facilisi mauris, elit sociis leo sodales accumsan. Iaculis ac fringilla torquent lorem consectetuer, sociosqu phasellus risus urna aliquam, ornare.</p>
-                            <div class="about_signature">
-                                <img src="../../../assets/img/about/about-us-signature.png" alt="">
+                <div class="col-lg-6 col-md-6">
+                    <article class="single_gallery_section">
+                        <figure>
+                            <div class="gallery_thumb">
+                                <img src="../../../assets/img/about/about4.jpg" alt="">
                             </div>
-                        </figcaption>
-                    </figure>
-                </div>    
-            </div>  
-        </div> 
-    </section>
-    <!--about section end-->
-
-    <!--chose us area start-->
-    <div class="choseus_area" data-bgimg="../../../assets/img/about/about-us-policy-bg.jpg">
-        <div class="container">   
-            <div class="row">
-                <div class="col-lg-4 col-md-4">
-                    <div class="single_chose">
-                        <div class="chose_icone">
-                            <img src="../../../assets/img/about/About_icon1.png" alt="">
-                        </div>
-                        <div class="chose_content">
-                            <h3>Creative Design</h3>
-                            <p>Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet</p>
-
-                        </div>
-                    </div>
+                            <figcaption class="about_gallery_content">
+                                <h3>THE PROBLEM?</h3>
+                                <ol class="text-justify">
+                                    <li>Farmers experience price risk, information asymmetry about demand, distribution inefficiency, and receive late payments.</li>
+                                    <li>Retailers face problems like higher costs, low quality and unhygienic produce, high price volatility, and the everyday hassle of going to the market.</li>
+                                    <li>The traditional Supply Chain is highly inefficient, unorganized, and has a high rate of food wastage.</li>
+                                </ol>
+                            </figcaption>
+                        </figure>
+                    </article>
                 </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="single_chose">
-                        <div class="chose_icone">
-                            <img src="../../../assets/img/about/About_icon2.png" alt="">
-                        </div>
-                        <div class="chose_content">
-                            <h3>100% Money Back Guarantee</h3>
-                            <p>Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet</p>
-
-                        </div>
-                    </div>
+                <div class="col-lg-6 col-md-6">
+                    <article class="single_gallery_section">
+                        <figure>
+                            <div class="gallery_thumb">
+                                <img src="../../../assets/img/about/about2.jpg" alt="">
+                            </div>
+                            <figcaption class="about_gallery_content">
+                                <h3>OUR SOLUTION</h3>
+                                <ol class="text-justify">
+                                    <li>We eliminated intermediaries by taking control of the Supply Chain by using technology and analytics.</li>
+                                    <li>We built reliable, cost-effective, and high-speed logistics and infrastructure to solve for inefficiencies in the Supply Chain.</li>
+                                    <li>On one end, farmers get better prices and consistent demand, and on the other end, retailers receive fresh produce at competitive prices that are delivered to their doorstep.</li>
+                                </ol>
+                            </figcaption>
+                        </figure>
+                    </article>
                 </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="single_chose">
-                        <div class="chose_icone">
-                            <img src="../../../assets/img/about/About_icon3.png" alt="">
-                        </div>
-                        <div class="chose_content">
-                            <h3>Online Support 24/7</h3>
-                            <p>Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>    
-    </div>
-
-    <!--chose us area end-->      
-
-    <!--services img area-->
-    <div class="about_gallery_section"> 
-        <div class="container">
-           <div class="about_gallery_container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4">
-                        <article class="single_gallery_section">
-                            <figure>
-                                <div class="gallery_thumb">
-                                    <img src="../../../assets/img/about/about2.jpg" alt="">
-                                </div>
-                                <figcaption class="about_gallery_content">
-                                   <h3>What do we do?</h3>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto</p>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <article class="single_gallery_section">
-                            <figure>
-                                <div class="gallery_thumb">
-                                    <img src="../../../assets/img/about/about3.jpg" alt="">
-                                </div>
-                                <figcaption class="about_gallery_content">
-                                   <h3>Our Mission</h3>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto</p>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <article class="single_gallery_section">
-                            <figure>
-                                <div class="gallery_thumb">
-                                    <img src="../../../assets/img/about/about4.jpg" alt="">
-                                </div>
-                                <figcaption class="about_gallery_content">
-                                   <h3>History Of Us</h3>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto</p>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                </div> 
-            </div>
-        </div>      
-    </div>
-    <!--services img end-->    
+            </div> 
+        </div>
+    </div>      
+</div>
+<!--services img end-->    
 
