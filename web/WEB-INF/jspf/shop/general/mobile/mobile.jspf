@@ -1,0 +1,86 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!--offcanvas menu area start-->
+
+<div class="offcanvas_menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="canvas_open">
+                    <a href="javascript:void(0)"><i class="icon-menu"></i></a>
+                </div>
+                <div class="offcanvas_menu_wrapper">
+                    <div class="canvas_close">
+                        <a href="javascript:void(0)"><i class="icon-x"></i></a>  
+                    </div>
+                    <div class="language_currency">
+                        <ul>
+                            <li class="language"><a  href="javascript:void(0)"> English </a>
+                            </li>
+                            <li class="currency"><a  href="javascript:void(0)"> NGN </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header_social text-right">
+                        <ul>
+                            <li><a  href="javascript:void(0)"><i class="ion-social-twitter"></i></a></li>
+                            <li><a  href="javascript:void(0)"><i class="ion-social-facebook"></i></a></li>
+                            <li><a  href="javascript:void(0)"><i class="ion-social-instagram-outline"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="search_container">
+                        <form name="searchForm">
+                            <div class="search_box">
+                                <input placeholder="Search products, brands, categories.." type="text" class="searchText">
+                                <button type="submit"><span class="lnr lnr-magnifier"></span></button>
+                            </div>
+                        </form>
+                        <div class="hover_category mt-1">
+                            <select class="select2" name="select" id="cat-root-cat" style="width: 253px; border-radius: 24px; padding-left: 1em;">
+                                <option selected value="1">Select a categories</option>
+
+                            </select>                        
+                        </div>
+                    </div>
+
+                    <div class="call-support mt-4">
+                        <p><a  href="tel:+234 818 206 6897">+234 818 206 6897</a>Customer Support</p>
+                    </div>
+                    <div id="menu" class="text-left ">
+                        <ul class="offcanvas_main_menu">
+                            <li class="menu-item-has-children active">
+                                <a href="/FynGramShop/">Home</a>
+
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="javascript:void(0)">Become A Seller</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item-has-children">
+                                        <a href="${pageContext.request.contextPath}/LinksServlet?type=Sell">Sell on FynGram</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children forMembers">
+                                <a href="${pageContext.request.contextPath}/LinksServlet?type=DashBoard">my account</a>
+                            </li>
+                            <li class="menu-item-has-children notforMembers">
+                                <a href="${pageContext.request.contextPath}/LinksServlet?type=Login">Login</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="${pageContext.request.contextPath}/LinksServlet?type=About">about Us</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="${pageContext.request.contextPath}/LinksServlet?type=Contact"> Contact Us</a> 
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="offcanvas_footer">
+                        <span><a  href="javascript:void(0)"><i class="fa fa-envelope-o"></i> sales@fyngram.com</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--offcanvas menu area end-->

@@ -116,7 +116,7 @@ function loadProductPage(categoryID) {
 function GetData(action, type, callfunction, data) {
     var path = window.location.pathname;
     var href = window.location.href;
-    var url = href.replace(path, '').replace("#", '');
+    var url = href.replace(path, '').replace("#", '').replace("?", '');
     $.ajax({
         url: url + '/FynGramEngine/DispatcherSerlvet',
         type: 'GET',
@@ -631,6 +631,11 @@ function linkToFunction(action, params) {
         case "LoadCustomerStats":
         {
             DisplayCustomerStats(params);
+            break;
+        }
+        case "LoadGlobalSearch":
+        {
+            DisplayGlobalSearch(params);
             break;
         }
 

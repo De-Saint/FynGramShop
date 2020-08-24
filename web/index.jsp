@@ -42,7 +42,7 @@
 
         <!-- Main Style CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
-        
+
         <!--Select 2-->
         <link rel="stylesheet" href="assets/css/select2.min.css" >
         <link href="assets/css/noty.css" rel="stylesheet""/>
@@ -90,8 +90,6 @@
         <script src="assets/js/appscript.js"></script>
         <script src="pages/shop/index/index.js" type="text/javascript"></script>
         <script src="assets/js/noty.min.js" type="text/javascript"></script>
-
-
     </body>
 
 </html>

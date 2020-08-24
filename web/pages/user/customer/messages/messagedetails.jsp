@@ -60,7 +60,6 @@
         <div class="off_canvars_overlay">
 
         </div>
-        <jsp:include page="../../../user/general/mobile/mobile.jsp"></jsp:include>
         <%@include file="../../../../WEB-INF/jspf/shop/general/header/header.jspf" %>
 
         <jsp:include page="../../../../WEB-INF/static_pages/user/customer/messages/messagedetails.jsp"></jsp:include>

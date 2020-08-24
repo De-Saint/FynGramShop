@@ -50,7 +50,7 @@ function DisplayUserReviewList(data) {
         $.each(data, function (index, details) {
             var newchild = childclone.clone();
             count++;
-            newchild.removeClass("shop-p-det-prop-clone");
+            newchild.removeClass("shop-product-review-clone");
             newchild.removeClass("d-none");
             newchild.addClass("new-clone");
             newchild.find(".shop-product-review-date-time").text(details["date"] + " " + details["time"]);
@@ -62,6 +62,6 @@ function DisplayUserReviewList(data) {
         });
         childclone.hide();
         
-        $(".review_count").text(count)
+        $(".review_count").text(count);
     }
 }

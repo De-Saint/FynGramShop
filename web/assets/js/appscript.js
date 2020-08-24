@@ -90,6 +90,27 @@ function GenralBtnEvents() {
     $("#ProceedToCheckOut").click(function () {
         window.location = extension + "LinksServlet?type=Cart";
     });
+
+    $("form[name=SearchForm]").submit(function (e) {
+
+        var searchText = $(".SearchText").val();
+        if (searchText.length > 3) {
+            showLoading();
+            GetData("Products", "GlobalSearch", "LoadGlobalSearch", searchText);
+        }
+        e.preventDefault();
+    });
+
+    $("form[name=searchForm]").submit(function (e) {
+        var searchText = $(".searchText").val();
+        if (searchText.length > 3) {
+            showLoading();
+            $('.offcanvas_menu_wrapper,.off_canvars_overlay').removeClass('active');
+            GetData("Products", "GlobalSearch", "LoadGlobalSearchr", searchText);
+        }
+        e.preventDefault();
+    });
+
 }
 
 
@@ -410,4 +431,9 @@ function DisplayUserDetails(resp) {
         }
     }
 
+}
+
+function DisplayGlobalSearch(data) {
+    console.log(data);
+    hideLoading();
 }

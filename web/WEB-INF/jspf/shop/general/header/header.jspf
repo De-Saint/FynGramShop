@@ -1,7 +1,8 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
 <header>
-     <%@include file="../../general/loader/loader.jspf" %> 
+    <%@include file="../../general/loader/loader.jspf" %> 
+    <%@include file="../../general/mobile/mobile.jspf" %>  
     <div class="main_header ">
         <div class="header_top">
             <div class="container">
@@ -44,11 +45,11 @@
                     <div class="col-lg-10 col-md-6 col-sm-7 col-8">
                         <div class="header_right_info">
                             <div class="search_container">
-                                <form action="#">
+                                <form name="SearchForm">
 
                                     <div class="search_box">
-                                        <input placeholder="Search products, brands and categories..."  type="text">
-                                        <button type="submit" disabled="true"><span class="lnr lnr-magnifier"></span></button>
+                                        <input placeholder="Search products, brands and categories..."  type="text" class="SearchText">
+                                        <button type="submit" ><span class="lnr lnr-magnifier"></span></button>
                                     </div>
                                 </form>
                             </div>
@@ -76,7 +77,7 @@
                                     <a  href="${pageContext.request.contextPath}/LinksServlet?type=Cart"><span class="lnr lnr-cart"></span> <span class="item_count cart_count">0</span> </a>
                                 </div>
                             </div>
-                          
+
                         </div>
                     </div>
                 </div>
@@ -121,7 +122,7 @@
                             <nav class="align-items-center">  
                                 <ul>
                                     <li><a class="active" href="${pageContext.request.contextPath}/LinksServlet?type=Sell">Sell on Fyngram </a></li> 
-                                    
+
                                 </ul>  
                             </nav> 
                         </div>
@@ -136,5 +137,5 @@
             </div>
         </div>
     </div> 
-                               
+                        
 </header>
