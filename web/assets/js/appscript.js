@@ -92,11 +92,10 @@ function GenralBtnEvents() {
     });
 
     $("form[name=SearchForm]").submit(function (e) {
-
         var searchText = $(".SearchText").val();
         if (searchText.length > 3) {
-            showLoading();
-            GetData("Products", "GlobalSearch", "LoadGlobalSearch", searchText);
+            localStorage.setItem("searchtext", searchText);
+            window.location = extension + "LinksServlet?type=Products";
         }
         e.preventDefault();
     });
@@ -104,9 +103,9 @@ function GenralBtnEvents() {
     $("form[name=searchForm]").submit(function (e) {
         var searchText = $(".searchText").val();
         if (searchText.length > 3) {
-            showLoading();
             $('.offcanvas_menu_wrapper,.off_canvars_overlay').removeClass('active');
-            GetData("Products", "GlobalSearch", "LoadGlobalSearchr", searchText);
+            localStorage.setItem("searchtext", searchText);
+            window.location = extension + "LinksServlet?type=Products";
         }
         e.preventDefault();
     });
@@ -188,7 +187,12 @@ function QuickView(parent, data) {
     parent.find("#shop-qv-prod-name").text(data.InfoDetails.name);
     parent.find("#shop-qv-prod-desc").text(data.InfoDetails.description);
     parent.find("#shop-qv-prod-selling-price").text(PriceFormat(data.PriceDetails.selling_price));
-    parent.find("#shop-qv-prod-cost-price").text(PriceFormat(data.PriceDetails.cost_price));
+    if (parseInt(data.show_actual_price) === 1) {
+        parent.find("#shop-qv-prod-cost-price").text(PriceFormat(data.PriceDetails.cost_price));
+    } else {
+        parent.find("#shop-qv-prod-cost-price").text(PriceFormat(data.PriceDetails.cost_price)).addClass("d-none");
+    }
+
     parent.find("#shop-qv-prod-root-category").text(data.RootCatName);
     parent.find("#shop-qv-prod-add-to-wishlist").click(function () {
         shopsessionid = verifyUser();

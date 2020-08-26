@@ -633,11 +633,6 @@ function linkToFunction(action, params) {
             DisplayCustomerStats(params);
             break;
         }
-        case "LoadGlobalSearch":
-        {
-            DisplayGlobalSearch(params);
-            break;
-        }
 
     }
 }

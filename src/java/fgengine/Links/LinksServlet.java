@@ -111,12 +111,11 @@ public class LinksServlet extends HttpServlet {
                     break;
                 }
                 case "Search": {
-                    session.setAttribute("categoryID", request.getParameter("cat"));
-                    session.setAttribute("query", request.getParameter("query"));
+//                    session.setAttribute("categoryID", request.getParameter("cat"));
+//                    session.setAttribute("query", request.getParameter("query"));
                     response.sendRedirect("pages/products/products.jsp");
                     break;
                 }
-
                 case "Login": {
                     response.sendRedirect("pages/user/general/login/login.jsp");
                     break;

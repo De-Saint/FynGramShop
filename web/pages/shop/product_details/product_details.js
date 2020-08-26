@@ -48,7 +48,12 @@ function DisplayShopProductDetails(data) {
     $(".shop-p-det-name").text(data.InfoDetails.name);
     $(".shop-p-det-desc").text(data.InfoDetails.description);
     $(".shop-p-det-selling-price").text(PriceFormat(data.PriceDetails.selling_price));
-    $(".shop-p-det-cost-price").text(PriceFormat(data.PriceDetails.cost_price));
+
+    if (parseInt(data.show_actual_price) === 1) {
+        $(".shop-p-det-cost-price").text(PriceFormat(data.PriceDetails.cost_price));
+    } else {
+        $(".shop-p-det-cost-price").text(PriceFormat(data.PriceDetails.cost_price)).addClass("d-none");
+    }
     $(".shop-p-det-root-category").text(data.RootCatName).click(function () {
         localStorage.setItem("categoryid", data.RootCatID);
         window.location = extension + "LinksServlet?type=Products";
@@ -215,10 +220,10 @@ function DisplayShopProductDetails(data) {
             newchild.removeClass("shop-p-det-prop-clone");
             newchild.removeClass("d-none");
             newchild.addClass("new-clone");
-                newchild.find(".shop-product-review-date-time").text(details["date"] + " " + details["time"]);
-                newchild.find(".shop-product-review-comment").text(details["comment"]);
-                newchild.find(".shop-product-review-name").text(details["reviewUsername"]);
-                newchild.find(".shop-product-review-rate_value").text(details["rate_value"]);
+            newchild.find(".shop-product-review-date-time").text(details["date"] + " " + details["time"]);
+            newchild.find(".shop-product-review-comment").text(details["comment"]);
+            newchild.find(".shop-product-review-name").text(details["reviewUsername"]);
+            newchild.find(".shop-product-review-rate_value").text(details["rate_value"]);
             newchild.appendTo(reviewParent).show();
         });
         childclone.hide();
@@ -249,7 +254,11 @@ function DisplayDetailsProducts(data, parent) {
             newchild.find(".shop-prod-rootcategory").text(details["RootCatName"]);
 
             newchild.find(".shop-p-selling-price").text(PriceFormat(details["PriceDetails"].selling_price));
-            newchild.find(".shop-p-cost-price").text(PriceFormat(details["PriceDetails"].cost_price));
+             if(parseInt(details["show_actual_price"]) === 1){
+                newchild.find(".shop-p-cost-price").text(PriceFormat(details["PriceDetails"].cost_price));
+            }else{
+                newchild.find(".shop-p-cost-price").text(PriceFormat(details["PriceDetails"].cost_price)).addClass("d-none");
+            }
             var show_condition = details["show_condition"];
             if (show_condition === "1" || show_condition === 1) {
                 newchild.find(".shop-p-condition").text(details["CondionDetails"].name);
@@ -286,7 +295,7 @@ function DisplayDetailsProducts(data, parent) {
             DisplayToolTip(btnquick);
 
             var btndaddtocart = newchild.find(".btn-shop-p-add-to-cart").click(function () {
-                
+
                 ProcessProductOption("Cart", ProductID, details["PriceDetails"].selling_price, 1, "Increase");
             });
             DisplayToolTip(btndaddtocart);

@@ -89,7 +89,6 @@ function IndexPageFunctions() {
 
 
 function DisplayShopProducts(data, parent) {
-    console.log(data);
     parent.find(".new-clone").remove();
     if (data !== "none") {
         var childclone = parent.find(".product-clone").removeClass("d-none");
@@ -99,6 +98,7 @@ function DisplayShopProducts(data, parent) {
         $.each(ids, function (index, id) {
             count++;
             var details = result[id];
+//             alert(details["show_actual_price"]);
             var newchild = childclone.clone();
             newchild.removeClass("product-clone");
             newchild.addClass("new-clone");
@@ -110,8 +110,13 @@ function DisplayShopProducts(data, parent) {
 
             newchild.find(".shop-prod-rootcategory").text(details["RootCatName"]);
 
+
             newchild.find(".shop-p-selling-price").text(PriceFormat(details["PriceDetails"].selling_price));
-            newchild.find(".shop-p-cost-price").text(PriceFormat(details["PriceDetails"].cost_price));
+            if(parseInt(details["show_actual_price"]) === 1){
+                newchild.find(".shop-p-cost-price").text(PriceFormat(details["PriceDetails"].cost_price));
+            }else{
+                newchild.find(".shop-p-cost-price").text(PriceFormat(details["PriceDetails"].cost_price)).addClass("d-none");
+            }
             var show_condition = details["show_condition"];
             if (show_condition === "1" || show_condition === 1) {
                 newchild.find(".shop-p-condition").text(details["CondionDetails"].name);

@@ -10,9 +10,9 @@
                     <h3>Shop</h3>
                     <ul>
                         <li><a href="/FynGramShop/">home</a></li>
-                        <li class="shop-cat-root-name" style="cursor: pointer;"></li>
-                        <li class="shop-cat-par-name" style="cursor: pointer;"></li>
-                        <li class="shop-cat-name font-weight-bold" style="cursor: pointer;"></li>
+                        <li class="shop-cat-root-name d-none" style="cursor: pointer;"></li>
+                        <li class="shop-cat-par-name d-none" style="cursor: pointer;"></li>
+                        <li class="shop-cat-name font-weight-bold d-none" style="cursor: pointer;"></li>
                     </ul>
                 </div>
             </div>
@@ -115,7 +115,7 @@
             <div class="col-lg-9 col-md-12">
                 <!--shop wrapper start-->
                 <!--shop toolbar start-->
-                <div class="shop_toolbar_wrapper">
+                <div class="shop_toolbar_wrapper product-display">
                     <div class="shop_toolbar_btn">
 
                         <button data-role="grid_3" type="button" class="active btn-grid-3" data-toggle="tooltip" title="3"></button>
@@ -124,24 +124,24 @@
 
                         <button data-role="grid_list" type="button"  class="btn-list" data-toggle="tooltip" title="List"></button>
                     </div>
-                    <div class="">
-                        <form class="" action="#">
-                            <select name="orderby" class="select2 form-control select2-show-search" id="short">
-                                <option selected value="1">Sort by average rating</option>
-                                <option  value="2">Sort by popularity</option>
-                                <option value="3">Sort by newness</option>
-                                <option value="4">Sort by price: low to high</option>
-                                <option value="5">Sort by price: high to low</option>
-                                <option value="6">Product Name: Z</option>
-                            </select>
-                        </form>
-                    </div>
+                   
                     <div class="page_amount">
                         <p>Showing 1–9 of 21 results</p>
                     </div>
+                     <div class="">
+                        
+                        <form class="" action="#">
+                             Sort By:
+                            <select name="orderby" class="select2 form-control select2-show-search " id="short">
+                                <option value="Newest Arrival">Newest Arrival</option>
+                                <option value="Low to High">Price: Low to High</option>
+                                <option value="High to Low">Price: High to Low</option>
+                            </select>
+                        </form>
+                    </div>
                 </div>
                 <!--shop toolbar end-->
-                <div class="row shop_wrapper ShopProductList" id="product-display" >
+                <div class="row shop_wrapper ShopProductList product-display" >
                     <div class="col-lg-4 col-md-4 col-sm-6 col-12 prodlist-clone d-none">
                         <div class="single_product">
                             <div class="product_thumb">
@@ -191,7 +191,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="shop_toolbar t_bottom">
+                <div class="shop_toolbar t_bottom product-display">
                     <div class="pagination">
                         <ul>
                             <li><a href="javascript:void(0)"><</a></li>
@@ -205,7 +205,7 @@
 
 
 
-                <div class="row shop_wrapper d-none" id="noproduct-display">
+                <div class="row shop_wrapper d-none noproduct-display">
                     <div class="col-lg-12 col-md-12 col-sm-6 col-12">
                         <div class="text-center mt-70">
                             <div class="widgets_container contact_us">
