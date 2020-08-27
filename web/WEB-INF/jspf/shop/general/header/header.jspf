@@ -46,12 +46,34 @@
                         <div class="header_right_info">
                             <div class="search_container">
                                 <form name="SearchForm">
-
                                     <div class="search_box">
                                         <input placeholder="Search products, brands and categories..."  type="text" class="SearchText">
-                                        <button type="submit" ><span class="lnr lnr-magnifier"></span></button>
                                     </div>
                                 </form>
+                                <div class="search-ajax d-none">
+                                    <div class="ajax-result-container">
+                                        <ul class="ajax-result-list searchResult">
+                                            <div class="search-clone d-none">
+                                                <div class="row">
+                                                    <div class="col-lg-3">
+                                                        <div class="">
+                                                            <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1" style="width: 6em; height: 6em;" alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-9 ">
+                                                        <h4 class="product_name"><a href="javascript:void(0)" class="shop-p-name btn-shop-p-details">Name</a></h4>
+                                                        <p><a href="javascript:void(0)" class="shop-prod-rootcategory">Fruits</a> </p>
+                                                        <div class="price_box"> 
+                                                            <span class="current_price shop-p-selling-price">0</span>
+                                                            <span class="old_price shop-p-cost-price">0</span>
+                                                            <span class="pull-right">Reviews (<span class="shop-prod-numberofratings">0</span>)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             <div class="language_currency text-right">
                                 <ul>
@@ -137,5 +159,5 @@
             </div>
         </div>
     </div> 
-                        
+
 </header>

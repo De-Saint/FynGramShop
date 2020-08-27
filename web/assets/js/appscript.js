@@ -91,24 +91,25 @@ function GenralBtnEvents() {
         window.location = extension + "LinksServlet?type=Cart";
     });
 
-    $("form[name=SearchForm]").submit(function (e) {
-        var searchText = $(".SearchText").val();
-        if (searchText.length > 3) {
-            localStorage.setItem("searchtext", searchText);
-            window.location = extension + "LinksServlet?type=Products";
+
+    $(".SearchText").keyup(function () {
+        var searchText = $(this).val();
+        if (searchText.length >= 3) {
+            GetData("Products", "GlobalSearch", "LoadGlobalSearch", searchText);
+        } else if (searchText.length === 0 || searchText.length <= 2) {
+            $(".search-ajax").addClass("d-none");
         }
-        e.preventDefault();
     });
 
-    $("form[name=searchForm]").submit(function (e) {
-        var searchText = $(".searchText").val();
-        if (searchText.length > 3) {
-            $('.offcanvas_menu_wrapper,.off_canvars_overlay').removeClass('active');
-            localStorage.setItem("searchtext", searchText);
-            window.location = extension + "LinksServlet?type=Products";
+    $(".searchText").keyup(function () {
+        var searchText = $(this).val();
+        if (searchText.length >= 3) {
+            GetData("Products", "GlobalSearch", "LoadGlobalSearchMobile", searchText);
+        } else if (searchText.length === 0 || searchText.length <= 2) {
+            $(".search-ajax").addClass("d-none");
         }
-        e.preventDefault();
     });
+
 
 }
 
@@ -437,7 +438,62 @@ function DisplayUserDetails(resp) {
 
 }
 
-function DisplayGlobalSearch(data) {
-    console.log(data);
+function DisplayGlobalSearch(data, parent) {
     hideLoading();
+    parent.find(".new-clone").remove();
+    if (data !== "none") {
+        $(".search-ajax").removeClass("d-none");
+        var childclone = parent.find(".search-clone").removeClass("d-none");
+        var count = 0;
+        var ids = data[0];
+        var result = data[1];
+        $.each(ids, function (index, id) {
+            count++;
+            var details = result[id];
+            var newchild = childclone.clone();
+            newchild.removeClass("search-clone");
+            newchild.addClass("new-clone");
+            newchild.find(".prod-sn").text(count);
+            var ProductID = details["ProductID"];
+            newchild.find(".prod-id").val(ProductID);
+            newchild.find(".shop-p-name").text(details["InfoDetails"].name);
+            newchild.find(".shop-p-desc").text(details["InfoDetails"].description);
+
+            newchild.find(".shop-prod-rootcategory").text(details["RootCatName"]).click(function () {
+                localStorage.setItem("categoryid", details["RootCatID"]);
+                window.location = extension + "LinksServlet?type=Products";
+            });
+            newchild.find(".shop-prod-numberofratings").text(details["RatingDetails"].NumberOfRatings);
+
+            newchild.find(".shop-p-selling-price").text(PriceFormat(details["PriceDetails"].selling_price));
+            if (parseInt(details["show_actual_price"]) === 1) {
+                newchild.find(".shop-p-cost-price").text(PriceFormat(details["PriceDetails"].cost_price));
+            } else {
+                newchild.find(".shop-p-cost-price").text(PriceFormat(details["PriceDetails"].cost_price)).addClass("d-none");
+            }
+            var show_condition = details["show_condition"];
+            if (show_condition === "1" || show_condition === 1) {
+                newchild.find(".shop-p-condition").text(details["CondionDetails"].name);
+            } else if (show_condition === "0" || show_condition === 0) {
+                newchild.find(".shop-p-condition").addClass("d-none");
+            }
+
+            if (details["FirstImage"] === "0" || details["FirstImage"] === 0) {
+                var image_url = extension + "assets/images/brand/logo.png";
+                newchild.find(".shop-p-image1").attr("src", image_url);
+            } else if (details["FirstImage"] !== "0" || details["FirstImage"] !== 0) {
+                newchild.find(".shop-p-image1").attr("src", "data:image/png;base64," + details["FirstImage"]);
+            }
+
+            newchild.find(".btn-shop-p-details").click(function () {
+                localStorage.setItem("productid", ProductID);
+                window.location = extension + "LinksServlet?type=ProductDetails";
+            });
+            newchild.appendTo(parent).show();
+        });
+        childclone.hide();
+    } else {
+        $(".search-ajax").addClass("d-none");
+    }
+
 }

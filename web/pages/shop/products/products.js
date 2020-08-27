@@ -61,7 +61,6 @@ function productBtnEvents() {
     $("#short").change(function () {
         var sort_by = $(this).val();
         var data = [categoryid, sort_by];
-        alert(data);
 //        showLoading();
 //        GetData("Product", "GetShopProductsBySorting", "LoadShopProductsByCategoryID", data);
     });
@@ -78,18 +77,7 @@ function productPageFunctions() {
         showLoading();
         GetData("Products", "GetShopProductsByCategoryID", "LoadShopProductsByCategoryID", categoryid);
     } else {
-        showLoading();
-        searchtext = GetSearchText();
-        if (searchtext) {
-            GetData("Products", "GlobalSearch", "LoadShopProductsByCategoryID", searchtext);
-//            GetData("Products", "GetShopProductsByCategoryID", "LoadShopProductsByCategoryID", categoryid);
-//            GetData("Category", "GetShopCategoriesByCategoryID", "LoadShopCategoriesByCategoryID", categoryid);
-//            GetData("Products", "GetShopCategoryPricesByCategoryID", "LoadShopCategoryPricesByCategoryID", categoryid);
-//            GetData("Category", "GetShopPropertiesByCategoryID", "LoadShopPropertiesByCategoryID", categoryid);
-//            GetData("Category", "GetShopTagsByCategoryID", "LoadShopTagsByCategoryID", categoryid);
-        } else {
-            window.location = extension + "LinksServlet?type=Index";
-        }
+        window.location = extension + "LinksServlet?type=Index";
     }
 
 }

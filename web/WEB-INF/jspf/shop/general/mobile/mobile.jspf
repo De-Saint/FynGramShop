@@ -32,9 +32,32 @@
                         <form name="searchForm">
                             <div class="search_box">
                                 <input placeholder="Search products, brands, categories.." type="text" class="searchText">
-                                <button type="submit"><span class="lnr lnr-magnifier"></span></button>
-                            </div>
+                             </div>
                         </form>
+                        <div class="search-ajax d-none">
+                            <div class="ajax-result-container">
+                                <ul class="ajax-result-list searchResult2">
+                                    <div class="search-clone d-none">
+                                        <div class="row">
+                                            <div class="col-sm-3 pull-left">
+                                                <div class="">
+                                                    <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1" style="width: 6em; height: 6em;" alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-9 pull-right">
+                                                <h4 class="product_name"><a href="javascript:void(0)" class="shop-p-name btn-shop-p-details">Name</a></h4>
+                                                <p><a href="javascript:void(0)" class="shop-prod-rootcategory">Fruits</a> </p>
+                                                <div class="price_box"> 
+                                                    <span class="current_price shop-p-selling-price">0</span>
+                                                    <span class="old_price shop-p-cost-price">0</span>
+                                                    <span class="pull-right">Reviews (<span class="shop-prod-numberofratings">0</span>)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="hover_category mt-1">
                             <select class="select2" name="select" id="cat-root-cat" style="width: 253px; border-radius: 24px; padding-left: 1em;">
                                 <option selected value="1">Select a categories</option>

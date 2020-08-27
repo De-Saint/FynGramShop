@@ -10,12 +10,6 @@ $(document).ready(function () {
     performActions();
 });
 
-//function getCurrentPage() {
-////returns the current page the user is on
-//    var path = window.location.pathname;
-////    var page = path.split("/").pop();
-//    return path;
-//}
 
 function getCurrentPath() {
 //returns the current page the user is on
@@ -259,6 +253,9 @@ function CalculatePercentage(userAmt) {
     }
     return newAmt;
 }
+
+
+
 
 function linkToFunction(action, params) {
     switch (action) {
@@ -631,6 +628,19 @@ function linkToFunction(action, params) {
         case "LoadCustomerStats":
         {
             DisplayCustomerStats(params);
+            break;
+        }
+        case "LoadGlobalSearch":
+        {
+
+            var parent = $(".searchResult");
+            DisplayGlobalSearch(params, parent);
+            break;
+        }
+        case "LoadGlobalSearchMobile":
+        {
+            var parent = $(".searchResult2");
+            DisplayGlobalSearch(params, parent);
             break;
         }
 

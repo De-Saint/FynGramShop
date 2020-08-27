@@ -41,6 +41,7 @@
         <link rel="stylesheet" href="assets/css/plugins.css">
 
         <!-- Main Style CSS -->
+        <link href="assets/css/helpers.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="assets/css/style.css">
 
         <!--Select 2-->
