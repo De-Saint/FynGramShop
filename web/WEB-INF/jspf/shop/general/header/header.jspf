@@ -25,9 +25,9 @@
                     <div class="col-lg-2">
                         <div class="header_social text-right">
                             <ul>
-                                <li><a href="javascript:void(0)"><i class="ion-social-twitter"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="ion-social-facebook"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="ion-social-instagram-outline"></i></a></li>
+                                <li><a  href="http://www.twitter.com/fyngram_com" target="_blank"><i class="ion-social-twitter"></i></a></li>
+                                <li><a  href="http://www.facebook.com/fyngram" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                                <li><a  href="http://www.linkedin.com/company/fyngram" target="_blank"><i class="ion-social-linkedin"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                                 <ul>
                                     <li class="language mt-1">
                                         <a href="javascript:void(0)" class="notforMembers"> 
-                                            <span class="lnr lnr-user mr-1" style="font-size: 17px;"></span><span class="font-weight-normal">Login<i class="icon-right ion-ios-arrow-down font-weight-bold"></i></span>
+                                            <span class="lnr lnr-user mr-1" style="font-size: 17px;"></span><span class="font-weight-normal">Account<i class="icon-right ion-ios-arrow-down font-weight-bold"></i></span>
                                         </a>
                                         <a href="javascript:void(0)" class="forMembers d-none" > 
                                             <span class="lnr lnr-user mr-1" style="font-size: 17px;"></span><span class="font-weight-normal">Account<i class="icon-right ion-ios-arrow-down font-weight-bold"></i></span>

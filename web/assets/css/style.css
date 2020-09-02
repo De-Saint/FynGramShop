@@ -1005,7 +1005,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .search_container form {
     display: flex;
     border-radius: 30px;
-    border: 1px solid #ededed;
+    border: 2px solid #40A944;
     background: #fff;
     width: 740px;
 }

@@ -1,0 +1,38 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="header_account_list  mini_cart_wrapper2 trackOrder_list">
+    <div class="mini_cart">
+        <div class="cart_gallery">
+            <div class="cart_close">
+                <div class="cart_text">
+                    <h3>Orders (<small class="order-count">0</small>)</h3>
+                </div>
+                <div class="mini_cart_close">
+                    <a href="javascript:void(0)"><i class="icon-x"></i></a>
+                </div>
+            </div>
+            <div class="col-md-12 card  border-0" id="TrackOrderList">
+                <div class="row track-order-clone d-none border mt-3">
+                    <div class="col-md-6 mt-2 mb-2 text-center ">
+                        Items in the Order (#<span class="order-product_count font-weight-bold">0</span>)
+                        <div class="fs-15 font-weight-bold order-reference">#FG-JFKFKFORIRJRL97</div>
+                        <span class=" pl-2 pr-2  bold text-muted order-amount">#3,8898</span>
+                        <div  class="mb-0 order-bookeddate-time"> 03-05-2020</div>
+                        <button class="btn btn-sm btn-success btn-view">view</button>
+                    </div>
+                    <div class="col-md-6 mt-2 mb-2 border-left trackorderstatus">
+                        <div class=" fs-15 trackorder-status-clone">
+                            <span class="status-name p-1">status</span><br>
+                            <small class="status-date">date</small>
+                            <hr class="mb-1 mt-1">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</div>

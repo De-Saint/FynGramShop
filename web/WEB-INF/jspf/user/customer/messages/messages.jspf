@@ -34,8 +34,8 @@
                             <tbody class="msglist">
                                 <tr class="msglist-clone d-none"> 
                                     <td class="action"><a data-toggle="tooltip" data-placement="top" title="Delete" data-original-title="" href="javascript:void(0)" class="delete-msg-btn"><i class="fa fa-trash text-danger"></i></a></td>
-                                    <td class="name text-left" style="width: 10em;"><a href="javascript:void(0)" class="msg_subject">Larry Gardner</a></td>
-                                    <td class="subject msg_body text-left"><a href="javascript:void(0)" class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </a></td>
+                                    <td class="name text-left" style="width: 10em;"><a href="javascript:void(0)" class="msg_subject">Loading name</a></td>
+                                    <td class="subject msg_body text-left"><a href="javascript:void(0)" class="">Loading body </a></td>
                                     <td class="time msg_date" style="width: 10em;">08:30 PM</td>
                                 </tr>
                             </tbody></table>

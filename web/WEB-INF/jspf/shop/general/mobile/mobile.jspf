@@ -23,9 +23,9 @@
                     </div>
                     <div class="header_social text-right">
                         <ul>
-                            <li><a  href="javascript:void(0)"><i class="ion-social-twitter"></i></a></li>
-                            <li><a  href="javascript:void(0)"><i class="ion-social-facebook"></i></a></li>
-                            <li><a  href="javascript:void(0)"><i class="ion-social-instagram-outline"></i></a></li>
+                            <li><a  href="http://www.twitter.com/fyngram_com" target="_blank"><i class="ion-social-twitter"></i></a></li>
+                            <li><a  href="http://www.facebook.com/fyngram" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                            <li><a  href="http://www.linkedin.com/company/fyngram" target="_blank"><i class="ion-social-linkedin"></i></a></li>
                         </ul>
                     </div>
                     <div class="search_container">
@@ -60,7 +60,7 @@
                         </div>
                         <div class="hover_category mt-1">
                             <select class="select2" name="select" id="cat-root-cat" style="width: 253px; border-radius: 24px; padding-left: 1em;">
-                                <option selected value="1">Select a categories</option>
+                                <option selected value="1">Select a category</option>
 
                             </select>                        
                         </div>

@@ -48,6 +48,8 @@
         <!--Select 2-->
         <link rel="stylesheet" href="../../../assets/css/select2.min.css" >
 
+        <link href="../../../assets/css/noty.css" rel="stylesheet""/>
+        <link href="../../../assets/css/noty_bootstrap-v4.css" rel="stylesheet" type="text/css"/>
         <!--modernizr min js here-->
         <script src="../../../assets/js/vendor/modernizr-3.7.1.min.js"></script>
 
@@ -67,7 +69,6 @@
 
             <!--footer area start-->
         <%@include file="../../../WEB-INF/jspf/shop/general/footer/footer.jspf" %>
-        <%@include file="../../../WEB-INF/jspf/shop/index/index_product_view.jspf" %>
 
         <!-- modal area end-->
 
@@ -79,6 +80,7 @@
         <!--popper min js-->
         <script src="../../../assets/js/popper.js"></script>
         <!--bootstrap min js-->
+
         <script src="../../../assets/js/bootstrap.min.js"></script>
         <!--owl carousel min js-->
         <script src="../../../assets/js/owl.carousel.min.js"></script>
@@ -105,7 +107,8 @@
         <script src="../../../assets/js/main.js"></script>
         <script src="../../../assets/js/helper.js"></script>
         <script src="../../../assets/js/appscript.js"></script>
-
+        <script src="track.js" type="text/javascript"></script>
+        <script src="../../../assets/js/noty.min.js" type="text/javascript"></script>
 
 
     </body>

@@ -213,7 +213,7 @@
                         <div class="tab-content">
                             <div class="tab-pane active" id="description" role="tabpanel">
                                 <div class="product_info_content">
-                                    <p class="shop-p-det-desc text-justify">Lorem ipsum cursus eu, suscipit id nulla.</p>
+                                    <p class="shop-p-det-desc text-justify">Loading description.</p>
                                     <table>
                                         <tbody >
                                             <tr>
@@ -312,7 +312,7 @@
                                     </form>
                                 </div>
                                 <div class="product_info_content">
-                                    <p class="shop-p-det-desc text-justify">Lorem ipsum cursus eu, suscipit id nulla.</p>
+                                    <p class="shop-p-det-desc text-justify">loading description.</p>
                                 </div>  
                             </div>
                             <div class="tab-pane" id="messages" role="tabpanel">

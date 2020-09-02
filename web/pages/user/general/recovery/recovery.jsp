@@ -49,6 +49,8 @@
         <link rel="stylesheet" href="../../../../assets/css/select2.min.css" >
 
         <!--modernizr min js here-->
+        <link href="../../../../assets/css/noty.css" rel="stylesheet"/>
+        <link href="../../../../assets/css/noty_bootstrap-v4.css" rel="stylesheet" type="text/css"/>
         <script src="../../../../assets/js/vendor/modernizr-3.7.1.min.js"></script>
 
     </head>
@@ -61,7 +63,6 @@
         <div class="off_canvars_overlay">
 
         </div>
-        <jsp:include page="../../../user/general/mobile/mobile.jsp"></jsp:include>
         <%@include file="../../../../WEB-INF/jspf/shop/general/header/header.jspf" %>
 
         <jsp:include page="../../../../WEB-INF/static_pages/user/general/recovery/recovery.jsp"></jsp:include>
@@ -105,6 +106,8 @@
         <script src="../../../../assets/js/main.js"></script>
         <script src="../../../../assets/js/helper.js"></script>
         <script src="../../../../assets/js/appscript.js"></script>
+        <script src="recovery.js" type="text/javascript"></script>
+        <script src="../../../../assets/js/noty.min.js" type="text/javascript"></script>
 
 
 

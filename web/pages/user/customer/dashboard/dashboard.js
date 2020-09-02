@@ -40,7 +40,7 @@ function DisplayCustomerStats(data) {
     $(".review_count").text(data.review_count);
     $(".discount_count").text(data.discount_count);
     $(".payment_count").text(data.payment_count);
-    $(".wallet_balance").text(data.wallet_balance);
+    $(".wallet_balance").text(PriceNumberFormat(data.wallet_balance));
     $(".message_count").text(data.message_count);
     $(".transaction_count").text(data.transaction_count);
     $(".wishlist_count").text(data.wishlist_count);

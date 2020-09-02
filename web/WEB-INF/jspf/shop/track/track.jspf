@@ -21,17 +21,20 @@
 <div class="contact_area">
     <div class="container">   
         <div class="row">
-       
+
             <div class="col-lg-12 col-md-12 text-center">
                 <div class="contact_message form mt-30">
                     <h3>Tell us about us here</h3>   
-                    <form id="contact-form" method="POST"  action="assets/mail.php">
+                    <form id="" method="" >
                         <p>  
                             <label> Enter your Order Reference Number</label>
-                            <input name="name" placeholder="FG-XXXXXXXXXX *" type="text"> 
+                            <input name="name" id="OrderRef" placeholder="FG-XXXXXXXXXX *" type="text" class="border-success"> 
                         </p>
-                        <button type="submit"> Track</button>  
-                        <p class="form-messege"></p>
+                        <div class=" text-center" >
+                            <div class="mini_cart_wrapper" >
+                                <a href="javascript:void(0)" id="TrackOrder" class="btn btn-success btn-sm">Track</a>
+                            </div> 
+                        </div>  
                     </form> 
 
                 </div> 

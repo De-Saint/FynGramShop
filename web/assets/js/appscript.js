@@ -307,7 +307,7 @@ function DisplayShopMobileRootCategories(data) {
         var ids = data[0];
         var result = data[1];
         cs.empty();
-        cs.append($('<option/>').val(0).text("Select Category"));
+        cs.append($('<option/>').val(0).text("Select a category"));
         $.each(ids, function (index, id) {
             var details = result[id];
             cs.append($('<option/>').val(details["id"]).text(details["name"]));

@@ -274,9 +274,9 @@ function linkToFunction(action, params) {
             DisplayUserDetails(params);
             break;
         }
-        case "LoadSubcribeNewletter":
+        case "LoadSubcribeNewsletter":
         {
-            DisplaySubcribeNewletter(params);
+            DisplaySubcribeNewsletter(params);
             break;
         }
         case "LoadRegisterCustomer":
@@ -641,6 +641,21 @@ function linkToFunction(action, params) {
         {
             var parent = $(".searchResult2");
             DisplayGlobalSearch(params, parent);
+            break;
+        }
+        case "LoadResetPassword":
+        {
+            DisplayResetPassword(params);
+            break;
+        }
+        case "LoadPasswordRecovery":
+        {
+            DisplayPasswordRecovery(params);
+            break;
+        }
+        case "LoadTrackOrder":
+        {
+            DisplayTrackOrder(params);
             break;
         }
 

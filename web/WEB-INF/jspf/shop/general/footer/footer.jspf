@@ -17,7 +17,7 @@
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-5">
                     <div class="widgets_container widget_menu">
-                        <h3>Information</h3>
+                        <h3>Company</h3>
                         <div class="footer_menu">
 
                             <ul>
@@ -25,18 +25,18 @@
                                 <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Privacy"> Privacy Policy</a></li>
                                 <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Terms"> Terms & Conditions</a></li>
                                 <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Contact"> Contact Us</a></li>
-                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Services"> Our Services</a></li>
-                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Suggestions">Suggest Feature</a></li>
+                                <!--<li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Services"> Our Services</a></li>-->
+                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Suggestions">Suggest a Feature</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-4">
                     <div class="widgets_container widget_menu">
-                        <h3>Extras</h3>
+                        <h3>Resources</h3>
                         <div class="footer_menu">
                             <ul>
-                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Categories">All Categories</a></li>
+                                <!--<li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Categories">All Categories</a></li>-->
                                 <li class="forMembers d-none"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Complaints">Complaints</a></li>
                                <li><a href="${pageContext.request.contextPath}/LinksServlet?type=ReturnPolicy">Return Policy</a></li>
                                 <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Supports">Supports</a></li>

@@ -28,7 +28,7 @@ function IndexBtnEvents() {
         var shopsessionid = $("#shopsessionid").val();
         if (newsletterEmail !== "") {
             var data = [newsletterEmail, shopsessionid];
-            GetData("User", "SubcribeNewletter", "LoadSubcribeNewletter", data);
+            GetData("User", "SubcribeNewsletter", "LoadSubcribeNewsletter", data);
         }
         e.preventDefault();
     });
@@ -68,7 +68,7 @@ function IndexBtnEvents() {
     });
 }
 
-function DisplaySubcribeNewletter(resp) {
+function DisplaySubcribeNewsletter(resp) {
     if (resp.status === "success") {
         $('.mailchimp-success').addClass('active');
         $('.mailchimp-success').html('' + resp.msg).fadeIn(900);

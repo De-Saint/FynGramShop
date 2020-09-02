@@ -464,19 +464,19 @@
             <div class="col-12">
                 <div class="brand_container owl-carousel ">
                     <div class="single_brand">
-                        <a href="javascript:void(0)"><img src="assets/img/brand/brand1.jpg" alt=""></a>
+                        <a href="javascript:void(0)"><img src="assets/img/brand/fyngram.png" alt="" style="width: 185px; height: 60px;"></a>
                     </div>
                     <div class="single_brand">
-                        <a href="javascript:void(0)"><img src="assets/img/brand/brand2.jpg" alt=""></a>
+                        <a href="javascript:void(0)"><img src="assets/img/brand/fyngram.png" alt="" style="width: 185px; height: 60px;"></a>
                     </div>
                     <div class="single_brand">
-                        <a href="javascript:void(0)"><img src="assets/img/brand/brand3.jpg" alt=""></a>
+                        <a href="javascript:void(0)"><img src="assets/img/brand/fyngram.png" alt="" style="width: 185px; height: 60px;"></a>
                     </div>
                     <div class="single_brand">
-                        <a href="javascript:void(0)"><img src="assets/img/brand/brand4.jpg" alt=""></a>
+                        <a href="javascript:void(0)"><img src="assets/img/brand/fyngram.png" alt="" style="width: 185px; height: 60px;"></a>
                     </div>
                     <div class="single_brand">
-                        <a href="javascript:void(0)"><img src="assets/img/brand/brand2.jpg" alt=""></a>
+                        <a href="javascript:void(0)"><img src="assets/img/brand/fyngram.png" alt="" style="width: 185px; height: 60px;"></a>
                     </div>
                 </div>
             </div>
