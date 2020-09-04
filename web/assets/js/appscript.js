@@ -37,9 +37,9 @@ function logoFunction() {
     var path = getCurrentPath();
     var logoImage = "assets/img/logo/logo.png";
     var partnerLogo1 = "assets/img/icon/paypal1.jpg";
-    var partnerLogo2 = "assets/img/icon/paypal2.jpg";
-    var partnerLogo3 = "assets/img/icon/paypal3.jpg";
-    var partnerLogo4 = "assets/img/icon/paypal4.jpg";
+    var partnerLogo2 = "assets/img/icon/paystack.png";
+    var partnerLogo3 = "assets/img/icon/master.png";
+    var partnerLogo4 = "assets/img/icon/verve.png";
     if (path.includes("pages/shop")) {
         extension = "../../../";
         $(".logoImage").attr("src", extension + logoImage);

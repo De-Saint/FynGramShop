@@ -21,5 +21,5 @@
         <%@include file="../../../WEB-INF/jspf/shop/index/index_product_view.jspf" %>
         <%@include file="../../../WEB-INF/jspf/shop/index/added.jspf" %>
 
-        <%@include file="../../../WEB-INF/jspf/shop/index/newsletter_popup.jspf" %>
+        <%--<%@include file="../../../WEB-INF/jspf/shop/index/newsletter_popup.jspf" %>--%>
 
