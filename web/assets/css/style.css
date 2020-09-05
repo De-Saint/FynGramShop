@@ -569,8 +569,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 @media only screen and (max-width: 767px) {
     .canvas_open {
-        right: 20px;
-        top: 25px;
+        right: 2px;
+        top: -2px;
     }
 }
 .canvas_open a {
@@ -998,7 +998,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 @media only screen and (max-width: 767px) {
     .search_container {
         margin-right: 0;
-         /*margin-top: 1em;*/
+         margin-top: 1em;
         /*display: none;*/
     }
 }
@@ -11112,10 +11112,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
         position: absolute;
         z-index: 9999 !important;
         background: none repeat scroll 0% 0% #fff;
-        left: -2rem;
-        top: 2em;
-        width: 2%;
-        min-width: 16rem;
+        left: 1rem;
+        top: 3em;
+        width: 5%;
+        min-width: 21rem;
         margin-top: 0.5rem;
         border-radius: 5px;
     }

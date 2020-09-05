@@ -36,10 +36,14 @@ function GetCartCount() {
 function logoFunction() {
     var path = getCurrentPath();
     var logoImage = "assets/img/logo/logo.png";
-    var partnerLogo1 = "assets/img/icon/paypal1.jpg";
-    var partnerLogo2 = "assets/img/icon/paystack.png";
-    var partnerLogo3 = "assets/img/icon/master.png";
-    var partnerLogo4 = "assets/img/icon/verve.png";
+    var partnerLogo1 = "assets/img/icon/pay.jpg";
+    var partnerLogo2 = "assets/img/icon/paystackcard.jpg";
+    var partnerLogo3 = "assets/img/icon/mastercard.png";
+    var partnerLogo4 = "assets/img/icon/visacard.png";
+    var ship1 = "assets/img/about/shipping1.jpg";
+    var ship2 = "assets/img/about/shipping2.jpg";
+    var ship3 = "assets/img/about/shipping3.jpg";
+    var ship4 = "assets/img/about/shipping4.jpg";
     if (path.includes("pages/shop")) {
         extension = "../../../";
         $(".logoImage").attr("src", extension + logoImage);
@@ -47,6 +51,10 @@ function logoFunction() {
         $(".partnerLogo2").attr("src", extension + partnerLogo2);
         $(".partnerLogo3").attr("src", extension + partnerLogo3);
         $(".partnerLogo4").attr("src", extension + partnerLogo4);
+        $(".ship1").attr("src", extension + ship1);
+        $(".ship2").attr("src", extension + ship2);
+        $(".ship3").attr("src", extension + ship3);
+        $(".ship4").attr("src", extension + ship4);
         $(".categories_menu").removeClass("categories_three");
     } else if (path.includes("pages/user")) {
         extension = "../../../../";
@@ -55,6 +63,10 @@ function logoFunction() {
         $(".partnerLogo2").attr("src", extension + partnerLogo2);
         $(".partnerLogo3").attr("src", extension + partnerLogo3);
         $(".partnerLogo4").attr("src", extension + partnerLogo4);
+        $(".ship1").attr("src", extension + ship1);
+        $(".ship2").attr("src", extension + ship2);
+        $(".ship3").attr("src", extension + ship3);
+        $(".ship4").attr("src", extension + ship4);
         $(".categories_menu").removeClass("categories_three");
     } else {
         $(".logoImage").attr("src", logoImage);
@@ -62,6 +74,10 @@ function logoFunction() {
         $(".partnerLogo2").attr("src", partnerLogo2);
         $(".partnerLogo3").attr("src", partnerLogo3);
         $(".partnerLogo4").attr("src", partnerLogo4);
+        $(".ship1").attr("src", extension + ship1);
+        $(".ship2").attr("src", extension + ship2);
+        $(".ship3").attr("src", extension + ship3);
+        $(".ship4").attr("src", extension + ship4);
     }
 }
 

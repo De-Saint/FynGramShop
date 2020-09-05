@@ -31,7 +31,7 @@
                         <div class="mt-5">
                             Interested in FynGram’s Store? Just pick up the phone to chat with a member of our sales team.
                         </div>
-                        <h1><span>+234 818 206 6897</span></h1>
+                        <h1><span>+234 7017 085 741</span></h1>
                         <a  href="${pageContext.request.contextPath}/LinksServlet?type=Contact">Talk To Sales </a>
                     </div>       
                 </div>
@@ -45,7 +45,7 @@
                         <div  class="mt-5">
                             Sometimes you need a little help shopping on FynGram Store. Don’t worry… our support team rep. is here for you.
                         </div>
-                        <h1><span>+234 818 206 6897</span></h1>
+                        <h1><span>+234 7017 085 741</span></h1>
                         <a class="list_button" href="${pageContext.request.contextPath}/LinksServlet?type=Contact">Customer Support </a>
                     </div>       
                 </div>

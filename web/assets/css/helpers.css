@@ -799,11 +799,7 @@ and open the template in the editor.
 .txt:disabled{
     border-color: #ddd;
 }
-.btn{
-    font-size: 1em;
-    padding: 0.5em 0 0.6em;
-    cursor: pointer;
-}
+
 .display-table{
     display: table !important;
 }

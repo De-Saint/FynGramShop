@@ -4,50 +4,108 @@
 <footer class="footer_widgets">
     <div class="footer_top">
         <div class="container">
-            <div class="row">
+            <!--shipping area start-->
+            <div class="shipping_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="single_shipping">
+                                <div class="shipping_icone">
+                                    <img class="ship1"  alt="">
+                                </div>
+                                <div class="shipping_content">
+                                    <h3>Free Shipping</h3>
+                                    <p>Free shipping on all orders above N200,000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="single_shipping col_2">
+                                <div class="shipping_icone">
+                                    <img class="ship2"  alt="">
+                                </div>
+                                <div class="shipping_content">
+                                    <h3>Support 24/7</h3>
+                                    <p>Contact us 24 hours a day, 7 days a week</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="single_shipping col_3">
+                                <div class="shipping_icone">
+                                    <img class="ship3" alt="">
+                                </div>
+                                <div class="shipping_content">
+                                    <h3>30 Days Return</h3>
+                                    <p>Simply return it within 5 days for an exchange</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="single_shipping col_4">
+                                <div class="shipping_icone">
+                                    <img class="ship4"  alt="">
+                                </div>
+                                <div class="shipping_content">
+                                    <h3>100% Payment Secure</h3>
+                                    <p>We ensure secure payment with ...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            <!--shipping area end-->
+            <div class="row ">
                 <div class="col-lg-4 col-md-12 col-sm-7">
-                    <div class="widgets_container contact_us">
+                    <div class="widgets_container contact_us text-left">
                         <div class="footer_logo">
                             <a href="/FynGramShop/"><img class="logoImage" alt=""></a>
                         </div>
-                        <p><span>Address:</span> Suite 208, Jinifa Plaza, Plot 1014, Samuel Ademulegun Adesujo Street, Central Business District Abuja.</p>
+                        <p><span>Address:</span> B12 Ehimiri Housing Estate, Umuahia, Abia State, Nigeria.</p>
                         <p><span>Email:</span> <a href="javascript:void(0)">sales@fyngram.com</a></p>
-                        <p><span>Call us:</span> <a  href="tel:+234 818 206 6897">+234 818 206 6897</a> </p>
+                        <p><span>Call us:</span> <a  href="tel:+234 7017 085 741">+234 7017 085 741</a> </p>
                     </div>          
                 </div>
-                <div class="col-lg-2 col-md-3 col-sm-5">
-                    <div class="widgets_container widget_menu">
-                        <h3>Company</h3>
-                        <div class="footer_menu">
 
-                            <ul>
-                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=About">About Us</a></li>
-                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Privacy"> Privacy Policy</a></li>
-                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Terms"> Terms & Conditions</a></li>
-                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Contact"> Contact Us</a></li>
-                                <!--<li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Services"> Our Services</a></li>-->
-                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Suggestions">Suggest a Feature</a></li>
-                            </ul>
+
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="pull-left pl-2">
+                        <div class="widgets_container widget_menu text-left">
+                            <h3>Company</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=About">About Us</a></li>
+                                    <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Privacy"> Privacy Policy</a></li>
+                                    <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Terms"> Terms & Conditions</a></li>
+                                    <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Contact"> Contact Us</a></li>
+                                    <!--<li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Services"> Our Services</a></li>-->
+                                    <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Suggestions">Suggest a Feature</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-4">
-                    <div class="widgets_container widget_menu">
-                        <h3>Resources</h3>
-                        <div class="footer_menu">
-                            <ul>
-                                <!--<li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Categories">All Categories</a></li>-->
-                                <li class="forMembers d-none"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Complaints">Complaints</a></li>
-                               <li><a href="${pageContext.request.contextPath}/LinksServlet?type=ReturnPolicy">Return Policy</a></li>
-                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Supports">Supports</a></li>
-                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=FAQs">FAQs</a></li>
-                                <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Track">Track Order</a></li>
-                            </ul>
+
+                    <div class="pull-right pr-5">
+                        <div class="widgets_container widget_menu text-left">
+                            <h3>Resources</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <!--<li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Categories">All Categories</a></li>-->
+                                    <li class="forMembers d-none"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Complaints">Complaints</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/LinksServlet?type=ReturnPolicy">Return Policy</a></li>
+                                    <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Supports">Supports</a></li>
+                                    <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=FAQs">FAQs</a></li>
+                                    <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Track">Track Order</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="widgets_container widget_newsletter">
+                    <div class="widgets_container widget_newsletter text-left">
                         <h3>Sign up newsletter</h3>
                         <p class="footer_desc">Get updates by subscribing to our weekly newsletter</p>
                         <div class="subscribe_form">
@@ -66,6 +124,17 @@
                 </div>
             </div>
         </div>
+        <div class="row justify-content-center m-4">
+            <div class="padding">
+                <div class="d-inline justify-content-center">
+                    <button type="button" class="btn btn-success btn-icon"> <a  href="http://www.twitter.com/fyngram_com" target="_blank"><i class="fa fa-facebook"></i></a> </button>
+                    <button type="button" class="btn btn-success btn-icon"> <a  href="http://www.facebook.com/fyngram" target="_blank"><i class="fa fa-linkedin"></i></a> </button> 
+                    <button type="button" class="btn btn-success btn-icon"> <a  href="http://www.linkedin.com/company/fyngram" target="_blank"><i class="fa fa-twitter"></i></a> </button> 
+                    <button type="button" class="btn btn-success btn-icon"> <a  href="https://www.instagram.com/p/CEwMms7A9b-/?igshid=1cyr3vzecm9b" target="_blank"><i class="fa fa-instagram"></i> </a></button> 
+
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="footer_bottom">
@@ -76,17 +145,17 @@
                         <p>
                             Copyright &copy;<script>
                                 document.write(new Date().getFullYear());
-                            </script> All Rights Reserved | <a href="#" target="blank">FynGram</a>
+                            </script> All Rights Reserved | <a href="/FynGramShop" target="blank">FynGram</a>
                         </p>
                     </div>
                 </div>    
                 <div class="col-lg-6 col-md-5">    
                     <div class="footer_payment">
                         <ul>
-                            <li><a href="/FynGramShop/"><img class="partnerLogo1" alt=""></a></li>
-                            <li><a href="/FynGramShop/"><img class="partnerLogo2" alt=""></a></li>
-                            <li><a href="/FynGramShop/"><img class="partnerLogo3" alt=""></a></li>
-                            <li><a href="/FynGramShop/"><img class="partnerLogo4" alt=""></a></li>
+                            <li class="mr-2"><a href="/FynGramShop/"><img class="partnerLogo1" alt="" style="width: 65px; height: 36px;"></a></li>
+                            <li class="mr-2"><a href="/FynGramShop/"><img class="partnerLogo2" alt="" style="width: 65px; height: 36px;"></a></li>
+                            <li class="mr-2"><a href="/FynGramShop/"><img class="partnerLogo3" alt="" style="width: 65px; height: 36px;"></a></li>
+                            <li><a href="/FynGramShop/"><img class="partnerLogo4"  style="width: 65px; height: 36px;" alt=""></a></li>
                         </ul>
                     </div>
                 </div>

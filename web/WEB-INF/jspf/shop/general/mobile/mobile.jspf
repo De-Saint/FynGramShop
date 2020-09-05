@@ -6,26 +6,19 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="canvas_open">
-                    <a href="javascript:void(0)"><i class="icon-menu"></i></a>
-                </div>
                 <div class="offcanvas_menu_wrapper">
                     <div class="canvas_close">
                         <a href="javascript:void(0)"><i class="icon-x"></i></a>  
                     </div>
                     <div class="language_currency">
+                        <div class="logo mb-2">
+                            <a href="/FynGramShop/"><img  class="logoImage" alt=""></a>
+                        </div>
                         <ul>
                             <li class="language"><a  href="javascript:void(0)"> English </a>
                             </li>
                             <li class="currency"><a  href="javascript:void(0)"> NGN </a>
                             </li>
-                        </ul>
-                    </div>
-                    <div class="header_social text-right">
-                        <ul>
-                            <li><a  href="http://www.twitter.com/fyngram_com" target="_blank"><i class="ion-social-twitter"></i></a></li>
-                            <li><a  href="http://www.facebook.com/fyngram" target="_blank"><i class="ion-social-facebook"></i></a></li>
-                            <li><a  href="http://www.linkedin.com/company/fyngram" target="_blank"><i class="ion-social-linkedin"></i></a></li>
                         </ul>
                     </div>
                     <div class="search_container">
@@ -38,7 +31,7 @@
                     </div>
 
                     <div class="call-support mt-4">
-                        <p><a  href="tel:+234 818 206 6897">+234 818 206 6897</a>Customer Support</p>
+                        <p><a  href="tel:+234 7017 085 741">+234 7017 085 741</a>Customer Support</p>
                     </div>
                     <div id="menu" class="text-left ">
                         <ul class="offcanvas_main_menu">
@@ -63,7 +56,7 @@
                                 <a href="${pageContext.request.contextPath}/LinksServlet?type=Register">Register</a>
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="${pageContext.request.contextPath}/LinksServlet?type=About">about Us</a>
+                                <a href="${pageContext.request.contextPath}/LinksServlet?type=About">About Us</a>
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="${pageContext.request.contextPath}/LinksServlet?type=Contact"> Contact Us</a> 
@@ -71,7 +64,7 @@
                         </ul>
                     </div>
                     <div class="offcanvas_footer">
-                        <span><a  href="javascript:void(0)"><i class="fa fa-envelope-o"></i> sales@fyngram.com</a></span>
+                        <span><a  href="javascript:void(0)"><i class="fa fa-envelope-o"></i> support@fyngram.com</a></span>
                     </div>
                 </div>
             </div>
