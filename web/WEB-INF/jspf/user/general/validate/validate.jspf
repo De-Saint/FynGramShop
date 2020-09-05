@@ -1,0 +1,56 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!--breadcrumbs area start-->
+<div class="breadcrumbs_area">
+    <div class="container">   
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_content">
+                    <h3>Account Confirmation</h3>
+                    <ul>
+                        <li><a  href="javascript:void(0)">home</a></li>
+                        <li>Validate Account</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>         
+</div>
+<!--breadcrumbs area end-->
+
+<!-- customer login start -->
+<div class="customer_login">
+    <div class="container">
+        <div class="row ">
+            <!--login area start-->
+            <div class="col-xl-8 col-lg-10 justify-content-center mx-auto text-center">
+                <div class="account_form resetpwd">
+                    <h2>Account Confirmation</h2>
+                    <form name="verificationForm">
+                        <p>Please enter the verification code sent to your email.</p>
+                        <p>   
+                            <label>Verification Code <span>*</span></label>
+                            <input type="text" id="verifyCode" required placeholder="Verification Code" class="form-control">
+                        </p>
+
+                        <div class="login_submit">
+                            <label for="remember" class="pull-left">
+                                <a href="${pageContext.request.contextPath}/LinksServlet?type=Login">Back to Login</a>
+
+                            </label>
+                            <button type="submit" class="btn btn-outline-success">Submit</button>
+
+                        </div>
+
+                    </form>
+                </div>    
+            </div>
+            <!--login area start-->
+
+
+            <!--register area end-->
+        </div>
+
+    </div>    
+</div>
+<!-- customer login end -->

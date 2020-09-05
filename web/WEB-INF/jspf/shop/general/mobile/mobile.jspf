@@ -47,19 +47,20 @@
 
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="javascript:void(0)">Become A Seller</a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item-has-children">
-                                        <a href="${pageContext.request.contextPath}/LinksServlet?type=Sell">Sell on FynGram</a>
-                                    </li>
-                                </ul>
+                                <a href="${pageContext.request.contextPath}/LinksServlet?type=Sell">Become A Seller</a>
                             </li>
 
                             <li class="menu-item-has-children forMembers">
-                                <a href="${pageContext.request.contextPath}/LinksServlet?type=DashBoard">my account</a>
+                                <a href="${pageContext.request.contextPath}/LinksServlet?type=DashBoard">my Account</a>
+                            </li>
+                            <li class="menu-item-has-children forMembers">
+                                <a href="${pageContext.request.contextPath}/LinksServlet?type=LogOut">LogOut</a>
                             </li>
                             <li class="menu-item-has-children notforMembers">
                                 <a href="${pageContext.request.contextPath}/LinksServlet?type=Login">Login</a>
+                            </li>
+                            <li class="menu-item-has-children notforMembers">
+                                <a href="${pageContext.request.contextPath}/LinksServlet?type=Register">Register</a>
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="${pageContext.request.contextPath}/LinksServlet?type=About">about Us</a>

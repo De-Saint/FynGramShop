@@ -22,7 +22,7 @@
     <div class="container">   
         <div class="row">
 
-            <div class="col-lg-12 col-md-12 text-center">
+            <div class="col-xl-8 col-lg-10 justify-content-center mx-auto text-center">
                 <div class="contact_message form mt-30">
                     <h3>Tell us about us here</h3>   
                     <form id="" method="" >

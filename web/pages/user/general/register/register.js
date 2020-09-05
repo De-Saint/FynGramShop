@@ -28,11 +28,11 @@ function RegisterBtnEvents() {
         if (!Newsletter) {
             Newsletter = 0;
         }
-        shopsessionid = verifyUser();
+       
         if (Password === password2) {
             if (terms) {
                 showLoading();
-                var data = [Gender, Frstname, Lastname, EmailAddress, PhoneNumber, Password, Newsletter, shopsessionid];
+                var data = [Gender, Frstname, Lastname, EmailAddress, PhoneNumber, Password, Newsletter];
                 GetData("User", "RegisterCustomer", "LoadRegisterCustomer", data);
             } else {
                 ShowNotification("Please, accept our terms and conditions by ticking the terms and condition box", 'error');
@@ -49,20 +49,8 @@ function RegisterBtnEvents() {
 function DisplayRegisterCustomer(resp) {
     hideLoading();
     if (resp.status === "success") {
-        SessionTokenManager(resp);
         ShowNotification(resp.msg, 'success');
-        verifyUser();
-        localStorage.setItem("shownewsletter", "No");
-        cartcount = GetCartCount();
-        $(".cart_count").text(cartcount);
-        var pageredirect = localStorage.getItem("page_redirect");
-        if (pageredirect === "checkout") {
-            window.location = extension + "LinksServlet?type=CheckOut";
-        } else if (pageredirect === "saveitems") {
-            window.location = extension + "LinksServlet?type=WishList";
-        } else {
-            window.location = extension + "LinksServlet?type=DashBoard";
-        }
+        window.location = extension + "LinksServlet?type=Validate";
     } else if (resp.status === "error") {
         ShowNotification(resp.msg, 'error');
     }

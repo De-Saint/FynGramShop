@@ -75,22 +75,28 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="text-right">
+                            <div class="text-right ml-2 d-none d-lg-block">
                                 <ul>
-                                    <li class=" mt-1">
-                                        <a href="${pageContext.request.contextPath}/LinksServlet?type=Login" class="notforMembers text-success"> 
-                                            <span class="lnr lnr-user mr-2 fs-18" ></span><span class="font-weight-normal">Login</span>
-                                        </a>
-                                        <a href="${pageContext.request.contextPath}/LinksServlet?type=Register" class="notforMembers  text-success"> 
-                                            <span class="lnr lnr-user mr-1 fs-18"></span><span class="font-weight-normal">Register</span>
+                                    <li class=" mt-1 notforMembers">
+                                        <a href="${pageContext.request.contextPath}/LinksServlet?type=Login" class=" text-success"> 
+                                            <span class="font-weight-normal"><i class="fa fa-user-circle fs-18 mr-1"></i>Login</span>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="language_currency text-right">
+                            <div class="text-right ml-1 d-none d-lg-block">
                                 <ul>
-                                    <li class=" mt-1">
-                                        <a href="javascript:void(0)" class="forMembers d-none" > 
+                                    <li class=" mt-1 notforMembers">
+                                        <a href="${pageContext.request.contextPath}/LinksServlet?type=Register" class="  text-success d-none d-lg-block""> 
+                                             <span class="font-weight-normal"><i class="fa fa-user-plus fs-18 mr-1"></i>Register</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="language_currency text-right ">
+                                <ul>
+                                    <li class=" mt-1 forMembers d-none">
+                                        <a href="javascript:void(0)" class="" > 
                                             <span class="lnr lnr-user mr-1" style="font-size: 17px;"></span><span class="font-weight-normal">My Account<i class="icon-right ion-ios-arrow-down font-weight-bold"></i></span>
                                         </a>
                                         <ul class="dropdown_language">

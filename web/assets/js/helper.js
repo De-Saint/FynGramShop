@@ -658,6 +658,11 @@ function linkToFunction(action, params) {
             DisplayTrackOrder(params);
             break;
         }
+        case "LoadValidateAccount":
+        {
+            DisplayValidateAccount(params);
+            break;
+        }
 
     }
 }

@@ -623,7 +623,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .sticky-header.sticky {
-        /*position: inherit;*/
         -webkit-box-shadow: inherit;
         box-shadow: inherit;
         -webkit-animation-name: inherit;
@@ -635,7 +634,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 @media only screen and (max-width: 767px) {
     .sticky-header.sticky {
-        /*position: inherit;*/
         -webkit-box-shadow: inherit;
         box-shadow: inherit;
         -webkit-animation-name: inherit;
@@ -11083,7 +11081,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     position: absolute;
     z-index: 9999 !important;
     background: none repeat scroll 0% 0% #fff;
-    left: 5rem;
     top: 100%;
     width: 68%;
     min-width: 25rem;

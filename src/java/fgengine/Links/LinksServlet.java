@@ -111,8 +111,6 @@ public class LinksServlet extends HttpServlet {
                     break;
                 }
                 case "Search": {
-//                    session.setAttribute("categoryID", request.getParameter("cat"));
-//                    session.setAttribute("query", request.getParameter("query"));
                     response.sendRedirect("pages/products/products.jsp");
                     break;
                 }
@@ -126,6 +124,10 @@ public class LinksServlet extends HttpServlet {
                 }
                 case "Recovery": {
                     response.sendRedirect("pages/user/general/recovery/recovery.jsp");
+                    break;
+                }
+                case "Validate": {
+                    response.sendRedirect("pages/user/general/validate/validate.jsp");
                     break;
                 }
                 case "DashBoard": {
