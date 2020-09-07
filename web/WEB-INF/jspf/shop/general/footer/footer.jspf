@@ -127,9 +127,9 @@
         <div class="row justify-content-center m-4">
             <div class="padding">
                 <div class="d-inline justify-content-center">
-                    <button type="button" class="btn btn-success btn-icon"> <a  href="http://www.twitter.com/fyngram_com" target="_blank"><i class="fa fa-facebook"></i></a> </button>
-                    <button type="button" class="btn btn-success btn-icon"> <a  href="http://www.facebook.com/fyngram" target="_blank"><i class="fa fa-linkedin"></i></a> </button> 
-                    <button type="button" class="btn btn-success btn-icon"> <a  href="http://www.linkedin.com/company/fyngram" target="_blank"><i class="fa fa-twitter"></i></a> </button> 
+                    <button type="button" class="btn btn-success btn-icon"> <a  href="http://www.facebook.com/fyngram" target="_blank"><i class="fa fa-facebook"></i></a> </button> 
+                    <button type="button" class="btn btn-success btn-icon"> <a  href="http://www.twitter.com/fyngram_com" target="_blank"><i class="fa fa-twitter"></i></a> </button>
+                    <button type="button" class="btn btn-success btn-icon"> <a  href="http://www.linkedin.com/company/fyngram" target="_blank"><i class="fa fa-linkedin"></i></a> </button> 
                     <button type="button" class="btn btn-success btn-icon"> <a  href="https://www.instagram.com/p/CEwMms7A9b-/?igshid=1cyr3vzecm9b" target="_blank"><i class="fa fa-instagram"></i> </a></button> 
 
                 </div>

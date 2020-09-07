@@ -18,12 +18,12 @@
                         <div class="fs-15 font-weight-bold order-reference">#FG-JFKFKFORIRJRL97</div>
                         <span class=" pl-2 pr-2  bold text-muted order-amount">#3,8898</span>
                         <div  class="mb-0 order-bookeddate-time"> 03-05-2020</div>
-                        <button class="btn btn-sm btn-success btn-view">view</button>
+                        <button class="btn btn-sm btn-success btn-view">View Status</button>
                     </div>
                     <div class="col-md-6 mt-2 mb-2 border-left trackorderstatus">
                         <div class=" fs-15 trackorder-status-clone">
-                            <span class="status-name p-1">status</span><br>
-                            <small class="status-date">date</small>
+                            <span class="status-name p-1">Status</span><br>
+                            <small class="status-date">Date</small>
                             <hr class="mb-1 mt-1">
                         </div>
                         

@@ -45,7 +45,7 @@
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                 <div class="card-body">
-                    <a  href="${pageContext.request.contextPath}/LinksServlet?type=Wallets"  class="nav-link btn-success id-wallets ">Wallets</a>
+                    <a  href="${pageContext.request.contextPath}/LinksServlet?type=Wallets"  class="nav-link btn-success id-wallets ">FynPay</a>
                     <a  href="${pageContext.request.contextPath}/LinksServlet?type=CashOut"  class="nav-link btn-success id-cashout mt-2 ">CashOut</a>
                     <a  href="${pageContext.request.contextPath}/LinksServlet?type=Payments"  class="nav-link btn-success id-payments mt-2 ">Payments</a>
                     <a  href="${pageContext.request.contextPath}/LinksServlet?type=Transaction"  class="nav-link btn-success id-transactions mt-2 ">Transactions</a>

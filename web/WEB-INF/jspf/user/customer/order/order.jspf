@@ -55,7 +55,7 @@
                                         <p class="ml-2 mb-0 order-bookeddate-time"> 03-05-2020</p>
                                     </div>
                                     <div class="pull-right col-md-6">
-                                        <span class="order-payment fs-14 font-weight-bold">Payment</span> (<small class="text-info">Checkout Option</small>)
+                                        <span class="order-payment fs-14 font-weight-bold">Payment</span>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>

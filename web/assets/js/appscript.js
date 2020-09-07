@@ -36,10 +36,10 @@ function GetCartCount() {
 function logoFunction() {
     var path = getCurrentPath();
     var logoImage = "assets/img/logo/logo.png";
-    var partnerLogo1 = "assets/img/icon/pay.jpg";
+    var partnerLogo1 = "assets/img/icon/fynpay.png";
     var partnerLogo2 = "assets/img/icon/paystackcard.jpg";
     var partnerLogo3 = "assets/img/icon/mastercard.png";
-    var partnerLogo4 = "assets/img/icon/visacard.png";
+    var partnerLogo4 = "assets/img/icon/paypal.jpg";
     var ship1 = "assets/img/about/shipping1.jpg";
     var ship2 = "assets/img/about/shipping2.jpg";
     var ship3 = "assets/img/about/shipping3.jpg";

@@ -44,7 +44,7 @@ function checkOutBtnEvents() {
         }
 
         if (pay_method === "wallet") {
-            var data = [shopsessionid, "Wallet", note];
+            var data = [shopsessionid, "FynPay", note];
             showLoading();
             localStorage.setItem("cartcount", 0);
             GetData("Order", "PlaceOrder", "LoadPlaceOrder", data);
@@ -65,7 +65,7 @@ function checkOutBtnEvents() {
             var data = [shopsessionid, pin];
             showLoading();
             GetData("Cart", "ViewWalletBalance", "LoadWalletBalance", data);
-        }else{
+        } else {
             ShowNotification("Please, enter your wallet pin.", "error");
         }
 
@@ -223,7 +223,6 @@ function DisplayDefaultAddress(data) {
 function DisplayGetShopCart(data, parent) {
     hideLoading();
     if (data.product_count) {
-        console.log(data);
         GetDeliveryFees(data.total_amount);
         $(".cart_amount").text(PriceNumberFormat(data.amount));
         $(".checkout_cart_sub_total").text(PriceNumberFormat(data.amount));
@@ -275,6 +274,7 @@ function DisplayShippingDetails(data) {
     if (data.product_count) {
         var parent = $("#shippingDetailList");
         var cartproddata = data.CartProductDetails;
+        var objcount = ConvertObjectToArrayAndReturnLength(cartproddata);
         parent.find(".new-clone").remove();
         if (cartproddata === "none") {
             parent.text("No Result");
@@ -288,7 +288,7 @@ function DisplayShippingDetails(data) {
                 newchild.removeClass("d-none");
                 newchild.addClass("new-clone");
                 newchild.find(".ship-p-sn").text("#" + count);
-                newchild.find(".total_ship-p-count").text(data.product_count);
+                newchild.find(".total_ship-p-count").text(objcount);
                 newchild.find(".ship-p-name").text(details.ProductDetails.InfoDetails.name);
                 newchild.find(".ship-p-startdate").text(details.ProductDetails.SellerDetails.shipStartDate);
                 newchild.find(".ship-p-enddate").text(details.ProductDetails.SellerDetails.shipEndDate);
@@ -306,6 +306,12 @@ function GetDeliveryFees(cartamount) {
     GetData("Cart", "GetCartShippingFees", "LoadShippingFees", cartamount);
 
 }
+
+function ConvertObjectToArrayAndReturnLength(obj) {
+    var res = Object.keys(obj).map((key) => [Number(key), obj[key]]);
+    return res.length;
+}
+
 
 function DisplayShippingFees(data) {
     var shippingAmount = data.split("#")[0];

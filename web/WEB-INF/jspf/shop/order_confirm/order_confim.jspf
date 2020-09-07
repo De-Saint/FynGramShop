@@ -23,7 +23,7 @@
             <h1>Your order has been placed!</h1>
             <p>Your order has been successfully placed!</p>
             <p>You can view your order by going to the <a
-                    href="${pageContext.request.contextPath}/LinksServlet?type=Accounts" class="font-weight-bold text-success">my
+                    href="${pageContext.request.contextPath}/LinksServlet?type=DashBoard" class="font-weight-bold text-success">my
                     account</a> page and by clicking on <a
                         href="${pageContext.request.contextPath}/LinksServlet?type=Order" class="font-weight-bold text-success">Order</a>.
             </p>

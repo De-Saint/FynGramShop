@@ -10,7 +10,7 @@
                     <ul>
                          <li><a href="/FynGramShop">home</a></li>
                         <li>My account</li>
-                        <li>My Wallets</li>
+                        <li>My FynPay</li>
                     </ul>
                 </div>
             </div>
@@ -29,14 +29,22 @@
                 </div>
                 <div class="col-sm-12 col-md-9 col-lg-9">
                     <!-- Tab panes -->
-                    <div class="col-md-12">
+                    <!-- Tab panes -->
+                    <div class="row">
+                        <div class="mini_cart_wrapper col-md-12">
+                           <span  data-toggle="modal" data-target="#fund_wallet"   class="pull-right btn btn-outline-success btn-sm"> Fund FynPay Account</span>
+                        </div> 
+                    </div>
+
+                    <hr class="" style="margin-top: 10px !important; margin-bottom: 10px !important;">
+
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="card pl-3 pr-3 pt-3 pb-3 border border-success">
-                                    <h5 class="text-dark" style="font-weight: 600;">Main Wallet 
-                                        <span  data-toggle="modal" data-target="#fund_wallet"   class="pull-right btn btn-outline-success btn-sm"> Fund Wallet</span>
+                                    <h5 class="text-dark" style="font-weight: 600;">Main FynPay Account Balance 
+                                        
                                     </h5>
-                                    <h5 class="mt-2">Wallet Number</h5>
+                                    <h5 class="mt-2">FynPay Account Number</h5>
                                     <div class="input-group ">
                                         <div class="input-group-prepend">
                                             <div class="input-group-text bg-white"><div class="fa fa-money"></div></div>
@@ -50,7 +58,7 @@
                                         <div class="row d-flex mt-3">
                                             <div class="col-md-7 d-flex">
                                                 <div class="fa fa-credit-card pr-2 pt-1" style="font-size: 15px; color: #495057;"></div>
-                                                <div style="color: #495057;">Wallet Pin :</div>
+                                                <div style="color: #495057;">FynPay Account Pin :</div>
                                             </div>
                                             <div class="col-md-5 float-right">
                                                 <div class="walletPin" style="font-weight: 500; text-align: right;">6533</div>
@@ -71,8 +79,8 @@
 
                             <div class="col-md-6">
                                 <div class="card bg-light pl-3 pr-3 pt-3 pb-3">
-                                    <h5 class="text-dark" style="font-weight: 600;">Pending Wallet</h5>
-                                    <h5 class="mt-2">Wallet Number</h5>
+                                    <h5 class="text-dark" style="font-weight: 600;">Pending FynPay Account Balance</h5>
+                                    <h5 class="mt-2">FynPay Account Number</h5>
                                     <div class="input-group">
                                         <div class="input-group-prepend">
                                             <div class="input-group-text" style="background-color: #ffffff"><div class="fa fa-money"></div></div>
@@ -86,7 +94,7 @@
                                         <div class="row d-flex mt-3">
                                             <div class="col-md-7 d-flex">
                                                 <div class="fa fa-credit-card pr-2 pt-1" style="font-size: 15px; color: #495057;"></div>
-                                                <div style="color: #495057;">Wallet Pin :</div>
+                                                <div style="color: #495057;">FynPay Account Pin :</div>
                                             </div>
                                             <div class="col-md-5 float-right">
                                                 <div class="walletPin" style="font-weight: 500; text-align: right;">6533</div>
@@ -105,7 +113,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+
                 </div>
             </div>
         </div>  

@@ -90,7 +90,7 @@
                                             <div class="fa fa-money text-center fs-40 text-success"></div>
                                         </div>
                                         <div class="col-md-12 text-center mt-2 fs-21 text-muted font-weight-bold ">&#8358;<span class="wallet_balance">0</span></div>
-                                        <div class="col-md-12 text-center mt-2 fs-15 font-weight-bold"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Wallets" class="text-success">Total Wallet Balance</a></div>
+                                        <div class="col-md-12 text-center mt-2 fs-15 font-weight-bold"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Wallets" class="text-success">Total FynPay Balance</a></div>
                                     </div>
                                 </div>
                             </div>

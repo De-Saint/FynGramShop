@@ -333,13 +333,13 @@
 
                                                     <div class="panel-default col-lg-6 col-md-6" id="headPayOne">
                                                         <input id="walletpaymethod" name="pay_method" type="radio" value="wallet" data-toggle="collapse" data-target="#walletpay" aria-expanded="false" aria-controls="walletpay"/>
-                                                        <label for="walletpaymethod" data-toggle="collapse" data-target="#walletpay" aria-controls="walletpay">Pay from My Wallet?  <i class="fa fa-money fs-32 pt-2 ml-1"></i> </label>
+                                                        <label for="walletpaymethod" data-toggle="collapse" data-target="#walletpay" aria-controls="walletpay">Pay via FynPay?  <img src="../../../assets/img/icon/fynpay.png" style="width: 160px; height: 45px;" alt=""> </label>
                                                         <div id="walletpay" class="collapse show" aria-labelledby="headPayTwo" data-parent="#accordion4">
                                                             <div class="card-body1 pl-4">
-                                                                <p>Pay from your fyngram wallet account.
-                                                                    <br>This transaction will fail if you have insufficient fund. </br>
+                                                                <p>Pay from your FynPay Account.
+                                                                    <br>This transaction would fail if you have insufficient fund. </br>
                                                                     <span class="mini_cart_wrapper">
-                                                                        <a href="javascript:void(0)" class="font-weight-bold text-success">Check your wallet balance</a>
+                                                                        <a href="javascript:void(0)" class="font-weight-bold text-success">Check your FynPay Account</a>
                                                                     </span> 
                                                                 </p>
                                                             </div>
@@ -348,11 +348,11 @@
 
                                                     <div class="panel-default col-lg-6 col-md-6" id="headPayOne">
                                                         <input id="paystackmethod" name="pay_method" type="radio" value="paystack" data-toggle="collapse" data-target="#paystackpay" aria-expanded="false" aria-controls="paystackpay" />
-                                                        <label for="paystackmethod" data-toggle="collapse" data-target="#paystackpay" aria-controls="paystackpay">Pay via PayStack? <img src="../../../assets/img/brand/paystack.png" style="width: 160px; height: 45px;" alt=""></label>
+                                                        <label for="paystackmethod" data-toggle="collapse" data-target="#paystackpay" aria-controls="paystackpay">Pay via PayStack? <img src="../../../assets/img/icon/paystackcard.jpg" style="width: 160px; height: 45px;" alt=""></label>
 
                                                         <div id="paystackpay" class="collapse" aria-labelledby="headPayOne" data-parent="#accordion4">
                                                             <div class="card-body1 pl-4">
-                                                                <p>Pay via PayStack; you can pay with your card if you don’t have not funded your <b>FynGram Wallet.</b></p> 
+                                                                <p>Pay via PayStack; you can also pay with your card if you have not funded your <b>FynPay Account.</b></p> 
                                                             </div>
 
                                                         </div>
