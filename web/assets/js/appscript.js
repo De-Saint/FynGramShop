@@ -39,7 +39,7 @@ function logoFunction() {
     var partnerLogo1 = "assets/img/icon/fynpay.png";
     var partnerLogo2 = "assets/img/icon/paystackcard.jpg";
     var partnerLogo3 = "assets/img/icon/mastercard.png";
-    var partnerLogo4 = "assets/img/icon/paypal.jpg";
+    var partnerLogo4 = "assets/img/icon/verve.png";
     var ship1 = "assets/img/about/shipping1.jpg";
     var ship2 = "assets/img/about/shipping2.jpg";
     var ship3 = "assets/img/about/shipping3.jpg";
@@ -421,7 +421,7 @@ function DisplayUserDetails(resp) {
         $(".uFirstName").val(resp.firstname);
         $(".uLastName").val(resp.lastname);
         $(".uDateJoined").text(resp.date);
-        if (resp.newsletter === 1 || resp.newsletter === "1") {
+        if (resp.newsletters === 1 || resp.newsletters === "1") {
             $(".uNewsletter").text("Has Subcribed").addClass("badge badge-success");
         } else {
             $(".uNewsletter").text("Has not subscribed").addClass("badge badge-primary");

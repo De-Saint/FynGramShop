@@ -86,7 +86,7 @@
                                 <ul class="cat-subproplist">
                                     <li class="cat-subprop-clone d-none">
                                         <label for="remember">
-                                            <input id="remember" type="checkbox" class="cat-subprop-id" name="cat-subprop-id">
+                                            <!--<input id="remember" type="checkbox" class="cat-subprop-id" name="cat-subprop-id">-->
                                             <a href="javascript:void(0)" class="cat-subprop-name">Black  <span>(6)</span></a>
                                         </label>
                                         <!----> 
@@ -126,7 +126,7 @@
                     </div>
                    
                     <div class="page_amount">
-                        <p>Showing 1–9 of 21 results</p>
+                        <p class="result_count">Showing 0 results</p>
                     </div>
                      <div class="">
                         
@@ -191,7 +191,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="shop_toolbar t_bottom product-display">
+<!--                <div class="shop_toolbar t_bottom product-display d-none">
                     <div class="pagination">
                         <ul>
                             <li><a href="javascript:void(0)"><</a></li>
@@ -201,7 +201,7 @@
                             <li class="next"><a href="javascript:void(0)">></a></li>
                         </ul>
                     </div>
-                </div>
+                </div>-->
 
 
 

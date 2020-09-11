@@ -25,7 +25,6 @@ function GetSearchText() {
 }
 
 function productBtnEvents() {
-    /*---slider-range here---*/
 
     $(".product_thumb").addClass("threegridimage");
     $("#slider-range").slider({
@@ -61,8 +60,8 @@ function productBtnEvents() {
     $("#short").change(function () {
         var sort_by = $(this).val();
         var data = [categoryid, sort_by];
-//        showLoading();
-//        GetData("Product", "GetShopProductsBySorting", "LoadShopProductsByCategoryID", data);
+        showLoading();
+        GetData("Products", "GetShopProductsBySorting", "LoadShopProductsByCategoryID", data);
     });
 
 
@@ -84,6 +83,7 @@ function productPageFunctions() {
 
 
 function DisplayShopProductsByCategoryID(data) {
+
     hideLoading();
     var parent = $(".ShopProductList");
     parent.find(".new-clone").remove();
@@ -170,6 +170,7 @@ function DisplayShopProductsByCategoryID(data) {
             newchild.appendTo(parent).show();
         });
         childclone.hide();
+        $(".result_count").text("Showing " + count + " results");
     } else {
         $(".noproduct-display").removeClass("d-none");
         $(".product-display").addClass("d-none");
@@ -325,7 +326,9 @@ function DisplayShopPropertiesByCategoryID(data) {
                 newsubchild.removeClass("d-none");
                 var subdetails = CatList["par" + subid];
                 newsubchild.find(".cat-subprop-id").val(subdetails["id"]);
-                newsubchild.find(".cat-subprop-name").text(subdetails["name"]);
+                newsubchild.find(".cat-subprop-name").text(subdetails["name"]).click(function () {
+                    GetData("Products", "GlobalSearch", "LoadShopProductsByCategoryID", subdetails["name"]);
+                });
                 newsubchild.appendTo(subParent);
             });
             newchild.appendTo(parent).show();

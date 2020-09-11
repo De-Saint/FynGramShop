@@ -37,7 +37,7 @@ function walletsBtnEvents() {
 function payWithPaystack(paymentamount, email, actualamount, PaymentType) {
     var userDetail = localStorage.getItem("uUserName");
     var handler = PaystackPop.setup({
-        key: 'pk_test_b3685f824518679567d6356e2636fc184878e833',
+        key: 'pk_test_c819ab617f5085772d511e6e5cafc3785367cb78',
         email: email,
         amount: paymentamount + "00",
         ref: '' + Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
@@ -89,7 +89,6 @@ function DisplayGetWalletDetails(resp) {
 }
 
 function DisplayValidatePaystackPayment(data) {
-    console.log(data);
      hideLoading();
     var resp = data.result;
     if (resp.status === "success") {

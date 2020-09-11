@@ -395,8 +395,8 @@
         }).owlCarousel({
             loop: true,
             nav: false,
-            autoplay: false,
-            autoplayTimeout: 8000,
+            autoplay: true,
+            autoplayTimeout: 2000,
             items: 5,
             margin: 20,
             dots: false,

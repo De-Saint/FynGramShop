@@ -51,7 +51,7 @@
                                             <label>Last Name</label>
                                             <input type="text" class="uLastName" name="last-name">
                                             <label>Email</label>
-                                            <input type="text" class="uEmail" name="email-name">
+                                            <input type="text" disabled="true" readonly="true"  class="uEmail border-0" name="email-name">
                                             <label>Phone</label>
                                             <input type="text" class="uPhone" name="email-name">
                                             <br>
@@ -64,8 +64,14 @@
                                                 <input type="checkbox" value="1" name="newsletter">
                                                 <label>Sign up for our newsletter</label>
                                             </span>
+                                            <hr>
+                                            <!--<p>T</p>-->
+                                             <label>Current Password</label>
+                                            <input type="text" class="uOldPass" name="">
+                                             <label>New Password</label>
+                                            <input type="text" class="uNewPass" name="email-name">
                                             <div class="">
-                                                <button type="button"  class="btn btn-success">Update</button>
+                                                <button type="button" id="UpdateProfile" class="btn btn-success">Update</button>
                                             </div>
                                         </form>
                                     </div>

@@ -98,7 +98,6 @@ function DisplayShopProducts(data, parent) {
         $.each(ids, function (index, id) {
             count++;
             var details = result[id];
-//             alert(details["show_actual_price"]);
             var newchild = childclone.clone();
             newchild.removeClass("product-clone");
             newchild.addClass("new-clone");

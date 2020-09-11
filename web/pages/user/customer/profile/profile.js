@@ -50,9 +50,11 @@ function profileBtnEvents() {
                 $(".mini_cart_close").click();
                 if (option === "add") {
                     var data = [shopsessionid, bankid, bkaccttype, bkAcctNumber];
+                    showLoading();
                     GetData("CashOut", "CreateBankDetails", "LoadAddBankDetails", data);
                 } else {
                     var data = [bankid, bkaccttype, bkAcctNumber, bkdetid];
+                    showLoading();
                     GetData("CashOut", "EditBankDetails", "LoadAddBankDetails", data);
                 }
 
@@ -60,6 +62,47 @@ function profileBtnEvents() {
         }
         e.preventDefault();
     });
+    $("#UpdateProfile").click(function () {
+        var uLastName = $(".uLastName").val();
+        var uFirstName = $(".uFirstName").val();
+        var uNewsletter = $("input[name=newsletter]:checked").val();
+        if (!uNewsletter) {
+            uNewsletter = 0;
+        }
+        var uPhone = $(".uPhone").val();
+        var uOldPass = $(".uOldPass").val();
+        var uNewPass = $(".uNewPass").val();
+        if (uLastName) {
+            if (uFirstName) {
+                if (uPhone) {
+                    if (uOldPass) {
+                        if (uNewPass) {
+                            var data = [shopsessionid, uLastName, uFirstName, uNewsletter, uPhone, uOldPass, uNewPass];
+                            showLoading();
+                            GetData("User", "UpdateProfile", "LoadAddBankDetails", data);
+                        } else {
+                            ShowNotification("Please, enter the new password", "error");
+                        }
+                    } else {
+                        ShowNotification("Please, provide your current password", "error", );
+                    }
+                } else {
+                    ShowNotification("Please, enter your new phone number", "error", );
+                }
+
+            } else {
+                ShowNotification("Please, provide your firstname", "error", );
+            }
+
+        } else {
+            ShowNotification("Please, provide your lastname", "error", );
+        }
+
+
+
+    });
+
+
 }
 
 function profileSetLink() {
@@ -90,10 +133,10 @@ function DisplayBanks(data) {
 
 function DisplayAddBankDetails(resp) {
     ShowNotification(resp.msg, resp.status);
+    hideLoading();
     if (resp.status === "success") {
         GetData("User", "GetUserDetails", "LoadUserDetails", shopsessionid);
-    } else {
-        hideLoading();
+        window.location.reload();
     }
 
 }
