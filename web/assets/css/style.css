@@ -5157,7 +5157,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 /*  07. footer area css here */
 .footer_top {
-    padding-bottom: 64px;
+    /*padding-bottom: 64px;*/
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .footer_top {
@@ -5255,7 +5255,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .footer_menu ul li a {
-    display: block;
+    display: inline-block;
     font-weight: 400;
     font-size: 14px;
     line-height: 30px;

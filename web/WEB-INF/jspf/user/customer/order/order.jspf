@@ -60,11 +60,16 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="row mt-4">
-                                    <div class="col-md-12 fs-18">
-                                        <span class="badge pl-2 pr-2 pb-2 pt-2 order-status pull-left">Cancelled</span>
-                                      
+                                    <div class="col-md-4 fs-18">
+                                        <span class="badge pl-2 pr-2 pb-2 pt-2 order-status">Cancelled</span>
+                                    </div>
+                                    <div class="col-md-4 fs-18">
+                                        <button class="btn btn-outline-danger btn-sm CancelOrderBtn d-none ">Cancel Order</button>
+                                    </div>
+                                    <div class="col-md-4 fs-18">
                                         <span class=" pl-2 pr-2 pull-right bold text-muted order-amount">#3,8898</span>
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>

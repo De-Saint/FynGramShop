@@ -11,7 +11,6 @@ $(document).ready(function () {
 function IndexFunctions() {
     IndexBtnEvents();
     IndexPageFunctions();
-
 }
 
 function IndexBtnEvents() {
@@ -22,17 +21,6 @@ function IndexBtnEvents() {
             sessionStorage.setItem("newscheck", "Yes");
         }
     });
-
-    $("form[name=mc-mail]").submit(function (e) {
-        var newsletterEmail = $(".mc-email").val();
-        var shopsessionid = $("#shopsessionid").val();
-        if (newsletterEmail !== "") {
-            var data = [newsletterEmail, shopsessionid];
-            GetData("User", "SubcribeNewsletter", "LoadSubcribeNewsletter", data);
-        }
-        e.preventDefault();
-    });
-
     $("#slideImage1").click(function () {
         loadProductPage(1);
     });
@@ -68,15 +56,7 @@ function IndexBtnEvents() {
     });
 }
 
-function DisplaySubcribeNewsletter(resp) {
-    if (resp.status === "success") {
-        $('.mailchimp-success').addClass('active');
-        $('.mailchimp-success').html('' + resp.msg).fadeIn(900);
-        $('.mailchimp-error').fadeOut(400);
-    } else if (resp.status === "error") {
-        $('.mailchimp-error').html('' + resp.msg).fadeIn(900);
-    }
-}
+
 
 
 function IndexPageFunctions() {
@@ -102,8 +82,8 @@ function DisplayShopProducts(data, parent) {
             newchild.removeClass("product-clone");
             newchild.addClass("new-clone");
             newchild.find(".prod-sn").text(count);
-            var ProductID = details["ProductID"];
-            newchild.find(".prod-id").val(ProductID);
+            console.log(details);
+            newchild.find(".prod-id").val(details["ProductID"]);
             newchild.find(".shop-p-name").text(details["InfoDetails"].name);
             newchild.find(".shop-p-desc").text(details["InfoDetails"].description);
 
@@ -111,9 +91,9 @@ function DisplayShopProducts(data, parent) {
 
 
             newchild.find(".shop-p-selling-price").text(PriceFormat(details["PriceDetails"].selling_price));
-            if(parseInt(details["show_actual_price"]) === 1){
+            if (parseInt(details["show_actual_price"]) === 1) {
                 newchild.find(".shop-p-cost-price").text(PriceFormat(details["PriceDetails"].cost_price));
-            }else{
+            } else {
                 newchild.find(".shop-p-cost-price").text(PriceFormat(details["PriceDetails"].cost_price)).addClass("d-none");
             }
             var show_condition = details["show_condition"];
@@ -138,20 +118,20 @@ function DisplayShopProducts(data, parent) {
                 }
             }
             var btndetails = newchild.find(".btn-shop-p-details").click(function () {
-                localStorage.setItem("productid", ProductID);
+                localStorage.setItem("productid", details["ProductID"]);
                 window.location = extension + "LinksServlet?type=ProductDetails";
             });
             DisplayToolTip(btndetails);
             var btnquick = newchild.find(".btn-shop-p-quick-view").click(function () {
                 var modalParent = $("#modal_box");
                 QuickView(modalParent, details);//
-                var data = [shopsessionid, ProductID];
+                var data = [shopsessionid, details["ProductID"]];
                 GetData("Products", "ComputeUserProductViewed", "LoadComputeUserProductViewed", data);
             });
             DisplayToolTip(btnquick);
             var btndaddtocart = newchild.find(".btn-shop-p-add-to-cart").click(function () {
-                ProcessProductOption("Cart", ProductID, details["PriceDetails"].selling_price, 1, "Increase");
-                var data = [shopsessionid, ProductID];
+                ProcessProductOption("Cart", details["ProductID"], details["PriceDetails"].selling_price, 1, "Increase");
+                var data = [shopsessionid, details["ProductID"]];
                 GetData("Products", "ComputeUserProductViewed", "LoadComputeUserProductViewed", data);
             });
             DisplayToolTip(btndaddtocart);
@@ -162,8 +142,8 @@ function DisplayShopProducts(data, parent) {
                     localStorage.setItem("page_redirect", "saveditems");
                     window.location = extension + "LinksServlet?type=Login";
                 } else {
-                    ProcessProductOption("SavedItems", ProductID, details["PriceDetails"].selling_price, 1, "Increase");
-                    var data = [shopsessionid, ProductID];
+                    ProcessProductOption("SavedItems", details["ProductID"], details["PriceDetails"].selling_price, 1, "Increase");
+                    var data = [shopsessionid, details["ProductID"]];
                     GetData("Products", "ComputeUserProductViewed", "LoadComputeUserProductViewed", data);
                 }
             });

@@ -47,10 +47,10 @@
                                 <a href="${pageContext.request.contextPath}/LinksServlet?type=DashBoard">my Account</a>
                             </li>
                             <li class="menu-item-has-children forMembers">
-                                <a href="${pageContext.request.contextPath}/LinksServlet?type=LogOut">LogOut</a>
+                                <a href="${pageContext.request.contextPath}/LinksServlet?type=LogOut"  id="logout">LogOut</a>
                             </li>
                             <li class="menu-item-has-children notforMembers">
-                                <a href="${pageContext.request.contextPath}/LinksServlet?type=Login">Login</a>
+                                <a href="${pageContext.request.contextPath}/LinksServlet?type=Login" >Login</a>
                             </li>
                             <li class="menu-item-has-children notforMembers">
                                 <a href="${pageContext.request.contextPath}/LinksServlet?type=Register">Register</a>
@@ -64,7 +64,7 @@
                         </ul>
                     </div>
                     <div class="offcanvas_footer">
-                        <span><a  href="javascript:void(0)"><i class="fa fa-envelope-o"></i> support@fyngram.com</a></span>
+                        <span><a  href="mailto:support@fyngram.com"><i class="fa fa-envelope-o"></i> support@fyngram.com</a></span>
                     </div>
                 </div>
             </div>

@@ -37,7 +37,7 @@
                                 </div>
                                 <div class="shipping_content">
                                     <h3>30 Days Return</h3>
-                                    <p>Simply return it within 5 days for an exchange</p>
+                                    <p>Simply return it within 7 working days for an exchange</p>
 
                                 </div>
                             </div>
@@ -49,7 +49,7 @@
                                 </div>
                                 <div class="shipping_content">
                                     <h3>100% Payment Secure</h3>
-                                    <p>We ensure secure payment with ...</p>
+                                    <p>We ensure secure payment with PCI DSS</p>
                                 </div>
                             </div>
                         </div>
@@ -64,7 +64,7 @@
                             <a href="/FynGramShop/"><img class="logoImage" alt=""></a>
                         </div>
                         <p><span>Address:</span> B12 Ehimiri Housing Estate, Umuahia, Abia State, Nigeria.</p>
-                        <p><span>Email:</span> <a href="javascript:void(0)">sales@fyngram.com</a></p>
+                        <p><span>Email:</span> <a  href="mailto:support@fyngram.com">support@fyngram.com</a></p>
                         <p><span>Call us:</span> <a  href="tel:+234 7017 085 741">+234 7017 085 741</a> </p>
                     </div>          
                 </div>
@@ -77,10 +77,8 @@
                             <div class="footer_menu">
                                 <ul>
                                     <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=About">About Us</a></li>
-                                    <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Privacy"> Privacy Policy</a></li>
-                                    <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Terms"> Terms & Conditions</a></li>
                                     <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Contact"> Contact Us</a></li>
-                                    <!--<li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Services"> Our Services</a></li>-->
+                                    <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Index"> Buy</a> / <a  href="/FynGramManager/pages/general/register/register.jsp">Sell</a></li>
                                     <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Suggestions">Suggest a Feature</a></li>
                                 </ul>
                             </div>
@@ -92,10 +90,9 @@
                             <h3>Resources</h3>
                             <div class="footer_menu">
                                 <ul>
-                                    <!--<li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Categories">All Categories</a></li>-->
                                     <li class="forMembers d-none"><a  href="${pageContext.request.contextPath}/LinksServlet?type=Complaints">Complaints</a></li>
-                                    <li><a href="${pageContext.request.contextPath}/LinksServlet?type=ReturnPolicy">Return Policy</a></li>
                                     <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Supports">Supports</a></li>
+                                    <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Services">Blog</a></li>
                                     <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=FAQs">FAQs</a></li>
                                     <li><a  href="${pageContext.request.contextPath}/LinksServlet?type=Track">Track Order</a></li>
                                 </ul>
@@ -109,16 +106,15 @@
                         <h3>Sign up newsletter</h3>
                         <p class="footer_desc">Get updates by subscribing to our weekly newsletter</p>
                         <div class="subscribe_form">
-                            <form name="mc-mail" class="mc-form footer-newsletter" >
+                            <form name="mailForm"  method="POST" class="mc-form footer-newsletter" >
                                 <input id="mc-email" class="mc-email" type="email" autocomplete="off" placeholder="Enter you email" />
-                                <button id="mc-submit" class="mc-submit">Subscribe</button>
+                                <button type="submit" class="mc-submit">Subscribe</button>
                             </form>
-                            <!-- mailchimp-alerts Start -->
-                            <div class="mailchimp-alerts text-left">
-                                <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
-                                <div class="mailchimp-success"></div><!-- mailchimp-success end -->
-                                <div class="mailchimp-error"></div><!-- mailchimp-error end -->
-                            </div><!-- mailchimp-alerts end -->
+                            <div class="mailchimp-alerts text-centre">
+                                <div class="alert alert-success mc-email-success d-none" role="alert"></div>
+                                <div class="alert alert-danger mc-email-error d-none" role="alert"></div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -127,11 +123,19 @@
         <div class="row justify-content-center m-4">
             <div class="padding">
                 <div class="d-inline justify-content-center">
-                    <button type="button" class="btn btn-success btn-icon"> <a  href="http://www.facebook.com/fyngram" target="_blank"><i class="fa fa-facebook"></i></a> </button> 
-                    <button type="button" class="btn btn-success btn-icon"> <a  href="http://www.twitter.com/fyngram_com" target="_blank"><i class="fa fa-twitter"></i></a> </button>
-                    <button type="button" class="btn btn-success btn-icon"> <a  href="http://www.linkedin.com/company/fyngram" target="_blank"><i class="fa fa-linkedin"></i></a> </button> 
+                    <button type="button" class="btn btn-success btn-icon mr-4"> <a  href="http://www.facebook.com/fyngram" target="_blank"><i class="fa fa-facebook"></i></a> </button> 
+                    <button type="button" class="btn btn-success btn-icon mr-4"> <a  href="http://www.twitter.com/fyngram_com" target="_blank"><i class="fa fa-twitter"></i></a> </button>
+                    <button type="button" class="btn btn-success btn-icon mr-4"> <a  href="http://www.linkedin.com/company/fyngram" target="_blank"><i class="fa fa-linkedin"></i></a> </button> 
                     <button type="button" class="btn btn-success btn-icon"> <a  href="https://www.instagram.com/p/CEwMms7A9b-/?igshid=1cyr3vzecm9b" target="_blank"><i class="fa fa-instagram"></i> </a></button> 
 
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center m-4">
+            <div class="padding">
+                <div class="d-inline justify-content-center">
+                    <a href="/FynGramShop/"><img class="secureLogo1 mr-3" alt="" style="width: 70px; height: 36px;"></a>
+                    <a href="/FynGramShop/"><img class="secureLogo2" alt="" style="width: 70px; height: 36px;"></a>
                 </div>
             </div>
         </div>
@@ -140,21 +144,24 @@
     <div class="footer_bottom">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 col-md-7">
+                <div class="col-lg-8 col-md-8">
                     <div class="copyright_area">
                         <p>
+                            <a  href="${pageContext.request.contextPath}/LinksServlet?type=Privacy"> Privacy Policy</a> | 
+                            <a  href="${pageContext.request.contextPath}/LinksServlet?type=Terms"> Terms & Conditions</a> | 
+                            <a href="${pageContext.request.contextPath}/LinksServlet?type=ReturnPolicy">Return Policy</a> |
                             Copyright &copy;<script>
                                 document.write(new Date().getFullYear());
                             </script> All Rights Reserved | <a href="/FynGramShop" target="blank">FynGram</a>
                         </p>
                     </div>
                 </div>    
-                <div class="col-lg-6 col-md-5">    
+                <div class="col-lg-4 col-md-4">    
                     <div class="footer_payment">
                         <ul>
-                            <li class="mr-2"><a href="/FynGramShop/"><img class="partnerLogo1" alt="" style="width: 65px; height: 36px;"></a></li>
-                            <li class="mr-2"><a href="/FynGramShop/"><img class="partnerLogo2" alt="" style="width: 65px; height: 36px;"></a></li>
-                            <li class="mr-2"><a href="/FynGramShop/"><img class="partnerLogo3" alt="" style="width: 65px; height: 36px;"></a></li>
+                            <li class="mr-2"><a href="/FynGramShop/"><img class="partnerLogo1" alt="" style="width: 70px; height: 36px;"></a></li>
+                            <li class="mr-2"><a href="/FynGramShop/"><img class="partnerLogo2" alt="" style="width: 70px; height: 36px;"></a></li>
+                            <li class="mr-2"><a href="/FynGramShop/"><img class="partnerLogo3" alt="" style="width: 70px; height: 36px;"></a></li>
                             <li><a href="/FynGramShop/"><img class="partnerLogo4"  style="width: 65px; height: 36px;" alt=""></a></li>
                         </ul>
                     </div>

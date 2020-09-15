@@ -105,7 +105,7 @@
                                         <ul class="dropdown_language">
                                             <li  class="forMembers"><a href="${pageContext.request.contextPath}/LinksServlet?type=DashBoard">My Account</a></li>
                                             <li class="forMembers"><a href="${pageContext.request.contextPath}/LinksServlet?type=WishList">My Saved Items</a></li>
-                                            <li class="forMembers"><a href="${pageContext.request.contextPath}/LinksServlet?type=LogOut" id="logout">Logout</a></li>
+                                            <li class="forMembers"><a href="${pageContext.request.contextPath}/LinksServlet?type=LogOut" class="logout">Logout</a></li>
                                         </ul>
                                     </li>
                                 </ul>

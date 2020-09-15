@@ -44,7 +44,7 @@
                                 <hr class="border-dark">
                                 <div class="input-radio">
                                     <span class="custom-radio"><input type="radio" required value="Male"  name="id_gender"> Mr.</span>
-                                    <span class="custom-radio"><input type="radio" required="" value="FeMale" name="id_gender"> Mrs.</span>
+                                    <span class="custom-radio"><input type="radio" required="" value="FeMale" name="id_gender"> Mrs./Miss</span>
                                 </div>
                                 <label>First Name</label>
                                 <input type="text" name="first-name" id="firstname" required="true" placeholder="First Name">

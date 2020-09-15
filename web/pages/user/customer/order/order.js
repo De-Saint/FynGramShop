@@ -46,7 +46,6 @@ function DisplayOrders(data) {
         $.each(ids, function (index, id) {
             count++;
             var result = details[id];
-            console.log(result);
             var newchild = childclone.clone();
             newchild.addClass("order-clone");
             newchild.addClass("newclone");
@@ -57,7 +56,14 @@ function DisplayOrders(data) {
             newchild.find(".order-status").text(result["StatusDetails"].name).addClass("badge-" + result["StatusDetails"].color);
             newchild.find(".order-bookeddate-time").text(result["booking_date"] + " " + result["booking_time"]);
             newchild.find(".order-product_count").text(result["product_count"]);
-
+            if (result["StatusDetails"].name !== "Cancelled") {
+                var cancelbtn = newchild.find(".CancelOrderBtn").removeClass("d-none");
+                cancelbtn.click(function () {
+                    var data = [result["OrderID"], 3, shopsessionid];
+                    showLoading();
+                    GetData("Order", "UpdateOrderStatus", "LoadUpdateOrderStatus", data);
+                });
+            }
             var detailsbtn = newchild.find(".view_btn_order");
             detailsbtn.click(function () {
                 localStorage.setItem("orderid", result["OrderID"]);
@@ -73,4 +79,17 @@ function DisplayOrders(data) {
         $("<td />", {class: "text-center newclone text-primary", colspan: "9", text: "No Result Found"}).appendTo(row);
 
     }
+}
+
+
+function DisplayUpdateOrderStatus(data) {
+    hideLoading();
+    var resp = data.result;
+    if (resp.status === "success") {
+        ShowNotification(resp.msg, resp.status);
+        window.location.reload();
+    } else {
+        ShowNotification(resp.msg, resp.status);
+    }
+
 }

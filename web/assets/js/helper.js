@@ -663,6 +663,11 @@ function linkToFunction(action, params) {
             DisplayValidateAccount(params);
             break;
         }
+        case "LoadUpdateOrderStatus":
+        {
+            DisplayUpdateOrderStatus(params);
+            break;
+        }
 
     }
 }

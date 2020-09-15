@@ -34,10 +34,10 @@
                 <div class="contact_message content">
                     <h3>contact us</h3>    
                     <p class="font-weight-bold">Please contact us for any questions or comments by sending an email</p>
-                    <p><i class="fa fa-phone"></i> <a href="#">support@fyngram.com</a></p>
+                    <p><i class="fa fa-phone"></i> <a href=" href="mailto:support@fyngram.com"">support@fyngram.com</a></p>
                    
                     <p class="font-weight-bold">You can also contact our customer care at </p>
-                     <p><i class="fa fa-envelope-o"></i><a href="tel:++234 7017 085 741"> +234 7017 085 741</a></p>
+                     <p><i class="fa fa-envelope-o"></i><a href="tel:+234 7017 085 741"> +234 7017 085 741</a></p>
                    
                     <p class="font-weight-bold">You can visit our office address at </p>
                     <p><i class="fa fa-fax"></i> B12 Ehimiri Housing Estate, Umuahia, Abia State, Nigeria</p>         

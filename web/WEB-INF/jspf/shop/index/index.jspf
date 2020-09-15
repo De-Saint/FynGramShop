@@ -53,8 +53,8 @@
             <div class="col-12">
                 <div class="product_header">
                     <div class="section_title">
-                        <p>Trending selling items</p>
-                        <h2>Top Selling Items</h2>
+                        <p>Trending selling products</p>
+                        <h2>Top Selling Products</h2>
                     </div>
                 </div>
             </div>
@@ -257,7 +257,7 @@
                 <div class="col-lg-2 col-md-2 product-clone d-none">
                     <div class="single_product">
                         <div class="product_thumb">
-                            <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 index-d-view" style="width: 169px; height: 169px;" alt=""></a>
+                            <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 index-d-view"  alt=""></a>
                             <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 index-d-view"   alt=""></a>
                             <div class="label_product">
                                 <span class="label_sale">Sale</span>
@@ -414,19 +414,19 @@
             <div class="col-12">
                 <div class="brand_container owl-carousel ">
                     <div class="single_brand">
-                        <a href="javascript:void(0)"><img src="assets/img/brand/fyngram.png" alt="" style="width: 185px; height: 60px;"></a>
+                        <a href="javascript:void(0)"><img src="assets/img/brand/egsol.png" alt="" style="width: 185px; height: 60px;"></a>
                     </div>
                     <div class="single_brand">
                         <a href="javascript:void(0)"><img src="assets/img/brand/fyngram.png" alt="" style="width: 185px; height: 60px;"></a>
                     </div>
                     <div class="single_brand">
-                        <a href="javascript:void(0)"><img src="assets/img/brand/fyngram.png" alt="" style="width: 185px; height: 60px;"></a>
+                        <a href="javascript:void(0)"><img src="assets/img/brand/egsol.png" alt="" style="width: 185px; height: 60px;"></a>
                     </div>
                     <div class="single_brand">
                         <a href="javascript:void(0)"><img src="assets/img/brand/fyngram.png" alt="" style="width: 185px; height: 60px;"></a>
                     </div>
                     <div class="single_brand">
-                        <a href="javascript:void(0)"><img src="assets/img/brand/fyngram.png" alt="" style="width: 185px; height: 60px;"></a>
+                        <a href="javascript:void(0)"><img src="assets/img/brand/egsol.png" alt="" style="width: 185px; height: 60px;"></a>
                     </div>
                     <div class="single_brand">
                         <a href="javascript:void(0)"><img src="assets/img/brand/fyngram.png" alt="" style="width: 185px; height: 60px;"></a>
