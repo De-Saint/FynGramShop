@@ -16,6 +16,7 @@ function RegisterFunctions() {
 
 function RegisterBtnEvents() {
     $("form[name=registerForm]").submit(function (e) {
+        var Title = $("input[name=id_title]:checked").val();
         var Gender = $("input[name=id_gender]:checked").val();
         var Frstname = $("#firstname").val();
         var Lastname = $("#lastname").val();
@@ -31,8 +32,8 @@ function RegisterBtnEvents() {
        
         if (Password === password2) {
             if (terms) {
+                var data = [Gender, Frstname, Lastname, EmailAddress, PhoneNumber, Password, Newsletter, Title];
                 showLoading();
-                var data = [Gender, Frstname, Lastname, EmailAddress, PhoneNumber, Password, Newsletter];
                 GetData("User", "RegisterCustomer", "LoadRegisterCustomer", data);
             } else {
                 ShowNotification("Please, accept our terms and conditions by ticking the terms and condition box", 'error');

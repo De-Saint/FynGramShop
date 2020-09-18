@@ -35,15 +35,16 @@
 
                         <div class="login_submit">
                             <label for="remember" class="pull-left">
-                                <a href="${pageContext.request.contextPath}/LinksServlet?type=Login">Back to Login</a>
+                                <a  class="text-success" href="${pageContext.request.contextPath}/LinksServlet?type=Login">Back to Login</a>
 
                             </label>
                             <button type="submit" class="btn btn-outline-success">Submit</button>
 
                         </div>
-
                     </form>
-                </div>    
+                </div>  
+                                <div class="">If, you did not receive an email, you can  <a href="${pageContext.request.contextPath}/LinksServlet?type=Login" class="text-success">login</a> and validate your account later.</div>
+
             </div>
             <!--login area start-->
 

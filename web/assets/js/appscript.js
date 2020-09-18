@@ -133,13 +133,13 @@ function GenralBtnEvents() {
             $(".search-ajax").addClass("d-none");
         }
     });
-
     $("form[name=mailForm]").submit(function (e) {
         var newsletterEmail = $(".mc-email").val();
         var shopsessionid = verifyUser();
         if (newsletterEmail !== "") {
             if (shopsessionid !== undefined) {
                 var data = [newsletterEmail, shopsessionid];
+                showLoading();
                 GetData("User", "SubcribeNewsletter", "LoadSubcribeNewsletter", data);
                 $(".mc-email").val("");
             }
@@ -450,6 +450,7 @@ function DisplayUserDetails(resp) {
         localStorage.setItem("uEmail", resp.email);
         $(".uPhone").val(resp.phone);
         $(".uGender").text(resp.gender);
+        $(".uTitle").text(resp.title);
         if (!$.isEmptyObject(resp.BankDetails)) {
             $(".uBankName").val(resp.BankDetails.bankName);
             if (resp.BankDetails.bankName) {
@@ -536,6 +537,7 @@ function DisplayGlobalSearch(data, parent) {
 
 
 function DisplaySubcribeNewsletter(resp) {
+    hideLoading();
     if (resp.status === "success") {
         $('.mc-email-success').removeClass("d-none");
         $('.mc-email-success').addClass('active');

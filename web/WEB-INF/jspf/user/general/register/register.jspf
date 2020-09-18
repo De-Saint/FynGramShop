@@ -42,14 +42,22 @@
 
                                 <div class="font-weight-bold">Your Personal Details</div>
                                 <hr class="border-dark">
+                                <label>Title</label>
                                 <div class="input-radio">
-                                    <span class="custom-radio"><input type="radio" required value="Male"  name="id_gender"> Mr.</span>
-                                    <span class="custom-radio"><input type="radio" required="" value="FeMale" name="id_gender"> Mrs./Miss</span>
+                                    <span class="custom-radio"><input type="radio" required value="Mr"  name="id_title"> Mr.</span>
+                                    <span class="custom-radio"><input type="radio" required="" value="Mrs" name="id_title"> Mrs.</span>
+                                    <span class="custom-radio"><input type="radio" required="" value="Miss" name="id_title"> Miss.</span>
                                 </div>
                                 <label>First Name</label>
                                 <input type="text" name="first-name" id="firstname" required="true" placeholder="First Name">
                                 <label>Last Name</label>
                                 <input type="text" name="last-name" id="lastname" required="true" placeholder="Last Name">
+                           
+                                <label>Gender</label>
+                                <div class="input-radio">
+                                    <span class="custom-radio"><input type="radio" required value="Male"  name="id_gender"> Male</span>
+                                    <span class="custom-radio"><input type="radio" required="" value="Female" name="id_gender"> Female</span>
+                                </div>
                                 <label>Email</label>
                                 <input type="email" name="email-name" id="emial" required="true" placeholder="Email">
                                 <label>Phone</label>
@@ -73,7 +81,7 @@
                                     </span><br>
                                     <button type="submit" class="btn btn-success">Register</button>
                                 </div>
-                             </form>
+                            </form>
                         </div>
                     </div>
                 </div>

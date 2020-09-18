@@ -47,7 +47,7 @@
                                 <a href="${pageContext.request.contextPath}/LinksServlet?type=DashBoard">my Account</a>
                             </li>
                             <li class="menu-item-has-children forMembers">
-                                <a href="${pageContext.request.contextPath}/LinksServlet?type=LogOut"  id="logout">LogOut</a>
+                                <a href="${pageContext.request.contextPath}/LinksServlet?type=LogOut"  class="logout">LogOut</a>
                             </li>
                             <li class="menu-item-has-children notforMembers">
                                 <a href="${pageContext.request.contextPath}/LinksServlet?type=Login" >Login</a>

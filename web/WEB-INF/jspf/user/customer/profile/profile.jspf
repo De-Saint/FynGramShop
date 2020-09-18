@@ -8,7 +8,7 @@
                 <div class="breadcrumb_content">
                     <h3>My Account</h3>
                     <ul>
-                         <li><a href="/FynGramShop">home</a></li>
+                        <li><a href="/FynGramShop">home</a></li>
                         <li>My account</li>
                         <li>My Profile</li>
                     </ul>
@@ -45,7 +45,9 @@
                                     <div class="account_login_form col-lg-6">
 
                                         <form action="#">
-
+                                            <div class="input-radio mb-2">
+                                               Title: <span class="custom-radio uTitle" >  Mr.</span>
+                                            </div> 
                                             <label>First Name</label>
                                             <input type="text" class="uFirstName" name="first-name">
                                             <label>Last Name</label>
@@ -66,9 +68,9 @@
                                             </span>
                                             <hr>
                                             <!--<p>T</p>-->
-                                             <label>Current Password</label>
+                                            <label>Current Password</label>
                                             <input type="text" class="uOldPass" name="">
-                                             <label>New Password</label>
+                                            <label>New Password</label>
                                             <input type="text" class="uNewPass" name="email-name">
                                             <div class="">
                                                 <button type="button" id="UpdateProfile" class="btn btn-success">Update</button>

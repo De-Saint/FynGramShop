@@ -106,11 +106,12 @@
                         <h3>Sign up newsletter</h3>
                         <p class="footer_desc">Get updates by subscribing to our weekly newsletter</p>
                         <div class="subscribe_form">
-                            <form name="mailForm"  method="POST" class="mc-form footer-newsletter" >
+                            <form name="mailForm" class="mc-form footer-newsletter" >
                                 <input id="mc-email" class="mc-email" type="email" autocomplete="off" placeholder="Enter you email" />
                                 <button type="submit" class="mc-submit">Subscribe</button>
+                                <!--<input type="submit" class="btn btn-success" value="Subscribe">-->
                             </form>
-                            <div class="mailchimp-alerts text-centre">
+                            <div class="mailchimp-alerts text-center mt-1">
                                 <div class="alert alert-success mc-email-success d-none" role="alert"></div>
                                 <div class="alert alert-danger mc-email-error d-none" role="alert"></div>
 
