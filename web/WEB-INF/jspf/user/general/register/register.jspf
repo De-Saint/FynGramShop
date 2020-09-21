@@ -77,7 +77,7 @@
                                 <div class=" ">
                                     <span class="custom_checkbox">
                                         <input type="checkbox" value="1" name="terms"  id="terms" required="true">
-                                        <label>I have read and agree to the <a class="font-weight-bold" href="${pageContext.request.contextPath}/LinksServlet?type=Terms">Term and condition!</a> </label>
+                                        <label>I have read and agreed to the <a class="font-weight-bold" href="${pageContext.request.contextPath}/LinksServlet?type=Terms">TERMS AND CONDITIONS!</a> </label>
                                     </span><br>
                                     <button type="submit" class="btn btn-success">Register</button>
                                 </div>
