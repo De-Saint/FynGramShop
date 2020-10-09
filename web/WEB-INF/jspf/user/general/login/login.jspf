@@ -31,7 +31,7 @@
                         <div class="">
                             By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.
                             <div class="mt-70 text-left  p-lg-0 mb-lg-4">
-                                <a href="${pageContext.request.contextPath}/LinksServlet?type=Register" class="btn btn-success text-white rounded mb-3">Continue</a>
+                                <a href="${pageContext.request.contextPath}/LinksServlet?type=Register" class="btn btn-success text-white rounded mb-3">Create Account</a>
                             </div>
                         </div>
                     </form>

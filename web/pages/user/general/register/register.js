@@ -29,7 +29,6 @@ function RegisterBtnEvents() {
         if (!Newsletter) {
             Newsletter = 0;
         }
-       
         if (Password === password2) {
             if (terms) {
                 var data = [Gender, Frstname, Lastname, EmailAddress, PhoneNumber, Password, Newsletter, Title];

@@ -7207,7 +7207,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     max-width: 180px;
 }
 .table_desc .cart_page table tbody tr td.product_thumb a img {
-    width: 100px;
+    width: 100px !important;
+    height: 100px !important;
 }
 .table_desc .cart_page table tbody tr td.product_name {
     min-width: 180px;

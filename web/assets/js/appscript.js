@@ -236,7 +236,7 @@ function QuickView(parent, data) {
         var UserType = shopsessionid.split("#")[1];
         if (UserType === "G") {
             localStorage.setItem("page_redirect", "saveditems");
-            window.location = extension + "LinksServlet?type=Login";
+            window.location = extension + "LinksServlet?type=Register";
         } else {
             parent.modal("hide");
             ProcessProductOption("SavedItems", data.ProductID, data.PriceDetails.selling_price, 1, "Increase");

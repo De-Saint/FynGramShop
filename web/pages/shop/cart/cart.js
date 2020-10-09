@@ -22,7 +22,7 @@ function cartBtnEvents() {
         var UserType = shopsessionid.split("#")[1];
         if (UserType === "G") {
             localStorage.setItem("page_redirect", "checkout");
-            window.location = extension + "LinksServlet?type=Login";
+            window.location = extension + "LinksServlet?type=Register";
         } else {
             window.location = extension + "LinksServlet?type=CheckOut";
         }
@@ -114,7 +114,7 @@ function DisplayShopCart(data, parent) {
                     var UserType = shopsessionid.split("#")[1];
                     if (UserType === "G") {
                         localStorage.setItem("page_redirect", "saveditems");
-                        window.location = extension + "LinksServlet?type=Login";
+                        window.location = extension + "LinksServlet?type=Register";
                     } else {
                         ProcessProductOption("SavedItems", details.ProductDetails.ProductID, details.ProductDetails.PriceDetails.selling_price, 1, "Increase");
                     }

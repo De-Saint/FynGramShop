@@ -139,7 +139,7 @@ function DisplayShopProducts(data, parent) {
                 var UserType = shopsessionid.split("#")[1];
                 if (UserType === "G") {
                     localStorage.setItem("page_redirect", "saveditems");
-                    window.location = extension + "LinksServlet?type=Login";
+                    window.location = extension + "LinksServlet?type=Register";
                 } else {
                     ProcessProductOption("SavedItems", details["ProductID"], details["PriceDetails"].selling_price, 1, "Increase");
                     var data = [shopsessionid, details["ProductID"]];

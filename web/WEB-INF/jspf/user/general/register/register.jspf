@@ -38,9 +38,9 @@
                     <div class="login_form_container">
                         <div class="account_login_form">
                             <form name="registerForm" class="form-horizontal" id="registerForm">
-                                <p>Already have an account? <a href="${pageContext.request.contextPath}/LinksServlet?type=Login">LogIn Instead!</a></p>
-
-                                <div class="font-weight-bold">Your Personal Details</div>
+                                <div class="font-weight-bold pull-left">Your Personal Details</div>
+                                <div class="font-weight-bold pull-right"><a href="${pageContext.request.contextPath}/LinksServlet?type=Login" class="text-primary">Existing Customer? LogIn!</a></div>
+                                <div class="clearfix"></div>
                                 <hr class="border-dark">
                                 <label>Title</label>
                                 <div class="input-radio">
