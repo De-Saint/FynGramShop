@@ -35,7 +35,6 @@ function dashboardPageFunctions() {
 
 function DisplayCustomerStats(data) {
     hideLoading();
-    console.log(data);
     $(".address_count").text(data.address_count);
     $(".review_count").text(data.review_count);
     $(".discount_count").text(data.discount_count);

@@ -81,7 +81,6 @@ function DisplayRecentTransactions(data, parent) {
 }
 
 function DisplayDeleteTransaction(data, parent) {
-    console.log(data);
     var resp = data[2];
     ShowNotification(resp.msg, resp.status);
     if (resp.status === "success") {

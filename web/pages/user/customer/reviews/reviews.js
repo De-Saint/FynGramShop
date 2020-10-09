@@ -41,7 +41,6 @@ function DisplayUserReviewList(data) {
 
     var reviewParent = $("#reviewsList");
     reviewParent.find(".new-clone").remove();
-    console.log(data);
     if (data === "none") {
         reviewParent.text("No Result");
     } else {

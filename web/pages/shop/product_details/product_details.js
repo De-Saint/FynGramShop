@@ -208,7 +208,6 @@ function DisplayShopProductDetails(data) {
     var reviewdata = data.ReviewDetails;
     var reviewParent = $("#shop-product-reviews");
     reviewParent.find(".new-clone").remove();
-    console.log(reviewdata);
     if (reviewdata === "none") {
         reviewParent.text("No Result");
     } else {

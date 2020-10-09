@@ -37,7 +37,6 @@ function returnsPageFunctions() {
 
 
 function DisplayStockMovement(data) {
-    console.log(data);
     hideLoading();
     var parent = $(".StockList");
     parent.find(".newclone").remove();

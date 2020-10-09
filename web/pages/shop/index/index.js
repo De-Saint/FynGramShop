@@ -82,7 +82,6 @@ function DisplayShopProducts(data, parent) {
             newchild.removeClass("product-clone");
             newchild.addClass("new-clone");
             newchild.find(".prod-sn").text(count);
-            console.log(details);
             newchild.find(".prod-id").val(details["ProductID"]);
             newchild.find(".shop-p-name").text(details["InfoDetails"].name);
             newchild.find(".shop-p-desc").text(details["InfoDetails"].description);

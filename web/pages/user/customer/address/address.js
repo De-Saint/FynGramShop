@@ -148,7 +148,6 @@ function DisplayStates(data) {
 }
 
 function DisplayLGAs(data) {
-    console.log(data);
     var cs = $("#lgas");
     cs.empty();
     $("#towns").empty();

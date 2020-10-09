@@ -45,7 +45,6 @@ function cashoutPageFunctions() {
 }
 
 function DisplayCashoutRequests(data, parent) {
-    console.log(data);
     hideLoading();
     parent.find(".newclone").remove();
     if (data !== "none") {
@@ -56,7 +55,6 @@ function DisplayCashoutRequests(data, parent) {
         $.each(ids, function (index, id) {
             count++;
             var details = result[id];
-            console.log(details);
             var newchild = childclone.clone();
             newchild.removeClass("cashoutlist-clone");
             newchild.removeClass("d-none");
@@ -99,7 +97,6 @@ function DisplayCashoutRequests(data, parent) {
 }
 
 function DisplayCashOutOptions(data, parent) {
-    console.log(data);
     var response = data[2];
     ShowNotification(response.msg, response.status);
     if (response.status === "success") {

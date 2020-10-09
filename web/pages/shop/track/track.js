@@ -78,8 +78,6 @@ function DisplayTrackOrder(data) {
 }
 
 function DisplayStatusHistoryDetails(data, parent) {
-    console.log(data);
-
     parent.find(".new-clone").remove();
     if (data === "none") {
 //        parent.text("No Result");

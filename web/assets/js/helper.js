@@ -600,7 +600,6 @@ function linkToFunction(action, params) {
         }
         case "LoadComputeUserProductViewed":
         {
-            console.log(params);
             break;
         }
         case "LoadRecentlyViewed":

@@ -45,7 +45,6 @@ function DisplayCustomerDiscountCodes(data, parent) {
         $.each(ids, function (index, id) {
             count++;
             var details = result[id];
-            console.log(details);
             var newchild = childclone.clone();
             newchild.removeClass("dcode-clone");
             newchild.removeClass("d-none");
