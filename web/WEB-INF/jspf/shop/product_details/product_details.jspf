@@ -32,8 +32,8 @@
                                 <article class="single_product">
                                     <figure>
                                         <div class="product_thumb">
-                                            <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 " alt=""></a>
-                                            <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 "   alt=""></a>
+                                            <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 " style="width: 4.5em; height: 4.5em;" alt=""></a>
+                                            <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 "  style="width: 4.5em; height: 4.5em;"  alt=""></a>
                                         </div>
                                         <figcaption class="product_content">
                                             <h4 class="product_name">
@@ -68,8 +68,8 @@
                                 <article class="single_product">
                                     <figure>
                                         <div class="product_thumb">
-                                            <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 " alt=""></a>
-                                            <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 "   alt=""></a>
+                                            <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 "  style="width:5.5em !important; height:5.5em !important;" alt=""></a>
+                                            <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 "  style="width:5.5em !important; height:5.5em !important;"  alt=""></a>
                                         </div>
                                         <figcaption class="product_content">
                                             <h4 class="product_name">
@@ -455,10 +455,10 @@
                             <div class="col-lg-3 col-md-2 product-clone d-none" >
                                 <div class="single_product">
                                     <div class="product_thumb">
-                                        <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 "  alt=""></a>
+                                        <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1"   alt=""></a>
                                         <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2"   alt=""></a>
                                         <div class="label_product">
-                                            <span class="label_sale">Sale</span>
+                                            <!--<span class="label_sale">Sale</span>-->
                                             <span class="label_new shop-p-condition ">New</span>
                                         </div>
                                         <div class="action_links">

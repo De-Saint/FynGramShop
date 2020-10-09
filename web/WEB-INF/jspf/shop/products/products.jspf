@@ -145,10 +145,9 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 col-12 prodlist-clone d-none">
                         <div class="single_product">
                             <div class="product_thumb">
-                                <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 shop-d-view" alt=""></a>
-                                <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 shop-d-view"   alt=""></a>
+                                <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1" alt=""></a>
+                                <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2" alt=""></a>
                                 <div class="label_product">
-                                    <span class="label_sale">On Sale</span>
                                     <!--<span class="label_sale">Sale</span>-->
                                     <span class="label_new shop-p-condition ">New</span>
                                 </div>
