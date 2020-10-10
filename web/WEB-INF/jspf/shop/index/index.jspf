@@ -412,37 +412,42 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
+                <div class="section_title">
+                    <p>Product brands </p>
+                    <h2>Shop By Brands</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
                 <div class="brand_container owl-carousel ">
                     <img src="../../../../" alt=""/>
                     <div class="single_brand">
-                        <a href="javascript:void(0)"><img src="assets/img/brand/egsol.png" alt="" style="width: 185px; height: 70px;"></a>
+                        <a href="javascript:void(0)"><img src="assets/img/brand/egsol.png" alt="" style="width: 185px; height: 70px;" id="egsol"></a>
                     </div>
                     <div class="single_brand">
-                        <a href="javascript:void(0)"><img src="assets/img/brand/fyngram.png" alt="" style="width: 185px; height: 70px;"></a>
+                        <a href="javascript:void(0)"><img src="assets/img/brand/Friesland.png" alt="" style="width: 185px; height: 70px" id="Friesland"></a>
                     </div>
                     <div class="single_brand">
-                        <a href="javascript:void(0)"><img src="assets/img/brand/Friesland.png" alt="" style="width: 185px; height: 70px;"></a>
+                        <a href="javascript:void(0)"><img src="assets/img/brand/dufil.jpeg" alt="" style="width: 185px; height: 70px;" id="dufil"></a>
                     </div>
                     <div class="single_brand">
-                        <a href="javascript:void(0)"><img src="assets/img/brand/dufil.png" alt="" style="width: 185px; height: 70px;"></a>
+                        <a href="javascript:void(0)"><img src="assets/img/brand/fmn.png" alt="" style="width: 185px; height: 70px;" id="fmn"></a>
                     </div>
                     <div class="single_brand">
-                        <a href="javascript:void(0)"><img src="assets/img/brand/flourm.png" alt="" style="width: 185px; height: 70px;"></a>
+                        <a href="javascript:void(0)"><img src="assets/img/brand/honey.png" alt="" style="width: 185px; height: 70px;" id="honeywell"></a>
                     </div>
                     <div class="single_brand">
-                        <a href="javascript:void(0)"><img src="assets/img/brand/honeywell.png" alt="" style="width: 185px; height: 80px;"></a>
+                        <a href="javascript:void(0)"><img src="assets/img/brand/unilever.jpg" alt="" style="width: 185px; height: 70px;"  id="unilever"></a>
                     </div>
                     <div class="single_brand">
-                        <a href="javascript:void(0)"><img src="assets/img/brand/unilever.jpg" alt="" style="width: 185px; height: 70px;"></a>
+                        <a href="javascript:void(0)"><img src="assets/img/brand/uac-foods.png" alt="" style="width: 185px; height: 70px;"  id="uac"></a>
                     </div>
                     <div class="single_brand">
-                        <a href="javascript:void(0)"><img src="assets/img/brand/uac-foods.png" alt="" style="width: 185px; height: 70px;"></a>
+                        <a href="javascript:void(0)"><img src="assets/img/brand/nestle.jpeg" alt="" style="width: 185px; height: 70px;"  id="nestle"></a>
                     </div>
                     <div class="single_brand">
-                        <a href="javascript:void(0)"><img src="assets/img/brand/nestle.jpeg" alt="" style="width: 185px; height: 70px;"></a>
-                    </div>
-                    <div class="single_brand">
-                        <a href="javascript:void(0)"><img src="assets/img/brand/pz.jpeg" alt="" style="width: 185px; height: 70px;"></a>
+                        <a href="javascript:void(0)"><img src="assets/img/brand/pz.jpeg" alt="" style="width: 185px; height: 70px;"  id="pz"></a>
                     </div>
                     </div>
                 </div>

@@ -150,6 +150,7 @@ function GenralBtnEvents() {
 }
 
 
+
 function DisplayShopAllLevelCategories(data) {
     var parent = $(".categorylist");
     parent.find(".catnewclone").remove();

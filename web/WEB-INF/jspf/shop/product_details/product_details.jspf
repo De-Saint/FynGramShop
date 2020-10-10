@@ -144,10 +144,6 @@
                                     <div class="product_ratting">
                                         <ul class="text-success">
                                             <li><a href="javascript:void(0)"><i class="icon-star fs-20"></i></a></li>
-                                            <li><a href="javascript:void(0)"><i class="icon-star fs-20"></i></a></li>
-                                            <li><a href="javascript:void(0)"><i class="icon-star fs-20"></i></a></li>
-                                            <li><a href="javascript:void(0)"><i class="icon-star fs-20"></i></a></li>
-                                            <li><a href="javascript:void(0)"><i class="icon-star fs-20"></i></a></li>
                                             <li class="review fs-15"> </a>
                                                 <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Reviews (<span class="shop-numberofratings">0</span>)</a></li>
                                         </ul>

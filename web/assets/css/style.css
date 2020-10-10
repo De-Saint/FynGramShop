@@ -567,12 +567,18 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     top: 26px;
     z-index: 9;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) and (max-width: 991px){
     .canvas_open {
         right: 2px;
         top: -2px;
     }
 }
+/*@media only screen and (min-width: 800px)  and (max-width: 1280px{
+   .canvas_open {
+        right: 2px;
+        top: -2px;
+    }
+}*/
 .canvas_open a {
     font-size: 26px;
     width: 41px;
@@ -11136,4 +11142,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
         margin: 0;
         border-radius: 5px;
     }
+}
+.zoomContainer {
+    display: none;
 }
