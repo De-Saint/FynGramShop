@@ -5150,7 +5150,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .single_brand a img {
-    opacity: 0.5;
+    opacity: 9;
     transition: .3s;
 }
 .single_brand:hover a img {

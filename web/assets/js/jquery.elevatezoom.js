@@ -1711,7 +1711,7 @@ if ( typeof Object.create !== 'function' ) {
 	};
 
 	$.fn.elevateZoom.options = {
-			zoomActivation: "hover", // Can also be click (PLACEHOLDER FOR NEXT VERSION)
+			zoomActivation: "click", // Can also be click (PLACEHOLDER FOR NEXT VERSION)
       zoomEnabled: true, //false disables zoomwindow from showing
 			preloading: 1, //by default, load all the images, if 0, then only load images after activated (PLACEHOLDER FOR NEXT VERSION)
 			zoomLevel: 1, //default zoom level of image

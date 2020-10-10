@@ -101,32 +101,33 @@
                             <div class="product-details-tab">
                                 <div id="img-1" class="zoomWrapper single-zoom">
                                     <a href="javascript:void(0)">
-                                        <img id="zoom1" style="width: 406.75px; height: 406.75px; background-image: none !important" class="shop-p-det-image1" src="../../../assets/img/no-image.png" data-zoom-image="../../../assets/img/no-image.png" alt="big-1">
+                                        <img id="zoom1" style="width: 406.75px; height: 406.75px;"  alt="big-1">
+                                        <!--<img id="zoom1" style="width: 406.75px; height: 406.75px;" class="shop-p-det-image11" src="../../../assets/img/no-image.png"  alt="big-1">-->
                                     </a>
                                 </div>
                                 <div class="single-zoom-thumb">
                                     <ul class="s-tab-zoom owl-carousel single-product-active" id="gallery_01">
                                         <li class="s-p-det-img1">
                                             <a href="javascript:void(0)" class="elevatezoom-gallery active shop-p-det-image11">
-                                                <img class="shop-p-det-image11"  alt="zo-th-1"/>
+                                                <img class="shop-p-det-image11" style="width:4em !important; height:5em !important;"  alt="zo-th-1"/>
                                             </a>
 
                                         </li>
                                         <li class="s-p-det-img2">
-                                            <a href="javascript:void(0)" class="elevatezoom-gallery s-p-det-img2 active shop-p-det-image12" data-update="" >
-                                                <img class="shop-p-det-image12" alt="zo-th-1"/>
+                                            <a href="javascript:void(0)" class="elevatezoom-gallery s-p-det-img2  shop-p-det-image12" data-update="" >
+                                                <img class="shop-p-det-image12"  style="width:4em !important; height:5em !important;" alt="zo-th-1"/>
                                             </a>
 
                                         </li>
                                         <li class="s-p-det-img3">
-                                            <a href="javascript:void(0)" class="elevatezoom-gallery s-p-det-img3" active shop-p-det-image13" data-update="" >
-                                                <img class="shop-p-det-image13" alt="zo-th-1"/>
+                                            <a href="javascript:void(0)" class="elevatezoom-gallery s-p-det-img3 shop-p-det-image13"  " data-update="" >
+                                                <img class="shop-p-det-image13 img-thumbnail"  style="width:4em !important; height:5em !important;" alt="zo-th-1"/>
                                             </a>
 
                                         </li>
                                         <li class="s-p-det-img4">
-                                            <a href="javascript:void(0)" class="elevatezoom-gallery s-p-det-img4 active shop-p-det-image14" data-update="" >
-                                                <img class="shop-p-det-image14" alt="zo-th-1"/>
+                                            <a href="javascript:void(0)" class="elevatezoom-gallery s-p-det-img4 shop-p-det-image14" data-update="" >
+                                                <img class="shop-p-det-image14 img-thumbnail"  style="width:4em !important; height:5em !important;" alt="zo-th-1"/>
                                             </a>
 
                                         </li>
@@ -168,7 +169,7 @@
                                     </div>
                                     <div class=" product_d_action">
                                         <ul>
-                                            <li><a href="javascript:void(0)" title="Add to Saved Items" class="shop-p-det-addtoWishList">+ Add to Saved Items</a></li>
+                                            <li><a href="javascript:void(0)" title="Add to Saved Items" class="shop-p-det-addtoWishList text-primary">+ Add to Saved Items</a></li>
                                         </ul>
                                     </div>
                                     <div class="product_meta">
@@ -178,7 +179,7 @@
                                     </div>
 
                                 </form>
-                                <div class="priduct_social">
+                                <div class="priduct_social d-none">
                                     <ul>
                                         <li><a class="facebook" href="javascript:void(0)" title="facebook"><i class="fa fa-facebook"></i> Like</a></li>           
                                         <li><a class="twitter" href="javascript:void(0)" title="twitter"><i class="fa fa-twitter"></i> tweet</a></li>           

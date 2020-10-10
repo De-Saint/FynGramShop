@@ -407,7 +407,6 @@
                 },
                 300: {
                     items: 2,
-                    margin: 15,
                 },
                 480: {
                     items: 3,
@@ -626,13 +625,12 @@
 //            " - $" + $("#slider-range").slider("values", 1));
 
     /*---elevateZoom---*/
-    $("#zoom1").elevateZoom({
-        gallery: 'gallery_01',
-        responsive: true,
-        cursor: 'crosshair',
-        zoomType: 'inner'
-
-    });
+//    $("#zoom1").elevateZoom({
+//        gallery: 'gallery_01',
+//        responsive: true,
+//        cursor: 'crosshair',
+//        zoomType: 'inner',
+//    });
 
     /*---portfolio Isotope activation---*/
     $('.portfolio_gallery').imagesLoaded(function () {
