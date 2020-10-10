@@ -11146,3 +11146,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .zoomContainer {
     display: none;
 }
+.brand_container{
+    pointer-events: none;
+}

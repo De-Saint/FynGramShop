@@ -53,7 +53,6 @@
             <div class="col-12">
                 <div class="product_header">
                     <div class="section_title">
-                        <p>Trending selling products</p>
                         <h2>Top Selling Products</h2>
                     </div>
                 </div>
@@ -65,7 +64,7 @@
                     <div class="single_product">
                         <div class="product_thumb">
                             <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 img-thumbnail" style="width: 255px; height: 200px; " alt=""></a>
-                            <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 img-thumbnail" style="width: 255px; height: 200x; "  alt=""></a>
+                            <!--<a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 img-thumbnail" style="width: 255px; height: 200x; "  alt=""></a>-->
                             <div class="label_product">
                                 <!--<span class="label_sale">Sale</span>-->
                                 <!--<span class="label_new shop-p-condition ">New</span>-->
@@ -124,7 +123,6 @@
         <div class="row">
             <div class="col-12">
                 <div class="section_title">
-                    <p>Recently added to our store </p>
                     <h2>Recently Added</h2>
                 </div>
             </div>
@@ -135,7 +133,7 @@
                     <div class="single_product">
                         <div class="product_thumb">
                             <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 img-thumbnail" style="width: 255px; height: 200px; " alt=""></a>
-                            <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 img-thumbnail" style="width: 255px; height: 200px; " alt=""></a>
+                            <!--<a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 img-thumbnail" style="width: 255px; height: 200px; " alt=""></a>-->
                             <div class="label_product">
                                 <!--<span class="label_sale">Sale</span>-->
                                 <!--<span class="label_new shop-p-condition ">New</span>-->
@@ -187,7 +185,6 @@
         <div class="row">
             <div class="col-12">
                 <div class="section_title">
-                    <p>Best Sellers on our store </p>
                     <h2>Best Sellers</h2>
                 </div>
             </div>
@@ -209,7 +206,7 @@
                                             <figure>
                                                 <div class="product_thumb">
                                                     <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 shop-d-view img-thumbnail" alt=""></a>
-                                                    <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 shop-d-view img-thumbnail"   alt=""></a>
+                                                    <!--<a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 shop-d-view img-thumbnail"   alt=""></a>-->
                                                 </div>
                                                 <figcaption class="product_content">
                                                     <h4 class="product_name "><a href="javascript:void(0)" class="shop-p-name btn-shop-p-details">Aliquam Consequat</a></h4>
@@ -247,7 +244,6 @@
         <div class="row">
             <div class="col-12">
                 <div class="section_title">
-                    <p>Recently added our store </p>
                     <h2>Mostview Products</h2>
                 </div>
             </div>
@@ -258,7 +254,7 @@
                     <div class="single_product">
                         <div class="product_thumb">
                             <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 img-thumbnail" style="width: 255px; height: 200px; " alt=""></a>
-                            <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 img-thumbnail" style="width: 255px; height: 200px; " alt=""></a>
+                            <!--<a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 img-thumbnail" style="width: 255px; height: 200px; " alt=""></a>-->
                             <div class="label_product">
                                 <!--<span class="label_sale">Sale</span>-->
                                 <!--<span class="label_new shop-p-condition ">New</span>-->
@@ -363,7 +359,6 @@
         <div class="row">
             <div class="col-12">
                 <div class="section_title">
-                    <p>Featured Products on our store </p>
                     <h2>Featured Products</h2>
                 </div>
             </div>
@@ -377,7 +372,7 @@
                                 <figure>
                                     <div class="product_thumb">
                                         <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 shop-d-view img-thumbnail" alt=""></a>
-                                        <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 shop-d-view img-thumbnail"   alt=""></a>
+                                        <!--<a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 shop-d-view img-thumbnail"   alt=""></a>-->
                                     </div>
                                     <figcaption class="product_content">
                                         <h4 class="product_name "><a href="javascript:void(0)" class="shop-p-name btn-shop-p-details">Aliquam Consequat</a></h4>
@@ -413,7 +408,6 @@
         <div class="row">
             <div class="col-12">
                 <div class="section_title">
-                    <p>Product brands </p>
                     <h2>Shop By Brands</h2>
                 </div>
             </div>
@@ -421,7 +415,6 @@
         <div class="row">
             <div class="col-12">
                 <div class="brand_container owl-carousel ">
-                    <img src="../../../../" alt=""/>
                     <div class="single_brand">
                         <a href="javascript:void(0)"><img src="assets/img/brand/egsol.png" alt="" style="width: 185px; height: 70px;" id="egsol"></a>
                     </div>

@@ -396,6 +396,8 @@
             loop: true,
             nav: false,
             autoplay: true,
+            pauseOnHover: false,
+            pauseOnFocus: false,
             autoplayTimeout: 2000,
             items: 5,
             margin: 20,

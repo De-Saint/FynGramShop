@@ -33,7 +33,7 @@
                                     <figure>
                                         <div class="product_thumb">
                                             <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 img-thumbnail" style="width: 4.5em; height: 4.5em;" alt=""></a>
-                                            <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 img-thumbnail"  style="width: 4.5em; height: 4.5em;"  alt=""></a>
+                                            <!--<a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 img-thumbnail"  style="width: 4.5em; height: 4.5em;"  alt=""></a>-->
                                         </div>
                                         <figcaption class="product_content">
                                             <h4 class="product_name">
@@ -69,7 +69,7 @@
                                     <figure>
                                         <div class="product_thumb">
                                             <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 img-thumbnail"  style="width:5.5em !important; height:5.5em !important;" alt=""></a>
-                                            <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 img-thumbnail"  style="width:5.5em !important; height:5.5em !important;"  alt=""></a>
+                                            <!--<a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 img-thumbnail"  style="width:5.5em !important; height:5.5em !important;"  alt=""></a>-->
                                         </div>
                                         <figcaption class="product_content">
                                             <h4 class="product_name">
@@ -453,7 +453,7 @@
                                 <div class="single_product">
                                     <div class="product_thumb">
                                         <a class="primary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image1 img-thumbnail" style="width: 255px; height: 200px; "    alt=""></a>
-                                        <a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 img-thumbnail" style="width: 255px; height: 200px; "    alt=""></a>
+                                        <!--<a class="secondary_img btn-shop-p-details" href="javascript:void(0)"><img class="shop-p-image2 img-thumbnail" style="width: 255px; height: 200px; "    alt=""></a>-->
                                         <div class="label_product">
                                             <!--<span class="label_sale">Sale</span>-->
                                             <span class="label_new shop-p-condition ">New</span>
