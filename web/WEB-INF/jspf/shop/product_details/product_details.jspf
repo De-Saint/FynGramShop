@@ -101,7 +101,7 @@
                             <div class="product-details-tab">
                                 <div id="img-1" class="zoomWrapper single-zoom">
                                     <a href="javascript:void(0)">
-                                        <img id="zoom1" style="width: 406.75px; height: 406.75px;"  alt="big-1">
+                                        <img id="zoom1"  src="../../../assets/img/no-image.png" style="width: 30em; height: 30em;" alt="big-1">
                                         <!--<img id="zoom1" style="width: 406.75px; height: 406.75px;" class="shop-p-det-image11" src="../../../assets/img/no-image.png"  alt="big-1">-->
                                     </a>
                                 </div>

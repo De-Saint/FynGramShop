@@ -144,7 +144,7 @@ function GenralBtnEvents() {
                 $(".mc-email").val("");
             }
         }
-        
+
         e.preventDefault();
     });
 }
@@ -390,32 +390,6 @@ function DisplayCartAddOption(data) {
             parent.find(".added-p-image").attr("src", image_url);
         } else if (cartdata.ImageText !== "0" || cartdata.ImageText !== 0) {
             parent.find(".added-p-image").attr("src", "data:image/png;base64," + cartdata.ImageText);
-        }
-
-
-        var propdata = data.PropertyDetails;
-        var PropertyParent = parent.find("#added-p-det-prop-list");
-        PropertyParent.find(".new-clone").remove();
-        if (propdata === "none") {
-            PropertyParent.text("No Result");
-        } else {
-            var childclone = PropertyParent.find(".added-p-det-prop-clone");
-            var count = 0;
-            $.each(propdata, function (index, details) {
-                var newchild = childclone.clone();
-                count++;
-                newchild.removeClass("added-p-det-prop-clone");
-                newchild.removeClass("d-none");
-                newchild.addClass("new-clone");
-                if (details["RootPropName"] !== details["name"]) {
-                    newchild.find(".added-p-det-prop-name").text(details["RootPropName"]);
-                    newchild.find(".added-p-det-prop-value").text(details["name"]);
-                } else {
-                    newchild.addClass("d-none");
-                }
-                newchild.appendTo(PropertyParent).show();
-            });
-            childclone.hide();
         }
     }
 

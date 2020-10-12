@@ -399,6 +399,7 @@
             pauseOnHover: false,
             pauseOnFocus: false,
             autoplayTimeout: 2000,
+            autoplayHoverPause:true,
             items: 5,
             margin: 20,
             dots: false,

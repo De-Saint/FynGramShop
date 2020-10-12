@@ -201,7 +201,7 @@
                         <div class="col-lg-12 col-md-12">
                             <div class="row BestSellersProd" id="">
                                 <div class=" col-lg-6 col-md-6 small_product_area product-clone d-none product_column2" >
-                                    <div class="product_items " style="width: 366.667px; margin-right: 20px; margin-top: 20px;">
+                                    <div class="product_items " style="margin-right: 20px; margin-top: 20px;">
                                         <article class="single_product">
                                             <figure>
                                                 <div class="product_thumb">
@@ -367,7 +367,7 @@
             <div class="col-lg-12 col-md-12">
                 <div class="row FeaturedProd" id="">
                     <div class=" col-lg-4 col-md-4 small_product_area product-clone d-none product_column2" >
-                        <div class="product_items " style="width: 366.667px; margin-right: 20px; margin-top: 20px;">
+                        <div class="product_items " style="margin-right: 20px; margin-top: 20px;">
                             <article class="single_product">
                                 <figure>
                                     <div class="product_thumb">

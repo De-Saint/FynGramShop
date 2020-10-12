@@ -83,7 +83,7 @@
                                                     <div class="font-weight-light ">Please, add an address to be used as your delivery address.</div>
 
                                                 </div>  
-                                                <div class="col-lg-6 offset-3 mt-3">
+                                                <div class="col-lg-6 mt-3">
                                                     <a class="btn btn-success text-center text-white" href="${pageContext.request.contextPath}/LinksServlet?type=Address">Add Address</a>
                                                 </div>
                                             </div>
