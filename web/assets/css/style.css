@@ -3384,8 +3384,11 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 @media only screen and (max-width: 767px) {
     .product_thumb a img {
-        width: 100%!important;
-        height: 100% !important;
+        max-width: 100% !important;
+        max-height: 100% !important;
+        object-fit: contain;
+        margin: auto;
+        display: block;
     }
 }
 
@@ -7120,7 +7123,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     .product_right_sidebar .product-details-tab {
         margin-bottom: 58px;
     }
-     .product_right_sidebar .product-details-tab img {
+    .product_right_sidebar .product-details-tab img {
         width: 25em !important;
         height: 25em !important;
     }
