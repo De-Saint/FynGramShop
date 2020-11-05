@@ -68,11 +68,16 @@ function verifyUser() {
             $(".forMembers").addClass("d-none");
             $(".notforMembers").show();
             $(".notforMembers").removeClass("d-none");
-            $.getJSON("https://ip.seeip.org/geoip", function (data) {
+            $.getJSON("https://ipapi.co/json/", function (data) {
                 var address = data.city + " " + data.country;
                 var data = [data.ip, address];
                 GetData("User", "SaveGuest", "LoadSaveGuest", data);
             });
+//            $.getJSON("https://ip.seeip.org/geoip", function (data) {
+//                var address = data.city + " " + data.country;
+//                var data = [data.ip, address];
+//                GetData("User", "SaveGuest", "LoadSaveGuest", data);
+//            });
         } else {
             var utype = shopsessionidString.split("#")[1];
             if (utype === "G") {
