@@ -55,7 +55,7 @@ function DisplayStockMovement(data) {
             newchild.addClass("stock-clone");
             newchild.addClass("newclone");
             newchild.find(".stock-sn").text(count);
-           newchild.find(".stock-name").text(result["name"]);
+            newchild.find(".stock-name").text(result["name"]);
             newchild.find(".stock-product-name").text(result["ProductName"]);
             newchild.find(".stock-order-qty").text(result["product_quantity"]);
             newchild.find(".stock-date").text(result["date"]);
@@ -67,6 +67,6 @@ function DisplayStockMovement(data) {
 
     } else {
         var row = $("<tr />").appendTo(parent);
-        $("<td />", {class: "ml-9 text-center newclone text-primary", colspan: "10", text: "No Result Found"}).appendTo(row);
+        $("<td />", {class: "ml-9 text-center newclone text-success", colspan: "6", text: "No Result Found"}).appendTo(row);
     }
 }

@@ -72,32 +72,24 @@ function profileBtnEvents() {
         var uPhone = $(".uPhone").val();
         var uOldPass = $(".uOldPass").val();
         var uNewPass = $(".uNewPass").val();
+
         if (uLastName) {
-            if (uFirstName) {
-                if (uPhone) {
-                    if (uOldPass) {
-                        if (uNewPass) {
-                            var data = [shopsessionid, uLastName, uFirstName, uNewsletter, uPhone, uOldPass, uNewPass];
-                            showLoading();
-                            GetData("User", "UpdateProfile", "LoadAddBankDetails", data);
-                        } else {
-                            ShowNotification("Please, enter the new password", "error");
-                        }
-                    } else {
-                        ShowNotification("Please, provide your current password", "error", );
-                    }
-                } else {
-                    ShowNotification("Please, enter your new phone number", "error", );
-                }
-
-            } else {
-                ShowNotification("Please, provide your firstname", "error", );
-            }
-
-        } else {
             ShowNotification("Please, provide your lastname", "error", );
         }
+        if (uFirstName === "") {
+            ShowNotification("Please, provide your firstname", "error", );
+        }
+        if (uPhone === "") {
+            ShowNotification("Please, enter your new phone number", "error", );
+        }
+        if (uOldPass === "") {
+            ShowNotification("Please, provide your current password", "error", );
+            return false;
+        }
 
+        var data = [shopsessionid, uLastName, uFirstName, uNewsletter, uPhone, uOldPass, uNewPass];
+        showLoading();
+        GetData("User", "UpdateProfile", "LoadAddBankDetails", data);
 
 
     });

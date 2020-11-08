@@ -69,7 +69,7 @@
                                             <hr>
                                             <!--<p>T</p>-->
                                             <label>Current Password</label>
-                                            <input type="text" class="uOldPass" name="">
+                                            <input type="password" class="uOldPass" name="">
                                             <label>New Password</label>
                                             <input type="text" class="uNewPass" name="email-name">
                                             <div class="">
